@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Example</string>
+
+    <string name="recyclerview.with.search">RecyclerView with search</string>
+    <string name="search">Search</string>
 </resources>
