@@ -1,4 +1,4 @@
-package com.example.kirchhoff.example.ui.recyclersearch.data;
+package com.example.kirchhoff.example.ui.recycler.search.data;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;

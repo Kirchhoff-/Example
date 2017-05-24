@@ -20,7 +20,7 @@
         </activity>
 
         <activity
-            android:name=".ui.recyclersearch.RecyclerSearchActivity"
+            android:name=".ui.recycler.search.RecyclerSearchActivity"
             android:label="@string/recyclerview.with.search"
             android:theme="@style/AppTheme.NoActionBar" />
 
@@ -32,6 +32,10 @@
             android:name=".ui.fab.FabAnimationActivity"
             android:label="@string/fab.animation"
             android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".ui.recycler.swipe.RecyclerCustomSwipeActivity"
+            android:label="@string/custom.recycler.swipe" />
 
     </application>
 

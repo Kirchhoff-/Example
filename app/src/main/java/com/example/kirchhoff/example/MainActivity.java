@@ -6,7 +6,8 @@ import android.view.View;
 
 import com.example.kirchhoff.example.ui.databinding.DataBindingActivity;
 import com.example.kirchhoff.example.ui.fab.FabAnimationActivity;
-import com.example.kirchhoff.example.ui.recyclersearch.RecyclerSearchActivity;
+import com.example.kirchhoff.example.ui.recycler.search.RecyclerSearchActivity;
+import com.example.kirchhoff.example.ui.recycler.swipe.RecyclerCustomSwipeActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -18,6 +19,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.recyclerViewWithSearch).setOnClickListener(this);
         findViewById(R.id.dataBindingExample).setOnClickListener(this);
         findViewById(R.id.fabAnimationExample).setOnClickListener(this);
+        findViewById(R.id.customRecyclerSwipe).setOnClickListener(this);
     }
 
     @Override
@@ -28,5 +30,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             DataBindingActivity.startMe(this);
         else if (view.getId() == R.id.fabAnimationExample)
             FabAnimationActivity.startMe(this);
+        else if (view.getId() == R.id.customRecyclerSwipe)
+            RecyclerCustomSwipeActivity.startMe(this);
     }
 }

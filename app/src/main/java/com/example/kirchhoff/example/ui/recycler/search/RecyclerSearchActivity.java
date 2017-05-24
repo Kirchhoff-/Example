@@ -1,4 +1,4 @@
-package com.example.kirchhoff.example.ui.recyclersearch;
+package com.example.kirchhoff.example.ui.recycler.search;
 
 import android.content.Context;
 import android.content.Intent;
@@ -14,8 +14,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.example.kirchhoff.example.R;
-import com.example.kirchhoff.example.ui.recyclersearch.data.AndroidVersion;
-import com.example.kirchhoff.example.ui.recyclersearch.data.DataAdapter;
+import com.example.kirchhoff.example.ui.recycler.search.data.AndroidVersion;
+import com.example.kirchhoff.example.ui.recycler.search.data.DataAdapter;
 
 import java.util.ArrayList;
 

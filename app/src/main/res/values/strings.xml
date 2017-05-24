@@ -9,4 +9,7 @@
 
     <string name="fab.animation">Fab animation</string>
     <string name="fab.animation.example">Fab animation example</string>
+
+    <string name="custom.recycler.swipe">Custom recycler swipe</string>
+    <string name="custom.recycler.swipe.example">Custom recycler swipe example</string>
 </resources>
