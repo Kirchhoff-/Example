@@ -27,6 +27,12 @@
         <activity
             android:name=".ui.databinding.DataBindingActivity"
             android:label="@string/data.binding" />
+
+        <activity
+            android:name=".ui.fab.FabAnimationActivity"
+            android:label="@string/fab.animation"
+            android:theme="@style/AppTheme.NoActionBar" />
+
     </application>
 
 </manifest>

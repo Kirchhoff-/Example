@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.example.kirchhoff.example.ui.databinding.DataBindingActivity;
+import com.example.kirchhoff.example.ui.fab.FabAnimationActivity;
 import com.example.kirchhoff.example.ui.recyclersearch.RecyclerSearchActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -16,6 +17,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         findViewById(R.id.recyclerViewWithSearch).setOnClickListener(this);
         findViewById(R.id.dataBindingExample).setOnClickListener(this);
+        findViewById(R.id.fabAnimationExample).setOnClickListener(this);
     }
 
     @Override
@@ -24,5 +26,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             RecyclerSearchActivity.startMe(this);
         else if (view.getId() == R.id.dataBindingExample)
             DataBindingActivity.startMe(this);
+        else if (view.getId() == R.id.fabAnimationExample)
+            FabAnimationActivity.startMe(this);
     }
 }

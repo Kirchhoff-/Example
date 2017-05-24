@@ -6,4 +6,7 @@
 
     <string name="data.binding">Data binding</string>
     <string name="data.binding.example">Data binding example</string>
+
+    <string name="fab.animation">Fab animation</string>
+    <string name="fab.animation.example">Fab animation example</string>
 </resources>
