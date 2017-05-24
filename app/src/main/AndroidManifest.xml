@@ -23,6 +23,10 @@
             android:name=".ui.recyclersearch.RecyclerSearchActivity"
             android:label="@string/recyclerview.with.search"
             android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".ui.databinding.DataBindingActivity"
+            android:label="@string/data.binding" />
     </application>
 
 </manifest>
