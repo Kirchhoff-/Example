@@ -12,4 +12,14 @@
 
     <string name="custom.recycler.swipe">Custom recycler swipe</string>
     <string name="custom.recycler.swipe.example">Custom recycler swipe example</string>
+
+    <string name="recycler.collapsing.title">Recycler Collapsing</string>
+    <string name="recycler.collapsing.example">Recycler collapsing example</string>
+    <string name="recycler.collapsing.row.title">Row title</string>
+    <string name="recycler.collapsing.row.text">Some long long long Text.
+        Some long long long Text. Some long long long Text.
+        Some long long long Text. Some long long long Text.
+        Some long long long Text. Some long long long Text.
+        Some long long long Text. Some long long long Text.
+        Some long long long Text. Some long long long Text.</string>
 </resources>

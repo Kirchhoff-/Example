@@ -37,6 +37,11 @@
             android:name=".ui.recycler.swipe.RecyclerCustomSwipeActivity"
             android:label="@string/custom.recycler.swipe" />
 
+        <activity
+            android:name=".ui.recycler.toolbar.RecyclerCollapsingToolbarActivity"
+            android:label="@string/recycler.collapsing.title"
+            android:theme="@style/AppTheme.NoActionBar" />
+
     </application>
 
 </manifest>
