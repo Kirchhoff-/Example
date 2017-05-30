@@ -9,6 +9,7 @@ import com.example.kirchhoff.example.ui.fab.FabAnimationActivity;
 import com.example.kirchhoff.example.ui.recycler.search.RecyclerSearchActivity;
 import com.example.kirchhoff.example.ui.recycler.swipe.RecyclerCustomSwipeActivity;
 import com.example.kirchhoff.example.ui.recycler.toolbar.RecyclerCollapsingToolbarActivity;
+import com.example.kirchhoff.example.ui.viewpager.VPWithoutFragmentActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -22,6 +23,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.fabAnimationExample).setOnClickListener(this);
         findViewById(R.id.customRecyclerSwipe).setOnClickListener(this);
         findViewById(R.id.recyclerCollapsing).setOnClickListener(this);
+        findViewById(R.id.vpWithoutFragment).setOnClickListener(this);
     }
 
     @Override
@@ -36,5 +38,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             RecyclerCustomSwipeActivity.startMe(this);
         else if (view.getId() == R.id.recyclerCollapsing)
             RecyclerCollapsingToolbarActivity.startMe(this);
+        else if (view.getId() == R.id.vpWithoutFragment)
+            VPWithoutFragmentActivity.startMe(this);
     }
 }

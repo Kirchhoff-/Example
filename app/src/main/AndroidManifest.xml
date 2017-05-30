@@ -42,6 +42,10 @@
             android:label="@string/recycler.collapsing.title"
             android:theme="@style/AppTheme.NoActionBar" />
 
+        <activity
+            android:name=".ui.viewpager.VPWithoutFragmentActivity"
+            android:label="@string/vp.without.fragment.title" />
+
     </application>
 
 </manifest>
