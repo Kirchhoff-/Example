@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.example.kirchhoff.example.ui.databinding.DataBindingActivity;
+import com.example.kirchhoff.example.ui.drawer.simple.SimpleActivity;
 import com.example.kirchhoff.example.ui.fab.FabAnimationActivity;
 import com.example.kirchhoff.example.ui.recycler.search.RecyclerSearchActivity;
 import com.example.kirchhoff.example.ui.recycler.swipe.RecyclerCustomSwipeActivity;
@@ -24,6 +25,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.customRecyclerSwipe).setOnClickListener(this);
         findViewById(R.id.recyclerCollapsing).setOnClickListener(this);
         findViewById(R.id.vpWithoutFragment).setOnClickListener(this);
+        findViewById(R.id.navigationDrawerDelegation).setOnClickListener(this);
     }
 
     @Override
@@ -40,5 +42,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             RecyclerCollapsingToolbarActivity.startMe(this);
         else if (view.getId() == R.id.vpWithoutFragment)
             VPWithoutFragmentActivity.startMe(this);
+        else if (view.getId() == R.id.navigationDrawerDelegation)
+            SimpleActivity.startMe(this);
     }
 }

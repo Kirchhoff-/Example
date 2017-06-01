@@ -44,5 +44,11 @@
         android:layout_height="wrap_content"
         android:text="@string/vp.without.fragment" />
 
+    <Button
+        android:id="@+id/navigationDrawerDelegation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/drawer.example" />
+
 
 </LinearLayout>
