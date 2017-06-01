@@ -1,5 +1,6 @@
 package com.example.kirchhoff.example;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -7,6 +8,7 @@ import android.view.View;
 import com.example.kirchhoff.example.ui.databinding.DataBindingActivity;
 import com.example.kirchhoff.example.ui.drawer.simple.SimpleActivity;
 import com.example.kirchhoff.example.ui.fab.FabAnimationActivity;
+import com.example.kirchhoff.example.ui.recycler.diffutil.DiffUtilActivity;
 import com.example.kirchhoff.example.ui.recycler.search.RecyclerSearchActivity;
 import com.example.kirchhoff.example.ui.recycler.swipe.RecyclerCustomSwipeActivity;
 import com.example.kirchhoff.example.ui.recycler.toolbar.RecyclerCollapsingToolbarActivity;
@@ -26,6 +28,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.recyclerCollapsing).setOnClickListener(this);
         findViewById(R.id.vpWithoutFragment).setOnClickListener(this);
         findViewById(R.id.navigationDrawerDelegation).setOnClickListener(this);
+        findViewById(R.id.diffUtil).setOnClickListener(this);
     }
 
     @Override
@@ -44,5 +47,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             VPWithoutFragmentActivity.startMe(this);
         else if (view.getId() == R.id.navigationDrawerDelegation)
             SimpleActivity.startMe(this);
+        else if (view.getId() == R.id.diffUtil) {
+            Intent difIntent = new Intent(this, DiffUtilActivity.class);
+            this.startActivity(difIntent);
+        }
     }
 }

@@ -36,6 +36,10 @@
     <string name="drawer.settings">Settings</string>
 
 
+    <!-- Resources for DiffUtilActivity -->
+    <string name="diff.util.title">DiffUtil</string>
+    <string name="diff.util.example">DiffUtil Example</string>
+
     <string name="send">Send</string>
     <string name="share">Share</string>
     <string name="communicate">Communicate</string>

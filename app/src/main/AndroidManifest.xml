@@ -55,6 +55,10 @@
             android:name=".ui.drawer.simple.SimpleActivity"
             android:label="@string/drawer.title" />
 
+        <activity
+            android:name=".ui.recycler.diffutil.DiffUtilActivity"
+            android:label="@string/diff.util.title" />
+
     </application>
 
 </manifest>

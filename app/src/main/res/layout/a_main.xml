@@ -50,5 +50,11 @@
         android:layout_height="wrap_content"
         android:text="@string/drawer.example" />
 
+    <Button
+        android:id="@+id/diffUtil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/diff.util.example" />
+
 
 </LinearLayout>
