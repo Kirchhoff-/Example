@@ -56,5 +56,10 @@
         android:layout_height="wrap_content"
         android:text="@string/diff.util.example" />
 
+    <Button
+        android:id="@+id/tinderExample"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tinder.example" />
 
 </LinearLayout>

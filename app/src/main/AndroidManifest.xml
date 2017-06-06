@@ -59,6 +59,10 @@
             android:name=".ui.recycler.diffutil.DiffUtilActivity"
             android:label="@string/diff.util.title" />
 
+        <activity
+            android:name=".ui.tinder.TinderActivity"
+            android:label="@string/tinder.title" />
+
     </application>
 
 </manifest>
