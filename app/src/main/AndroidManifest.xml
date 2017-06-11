@@ -67,6 +67,10 @@
             android:name=".ui.view.ViewActivity"
             android:label="@string/view.title" />
 
+        <activity
+            android:name=".ui.other.CountdownLabelActivity"
+            android:label="@string/countdown.label.title" />
+
     </application>
 
 </manifest>

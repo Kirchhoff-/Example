@@ -1,72 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.example.kirchhoff.example.MainActivity">
 
-    <Button
-        android:id="@+id/recyclerViewWithSearch"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/recyclerview.with.search" />
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/recyclerViewWithSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/recyclerview.with.search" />
 
 
-    <Button
-        android:id="@+id/dataBindingExample"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/data.binding.example" />
+        <Button
+            android:id="@+id/dataBindingExample"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/data.binding.example" />
 
-    <Button
-        android:id="@+id/fabAnimationExample"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/fab.animation.example" />
+        <Button
+            android:id="@+id/fabAnimationExample"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fab.animation.example" />
 
-    <Button
-        android:id="@+id/customRecyclerSwipe"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/custom.recycler.swipe.example" />
-
-
-    <Button
-        android:id="@+id/recyclerCollapsing"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/recycler.collapsing.example" />
-
-    <Button
-        android:id="@+id/vpWithoutFragment"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/vp.without.fragment" />
-
-    <Button
-        android:id="@+id/navigationDrawerDelegation"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/drawer.example" />
-
-    <Button
-        android:id="@+id/diffUtil"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/diff.util.example" />
-
-    <Button
-        android:id="@+id/tinderExample"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/tinder.example" />
+        <Button
+            android:id="@+id/customRecyclerSwipe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/custom.recycler.swipe.example" />
 
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="onViewClick"
-        android:text="@string/view.title" />
+        <Button
+            android:id="@+id/recyclerCollapsing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/recycler.collapsing.example" />
 
-</LinearLayout>
+        <Button
+            android:id="@+id/vpWithoutFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/vp.without.fragment" />
+
+        <Button
+            android:id="@+id/navigationDrawerDelegation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/drawer.example" />
+
+        <Button
+            android:id="@+id/diffUtil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/diff.util.example" />
+
+        <Button
+            android:id="@+id/tinderExample"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tinder.example" />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onViewClick"
+            android:text="@string/view.title" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onCountDownLabel"
+            android:text="@string/countdown.label.title" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -45,6 +45,8 @@
     <string name="tinder.title">TinderTitle</string>
     <string name="tinder.example">Tinder Example</string>
 
+    <string name="countdown.label.title">Countdown label</string>
+
     <!-- Resources for View -->
     <string name="view.title">View Example</string>
 
@@ -64,4 +66,25 @@
     <string name="red">Red</string>
     <string name="blue">Blue</string>
     <string name="orange">Orange</string>
+
+    <plurals name="days">
+        <item quantity="zero">%d Days</item>
+        <item quantity="one">%d Day</item>
+        <item quantity="other">%d Days</item>
+    </plurals>
+    <plurals name="hours">
+        <item quantity="zero">%d Hours</item>
+        <item quantity="one">%d Hour</item>
+        <item quantity="other">%d Hours</item>
+    </plurals>
+    <plurals name="minutes">
+        <item quantity="zero">%d Minutes</item>
+        <item quantity="one">%d Minute</item>
+        <item quantity="other">%d Minutes</item>
+    </plurals>
+    <plurals name="seconds">
+        <item quantity="zero">%d Seconds</item>
+        <item quantity="one">%d Second</item>
+        <item quantity="other">%d Seconds</item>
+    </plurals>
 </resources>
