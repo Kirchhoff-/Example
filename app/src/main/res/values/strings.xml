@@ -45,6 +45,9 @@
     <string name="tinder.title">TinderTitle</string>
     <string name="tinder.example">Tinder Example</string>
 
+    <!-- Resources for View -->
+    <string name="view.title">View Example</string>
+
     <string name="send">Send</string>
     <string name="share">Share</string>
     <string name="communicate">Communicate</string>

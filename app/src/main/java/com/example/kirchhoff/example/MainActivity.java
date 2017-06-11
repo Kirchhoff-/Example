@@ -13,6 +13,7 @@ import com.example.kirchhoff.example.ui.recycler.search.RecyclerSearchActivity;
 import com.example.kirchhoff.example.ui.recycler.swipe.RecyclerCustomSwipeActivity;
 import com.example.kirchhoff.example.ui.recycler.toolbar.RecyclerCollapsingToolbarActivity;
 import com.example.kirchhoff.example.ui.tinder.TinderActivity;
+import com.example.kirchhoff.example.ui.view.ViewActivity;
 import com.example.kirchhoff.example.ui.viewpager.VPWithoutFragmentActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -55,5 +56,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         } else if (view.getId() == R.id.tinderExample) {
             TinderActivity.startMe(this);
         }
+    }
+
+    public void onViewClick(View view) {
+        ViewActivity.start(this);
     }
 }
