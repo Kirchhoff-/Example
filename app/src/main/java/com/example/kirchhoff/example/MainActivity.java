@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.example.kirchhoff.example.ui.animation.SimpleTransitionActivity;
 import com.example.kirchhoff.example.ui.databinding.DataBindingActivity;
 import com.example.kirchhoff.example.ui.drawer.simple.SimpleActivity;
 import com.example.kirchhoff.example.ui.fab.FabAnimationActivity;
@@ -70,5 +71,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     public void customActionBar(View view) {
         CustomActionBarActivity.start(this);
+    }
+
+    public void simpleTransition(View view) {
+        SimpleTransitionActivity.start(this);
     }
 }

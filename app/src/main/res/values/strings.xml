@@ -50,6 +50,11 @@
     <!-- Resources for CustomActionBarActivity -->
     <string name="custom.actionbar.title">CustomActionBar</string>
 
+    <!-- Resources for SimpleTransitionActivity-->
+    <string name="simple.transition.title">SimpleTransition</string>
+    <string name="simple.transition.details.title">SimpleTransitionDetails</string>
+    <string name="transition">transition</string>
+
     <!-- Resources for View -->
     <string name="view.title">View Example</string>
 
