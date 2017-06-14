@@ -80,6 +80,12 @@
             android:onClick="onCountDownLabel"
             android:text="@string/countdown.label.title" />
 
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="customActionBar"
+            android:text="@string/custom.actionbar.title" />
+
     </LinearLayout>
 
 </ScrollView>

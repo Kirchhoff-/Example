@@ -71,6 +71,11 @@
             android:name=".ui.other.CountdownLabelActivity"
             android:label="@string/countdown.label.title" />
 
+        <activity
+            android:name=".ui.other.CustomActionBarActivity"
+            android:label="@string/custom.actionbar.title"
+            android:theme="@style/CustomActionBarTheme" />
+
     </application>
 
 </manifest>

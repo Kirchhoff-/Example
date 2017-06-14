@@ -47,6 +47,9 @@
 
     <string name="countdown.label.title">Countdown label</string>
 
+    <!-- Resources for CustomActionBarActivity -->
+    <string name="custom.actionbar.title">CustomActionBar</string>
+
     <!-- Resources for View -->
     <string name="view.title">View Example</string>
 

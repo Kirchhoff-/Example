@@ -9,6 +9,7 @@ import com.example.kirchhoff.example.ui.databinding.DataBindingActivity;
 import com.example.kirchhoff.example.ui.drawer.simple.SimpleActivity;
 import com.example.kirchhoff.example.ui.fab.FabAnimationActivity;
 import com.example.kirchhoff.example.ui.other.CountdownLabelActivity;
+import com.example.kirchhoff.example.ui.other.CustomActionBarActivity;
 import com.example.kirchhoff.example.ui.recycler.diffutil.DiffUtilActivity;
 import com.example.kirchhoff.example.ui.recycler.search.RecyclerSearchActivity;
 import com.example.kirchhoff.example.ui.recycler.swipe.RecyclerCustomSwipeActivity;
@@ -65,5 +66,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     public void onCountDownLabel(View view) {
         CountdownLabelActivity.start(this);
+    }
+
+    public void customActionBar(View view) {
+        CustomActionBarActivity.start(this);
     }
 }
