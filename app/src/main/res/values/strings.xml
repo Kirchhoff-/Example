@@ -55,6 +55,10 @@
     <string name="simple.transition.details.title">SimpleTransitionDetails</string>
     <string name="transition">transition</string>
 
+    <!-- Resources for SCoordinatorBehaviorActivity-->
+    <string name="coordinator.layout.behavior.title">Coordinate layout behavior</string>
+
+
     <!-- Resources for View -->
     <string name="view.title">View Example</string>
 

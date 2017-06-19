@@ -86,6 +86,10 @@
             android:label="@string/simple.transition.details.title"
             android:theme="@style/AppTheme.TransitionAnimation" />
 
+        <activity
+            android:name=".ui.other.CoordinatorBehaviorActivity"
+            android:label="@string/coordinator.layout.behavior.title" />
+
     </application>
 
 </manifest>
