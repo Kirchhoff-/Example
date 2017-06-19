@@ -3,7 +3,7 @@ package com.example.kirchhoff.example.ui.recycler.diffutil
 import android.support.v7.util.DiffUtil
 import android.view.View
 import com.example.kirchhoff.example.R
-import com.example.kirchhoff.example.ui.Extensions.setFormatDigit
+import com.example.kirchhoff.example.ui.extensions.setFormatDigit
 import io.reactivex.Flowable
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.Disposable

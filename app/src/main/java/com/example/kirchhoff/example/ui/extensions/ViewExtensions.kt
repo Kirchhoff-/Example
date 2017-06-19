@@ -1,4 +1,4 @@
-package com.example.kirchhoff.example.ui.Extensions
+package com.example.kirchhoff.example.ui.extensions
 
 import android.widget.TextView
 

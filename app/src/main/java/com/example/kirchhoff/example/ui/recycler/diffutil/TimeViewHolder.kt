@@ -4,7 +4,7 @@ import android.animation.ValueAnimator
 import android.view.View
 import android.widget.TextView
 import com.example.kirchhoff.example.R
-import com.example.kirchhoff.example.ui.Extensions.setFormatDigit
+import com.example.kirchhoff.example.ui.extensions.setFormatDigit
 
 /**
  * @author Kirchhoff-
