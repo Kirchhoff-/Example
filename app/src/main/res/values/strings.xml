@@ -58,6 +58,9 @@
     <!-- Resources for SCoordinatorBehaviorActivity-->
     <string name="coordinator.layout.behavior.title">Coordinate layout behavior</string>
 
+    <!-- Resources for MultiRowRecyclerActivity-->
+    <string name="multi.row.recycler.title">MultiRow RecyclerView</string>
+
 
     <!-- Resources for View -->
     <string name="view.title">View Example</string>

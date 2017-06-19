@@ -13,6 +13,7 @@ import com.example.kirchhoff.example.ui.other.CoordinatorBehaviorActivity;
 import com.example.kirchhoff.example.ui.other.CountdownLabelActivity;
 import com.example.kirchhoff.example.ui.other.CustomActionBarActivity;
 import com.example.kirchhoff.example.ui.recycler.diffutil.DiffUtilActivity;
+import com.example.kirchhoff.example.ui.recycler.multi.MultiRowRecyclerActivity;
 import com.example.kirchhoff.example.ui.recycler.search.RecyclerSearchActivity;
 import com.example.kirchhoff.example.ui.recycler.swipe.RecyclerCustomSwipeActivity;
 import com.example.kirchhoff.example.ui.recycler.toolbar.RecyclerCollapsingToolbarActivity;
@@ -80,5 +81,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     public void customCoordinateLayoutBehavior(View view) {
         CoordinatorBehaviorActivity.start(this);
+    }
+
+    public void multiRowRecycler(View view) {
+        MultiRowRecyclerActivity.start(this);
     }
 }

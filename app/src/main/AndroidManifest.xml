@@ -90,6 +90,10 @@
             android:name=".ui.other.CoordinatorBehaviorActivity"
             android:label="@string/coordinator.layout.behavior.title" />
 
+        <activity
+            android:name=".ui.recycler.multi.MultiRowRecyclerActivity"
+            android:label="@string/multi.row.recycler.title" />
+
     </application>
 
 </manifest>
