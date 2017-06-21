@@ -11,4 +11,9 @@
         android:layout_height="wrap_content" />
 
 
+    <com.example.kirchhoff.example.ui.view.view.LikeButtonView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center" />
+
 </LinearLayout>

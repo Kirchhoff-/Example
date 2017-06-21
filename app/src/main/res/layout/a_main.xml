@@ -105,7 +105,6 @@
             android:layout_height="wrap_content"
             android:onClick="multiRowRecycler"
             android:text="@string/multi.row.recycler.title" />
-
     </LinearLayout>
 
 </ScrollView>
