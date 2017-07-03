@@ -39,6 +39,7 @@
     <!-- Resources for DiffUtilActivity -->
     <string name="diff.util.title">DiffUtil</string>
     <string name="diff.util.example">DiffUtil Example</string>
+    <string name="diff.util.example.2">DiffUtil Example 2</string>
 
 
     <!-- Resources for TinderActivity -->

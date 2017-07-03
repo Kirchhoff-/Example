@@ -13,6 +13,7 @@ import com.example.kirchhoff.example.ui.other.CoordinatorBehaviorActivity;
 import com.example.kirchhoff.example.ui.other.CountdownLabelActivity;
 import com.example.kirchhoff.example.ui.other.CustomActionBarActivity;
 import com.example.kirchhoff.example.ui.recycler.diffutil.ex1.DiffUtilActivity;
+import com.example.kirchhoff.example.ui.recycler.diffutil.ex2.ThingDiffUtilActivity;
 import com.example.kirchhoff.example.ui.recycler.multi.MultiRowRecyclerActivity;
 import com.example.kirchhoff.example.ui.recycler.search.RecyclerSearchActivity;
 import com.example.kirchhoff.example.ui.recycler.swipe.RecyclerCustomSwipeActivity;
@@ -85,5 +86,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     public void multiRowRecycler(View view) {
         MultiRowRecyclerActivity.start(this);
+    }
+
+    public void diffUtilExample2(View view) {
+        ThingDiffUtilActivity.start(this);
     }
 }

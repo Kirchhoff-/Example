@@ -94,6 +94,10 @@
             android:name=".ui.recycler.multi.MultiRowRecyclerActivity"
             android:label="@string/multi.row.recycler.title" />
 
+        <activity
+            android:name=".ui.recycler.diffutil.ex2.ThingDiffUtilActivity"
+            android:label="@string/diff.util.title" />
+
     </application>
 
 </manifest>

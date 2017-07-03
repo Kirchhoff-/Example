@@ -105,6 +105,12 @@
             android:layout_height="wrap_content"
             android:onClick="multiRowRecycler"
             android:text="@string/multi.row.recycler.title" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="diffUtilExample2"
+            android:text="@string/diff.util.example.2" />
     </LinearLayout>
 
 </ScrollView>
