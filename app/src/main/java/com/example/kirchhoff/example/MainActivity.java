@@ -12,7 +12,7 @@ import com.example.kirchhoff.example.ui.fab.FabAnimationActivity;
 import com.example.kirchhoff.example.ui.other.CoordinatorBehaviorActivity;
 import com.example.kirchhoff.example.ui.other.CountdownLabelActivity;
 import com.example.kirchhoff.example.ui.other.CustomActionBarActivity;
-import com.example.kirchhoff.example.ui.recycler.diffutil.DiffUtilActivity;
+import com.example.kirchhoff.example.ui.recycler.diffutil.ex1.DiffUtilActivity;
 import com.example.kirchhoff.example.ui.recycler.multi.MultiRowRecyclerActivity;
 import com.example.kirchhoff.example.ui.recycler.search.RecyclerSearchActivity;
 import com.example.kirchhoff.example.ui.recycler.swipe.RecyclerCustomSwipeActivity;

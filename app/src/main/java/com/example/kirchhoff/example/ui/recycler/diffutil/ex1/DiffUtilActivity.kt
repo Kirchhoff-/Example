@@ -1,4 +1,4 @@
-package com.example.kirchhoff.example.ui.recycler.diffutil
+package com.example.kirchhoff.example.ui.recycler.diffutil.ex1
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity

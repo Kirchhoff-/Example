@@ -1,7 +1,6 @@
-package com.example.kirchhoff.example.ui.recycler.diffutil
+package com.example.kirchhoff.example.ui.recycler.diffutil.ex1
 
 import android.animation.ValueAnimator
-import android.view.View
 import android.widget.TextView
 import com.example.kirchhoff.example.R
 import com.example.kirchhoff.example.ui.extensions.setFormatDigit
@@ -9,13 +8,13 @@ import com.example.kirchhoff.example.ui.extensions.setFormatDigit
 /**
  * @author Kirchhoff-
  */
-class TimeViewHolder(itemView: View?) : BaseViewHolder<Time>(itemView) {
+class TimeViewHolder(itemView: android.view.View?) : BaseViewHolder<Time>(itemView) {
 
     companion object {
         @JvmStatic
         val valueAnimator: ValueAnimator = ValueAnimator.ofFloat(0f, 1f).apply {
-            this.repeatCount = ValueAnimator.INFINITE
-            this.repeatMode = ValueAnimator.REVERSE
+            this.repeatCount = android.animation.ValueAnimator.INFINITE
+            this.repeatMode = android.animation.ValueAnimator.REVERSE
             this.duration = 400
             this.start()
         }
@@ -29,7 +28,7 @@ class TimeViewHolder(itemView: View?) : BaseViewHolder<Time>(itemView) {
     val tvSeconds by lazy { itemView?.findViewById(R.id.tvSeconds) as TextView? }
 
     init {
-        valueAnimator.addUpdateListener {
+        TimeViewHolder.Companion.valueAnimator.addUpdateListener {
             vFirstDivider?.alpha = it.animatedFraction
             vSecondDivider?.alpha = it.animatedFraction
         }

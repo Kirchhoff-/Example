@@ -1,4 +1,4 @@
-package com.example.kirchhoff.example.ui.recycler.diffutil
+package com.example.kirchhoff.example.ui.recycler.diffutil.ex1
 
 /**
  * @author Kirchhoff-

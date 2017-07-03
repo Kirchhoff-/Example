@@ -1,4 +1,4 @@
-package com.example.kirchhoff.example.ui.recycler.diffutil
+package com.example.kirchhoff.example.ui.recycler.diffutil.ex1
 
 import android.support.v7.util.DiffUtil
 
@@ -41,19 +41,19 @@ class TimeDiffCallback(val oldList: List<Time>, val newList: List<Time>) : DiffU
         val set = mutableSetOf<String>()
 
         if (isIdEquels.not()) {
-            set.add(ID)
+            set.add(TimeDiffCallback.Companion.ID)
         }
 
         if (isHoursEquels.not()) {
-            set.add(HOURS)
+            set.add(TimeDiffCallback.Companion.HOURS)
         }
 
         if (isMinuteEquels.not()) {
-            set.add(MINUTES)
+            set.add(TimeDiffCallback.Companion.MINUTES)
         }
 
         if (isSecondsEquels.not()) {
-            set.add(SECONDS)
+            set.add(TimeDiffCallback.Companion.SECONDS)
         }
 
         return set
