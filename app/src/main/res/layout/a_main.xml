@@ -109,6 +109,13 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="mvpRecycler"
+            android:text="@string/mvp.recycler.view.title" />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:onClick="diffUtilExample2"
             android:text="@string/diff.util.example.2" />
     </LinearLayout>

@@ -62,6 +62,9 @@
     <!-- Resources for MultiRowRecyclerActivity-->
     <string name="multi.row.recycler.title">MultiRow RecyclerView</string>
 
+    <!-- MvpRecyclerViewActivity -->
+    <string name="mvp.recycler.view.title">Mvp RecyclerView</string>
+
 
     <!-- Resources for View -->
     <string name="view.title">View Example</string>

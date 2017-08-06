@@ -98,6 +98,10 @@
             android:name=".ui.recycler.diffutil.ex2.ThingDiffUtilActivity"
             android:label="@string/diff.util.title" />
 
+        <activity
+            android:name=".ui.recycler.mvp.MvpRecyclerViewActivity"
+            android:label="@string/mvp.recycler.view.title" />
+
     </application>
 
 </manifest>

@@ -15,6 +15,7 @@ import com.example.kirchhoff.example.ui.other.CustomActionBarActivity;
 import com.example.kirchhoff.example.ui.recycler.diffutil.ex1.DiffUtilActivity;
 import com.example.kirchhoff.example.ui.recycler.diffutil.ex2.ThingDiffUtilActivity;
 import com.example.kirchhoff.example.ui.recycler.multi.MultiRowRecyclerActivity;
+import com.example.kirchhoff.example.ui.recycler.mvp.MvpRecyclerViewActivity;
 import com.example.kirchhoff.example.ui.recycler.search.RecyclerSearchActivity;
 import com.example.kirchhoff.example.ui.recycler.swipe.RecyclerCustomSwipeActivity;
 import com.example.kirchhoff.example.ui.recycler.toolbar.RecyclerCollapsingToolbarActivity;
@@ -86,6 +87,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     public void multiRowRecycler(View view) {
         MultiRowRecyclerActivity.start(this);
+    }
+
+    public void mvpRecycler(View view) {
+        MvpRecyclerViewActivity.startMe(this);
     }
 
     public void diffUtilExample2(View view) {
