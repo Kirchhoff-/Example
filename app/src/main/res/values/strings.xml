@@ -65,6 +65,9 @@
     <!-- MvpRecyclerViewActivity -->
     <string name="mvp.recycler.view.title">Mvp RecyclerView</string>
 
+    <!-- KeyboardWatcherActivity -->
+    <string name="keyboard.watcher.title">KeyboardWatcher</string>
+
 
     <!-- Resources for View -->
     <string name="view.title">View Example</string>

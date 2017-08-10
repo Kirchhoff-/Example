@@ -47,6 +47,8 @@ dependencies {
 
     compile libraries.placeHolderView
 
+    compile libraries.keyboardWatcher
+
     testCompile libraries.junit
     testCompile libraries.mockito
 }

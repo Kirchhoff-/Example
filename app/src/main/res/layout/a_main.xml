@@ -118,6 +118,12 @@
             android:layout_height="wrap_content"
             android:onClick="diffUtilExample2"
             android:text="@string/diff.util.example.2" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="keyboardWatcherExample"
+            android:text="@string/keyboard.watcher.title" />
     </LinearLayout>
 
 </ScrollView>

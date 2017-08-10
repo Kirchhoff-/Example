@@ -12,6 +12,7 @@ import com.example.kirchhoff.example.ui.fab.FabAnimationActivity;
 import com.example.kirchhoff.example.ui.other.CoordinatorBehaviorActivity;
 import com.example.kirchhoff.example.ui.other.CountdownLabelActivity;
 import com.example.kirchhoff.example.ui.other.CustomActionBarActivity;
+import com.example.kirchhoff.example.ui.other.KeyboardWatcherActivity;
 import com.example.kirchhoff.example.ui.recycler.diffutil.ex1.DiffUtilActivity;
 import com.example.kirchhoff.example.ui.recycler.diffutil.ex2.ThingDiffUtilActivity;
 import com.example.kirchhoff.example.ui.recycler.multi.MultiRowRecyclerActivity;
@@ -95,5 +96,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     public void diffUtilExample2(View view) {
         ThingDiffUtilActivity.start(this);
+    }
+
+    public void keyboardWatcherExample(View view) {
+        KeyboardWatcherActivity.start(this);
     }
 }

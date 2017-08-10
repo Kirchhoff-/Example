@@ -102,6 +102,12 @@
             android:name=".ui.recycler.mvp.MvpRecyclerViewActivity"
             android:label="@string/mvp.recycler.view.title" />
 
+
+        <activity
+            android:name=".ui.other.KeyboardWatcherActivity"
+            android:label="@string/keyboard.watcher.title"
+            android:windowSoftInputMode="adjustResize" />
+
     </application>
 
 </manifest>
