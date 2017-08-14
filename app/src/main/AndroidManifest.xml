@@ -120,6 +120,10 @@
             android:name=".ui.architecture.example2.mvp.CounterMVPActivity"
             android:label="@string/mvp" />
 
+        <activity
+            android:name=".ui.architecture.example2.mvvm.CounterMVVMActivity"
+            android:label="@string/mvvm" />
+
     </application>
 
 </manifest>

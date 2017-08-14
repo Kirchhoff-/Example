@@ -10,6 +10,7 @@ import android.view.View;
 import com.example.kirchhoff.example.R;
 import com.example.kirchhoff.example.ui.architecture.example2.mvc.CounterMVCActivity;
 import com.example.kirchhoff.example.ui.architecture.example2.mvp.CounterMVPActivity;
+import com.example.kirchhoff.example.ui.architecture.example2.mvvm.CounterMVVMActivity;
 
 /**
  * @author Kirchhoff-
@@ -40,7 +41,7 @@ public class ArchitectureExampleActivity extends AppCompatActivity {
     }
 
     public void mvvmExample(View view) {
-        //Empty for now
+        CounterMVVMActivity.start(this);
     }
 
 }
