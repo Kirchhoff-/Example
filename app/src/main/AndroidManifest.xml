@@ -108,6 +108,14 @@
             android:label="@string/keyboard.watcher.title"
             android:windowSoftInputMode="adjustResize" />
 
+        <activity
+            android:name=".ui.architecture.example2.ArchitectureExampleActivity"
+            android:label="@string/architecture.example" />
+
+        <activity
+            android:name=".ui.architecture.example2.mvc.CounterMVCActivity"
+            android:label="@string/mvc" />
+
     </application>
 
 </manifest>

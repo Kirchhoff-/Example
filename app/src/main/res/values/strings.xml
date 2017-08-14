@@ -68,6 +68,15 @@
     <!-- KeyboardWatcherActivity -->
     <string name="keyboard.watcher.title">KeyboardWatcher</string>
 
+    <!-- ArchitectureExampleActivity -->
+    <string name="architecture.example">ArchitectureExample</string>
+
+
+    <!-- Architecture Types -->
+    <string name="mvc">MVC</string>
+    <string name="mvp">MVP</string>
+    <string name="mvvm">MVVM</string>
+
 
     <!-- Resources for View -->
     <string name="view.title">View Example</string>
