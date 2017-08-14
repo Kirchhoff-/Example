@@ -1,8 +1,8 @@
-package com.example.kirchhoff.example.architecture.mvp;
+package com.example.kirchhoff.example.architecture.example1.mvp;
 
-import com.example.kirchhoff.example.ui.architecture.data.Source;
-import com.example.kirchhoff.example.ui.architecture.mvp.MvpContract;
-import com.example.kirchhoff.example.ui.architecture.mvp.Presenter;
+import com.example.kirchhoff.example.ui.architecture.example1.data.Source;
+import com.example.kirchhoff.example.ui.architecture.example1.mvp.MvpContract;
+import com.example.kirchhoff.example.ui.architecture.example1.mvp.Presenter;
 
 import org.junit.Before;
 import org.junit.Test;

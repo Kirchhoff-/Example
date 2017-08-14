@@ -1,4 +1,4 @@
-package com.example.kirchhoff.example.ui.architecture.mvp;
+package com.example.kirchhoff.example.ui.architecture.example1.mvp;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -7,7 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
 import com.example.kirchhoff.example.R;
-import com.example.kirchhoff.example.ui.architecture.data.DataModel;
+import com.example.kirchhoff.example.ui.architecture.example1.data.DataModel;
 
 /**
  * @author Kirchhoff-

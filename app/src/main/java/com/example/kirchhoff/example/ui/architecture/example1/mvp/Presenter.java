@@ -1,8 +1,8 @@
-package com.example.kirchhoff.example.ui.architecture.mvp;
+package com.example.kirchhoff.example.ui.architecture.example1.mvp;
 
 import android.support.annotation.NonNull;
 
-import com.example.kirchhoff.example.ui.architecture.data.Source;
+import com.example.kirchhoff.example.ui.architecture.example1.data.Source;
 
 import io.reactivex.disposables.CompositeDisposable;
 import io.reactivex.functions.Consumer;

@@ -1,7 +1,7 @@
-package com.example.kirchhoff.example.architecture.mvvm;
+package com.example.kirchhoff.example.architecture.example1.mvvm;
 
-import com.example.kirchhoff.example.ui.architecture.data.Source;
-import com.example.kirchhoff.example.ui.architecture.mvvm.ViewModel;
+import com.example.kirchhoff.example.ui.architecture.example1.data.Source;
+import com.example.kirchhoff.example.ui.architecture.example1.mvvm.ViewModel;
 
 import org.junit.Before;
 import org.junit.Test;

@@ -1,4 +1,4 @@
-package com.example.kirchhoff.example.ui.architecture.data;
+package com.example.kirchhoff.example.ui.architecture.example1.data;
 
 import android.support.annotation.NonNull;
 
