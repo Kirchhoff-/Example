@@ -9,6 +9,7 @@ import android.view.View;
 
 import com.example.kirchhoff.example.R;
 import com.example.kirchhoff.example.ui.architecture.example2.mvc.CounterMVCActivity;
+import com.example.kirchhoff.example.ui.architecture.example2.mvp.CounterMVPActivity;
 
 /**
  * @author Kirchhoff-
@@ -35,7 +36,7 @@ public class ArchitectureExampleActivity extends AppCompatActivity {
     }
 
     public void mvpExample(View view) {
-        //Empty for now
+        CounterMVPActivity.start(this);
     }
 
     public void mvvmExample(View view) {
