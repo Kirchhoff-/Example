@@ -7,7 +7,6 @@ import android.view.View;
 
 import com.example.kirchhoff.example.ui.animation.SimpleTransitionActivity;
 import com.example.kirchhoff.example.ui.architecture.example2.ArchitectureExampleActivity;
-import com.example.kirchhoff.example.ui.databinding.DataBindingActivity;
 import com.example.kirchhoff.example.ui.drawer.simple.SimpleActivity;
 import com.example.kirchhoff.example.ui.fab.FabAnimationActivity;
 import com.example.kirchhoff.example.ui.other.CoordinatorBehaviorActivity;
@@ -33,7 +32,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.a_main);
 
         findViewById(R.id.recyclerViewWithSearch).setOnClickListener(this);
-        findViewById(R.id.dataBindingExample).setOnClickListener(this);
         findViewById(R.id.fabAnimationExample).setOnClickListener(this);
         findViewById(R.id.customRecyclerSwipe).setOnClickListener(this);
         findViewById(R.id.recyclerCollapsing).setOnClickListener(this);
@@ -47,8 +45,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
         if (view.getId() == R.id.recyclerViewWithSearch)
             RecyclerSearchActivity.startMe(this);
-        else if (view.getId() == R.id.dataBindingExample)
-            DataBindingActivity.startMe(this);
         else if (view.getId() == R.id.fabAnimationExample)
             FabAnimationActivity.startMe(this);
         else if (view.getId() == R.id.customRecyclerSwipe)

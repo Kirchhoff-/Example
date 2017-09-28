@@ -30,29 +30,29 @@ android {
 }
 
 dependencies {
-    compile libraries.supportAppCompat
-    compile libraries.supportDesign
-    compile libraries.supportRecyclerView
-    compile libraries.supportCardView
-    compile libraries.constraintLayout
+    implementation libraries.supportAppCompat
+    implementation libraries.supportDesign
+    implementation libraries.supportRecyclerView
+    implementation libraries.supportCardView
+    implementation libraries.constraintLayout
 
-    compile libraries.kotlin
+    implementation libraries.kotlin
 
-    compile libraries.butterKnife
-    annotationProcessor libraries.butterKnifeCompiler
+    implementation libraries.butterKnife
+    kapt libraries.butterKnifeCompiler
 
-    compile libraries.rxAndroid
-    compile libraries.rxJava
+    implementation libraries.rxAndroid
+    implementation libraries.rxJava
 
-    compile libraries.gson
-    compile libraries.glide
-    annotationProcessor libraries.glideCompiler
+    implementation libraries.gson
+    implementation libraries.glide
+    kapt libraries.glideCompiler
 
-    compile libraries.placeHolderView
+    implementation libraries.placeHolderView
 
-    compile libraries.keyboardWatcher
+    implementation libraries.keyboardWatcher
 
-    testCompile libraries.junit
-    testCompile libraries.mockito
-    testCompile libraries.robolectric
+    testImplementation libraries.junit
+    testImplementation libraries.mockito
+    testImplementation libraries.robolectric
 }

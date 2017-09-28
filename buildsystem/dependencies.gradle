@@ -2,16 +2,16 @@ ext.versions = [
         code               : 1,
         name               : '1.0',
 
-        androidGradlePlugin: '2.3.2',
+        androidGradlePlugin: '3.0.0-beta6',
         minSdk             : 17,
-        targetSdk          : 25,
-        compileSdk         : 25,
-        buildTools         : '25.0.2',
+        targetSdk          : 26,
+        compileSdk         : 26,
+        buildTools         : '26.0.1',
 
-        supportLibs        : '25.3.1',
+        supportLibs        : '26.0.1',
         constraintLayout   : '1.0.0',
 
-        kotlin             : '1.1.2-3',
+        kotlin             : '1.1.2-4',
 
         butterKnife        : '8.6.0',
 
@@ -35,31 +35,31 @@ ext.gradlePlugins = [
 ]
 
 ext.libraries = [
-        supportAppCompat: "com.android.support:appcompat-v7:$versions.supportLibs",
-        supportRecyclerView: "com.android.support:recyclerview-v7:$versions.supportLibs",
-        supportDesign      : "com.android.support:design:$versions.supportLibs",
-        supportCardView    : "com.android.support:cardview-v7:$versions.supportLibs",
-        constraintLayout   : "com.android.support.constraint:constraint-layout:$versions.constraintLayout-alpha9",
+        supportAppCompat        : "com.android.support:appcompat-v7:$versions.supportLibs",
+        supportRecyclerView     : "com.android.support:recyclerview-v7:$versions.supportLibs",
+        supportDesign           : "com.android.support:design:$versions.supportLibs",
+        supportCardView         : "com.android.support:cardview-v7:$versions.supportLibs",
+        constraintLayout        : "com.android.support.constraint:constraint-layout:$versions.constraintLayout-alpha9",
 
-        rxAndroid          : "io.reactivex.rxjava2:rxandroid:$versions.rxAndroid",
-        rxJava             : "io.reactivex.rxjava2:rxjava:$versions.rxJava",
+        rxAndroid               : "io.reactivex.rxjava2:rxandroid:$versions.rxAndroid",
+        rxJava                  : "io.reactivex.rxjava2:rxjava:$versions.rxJava",
 
-        kotlin             : "org.jetbrains.kotlin:kotlin-stdlib-jre7:$versions.kotlin",
+        kotlin                  : "org.jetbrains.kotlin:kotlin-stdlib-jre7:$versions.kotlin",
 
-        butterKnife        : "com.jakewharton:butterknife:$versions.butterKnife",
-        butterKnifeCompiler: "com.jakewharton:butterknife-compiler:$versions.butterKnife",
+        butterKnife             : "com.jakewharton:butterknife:$versions.butterKnife",
+        butterKnifeCompiler     : "com.jakewharton:butterknife-compiler:$versions.butterKnife",
 
-        gson            : "com.google.code.gson:gson:$versions.gson",
+        gson                    : "com.google.code.gson:gson:$versions.gson",
 
-        glide           : "com.github.bumptech.glide:glide:$versions.glide",
-        glideCompiler   : "com.github.bumptech.glide:compiler:$versions.glide",
+        glide                   : "com.github.bumptech.glide:glide:$versions.glide",
+        glideCompiler           : "com.github.bumptech.glide:compiler:$versions.glide",
 
-        placeHolderView : "com.mindorks:placeholderview:$versions.placeHolderView",
+        placeHolderView         : "com.mindorks:placeholderview:$versions.placeHolderView",
 
-        keyboardWatcher : "com.azimolabs.keyboardwatcher:keyboardwatcher:$versions.keyboardWatcher",
+        keyboardWatcher         : "com.azimolabs.keyboardwatcher:keyboardwatcher:$versions.keyboardWatcher",
 
         // Test dependencies
-        junit           : "junit:junit:$versions.junit",
-        mockito         : "org.mockito:mockito-all:$versions.mockito",
-        robolectric     : "org.robolectric:robolectric:$versions.robolectric"
+        junit                   : "junit:junit:$versions.junit",
+        mockito                 : "org.mockito:mockito-all:$versions.mockito",
+        robolectric             : "org.robolectric:robolectric:$versions.robolectric"
 ]

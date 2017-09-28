@@ -16,7 +16,7 @@ import java.util.concurrent.TimeUnit
  */
 class DiffUtilActivity : AppCompatActivity() {
 
-    private val recyclerView by lazy { findViewById(R.id.recyclerView) as RecyclerView }
+    private val recyclerView by lazy { findViewById<RecyclerView>(R.id.recyclerView) }
 
     private val adapter = TimeAdapter()
 

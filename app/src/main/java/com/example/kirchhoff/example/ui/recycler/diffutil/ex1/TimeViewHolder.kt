@@ -20,12 +20,12 @@ class TimeViewHolder(itemView: android.view.View?) : BaseViewHolder<Time>(itemVi
         }
     }
 
-    val vFirstDivider by lazy { itemView?.findViewById(R.id.vFirstDivider) }
-    val vSecondDivider by lazy { itemView?.findViewById(R.id.vSecondDivider) }
-    val tvId by lazy { itemView?.findViewById(R.id.tvId) as TextView? }
-    val tvHours by lazy { itemView?.findViewById(R.id.tvHours) as TextView? }
-    val tvMinutes by lazy { itemView?.findViewById(R.id.tvMinutes) as TextView? }
-    val tvSeconds by lazy { itemView?.findViewById(R.id.tvSeconds) as TextView? }
+    val vFirstDivider by lazy { itemView?.findViewById<TextView>(R.id.vFirstDivider) }
+    val vSecondDivider by lazy { itemView?.findViewById<TextView>(R.id.vSecondDivider) }
+    val tvId by lazy { itemView?.findViewById<TextView>(R.id.tvId) }
+    val tvHours by lazy { itemView?.findViewById<TextView>(R.id.tvHours) }
+    val tvMinutes by lazy { itemView?.findViewById<TextView>(R.id.tvMinutes) }
+    val tvSeconds by lazy { itemView?.findViewById<TextView>(R.id.tvSeconds) }
 
     init {
         TimeViewHolder.Companion.valueAnimator.addUpdateListener {
