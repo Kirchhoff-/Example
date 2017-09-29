@@ -81,6 +81,9 @@
     <!-- Resources for View -->
     <string name="view.title">View Example</string>
 
+
+    <string name="fast.recycler.view">Fast RecyclerView</string>
+
     <string name="send">Send</string>
     <string name="share">Share</string>
     <string name="communicate">Communicate</string>

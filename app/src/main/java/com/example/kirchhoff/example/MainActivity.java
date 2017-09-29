@@ -15,6 +15,7 @@ import com.example.kirchhoff.example.ui.other.CustomActionBarActivity;
 import com.example.kirchhoff.example.ui.other.KeyboardWatcherActivity;
 import com.example.kirchhoff.example.ui.recycler.diffutil.ex1.DiffUtilActivity;
 import com.example.kirchhoff.example.ui.recycler.diffutil.ex2.ThingDiffUtilActivity;
+import com.example.kirchhoff.example.ui.recycler.fast.FastRecyclerViewActivity;
 import com.example.kirchhoff.example.ui.recycler.multi.MultiRowRecyclerActivity;
 import com.example.kirchhoff.example.ui.recycler.mvp.MvpRecyclerViewActivity;
 import com.example.kirchhoff.example.ui.recycler.search.RecyclerSearchActivity;
@@ -101,5 +102,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     public void architectureExample(View view) {
         ArchitectureExampleActivity.start(this);
+    }
+
+    public void fastRecyclerViewExample(View view) {
+        FastRecyclerViewActivity.start(this);
     }
 }

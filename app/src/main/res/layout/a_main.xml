@@ -118,12 +118,18 @@
             android:onClick="keyboardWatcherExample"
             android:text="@string/keyboard.watcher.title" />
 
-
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="architectureExample"
             android:text="@string/architecture.example" />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="fastRecyclerViewExample"
+            android:text="@string/fast.recycler.view" />
     </LinearLayout>
 
 </ScrollView>

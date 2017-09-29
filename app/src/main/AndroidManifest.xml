@@ -121,8 +121,8 @@
             android:label="@string/mvp" />
 
         <activity
-            android:name=".ui.architecture.example2.mvvm.CounterMVVMActivity"
-            android:label="@string/mvvm" />
+            android:name=".ui.recycler.fast.FastRecyclerViewActivity"
+            android:label="@string/fast.recycler.view" />
 
     </application>
 
