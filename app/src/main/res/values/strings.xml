@@ -71,6 +71,9 @@
     <!-- ArchitectureExampleActivity -->
     <string name="architecture.example">ArchitectureExample</string>
 
+    <!-- ArchitectureComponentActivity-->
+    <string name="architecture.component">ArchitectureComponent</string>
+
 
     <!-- Architecture Types -->
     <string name="mvc">MVC</string>
