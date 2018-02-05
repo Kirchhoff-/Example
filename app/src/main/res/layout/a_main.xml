@@ -137,6 +137,13 @@
             android:layout_height="wrap_content"
             android:onClick="architectureComponentExample"
             android:text="@string/architecture.component" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="testableRecyclerViewExample"
+            android:text="@string/testable.recycler.view" />
+
     </LinearLayout>
 
 </ScrollView>

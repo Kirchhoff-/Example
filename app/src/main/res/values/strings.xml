@@ -74,6 +74,9 @@
     <!-- ArchitectureComponentActivity-->
     <string name="architecture.component">ArchitectureComponent</string>
 
+    <!-- Testable RecyclerViewActivity-->
+    <string name="testable.recycler.view">Testable RecyclerView</string>
+
 
     <!-- Architecture Types -->
     <string name="mvc">MVC</string>

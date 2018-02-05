@@ -124,6 +124,10 @@
             android:name=".ui.architecture.example3.ArchitectureComponentActivity"
             android:label="@string/architecture.component" />
 
+        <activity
+            android:name=".ui.recycler.testable.TestableRecyclerViewActivity"
+            android:label="@string/testable.recycler.view" />
+
     </application>
 
 </manifest>

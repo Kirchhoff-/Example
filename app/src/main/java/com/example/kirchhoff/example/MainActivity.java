@@ -21,6 +21,7 @@ import com.example.kirchhoff.example.ui.recycler.multi.MultiRowRecyclerActivity;
 import com.example.kirchhoff.example.ui.recycler.mvp.MvpRecyclerViewActivity;
 import com.example.kirchhoff.example.ui.recycler.search.RecyclerSearchActivity;
 import com.example.kirchhoff.example.ui.recycler.swipe.RecyclerCustomSwipeActivity;
+import com.example.kirchhoff.example.ui.recycler.testable.TestableRecyclerViewActivity;
 import com.example.kirchhoff.example.ui.recycler.toolbar.RecyclerCollapsingToolbarActivity;
 import com.example.kirchhoff.example.ui.tinder.TinderActivity;
 import com.example.kirchhoff.example.ui.view.ViewActivity;
@@ -111,5 +112,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     public void architectureComponentExample(View view) {
         ArchitectureComponentActivity.start(this);
+    }
+
+    public void testableRecyclerViewExample(View view) {
+        TestableRecyclerViewActivity.start(this);
     }
 }
