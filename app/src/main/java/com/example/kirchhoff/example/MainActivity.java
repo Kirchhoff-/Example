@@ -6,8 +6,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.example.kirchhoff.example.ui.animation.SimpleTransitionActivity;
-import com.example.kirchhoff.example.ui.architecture.example2.ArchitectureExampleActivity;
-import com.example.kirchhoff.example.ui.architecture.example3.ArchitectureComponentActivity;
 import com.example.kirchhoff.example.ui.drawer.simple.SimpleActivity;
 import com.example.kirchhoff.example.ui.fab.FabAnimationActivity;
 import com.example.kirchhoff.example.ui.other.CoordinatorBehaviorActivity;
@@ -102,16 +100,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         KeyboardWatcherActivity.start(this);
     }
 
-    public void architectureExample(View view) {
-        ArchitectureExampleActivity.start(this);
-    }
-
     public void fastRecyclerViewExample(View view) {
         FastRecyclerViewActivity.start(this);
-    }
-
-    public void architectureComponentExample(View view) {
-        ArchitectureComponentActivity.start(this);
     }
 
     public void testableRecyclerViewExample(View view) {
