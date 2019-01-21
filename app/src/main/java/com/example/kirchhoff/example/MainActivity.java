@@ -24,6 +24,7 @@ import com.example.kirchhoff.example.ui.recycler.toolbar.RecyclerCollapsingToolb
 import com.example.kirchhoff.example.ui.tinder.TinderActivity;
 import com.example.kirchhoff.example.ui.view.ViewActivity;
 import com.example.kirchhoff.example.ui.viewpager.VPWithoutFragmentActivity;
+import com.kirchhoff.curvedbottombar.CurvedBottomBarActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -106,5 +107,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     public void testableRecyclerViewExample(View view) {
         TestableRecyclerViewActivity.start(this);
+    }
+
+    public void curvedBottomBarExample(View view) {
+        Intent intent = new Intent(this, CurvedBottomBarActivity.class);
+        startActivity(intent);
     }
 }

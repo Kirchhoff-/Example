@@ -77,6 +77,9 @@
     <!-- Testable RecyclerViewActivity-->
     <string name="testable.recycler.view">Testable RecyclerView</string>
 
+    <!-- CurvedBottomBar -->
+    <string name="curved.bottom.bar">Curved BottomBar</string>
+
 
     <!-- Architecture Types -->
     <string name="mvc">MVC</string>

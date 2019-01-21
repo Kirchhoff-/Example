@@ -1,1 +1,1 @@
-include ':app', ':curvedbottomnavigationview'
+include ':app', ':curvedbottombar'
