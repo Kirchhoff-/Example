@@ -1,18 +1,13 @@
-package com.example.kirchhoff.example.ui.fab;
+package com.kirchhoff.fabanimation;
 
-import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
-
-import com.example.kirchhoff.example.R;
 
 /**
  * @author Kirchhoff-
@@ -28,13 +23,6 @@ public class FabAnimationActivity extends AppCompatActivity implements View.OnCl
     private FloatingActionButton fab2;
 
     private Animation fab_open, fab_close, rotate_forward, rotate_backward;
-
-
-    public static void startMe(Context context) {
-        Intent intent = new Intent(context, FabAnimationActivity.class);
-        context.startActivity(intent);
-    }
-
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -56,24 +44,12 @@ public class FabAnimationActivity extends AppCompatActivity implements View.OnCl
 
     @Override
     public void onClick(View view) {
-        switch (view.getId()) {
-            case R.id.fab:
-
-                animateFAB();
-                break;
-            case R.id.fab1:
-
-                Log.d(TAG, "Fab 1");
-                break;
-            case R.id.fab2:
-
-                Log.d(TAG, "Fab 2");
-                break;
+        if (view.getId() == R.id.fab) {
+            animateFAB();
         }
     }
 
-    public void animateFAB() {
-
+    private void animateFAB() {
         if (isFabOpen) {
             fab.startAnimation(rotate_backward);
             fab1.startAnimation(fab_close);
