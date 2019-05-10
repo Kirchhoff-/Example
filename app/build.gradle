@@ -59,4 +59,5 @@ dependencies {
     testImplementation libraries.mockito
     testImplementation libraries.robolectric
     implementation  project(path: ':curvedbottombar')
+    implementation  project(path: ':viewpagerwithoutfragment')
 }

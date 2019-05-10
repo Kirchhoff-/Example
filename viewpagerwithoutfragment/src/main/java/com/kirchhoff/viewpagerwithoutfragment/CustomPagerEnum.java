@@ -1,9 +1,7 @@
-package com.example.kirchhoff.example.ui.viewpager;
+package com.kirchhoff.viewpagerwithoutfragment;
 
 import android.support.annotation.LayoutRes;
 import android.support.annotation.StringRes;
-
-import com.example.kirchhoff.example.R;
 
 /**
  * @author Kirchhoff-

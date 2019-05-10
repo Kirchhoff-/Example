@@ -1,1 +1,1 @@
-include ':app', ':curvedbottombar'
+include ':app', ':curvedbottombar', ':viewpagerwithoutfragment'

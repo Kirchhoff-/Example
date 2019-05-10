@@ -1,4 +1,4 @@
-package com.example.kirchhoff.example.ui.viewpager;
+package com.kirchhoff.viewpagerwithoutfragment;
 
 import android.content.Context;
 import android.support.v4.view.PagerAdapter;

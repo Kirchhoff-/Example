@@ -23,8 +23,8 @@ import com.example.kirchhoff.example.ui.recycler.testable.TestableRecyclerViewAc
 import com.example.kirchhoff.example.ui.recycler.toolbar.RecyclerCollapsingToolbarActivity;
 import com.example.kirchhoff.example.ui.tinder.TinderActivity;
 import com.example.kirchhoff.example.ui.view.ViewActivity;
-import com.example.kirchhoff.example.ui.viewpager.VPWithoutFragmentActivity;
 import com.kirchhoff.curvedbottombar.CurvedBottomBarActivity;
+import com.kirchhoff.viewpagerwithoutfragment.VPWithoutFragmentActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -53,9 +53,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             RecyclerCustomSwipeActivity.startMe(this);
         else if (view.getId() == R.id.recyclerCollapsing)
             RecyclerCollapsingToolbarActivity.startMe(this);
-        else if (view.getId() == R.id.vpWithoutFragment)
-            VPWithoutFragmentActivity.startMe(this);
-        else if (view.getId() == R.id.navigationDrawerDelegation)
+        else if (view.getId() == R.id.vpWithoutFragment) {
+            Intent intent = new Intent(this, VPWithoutFragmentActivity.class);
+            startActivity(intent);
+        } else if (view.getId() == R.id.navigationDrawerDelegation)
             SimpleActivity.startMe(this);
         else if (view.getId() == R.id.diffUtil) {
             Intent difIntent = new Intent(this, DiffUtilActivity.class);

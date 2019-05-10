@@ -106,10 +106,6 @@
     <string name="next">Next</string>
     <string name="loading">Loading…</string>
 
-    <string name="red">Red</string>
-    <string name="blue">Blue</string>
-    <string name="orange">Orange</string>
-
     <plurals name="days">
         <item quantity="zero">%d Days</item>
         <item quantity="one">%d Day</item>
