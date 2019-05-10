@@ -2,7 +2,7 @@ ext.versions = [
         code               : 1,
         name               : '1.0',
 
-        androidGradlePlugin: '3.1.3',
+        androidGradlePlugin: '3.4.0',
         minSdk             : 17,
         targetSdk          : 26,
         compileSdk         : 26,
@@ -11,9 +11,9 @@ ext.versions = [
         archComponent      : '1.0.0',
 
         supportLibs        : '26.1.0',
-        constraintLayout   : '1.0.0',
+        constraintLayout   : '1.1.3',
 
-        kotlin             : '1.1.2-4',
+        kotlin             : '1.3.10',
 
         butterKnife        : '8.6.0',
 
@@ -23,12 +23,12 @@ ext.versions = [
 
         gson               : '2.7',
         rxJava             : '2.1.0',
-        rxAndroid          : '2.0.1',
+		rxAndroid          : '2.0.1',
 
-        glide              : '4.0.0-RC0',
-        placeHolderView    : '0.6.2',
+		glide              : '4.0.0-RC0',
+		placeHolderView    : '0.6.2',
 
-        keyboardWatcher    : '0.1.3'
+		keyboardWatcher    : '0.1.3'
 ]
 
 ext.gradlePlugins = [
@@ -41,14 +41,14 @@ ext.libraries = [
         supportRecyclerView     : "com.android.support:recyclerview-v7:$versions.supportLibs",
         supportDesign           : "com.android.support:design:$versions.supportLibs",
         supportCardView         : "com.android.support:cardview-v7:$versions.supportLibs",
-        constraintLayout        : "com.android.support.constraint:constraint-layout:$versions.constraintLayout-alpha9",
+        constraintLayout        : "com.android.support.constraint:constraint-layout:$versions.constraintLayout",
 
         archComponent           : "android.arch.lifecycle:extensions:$versions.archComponent",
 
         rxAndroid               : "io.reactivex.rxjava2:rxandroid:$versions.rxAndroid",
         rxJava                  : "io.reactivex.rxjava2:rxjava:$versions.rxJava",
 
-        kotlin                  : "org.jetbrains.kotlin:kotlin-stdlib-jre7:$versions.kotlin",
+        kotlin                  : "org.jetbrains.kotlin:kotlin-stdlib:$versions.kotlin",
 
         butterKnife             : "com.jakewharton:butterknife:$versions.butterKnife",
         butterKnifeCompiler     : "com.jakewharton:butterknife-compiler:$versions.butterKnife",
