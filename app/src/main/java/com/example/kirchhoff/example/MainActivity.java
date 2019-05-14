@@ -52,9 +52,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             startActivity(intent);
         } else if (view.getId() == R.id.customRecyclerSwipe)
             RecyclerCustomSwipeActivity.startMe(this);
-        else if (view.getId() == R.id.recyclerCollapsing)
-            RecyclerCollapsingToolbarActivity.startMe(this);
-        else if (view.getId() == R.id.vpWithoutFragment) {
+        else if (view.getId() == R.id.recyclerCollapsing) {
+            Intent intent = new Intent(this, RecyclerCollapsingToolbarActivity.class);
+            startActivity(intent);
+        } else if (view.getId() == R.id.vpWithoutFragment) {
             Intent intent = new Intent(this, VPWithoutFragmentActivity.class);
             startActivity(intent);
         } else if (view.getId() == R.id.navigationDrawerDelegation)
