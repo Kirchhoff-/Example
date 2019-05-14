@@ -109,7 +109,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     public void testableRecyclerViewExample(View view) {
-        TestableRecyclerViewActivity.start(this);
+		Intent intent = new Intent(this, TestableRecyclerViewActivity.class);
+		startActivity(intent);
     }
 
     public void curvedBottomBarExample(View view) {
