@@ -94,7 +94,7 @@
 
 
         <activity
-            android:name=".ui.other.KeyboardWatcherActivity"
+            android:name="com.kirchhoff.keyboardwatcher.KeyboardWatcherActivity"
             android:label="@string/keyboard.watcher.title"
             android:windowSoftInputMode="adjustResize" />
 

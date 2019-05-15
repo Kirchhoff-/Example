@@ -1,28 +1,15 @@
-package com.example.kirchhoff.example.ui.other;
+package com.kirchhoff.keyboardwatcher;
 
-import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
 import com.azimolabs.keyboardwatcher.KeyboardWatcher;
-import com.example.kirchhoff.example.R;
-
-/**
- * @author Kirchhoff-
- */
 
 public class KeyboardWatcherActivity extends AppCompatActivity implements KeyboardWatcher.OnKeyboardToggleListener {
 
     private KeyboardWatcher keyboardWatcher;
-
-    public static void start(Context context) {
-        Intent intent = new Intent(context, KeyboardWatcherActivity.class);
-        context.startActivity(intent);
-    }
-
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
