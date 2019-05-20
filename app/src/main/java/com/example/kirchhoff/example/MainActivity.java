@@ -106,7 +106,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     public void fastRecyclerViewExample(View view) {
-        FastRecyclerViewActivity.start(this);
+        Intent intent = new Intent(this, FastRecyclerViewActivity.class);
+        startActivity(intent);
     }
 
     public void testableRecyclerViewExample(View view) {
