@@ -1,9 +1,8 @@
-package com.example.kirchhoff.example.ui.recycler.fast
+package com.kirchhoff.fastrecyclerview
 
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import com.example.kirchhoff.example.R
 
 
 class FastRecyclerViewAdapter internal constructor(private val data: List<State>) : RecyclerView.Adapter<StateViewHolder>() {

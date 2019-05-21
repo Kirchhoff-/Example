@@ -1,1 +1,1 @@
-include ':app', ':curvedbottombar', ':viewpagerwithoutfragment', ':fabanimation', ':keyboardwatcher'
+include ':app', ':curvedbottombar', ':viewpagerwithoutfragment', ':fabanimation', ':keyboardwatcher', ':fastrecyclerview'
