@@ -60,4 +60,5 @@ dependencies {
     implementation project(path: ':viewpagerwithoutfragment')
     implementation project(path: ':fabanimation')
     implementation project(path: ':keyboardwatcher')
+    implementation project(path: ':fastrecyclerview')
 }

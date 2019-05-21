@@ -111,10 +111,6 @@
             android:label="@string/mvp" />
 
         <activity
-            android:name=".ui.recycler.fast.FastRecyclerViewActivity"
-            android:label="@string/fast.recycler.view" />
-
-        <activity
             android:name=".ui.architecture.example3.ArchitectureComponentActivity"
             android:label="@string/architecture.component" />
 

@@ -12,7 +12,6 @@ import com.example.kirchhoff.example.ui.other.CountdownLabelActivity;
 import com.example.kirchhoff.example.ui.other.CustomActionBarActivity;
 import com.example.kirchhoff.example.ui.recycler.diffutil.ex1.DiffUtilActivity;
 import com.example.kirchhoff.example.ui.recycler.diffutil.ex2.ThingDiffUtilActivity;
-import com.example.kirchhoff.example.ui.recycler.fast.FastRecyclerViewActivity;
 import com.example.kirchhoff.example.ui.recycler.multi.MultiRowRecyclerActivity;
 import com.example.kirchhoff.example.ui.recycler.mvp.MvpRecyclerViewActivity;
 import com.example.kirchhoff.example.ui.recycler.search.RecyclerSearchActivity;
@@ -23,6 +22,7 @@ import com.example.kirchhoff.example.ui.tinder.TinderActivity;
 import com.example.kirchhoff.example.ui.view.ViewActivity;
 import com.kirchhoff.curvedbottombar.CurvedBottomBarActivity;
 import com.kirchhoff.fabanimation.FabAnimationActivity;
+import com.kirchhoff.fastrecyclerview.FastRecyclerViewActivity;
 import com.kirchhoff.keyboardwatcher.KeyboardWatcherActivity;
 import com.kirchhoff.viewpagerwithoutfragment.VPWithoutFragmentActivity;
 

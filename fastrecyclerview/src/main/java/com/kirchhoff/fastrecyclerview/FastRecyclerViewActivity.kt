@@ -1,10 +1,9 @@
-package com.example.kirchhoff.example.ui.recycler.fast
+package com.kirchhoff.fastrecyclerview
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
-import com.example.kirchhoff.example.R
 import java.util.*
 
 class FastRecyclerViewActivity : AppCompatActivity() {
