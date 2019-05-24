@@ -77,7 +77,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     public void customActionBar(View view) {
-        CustomActionBarActivity.start(this);
+        Intent difIntent = new Intent(this, CustomActionBarActivity.class);
+        this.startActivity(difIntent);
     }
 
     public void simpleTransition(View view) {
