@@ -73,7 +73,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     public void onCountDownLabel(View view) {
-        CountdownLabelActivity.start(this);
+        Intent intent = new Intent(this, CountdownLabelActivity.class);
+        this.startActivity(intent);
     }
 
     public void customActionBar(View view) {
