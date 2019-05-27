@@ -1,0 +1,10 @@
+<manifest package="com.kirchhoff.recyclermvp"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<application>
+		<activity
+			android:name=".MvpRecyclerViewActivity"
+			android:label="@string/mvp.recycler.view.title" />
+	</application>
+
+</manifest>

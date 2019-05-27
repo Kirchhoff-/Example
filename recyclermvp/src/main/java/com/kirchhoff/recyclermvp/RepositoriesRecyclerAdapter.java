@@ -1,10 +1,9 @@
-package com.example.kirchhoff.example.ui.recycler.mvp;
+package com.kirchhoff.recyclermvp;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
-import com.example.kirchhoff.example.R;
 
 /**
  * @author Kirchhoff-

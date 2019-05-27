@@ -13,7 +13,6 @@ import com.example.kirchhoff.example.ui.other.CustomActionBarActivity;
 import com.example.kirchhoff.example.ui.recycler.diffutil.ex1.DiffUtilActivity;
 import com.example.kirchhoff.example.ui.recycler.diffutil.ex2.ThingDiffUtilActivity;
 import com.example.kirchhoff.example.ui.recycler.multi.MultiRowRecyclerActivity;
-import com.example.kirchhoff.example.ui.recycler.mvp.MvpRecyclerViewActivity;
 import com.example.kirchhoff.example.ui.recycler.search.RecyclerSearchActivity;
 import com.example.kirchhoff.example.ui.recycler.swipe.RecyclerCustomSwipeActivity;
 import com.example.kirchhoff.example.ui.recycler.testable.TestableRecyclerViewActivity;
@@ -24,6 +23,7 @@ import com.kirchhoff.curvedbottombar.CurvedBottomBarActivity;
 import com.kirchhoff.fabanimation.FabAnimationActivity;
 import com.kirchhoff.fastrecyclerview.FastRecyclerViewActivity;
 import com.kirchhoff.keyboardwatcher.KeyboardWatcherActivity;
+import com.kirchhoff.recyclermvp.MvpRecyclerViewActivity;
 import com.kirchhoff.viewpagerwithoutfragment.VPWithoutFragmentActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -95,7 +95,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     public void mvpRecycler(View view) {
-        MvpRecyclerViewActivity.startMe(this);
+        Intent intent = new Intent(this, MvpRecyclerViewActivity.class);
+        startActivity(intent);
     }
 
     public void diffUtilExample2(View view) {

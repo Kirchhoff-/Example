@@ -1,4 +1,4 @@
-package com.example.kirchhoff.example.ui.recycler.mvp;
+package com.kirchhoff.recyclermvp;
 
 /**
  * @author Kirchhoff-

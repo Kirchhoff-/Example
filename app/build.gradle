@@ -61,4 +61,5 @@ dependencies {
     implementation project(path: ':fabanimation')
     implementation project(path: ':keyboardwatcher')
     implementation project(path: ':fastrecyclerview')
+    implementation project(path: ':recyclermvp')
 }
