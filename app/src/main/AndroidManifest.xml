@@ -89,7 +89,7 @@
             android:label="@string/diff.util.title" />
 
         <activity
-            android:name=".ui.recycler.mvp.MvpRecyclerViewActivity"
+            android:name="com.kirchhoff.recyclermvp.MvpRecyclerViewActivity"
             android:label="@string/mvp.recycler.view.title" />
 
 

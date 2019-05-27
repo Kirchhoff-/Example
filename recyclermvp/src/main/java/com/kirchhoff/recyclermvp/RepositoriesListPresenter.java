@@ -1,4 +1,4 @@
-package com.example.kirchhoff.example.ui.recycler.mvp;
+package com.kirchhoff.recyclermvp;
 
 import java.util.ArrayList;
 import java.util.List;

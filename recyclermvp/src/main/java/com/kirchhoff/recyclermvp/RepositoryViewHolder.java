@@ -1,10 +1,9 @@
-package com.example.kirchhoff.example.ui.recycler.mvp;
+package com.kirchhoff.recyclermvp;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.TextView;
 
-import com.example.kirchhoff.example.R;
 
 /**
  * @author Kirchhoff-
@@ -18,8 +17,8 @@ public class RepositoryViewHolder extends RecyclerView.ViewHolder implements Rep
 
     public RepositoryViewHolder(View itemView) {
         super(itemView);
-        titleTextView = (TextView) itemView.findViewById(R.id.repoTitleText);
-        startCountTextView = (TextView) itemView.findViewById(R.id.repoStartCountText);
+        titleTextView = itemView.findViewById(R.id.repoTitleText);
+        startCountTextView = itemView.findViewById(R.id.repoStartCountText);
     }
 
 
