@@ -77,7 +77,7 @@
             android:theme="@style/AppTheme.TransitionAnimation" />
 
         <activity
-            android:name=".ui.other.CoordinatorBehaviorActivity"
+            android:name="com.kirchhoff.coordinatebehavior.CoordinatorBehaviorActivity"
             android:label="@string/coordinator.layout.behavior.title" />
 
         <activity
