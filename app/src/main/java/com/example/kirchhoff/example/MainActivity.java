@@ -7,7 +7,6 @@ import android.view.View;
 
 import com.example.kirchhoff.example.ui.animation.SimpleTransitionActivity;
 import com.example.kirchhoff.example.ui.drawer.simple.SimpleActivity;
-import com.example.kirchhoff.example.ui.other.CoordinatorBehaviorActivity;
 import com.example.kirchhoff.example.ui.other.CountdownLabelActivity;
 import com.example.kirchhoff.example.ui.other.CustomActionBarActivity;
 import com.example.kirchhoff.example.ui.recycler.diffutil.ex1.DiffUtilActivity;
@@ -19,6 +18,7 @@ import com.example.kirchhoff.example.ui.recycler.testable.TestableRecyclerViewAc
 import com.example.kirchhoff.example.ui.recycler.toolbar.RecyclerCollapsingToolbarActivity;
 import com.example.kirchhoff.example.ui.tinder.TinderActivity;
 import com.example.kirchhoff.example.ui.view.ViewActivity;
+import com.kirchhoff.coordinatebehavior.CoordinatorBehaviorActivity;
 import com.kirchhoff.curvedbottombar.CurvedBottomBarActivity;
 import com.kirchhoff.fabanimation.FabAnimationActivity;
 import com.kirchhoff.fastrecyclerview.FastRecyclerViewActivity;
@@ -87,7 +87,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     public void customCoordinateLayoutBehavior(View view) {
-        CoordinatorBehaviorActivity.start(this);
+        Intent intent = new Intent(this, CoordinatorBehaviorActivity.class);
+        startActivity(intent);
     }
 
     public void multiRowRecycler(View view) {

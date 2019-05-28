@@ -62,4 +62,5 @@ dependencies {
     implementation project(path: ':keyboardwatcher')
     implementation project(path: ':fastrecyclerview')
     implementation project(path: ':recyclermvp')
+    implementation project(path: ':coordinatorbehavior')
 }
