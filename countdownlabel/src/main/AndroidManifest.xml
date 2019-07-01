@@ -1,0 +1,10 @@
+<manifest package="com.kirchhoff.countdownlabel"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<application>
+		<activity
+			android:name="com.kirchhoff.countdownlabel.CountdownLabelActivity"
+			android:label="@string/countdown_title" />
+	</application>
+
+</manifest>

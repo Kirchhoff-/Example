@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="countdown_title">Countdown label</string>
+	<plurals name="days">
+		<item quantity="zero">%d Days</item>
+		<item quantity="one">%d Day</item>
+		<item quantity="other">%d Days</item>
+	</plurals>
+	<plurals name="hours">
+		<item quantity="zero">%d Hours</item>
+		<item quantity="one">%d Hour</item>
+		<item quantity="other">%d Hours</item>
+	</plurals>
+	<plurals name="minutes">
+		<item quantity="zero">%d Minutes</item>
+		<item quantity="one">%d Minute</item>
+		<item quantity="other">%d Minutes</item>
+	</plurals>
+	<plurals name="seconds">
+		<item quantity="zero">%d Seconds</item>
+		<item quantity="one">%d Second</item>
+		<item quantity="other">%d Seconds</item>
+	</plurals>
+</resources>
