@@ -83,7 +83,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     public void simpleTransition(View view) {
-        SimpleTransitionActivity.start(this);
+        Intent intent = new Intent(this, SimpleTransitionActivity.class);
+        startActivity(intent);
     }
 
     public void customCoordinateLayoutBehavior(View view) {
