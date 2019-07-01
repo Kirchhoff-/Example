@@ -63,4 +63,5 @@ dependencies {
     implementation project(path: ':fastrecyclerview')
     implementation project(path: ':recyclermvp')
     implementation project(path: ':coordinatorbehavior')
+    implementation project(path: ':countdownlabel')
 }

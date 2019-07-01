@@ -1,10 +1,9 @@
-package com.example.kirchhoff.example.ui.other
+package com.kirchhoff.countdownlabel
 
 import android.os.Bundle
 import android.os.Handler
 import android.support.v7.app.AppCompatActivity
 import android.widget.TextView
-import com.example.kirchhoff.example.R
 import java.util.*
 import java.util.concurrent.TimeUnit
 

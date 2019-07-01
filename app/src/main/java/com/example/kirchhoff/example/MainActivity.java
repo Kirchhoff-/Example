@@ -7,7 +7,6 @@ import android.view.View;
 
 import com.example.kirchhoff.example.ui.animation.SimpleTransitionActivity;
 import com.example.kirchhoff.example.ui.drawer.simple.SimpleActivity;
-import com.example.kirchhoff.example.ui.other.CountdownLabelActivity;
 import com.example.kirchhoff.example.ui.other.CustomActionBarActivity;
 import com.example.kirchhoff.example.ui.recycler.diffutil.ex1.DiffUtilActivity;
 import com.example.kirchhoff.example.ui.recycler.diffutil.ex2.ThingDiffUtilActivity;
@@ -19,6 +18,7 @@ import com.example.kirchhoff.example.ui.recycler.toolbar.RecyclerCollapsingToolb
 import com.example.kirchhoff.example.ui.tinder.TinderActivity;
 import com.example.kirchhoff.example.ui.view.ViewActivity;
 import com.kirchhoff.coordinatebehavior.CoordinatorBehaviorActivity;
+import com.kirchhoff.countdownlabel.CountdownLabelActivity;
 import com.kirchhoff.curvedbottombar.CurvedBottomBarActivity;
 import com.kirchhoff.fabanimation.FabAnimationActivity;
 import com.kirchhoff.fastrecyclerview.FastRecyclerViewActivity;
