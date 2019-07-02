@@ -40,10 +40,6 @@
             android:label="@string/diff.util.title" />
 
         <activity
-            android:name=".ui.tinder.TinderActivity"
-            android:label="@string/tinder.title" />
-
-        <activity
             android:name=".ui.view.ViewActivity"
             android:label="@string/view.title" />
 

@@ -51,8 +51,6 @@ dependencies {
     implementation libraries.glide
     kapt libraries.glideCompiler
 
-    implementation libraries.placeHolderView
-
     testImplementation libraries.junit
     testImplementation libraries.mockito
     testImplementation libraries.robolectric

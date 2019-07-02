@@ -14,7 +14,6 @@ import com.example.kirchhoff.example.ui.recycler.search.RecyclerSearchActivity;
 import com.example.kirchhoff.example.ui.recycler.swipe.RecyclerCustomSwipeActivity;
 import com.example.kirchhoff.example.ui.recycler.testable.TestableRecyclerViewActivity;
 import com.example.kirchhoff.example.ui.recycler.toolbar.RecyclerCollapsingToolbarActivity;
-import com.example.kirchhoff.example.ui.tinder.TinderActivity;
 import com.example.kirchhoff.example.ui.view.ViewActivity;
 import com.kirchhoff.coordinatebehavior.CoordinatorBehaviorActivity;
 import com.kirchhoff.countdownlabel.CountdownLabelActivity;
@@ -38,7 +37,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.recyclerCollapsing).setOnClickListener(this);
         findViewById(R.id.vpWithoutFragment).setOnClickListener(this);
         findViewById(R.id.diffUtil).setOnClickListener(this);
-        findViewById(R.id.tinderExample).setOnClickListener(this);
     }
 
     @Override
@@ -59,8 +57,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         } else if (view.getId() == R.id.diffUtil) {
             Intent difIntent = new Intent(this, DiffUtilActivity.class);
             this.startActivity(difIntent);
-        } else if (view.getId() == R.id.tinderExample) {
-            TinderActivity.startMe(this);
         }
     }
 
