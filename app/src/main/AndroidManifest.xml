@@ -35,16 +35,6 @@
         <activity
             android:name="com.kirchhoff.viewpagerwithoutfragment.VPWithoutFragmentActivity"
             android:label="@string/vp.without.fragment.title" />
-
-        <activity
-            android:name=".ui.drawer.delegation.NavigationDrawerActivity"
-            android:label="@string/drawer.title"
-            android:theme="@style/AppTheme.NoActionBar" />
-
-        <activity
-            android:name=".ui.drawer.simple.SimpleActivity"
-            android:label="@string/drawer.title" />
-
         <activity
             android:name=".ui.recycler.diffutil.ex1.DiffUtilActivity"
             android:label="@string/diff.util.title" />

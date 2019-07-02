@@ -26,15 +26,6 @@
     <string name="vp.without.fragment.title">VP without fragment</string>
     <string name="vp.without.fragment">ViewPager without fragment example</string>
 
-    <string name="drawer.example">NavigationDrawer Delegation example</string>
-    <string name="drawer.header.title">Some title</string>
-    <string name="drawer.header.text">Some text</string>
-    <string name="drawer.title">NavigationDrawerActivity</string>
-    <string name="drawer.open">Open navigation drawer</string>
-    <string name="drawer.close">Close navigation drawer</string>
-    <string name="drawer.settings">Settings</string>
-
-
     <!-- Resources for DiffUtilActivity -->
     <string name="diff.util.title">DiffUtil</string>
     <string name="diff.util.example">DiffUtil Example</string>
