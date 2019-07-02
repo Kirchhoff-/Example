@@ -31,11 +31,6 @@
     <string name="diff.util.example">DiffUtil Example</string>
     <string name="diff.util.example.2">DiffUtil Example 2</string>
 
-
-    <!-- Resources for TinderActivity -->
-    <string name="tinder.title">TinderTitle</string>
-    <string name="tinder.example">Tinder Example</string>
-
     <string name="countdown.label.title">Countdown label</string>
 
     <!-- Resources for CustomActionBarActivity -->
