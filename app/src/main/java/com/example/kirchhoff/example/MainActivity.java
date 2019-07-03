@@ -10,7 +10,6 @@ import com.example.kirchhoff.example.ui.other.CustomActionBarActivity;
 import com.example.kirchhoff.example.ui.recycler.diffutil.ex1.DiffUtilActivity;
 import com.example.kirchhoff.example.ui.recycler.diffutil.ex2.ThingDiffUtilActivity;
 import com.example.kirchhoff.example.ui.recycler.multi.MultiRowRecyclerActivity;
-import com.example.kirchhoff.example.ui.recycler.search.RecyclerSearchActivity;
 import com.example.kirchhoff.example.ui.recycler.swipe.RecyclerCustomSwipeActivity;
 import com.example.kirchhoff.example.ui.recycler.testable.TestableRecyclerViewActivity;
 import com.example.kirchhoff.example.ui.recycler.toolbar.RecyclerCollapsingToolbarActivity;
@@ -22,6 +21,7 @@ import com.kirchhoff.fabanimation.FabAnimationActivity;
 import com.kirchhoff.fastrecyclerview.FastRecyclerViewActivity;
 import com.kirchhoff.keyboardwatcher.KeyboardWatcherActivity;
 import com.kirchhoff.recyclermvp.MvpRecyclerViewActivity;
+import com.kirchhoff.recyclersearch.RecyclerSearchActivity;
 import com.kirchhoff.viewpagerwithoutfragment.VPWithoutFragmentActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -41,9 +41,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View view) {
-        if (view.getId() == R.id.recyclerViewWithSearch)
-            RecyclerSearchActivity.startMe(this);
-        else if (view.getId() == R.id.fabAnimationExample) {
+        if (view.getId() == R.id.recyclerViewWithSearch) {
+            Intent intent = new Intent(this, RecyclerSearchActivity.class);
+            startActivity(intent);
+        } else if (view.getId() == R.id.fabAnimationExample) {
             Intent intent = new Intent(this, FabAnimationActivity.class);
             startActivity(intent);
         } else if (view.getId() == R.id.customRecyclerSwipe)

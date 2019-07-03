@@ -1,4 +1,4 @@
-package com.example.kirchhoff.example.ui.recycler.search.data;
+package com.kirchhoff.recyclersearch.data;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -8,9 +8,9 @@ import android.widget.Filter;
 import android.widget.Filterable;
 import android.widget.TextView;
 
-import com.example.kirchhoff.example.R;
-
 import java.util.ArrayList;
+
+import com.kirchhoff.recyclersearch.R;
 
 /**
  * @author Kirchhoff-

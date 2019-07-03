@@ -1,4 +1,4 @@
-package com.example.kirchhoff.example.ui.recycler.search.data;
+package com.kirchhoff.recyclersearch.data;
 
 import android.support.annotation.Nullable;
 

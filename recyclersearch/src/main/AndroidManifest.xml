@@ -1,0 +1,11 @@
+<manifest package="com.kirchhoff.recyclersearch"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<application>
+		<activity
+			android:name=".RecyclerSearchActivity"
+			android:label="@string/recyclerview_with_search_title"
+			android:theme="@style/AppTheme.NoActionBar" />
+	</application>
+
+</manifest>
