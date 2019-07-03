@@ -2,7 +2,6 @@
     <string name="app_name">Example</string>
 
     <string name="recyclerview.with.search">RecyclerView with search</string>
-    <string name="search">Search</string>
 
     <string name="data.binding">Data binding</string>
     <string name="data.binding.example">Data binding example</string>

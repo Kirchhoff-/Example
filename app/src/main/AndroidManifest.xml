@@ -20,10 +20,6 @@
         </activity>
 
         <activity
-            android:name=".ui.recycler.search.RecyclerSearchActivity"
-            android:label="@string/recyclerview.with.search"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
             android:name=".ui.recycler.swipe.RecyclerCustomSwipeActivity"
             android:label="@string/custom.recycler.swipe" />
 

@@ -1,7 +1,5 @@
-package com.example.kirchhoff.example.ui.recycler.search;
+package com.kirchhoff.recyclersearch;
 
-import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.view.MenuItemCompat;
@@ -13,26 +11,16 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.example.kirchhoff.example.R;
-import com.example.kirchhoff.example.ui.recycler.search.data.AndroidVersion;
-import com.example.kirchhoff.example.ui.recycler.search.data.DataAdapter;
-
 import java.util.ArrayList;
 
-/**
- * @author Kirchhoff-
- */
+import com.kirchhoff.recyclersearch.data.AndroidVersion;
+import com.kirchhoff.recyclersearch.data.DataAdapter;
 
 public class RecyclerSearchActivity extends AppCompatActivity {
 
     private RecyclerView recyclerView;
     private ArrayList<AndroidVersion> arrayList;
     private DataAdapter adapter;
-
-    public static void startMe(Context context) {
-        Intent intent = new Intent(context, RecyclerSearchActivity.class);
-        context.startActivity(intent);
-    }
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
