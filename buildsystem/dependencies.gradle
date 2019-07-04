@@ -58,8 +58,6 @@ ext.libraries = [
         glide                   : "com.github.bumptech.glide:glide:$versions.glide",
         glideCompiler           : "com.github.bumptech.glide:compiler:$versions.glide",
 
-        keyboardWatcher         : "com.azimolabs.keyboardwatcher:keyboardwatcher:$versions.keyboardWatcher",
-
         // Test dependencies
         junit                   : "junit:junit:$versions.junit",
         mockito                 : "org.mockito:mockito-all:$versions.mockito",

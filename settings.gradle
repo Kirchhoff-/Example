@@ -1,1 +1,1 @@
-include ':app', ':curvedbottombar', ':viewpagerwithoutfragment', ':fabanimation', ':keyboardwatcher', ':fastrecyclerview', ':recyclermvp', ':coordinatorbehavior', ':countdownlabel', ':recyclersearch'
+include ':app', ':curvedbottombar', ':viewpagerwithoutfragment', ':fabanimation', ':fastrecyclerview', ':recyclermvp', ':coordinatorbehavior', ':countdownlabel', ':recyclersearch'
