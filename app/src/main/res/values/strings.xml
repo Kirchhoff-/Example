@@ -32,9 +32,6 @@
 
     <string name="countdown.label.title">Countdown label</string>
 
-    <!-- Resources for CustomActionBarActivity -->
-    <string name="custom.actionbar.title">CustomActionBar</string>
-
     <!-- Resources for SimpleTransitionActivity-->
     <string name="simple.transition.title">SimpleTransition</string>
     <string name="simple.transition.details.title">SimpleTransitionDetails</string>
