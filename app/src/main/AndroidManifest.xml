@@ -44,16 +44,6 @@
             android:label="@string/countdown.label.title" />
 
         <activity
-            android:name=".ui.animation.SimpleTransitionActivity"
-            android:label="@string/simple.transition.title"
-            android:theme="@style/AppTheme.TransitionAnimation" />
-
-        <activity
-            android:name=".ui.animation.SimpleTransitionDetailsActivity"
-            android:label="@string/simple.transition.details.title"
-            android:theme="@style/AppTheme.TransitionAnimation" />
-
-        <activity
             android:name="com.kirchhoff.coordinatebehavior.CoordinatorBehaviorActivity"
             android:label="@string/coordinator.layout.behavior.title" />
 

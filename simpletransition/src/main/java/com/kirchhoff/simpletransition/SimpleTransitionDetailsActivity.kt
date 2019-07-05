@@ -1,4 +1,4 @@
-package com.example.kirchhoff.example.ui.animation
+package com.kirchhoff.simpletransition
 
 import android.graphics.Color
 import android.os.Bundle
@@ -8,7 +8,6 @@ import android.view.View
 import android.widget.RelativeLayout
 import android.widget.TextView
 
-import com.example.kirchhoff.example.R
 
 class SimpleTransitionDetailsActivity : AppCompatActivity() {
 

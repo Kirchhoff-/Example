@@ -1,4 +1,4 @@
-package com.example.kirchhoff.example.ui.animation
+package com.kirchhoff.simpletransition
 
 import android.content.Intent
 import android.os.Bundle
@@ -8,7 +8,6 @@ import android.support.v4.content.ContextCompat
 import android.support.v7.app.AppCompatActivity
 import android.widget.AdapterView
 import android.widget.ListView
-import com.example.kirchhoff.example.R
 import java.util.*
 
 class SimpleTransitionActivity : AppCompatActivity() {
