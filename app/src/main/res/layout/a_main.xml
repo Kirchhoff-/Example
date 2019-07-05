@@ -66,18 +66,11 @@
             android:onClick="simpleTransition"
             android:text="@string/simple.transition.title" />
 
-
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="customCoordinateLayoutBehavior"
             android:text="@string/coordinator.layout.behavior.title" />
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="multiRowRecycler"
-            android:text="@string/multi.row.recycler.title" />
 
         <Button
             android:layout_width="match_parent"
