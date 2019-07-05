@@ -1,4 +1,4 @@
-package com.example.kirchhoff.example.ui.animation
+package com.kirchhoff.simpletransition
 
 import android.content.Context
 import android.graphics.Color
@@ -8,7 +8,6 @@ import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.LinearLayout
 import android.widget.TextView
-import com.example.kirchhoff.example.R
 import java.util.*
 
 class CustomAdapter internal constructor(private val context: Context, list: List<Array<String>>) : BaseAdapter() {

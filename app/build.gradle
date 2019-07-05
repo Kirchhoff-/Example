@@ -62,4 +62,5 @@ dependencies {
     implementation project(path: ':coordinatorbehavior')
     implementation project(path: ':countdownlabel')
     implementation project(path: ':recyclersearch')
+    implementation project(path: ':simpletransition')
 }

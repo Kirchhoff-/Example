@@ -32,11 +32,6 @@
 
     <string name="countdown.label.title">Countdown label</string>
 
-    <!-- Resources for SimpleTransitionActivity-->
-    <string name="simple.transition.title">SimpleTransition</string>
-    <string name="simple.transition.details.title">SimpleTransitionDetails</string>
-    <string name="transition">transition</string>
-
     <!-- Resources for SCoordinatorBehaviorActivity-->
     <string name="coordinator.layout.behavior.title">Coordinate layout behavior</string>
 
