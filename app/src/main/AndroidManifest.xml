@@ -36,10 +36,6 @@
             android:label="@string/diff.util.title" />
 
         <activity
-            android:name=".ui.view.ViewActivity"
-            android:label="@string/view.title" />
-
-        <activity
             android:name=".ui.recycler.diffutil.ex2.ThingDiffUtilActivity"
             android:label="@string/diff.util.title" />
 

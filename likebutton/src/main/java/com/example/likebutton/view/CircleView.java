@@ -1,4 +1,4 @@
-package com.example.kirchhoff.example.ui.view.view.like;
+package com.example.likebutton.view;
 
 import android.animation.ArgbEvaluator;
 import android.content.Context;
@@ -11,7 +11,8 @@ import android.util.AttributeSet;
 import android.util.Property;
 import android.view.View;
 
-import com.example.kirchhoff.example.ui.utils.MathUtils;
+import com.example.likebutton.utils.MathUtils;
+
 
 public class CircleView extends View {
     public static final Property<CircleView, Float> INNER_CIRCLE_RADIUS_PROGRESS =

@@ -51,8 +51,8 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="onViewClick"
-            android:text="@string/view.title" />
+            android:onClick="onLikeButtonClick"
+            android:text="@string/like_button_title" />
 
         <Button
             android:layout_width="match_parent"

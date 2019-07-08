@@ -1,4 +1,4 @@
-package com.example.kirchhoff.example.ui.view.view;
+package com.example.likebutton.view;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -15,27 +15,16 @@ import android.view.animation.OvershootInterpolator;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 
-import com.example.kirchhoff.example.R;
-import com.example.kirchhoff.example.ui.view.view.like.CircleView;
-import com.example.kirchhoff.example.ui.view.view.like.DotsView;
+import com.kirchhoff.likebutton.R;
 
-import butterknife.BindView;
-import butterknife.ButterKnife;
-
-/**
- * @author Kirchhoff-
- */
 
 public class LikeButtonView extends FrameLayout implements View.OnClickListener {
     private static final DecelerateInterpolator DECCELERATE_INTERPOLATOR = new DecelerateInterpolator();
     private static final AccelerateDecelerateInterpolator ACCELERATE_DECELERATE_INTERPOLATOR = new AccelerateDecelerateInterpolator();
     private static final OvershootInterpolator OVERSHOOT_INTERPOLATOR = new OvershootInterpolator(4);
 
-    @BindView(R.id.ivStar)
     ImageView ivStar;
-    @BindView(R.id.vDotsView)
     DotsView vDotsView;
-    @BindView(R.id.vCircle)
     CircleView vCircle;
 
     private boolean isChecked;
@@ -59,7 +48,9 @@ public class LikeButtonView extends FrameLayout implements View.OnClickListener 
 
     private void init() {
         LayoutInflater.from(getContext()).inflate(R.layout.v_like_button, this, true);
-        ButterKnife.bind(this);
+        ivStar = findViewById(R.id.ivStar);
+        vDotsView = findViewById(R.id.vDotsView);
+        vCircle = findViewById(R.id.vCircle);
         setOnClickListener(this);
     }
 
