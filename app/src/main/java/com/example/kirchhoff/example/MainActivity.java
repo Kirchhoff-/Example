@@ -83,7 +83,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     public void diffUtilExample2(View view) {
-        ThingDiffUtilActivity.start(this);
+        Intent intent = new Intent(this, ThingDiffUtilActivity.class);
+        startActivity(intent);
     }
 
     public void fastRecyclerViewExample(View view) {
