@@ -64,4 +64,5 @@ dependencies {
     implementation project(path: ':recyclersearch')
     implementation project(path: ':simpletransition')
     implementation project(path: ':likebutton')
+    implementation project(path: ':recyclercollapsing')
 }
