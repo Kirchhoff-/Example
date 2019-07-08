@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.kirchhoff.example">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
-        android:allowBackup="true"
+        android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -29,9 +32,6 @@
             android:theme="@style/AppTheme.NoActionBar" />
 
         <activity
-            android:name="com.kirchhoff.viewpagerwithoutfragment.VPWithoutFragmentActivity"
-            android:label="@string/vp.without.fragment.title" />
-        <activity
             android:name=".ui.recycler.diffutil.ex1.DiffUtilActivity"
             android:label="@string/diff.util.title" />
 
@@ -40,42 +40,8 @@
             android:label="@string/view.title" />
 
         <activity
-            android:name=".ui.other.CountdownLabelActivity"
-            android:label="@string/countdown.label.title" />
-
-        <activity
-            android:name="com.kirchhoff.coordinatebehavior.CoordinatorBehaviorActivity"
-            android:label="@string/coordinator.layout.behavior.title" />
-
-        <activity
             android:name=".ui.recycler.diffutil.ex2.ThingDiffUtilActivity"
             android:label="@string/diff.util.title" />
-
-        <activity
-            android:name="com.kirchhoff.recyclermvp.MvpRecyclerViewActivity"
-            android:label="@string/mvp.recycler.view.title" />
-
-
-        <activity
-            android:name="com.kirchhoff.keyboardwatcher.KeyboardWatcherActivity"
-            android:label="@string/keyboard.watcher.title"
-            android:windowSoftInputMode="adjustResize" />
-
-        <activity
-            android:name=".ui.architecture.example2.ArchitectureExampleActivity"
-            android:label="@string/architecture.example" />
-
-        <activity
-            android:name=".ui.architecture.example2.mvc.CounterMVCActivity"
-            android:label="@string/mvc" />
-
-        <activity
-            android:name=".ui.architecture.example2.mvp.CounterMVPActivity"
-            android:label="@string/mvp" />
-
-        <activity
-            android:name=".ui.architecture.example3.ArchitectureComponentActivity"
-            android:label="@string/architecture.component" />
 
         <activity
             android:name=".ui.recycler.testable.TestableRecyclerViewActivity"
