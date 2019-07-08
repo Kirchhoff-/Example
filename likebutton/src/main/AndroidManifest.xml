@@ -1,0 +1,10 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kirchhoff.likebutton">
+
+    <application>
+        <activity
+            android:name="com.example.likebutton.LikeButtonActivity"
+            android:label="@string/like_button_title" />
+    </application>
+
+</manifest>

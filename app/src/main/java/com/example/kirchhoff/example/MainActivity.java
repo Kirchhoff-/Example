@@ -10,7 +10,7 @@ import com.example.kirchhoff.example.ui.recycler.diffutil.ex2.ThingDiffUtilActiv
 import com.example.kirchhoff.example.ui.recycler.swipe.RecyclerCustomSwipeActivity;
 import com.example.kirchhoff.example.ui.recycler.testable.TestableRecyclerViewActivity;
 import com.example.kirchhoff.example.ui.recycler.toolbar.RecyclerCollapsingToolbarActivity;
-import com.example.kirchhoff.example.ui.view.ViewActivity;
+import com.example.likebutton.LikeButtonActivity;
 import com.kirchhoff.coordinatebehavior.CoordinatorBehaviorActivity;
 import com.kirchhoff.countdownlabel.CountdownLabelActivity;
 import com.kirchhoff.curvedbottombar.CurvedBottomBarActivity;
@@ -58,8 +58,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
-    public void onViewClick(View view) {
-        ViewActivity.start(this);
+    public void onLikeButtonClick(View view) {
+        Intent intent = new Intent(this, LikeButtonActivity.class);
+        this.startActivity(intent);
     }
 
     public void onCountDownLabel(View view) {

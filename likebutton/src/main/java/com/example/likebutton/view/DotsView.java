@@ -1,4 +1,4 @@
-package com.example.kirchhoff.example.ui.view.view.like;
+package com.example.likebutton.view;
 
 import android.animation.ArgbEvaluator;
 import android.content.Context;
@@ -8,7 +8,8 @@ import android.util.AttributeSet;
 import android.util.Property;
 import android.view.View;
 
-import com.example.kirchhoff.example.ui.utils.MathUtils;
+import com.example.likebutton.utils.MathUtils;
+
 
 public class DotsView extends View {
     private static final int DOTS_COUNT = 12;
@@ -168,3 +169,4 @@ public class DotsView extends View {
         circlePaints[3].setAlpha(alpha);
     }
 }
+

@@ -63,4 +63,5 @@ dependencies {
     implementation project(path: ':countdownlabel')
     implementation project(path: ':recyclersearch')
     implementation project(path: ':simpletransition')
+    implementation project(path: ':likebutton')
 }

@@ -53,15 +53,10 @@
     <!-- CurvedBottomBar -->
     <string name="curved.bottom.bar">Curved BottomBar</string>
 
-
     <!-- Architecture Types -->
     <string name="mvc">MVC</string>
     <string name="mvp">MVP</string>
     <string name="mvvm">MVVM</string>
-
-
-    <!-- Resources for View -->
-    <string name="view.title">View Example</string>
 
     <string name="send">Send</string>
     <string name="share">Share</string>
