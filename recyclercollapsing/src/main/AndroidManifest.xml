@@ -1,0 +1,11 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kirchhoff.recyclercollapsing">
+
+    <application>
+        <activity
+            android:name="com.example.recyclercollapsing.RecyclerCollapsingToolbarActivity"
+            android:label="@string/recycler_collapsing_title"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>

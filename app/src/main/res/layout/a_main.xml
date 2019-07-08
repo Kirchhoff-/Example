@@ -29,12 +29,11 @@
             android:layout_height="wrap_content"
             android:text="@string/custom.recycler.swipe.example" />
 
-
         <Button
             android:id="@+id/recyclerCollapsing"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/recycler.collapsing.example" />
+            android:text="@string/recycler_collapsing_example" />
 
         <Button
             android:id="@+id/vpWithoutFragment"

@@ -27,11 +27,6 @@
             android:label="@string/custom.recycler.swipe" />
 
         <activity
-            android:name=".ui.recycler.toolbar.RecyclerCollapsingToolbarActivity"
-            android:label="@string/recycler.collapsing.title"
-            android:theme="@style/AppTheme.NoActionBar" />
-
-        <activity
             android:name=".ui.recycler.diffutil.ex1.DiffUtilActivity"
             android:label="@string/diff.util.title" />
 

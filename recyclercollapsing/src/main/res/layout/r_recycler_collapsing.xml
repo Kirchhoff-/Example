@@ -13,13 +13,13 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/recycler.collapsing.row.title"
+            android:text="@string/recycler_collapsing_row_title"
             android:textSize="20sp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/recycler.collapsing.row.text"
+            android:text="@string/recycler_collapsing_row_text"
             android:textSize="18sp" />
 
     </LinearLayout>

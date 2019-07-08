@@ -1,8 +1,8 @@
-package com.example.kirchhoff.example.ui.recycler.toolbar
+package com.example.recyclercollapsing
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import com.example.kirchhoff.example.R
+import com.kirchhoff.recyclercollapsing.R
 
 class RecyclerCollapsingToolbarActivity : AppCompatActivity() {
 

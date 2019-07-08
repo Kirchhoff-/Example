@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="recycler_collapsing_title">Recycler Collapsing</string>
+    <string name="recycler_collapsing_example">Recycler collapsing example</string>
+    <string name="recycler_collapsing_row_title">Row title</string>
+    <string name="recycler_collapsing_row_text">Some long long long Text.
+        Some long long long Text. Some long long long Text.
+        Some long long long Text. Some long long long Text.
+        Some long long long Text. Some long long long Text.
+        Some long long long Text. Some long long long Text.
+        Some long long long Text. Some long long long Text.</string>
+</resources>
