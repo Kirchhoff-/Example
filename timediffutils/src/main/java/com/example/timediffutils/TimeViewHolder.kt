@@ -1,13 +1,11 @@
-package com.example.kirchhoff.example.ui.recycler.diffutil.ex1
+package com.example.timediffutils
 
 import android.animation.ValueAnimator
 import android.widget.TextView
-import com.example.kirchhoff.example.R
-import com.example.kirchhoff.example.ui.extensions.setFormatDigit
+import com.example.timediffutils.extensions.setFormatDigit
+import com.kirchhoff.timediffutils.R
 
-/**
- * @author Kirchhoff-
- */
+
 class TimeViewHolder(itemView: android.view.View?) : BaseViewHolder<Time>(itemView) {
 
     companion object {

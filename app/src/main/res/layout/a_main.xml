@@ -42,10 +42,10 @@
             android:text="@string/vp.without.fragment" />
 
         <Button
-            android:id="@+id/diffUtil"
+            android:id="@+id/timeDiffUtil"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/diff.util.example" />
+            android:text="@string/time_diff_utils_example" />
 
         <Button
             android:layout_width="match_parent"

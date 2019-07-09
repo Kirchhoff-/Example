@@ -1,0 +1,10 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kirchhoff.timediffutils">
+
+    <application>
+        <activity
+            android:name="com.example.timediffutils.TimeDiffUtilActivity"
+            android:label="@string/time_diff_utils_title" />
+    </application>
+
+</manifest>

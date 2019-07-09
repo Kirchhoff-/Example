@@ -1,9 +1,9 @@
-package com.example.kirchhoff.example.ui.recycler.diffutil.ex1
+package com.example.timediffutils
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.RecyclerView
-import com.example.kirchhoff.example.R
+import com.kirchhoff.timediffutils.R
 import io.reactivex.Flowable
 import io.reactivex.disposables.Disposable
 import io.reactivex.schedulers.Schedulers
@@ -11,10 +11,7 @@ import java.util.*
 import java.util.Calendar.*
 import java.util.concurrent.TimeUnit
 
-/**
- * @author Kirchhoff-
- */
-class DiffUtilActivity : AppCompatActivity() {
+class TimeDiffUtilActivity : AppCompatActivity() {
 
     private val recyclerView by lazy { findViewById<RecyclerView>(R.id.recyclerView) }
 
@@ -24,7 +21,7 @@ class DiffUtilActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.a_diff_util)
+        setContentView(R.layout.a_time_diff_util)
 
         val timeZonesIds = resources.getStringArray(R.array.timezones_ids).asIterable()
 

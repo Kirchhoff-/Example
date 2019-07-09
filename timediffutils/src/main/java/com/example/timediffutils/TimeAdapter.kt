@@ -1,14 +1,15 @@
-package com.example.kirchhoff.example.ui.recycler.diffutil.ex1
+package com.example.timediffutils
 
 import android.support.v7.util.DiffUtil.calculateDiff
-import com.example.kirchhoff.example.ui.extensions.setFormatDigit
+import com.example.timediffutils.extensions.setFormatDigit
+import com.kirchhoff.timediffutils.R
 import io.reactivex.android.schedulers.AndroidSchedulers
 
 
 class TimeAdapter : BaseAdapter<Time, TimeViewHolder>() {
 
 
-    override fun getItemViewId() = com.example.kirchhoff.example.R.layout.r_diff
+    override fun getItemViewId() = R.layout.r_time_diff
 
     override fun instantiateViewHolder(view: android.view.View?) = TimeViewHolder(view)
 
