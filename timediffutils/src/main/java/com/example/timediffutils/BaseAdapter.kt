@@ -1,4 +1,4 @@
-package com.example.kirchhoff.example.ui.recycler.diffutil.ex1
+package com.example.timediffutils
 
 import android.support.v7.widget.RecyclerView
 

@@ -5,11 +5,11 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-import com.example.kirchhoff.example.ui.recycler.diffutil.ex1.DiffUtilActivity;
 import com.example.kirchhoff.example.ui.recycler.diffutil.ex2.ThingDiffUtilActivity;
 import com.example.kirchhoff.example.ui.recycler.swipe.RecyclerCustomSwipeActivity;
 import com.example.likebutton.LikeButtonActivity;
 import com.example.recyclercollapsing.RecyclerCollapsingToolbarActivity;
+import com.example.timediffutils.TimeDiffUtilActivity;
 import com.kirchhoff.coordinatebehavior.CoordinatorBehaviorActivity;
 import com.kirchhoff.countdownlabel.CountdownLabelActivity;
 import com.kirchhoff.curvedbottombar.CurvedBottomBarActivity;
@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.customRecyclerSwipe).setOnClickListener(this);
         findViewById(R.id.recyclerCollapsing).setOnClickListener(this);
         findViewById(R.id.vpWithoutFragment).setOnClickListener(this);
-        findViewById(R.id.diffUtil).setOnClickListener(this);
+        findViewById(R.id.timeDiffUtil).setOnClickListener(this);
     }
 
     @Override
@@ -51,8 +51,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         } else if (view.getId() == R.id.vpWithoutFragment) {
             Intent intent = new Intent(this, VPWithoutFragmentActivity.class);
             startActivity(intent);
-        } else if (view.getId() == R.id.diffUtil) {
-            Intent difIntent = new Intent(this, DiffUtilActivity.class);
+        } else if (view.getId() == R.id.timeDiffUtil) {
+            Intent difIntent = new Intent(this, TimeDiffUtilActivity.class);
             this.startActivity(difIntent);
         }
     }

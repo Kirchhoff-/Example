@@ -26,13 +26,7 @@
             android:name=".ui.recycler.swipe.RecyclerCustomSwipeActivity"
             android:label="@string/custom.recycler.swipe" />
 
-        <activity
-            android:name=".ui.recycler.diffutil.ex1.DiffUtilActivity"
-            android:label="@string/diff.util.title" />
-
-        <activity
-            android:name=".ui.recycler.diffutil.ex2.ThingDiffUtilActivity"
-            android:label="@string/diff.util.title" />
+        <activity android:name=".ui.recycler.diffutil.ex2.ThingDiffUtilActivity" />
 
     </application>
 

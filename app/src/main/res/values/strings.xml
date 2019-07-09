@@ -14,9 +14,7 @@
     <string name="vp.without.fragment.title">VP without fragment</string>
     <string name="vp.without.fragment">ViewPager without fragment example</string>
 
-    <!-- Resources for DiffUtilActivity -->
-    <string name="diff.util.title">DiffUtil</string>
-    <string name="diff.util.example">DiffUtil Example</string>
+    <!-- Resources for TimeDiffUtilActivity -->
     <string name="diff.util.example.2">DiffUtil Example 2</string>
 
     <string name="countdown.label.title">Countdown label</string>
