@@ -36,9 +36,6 @@
     <!-- ArchitectureComponentActivity-->
     <string name="architecture.component">ArchitectureComponent</string>
 
-    <!-- Testable RecyclerViewActivity-->
-    <string name="testable.recycler.view">Testable RecyclerView</string>
-
     <!-- CurvedBottomBar -->
     <string name="curved.bottom.bar">Curved BottomBar</string>
 
