@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="custom_recycler_swipe_title">Custom recycler swipe</string>
+    <string name="custom_recycler_swipe_example">Custom recycler swipe example</string>
+</resources>

@@ -63,4 +63,5 @@ dependencies {
     implementation project(path: ':likebutton')
     implementation project(path: ':recyclercollapsing')
     implementation project(path: ':timediffutils')
+    implementation project(path: ':recyclerswipe')
 }

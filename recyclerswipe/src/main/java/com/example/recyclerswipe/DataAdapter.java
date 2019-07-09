@@ -1,4 +1,4 @@
-package com.example.kirchhoff.example.ui.recycler.swipe;
+package com.example.recyclerswipe;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -6,13 +6,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.example.kirchhoff.example.R;
+import com.kirchhoff.recyclerswipe.R;
 
 import java.util.ArrayList;
-
-/**
- * @author Kirchhoff-
- */
 
 public class DataAdapter extends RecyclerView.Adapter<DataAdapter.ViewHolder> {
 

@@ -6,9 +6,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.example.kirchhoff.example.ui.recycler.diffutil.ex2.ThingDiffUtilActivity;
-import com.example.kirchhoff.example.ui.recycler.swipe.RecyclerCustomSwipeActivity;
 import com.example.likebutton.LikeButtonActivity;
 import com.example.recyclercollapsing.RecyclerCollapsingToolbarActivity;
+import com.example.recyclerswipe.RecyclerCustomSwipeActivity;
 import com.example.timediffutils.TimeDiffUtilActivity;
 import com.kirchhoff.coordinatebehavior.CoordinatorBehaviorActivity;
 import com.kirchhoff.countdownlabel.CountdownLabelActivity;
@@ -43,9 +43,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         } else if (view.getId() == R.id.fabAnimationExample) {
             Intent intent = new Intent(this, FabAnimationActivity.class);
             startActivity(intent);
-        } else if (view.getId() == R.id.customRecyclerSwipe)
-            RecyclerCustomSwipeActivity.startMe(this);
-        else if (view.getId() == R.id.recyclerCollapsing) {
+        } else if (view.getId() == R.id.customRecyclerSwipe) {
+            Intent intent = new Intent(this, RecyclerCustomSwipeActivity.class);
+            startActivity(intent);
+        } else if (view.getId() == R.id.recyclerCollapsing) {
             Intent intent = new Intent(this, RecyclerCollapsingToolbarActivity.class);
             startActivity(intent);
         } else if (view.getId() == R.id.vpWithoutFragment) {

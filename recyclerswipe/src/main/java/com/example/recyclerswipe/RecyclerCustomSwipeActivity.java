@@ -1,4 +1,4 @@
-package com.example.kirchhoff.example.ui.recycler.swipe;
+package com.example.recyclerswipe;
 
 import android.content.Context;
 import android.content.DialogInterface;
@@ -21,15 +21,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
 
-import com.example.kirchhoff.example.R;
+import com.kirchhoff.recyclerswipe.R;
 
 import java.util.ArrayList;
 
-/**
- * @author Kirchhoff-
- */
 
-public class RecyclerCustomSwipeActivity extends AppCompatActivity implements View.OnClickListener {
+public class RecyclerCustomSwipeActivity extends AppCompatActivity {
 
     private ArrayList<String> countries = new ArrayList<>();
     private DataAdapter adapter;
@@ -59,7 +56,16 @@ public class RecyclerCustomSwipeActivity extends AppCompatActivity implements Vi
     private void initViews() {
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(this);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                removeView();
+                add = true;
+                alertDialog.setTitle("Add Country");
+                country.setText("");
+                alertDialog.show();
+            }
+        });
         recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
         recyclerView.setHasFixedSize(true);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
@@ -159,18 +165,5 @@ public class RecyclerCustomSwipeActivity extends AppCompatActivity implements Vi
             }
         });
         country = (EditText) view.findViewById(R.id.country);
-    }
-
-    @Override
-    public void onClick(View view) {
-        switch (view.getId()) {
-            case R.id.fab:
-                removeView();
-                add = true;
-                alertDialog.setTitle("Add Country");
-                country.setText("");
-                alertDialog.show();
-                break;
-        }
     }
 }

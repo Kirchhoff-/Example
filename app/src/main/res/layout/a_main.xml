@@ -27,7 +27,7 @@
             android:id="@+id/customRecyclerSwipe"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/custom.recycler.swipe.example" />
+            android:text="@string/custom_recycler_swipe_example" />
 
         <Button
             android:id="@+id/recyclerCollapsing"
