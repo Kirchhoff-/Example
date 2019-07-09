@@ -34,10 +34,6 @@
             android:name=".ui.recycler.diffutil.ex2.ThingDiffUtilActivity"
             android:label="@string/diff.util.title" />
 
-        <activity
-            android:name=".ui.recycler.testable.TestableRecyclerViewActivity"
-            android:label="@string/testable.recycler.view" />
-
     </application>
 
 </manifest>

@@ -8,7 +8,6 @@ import android.view.View;
 import com.example.kirchhoff.example.ui.recycler.diffutil.ex1.DiffUtilActivity;
 import com.example.kirchhoff.example.ui.recycler.diffutil.ex2.ThingDiffUtilActivity;
 import com.example.kirchhoff.example.ui.recycler.swipe.RecyclerCustomSwipeActivity;
-import com.example.kirchhoff.example.ui.recycler.testable.TestableRecyclerViewActivity;
 import com.example.likebutton.LikeButtonActivity;
 import com.example.recyclercollapsing.RecyclerCollapsingToolbarActivity;
 import com.kirchhoff.coordinatebehavior.CoordinatorBehaviorActivity;
@@ -91,11 +90,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void fastRecyclerViewExample(View view) {
         Intent intent = new Intent(this, FastRecyclerViewActivity.class);
         startActivity(intent);
-    }
-
-    public void testableRecyclerViewExample(View view) {
-		Intent intent = new Intent(this, TestableRecyclerViewActivity.class);
-		startActivity(intent);
     }
 
     public void curvedBottomBarExample(View view) {
