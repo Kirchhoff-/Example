@@ -22,10 +22,6 @@
             </intent-filter>
         </activity>
 
-        <activity
-            android:name=".ui.recycler.swipe.RecyclerCustomSwipeActivity"
-            android:label="@string/custom.recycler.swipe" />
-
         <activity android:name=".ui.recycler.diffutil.ex2.ThingDiffUtilActivity" />
 
     </application>

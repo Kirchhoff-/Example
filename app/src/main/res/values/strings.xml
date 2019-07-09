@@ -8,9 +8,6 @@
 
     <string name="fab_animation_example">Fab animation example</string>
 
-    <string name="custom.recycler.swipe">Custom recycler swipe</string>
-    <string name="custom.recycler.swipe.example">Custom recycler swipe example</string>
-
     <string name="vp.without.fragment.title">VP without fragment</string>
     <string name="vp.without.fragment">ViewPager without fragment example</string>
 
