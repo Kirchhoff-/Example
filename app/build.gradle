@@ -41,9 +41,6 @@ dependencies {
 
     implementation libraries.kotlin
 
-    implementation libraries.butterKnife
-    kapt libraries.butterKnifeCompiler
-
     implementation libraries.rxAndroid
     implementation libraries.rxJava
 

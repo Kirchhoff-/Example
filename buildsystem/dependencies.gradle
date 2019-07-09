@@ -15,8 +15,6 @@ ext.versions = [
 
         kotlin             : '1.3.10',
 
-        butterKnife        : '8.6.0',
-
         junit              : '4.12',
         mockito            : '1.10.19',
         robolectric        : '3.4.2',
@@ -49,9 +47,6 @@ ext.libraries = [
         rxJava                  : "io.reactivex.rxjava2:rxjava:$versions.rxJava",
 
         kotlin                  : "org.jetbrains.kotlin:kotlin-stdlib:$versions.kotlin",
-
-        butterKnife             : "com.jakewharton:butterknife:$versions.butterKnife",
-        butterKnifeCompiler     : "com.jakewharton:butterknife-compiler:$versions.butterKnife",
 
         gson                    : "com.google.code.gson:gson:$versions.gson",
 
