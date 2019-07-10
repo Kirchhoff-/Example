@@ -48,9 +48,6 @@ dependencies {
     implementation libraries.glide
     kapt libraries.glideCompiler
 
-    testImplementation libraries.junit
-    testImplementation libraries.mockito
-    testImplementation libraries.robolectric
     implementation project(path: ':curvedbottombar')
     implementation project(path: ':viewpagerwithoutfragment')
     implementation project(path: ':fabanimation')
