@@ -22,8 +22,6 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".ui.recycler.diffutil.ex2.ThingDiffUtilActivity" />
-
     </application>
 
 </manifest>

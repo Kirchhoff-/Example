@@ -61,4 +61,5 @@ dependencies {
     implementation project(path: ':recyclercollapsing')
     implementation project(path: ':timediffutils')
     implementation project(path: ':recyclerswipe')
+    implementation project(path: ':thingdiffutils')
 }

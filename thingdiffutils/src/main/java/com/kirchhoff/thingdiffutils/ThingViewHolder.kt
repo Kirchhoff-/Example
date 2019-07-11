@@ -1,10 +1,8 @@
-package com.example.kirchhoff.example.ui.recycler.diffutil.ex2
+package com.kirchhoff.thingdiffutils
 
 import android.support.v7.widget.RecyclerView
 import android.view.View
 import android.widget.TextView
-
-import com.example.kirchhoff.example.R
 
 class ThingViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 

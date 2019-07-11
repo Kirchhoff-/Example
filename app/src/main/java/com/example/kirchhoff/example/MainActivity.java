@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-import com.example.kirchhoff.example.ui.recycler.diffutil.ex2.ThingDiffUtilActivity;
 import com.example.likebutton.LikeButtonActivity;
 import com.example.recyclercollapsing.RecyclerCollapsingToolbarActivity;
 import com.example.recyclerswipe.RecyclerCustomSwipeActivity;
@@ -18,6 +17,7 @@ import com.kirchhoff.fastrecyclerview.FastRecyclerViewActivity;
 import com.kirchhoff.recyclermvp.MvpRecyclerViewActivity;
 import com.kirchhoff.recyclersearch.RecyclerSearchActivity;
 import com.kirchhoff.simpletransition.SimpleTransitionActivity;
+import com.kirchhoff.thingdiffutils.ThingDiffUtilActivity;
 import com.kirchhoff.viewpagerwithoutfragment.VPWithoutFragmentActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
