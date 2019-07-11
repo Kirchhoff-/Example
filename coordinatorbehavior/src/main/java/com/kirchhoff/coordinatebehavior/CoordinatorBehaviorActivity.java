@@ -6,10 +6,6 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-/**
- * @author Kirchhoff-
- */
-
 public class CoordinatorBehaviorActivity extends AppCompatActivity {
 
 
@@ -27,13 +23,13 @@ public class CoordinatorBehaviorActivity extends AppCompatActivity {
             }
         });
 
-     /*   findViewById(R.id.fab).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.fab).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Snackbar.make(view, "Button with custom behavior",
                         Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
-        }); */
+        });
     }
 }

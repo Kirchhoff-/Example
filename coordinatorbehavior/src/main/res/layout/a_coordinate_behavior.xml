@@ -7,15 +7,13 @@
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
+        android:layout_height="wrap_content">
 
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.PopupOverlay" />
+            android:background="?attr/colorPrimary" />
 
     </android.support.design.widget.AppBarLayout>
 
@@ -28,15 +26,16 @@
         android:layout_gravity="bottom|start"
         android:layout_margin="@dimen/fab_margin"
         android:text="@string/accept"
-        app:layout_behavior="com.example.kirchhoff.example.ui.utils.behavior.CustomMoveUpBehavior" />
+        app:layout_behavior="com.kirchhoff.coordinatebehavior.behavior.CustomMoveUpBehavior" />
 
-    <!-- <android.support.design.widget.FloatingActionButton
+    <android.support.design.widget.FloatingActionButton
          android:id="@+id/fab"
          android:layout_width="wrap_content"
          android:layout_height="wrap_content"
          android:layout_gravity="bottom|end"
-         android:layout_margin="@dimen/fab_margin"
+        android:layout_marginBottom="@dimen/fab_margin_bottom"
+        android:layout_marginEnd="@dimen/fab_margin"
          android:src="@android:drawable/arrow_down_float"
-         app:layout_behavior="com.example.kirchhoff.example.ui.utils.behavior.CustomRotateBehavior" /> -->
+        app:layout_behavior="com.kirchhoff.coordinatebehavior.behavior.CustomRotateBehavior" />
 
 </android.support.design.widget.CoordinatorLayout>

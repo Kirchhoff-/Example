@@ -1,4 +1,4 @@
-package com.example.kirchhoff.example.ui.utils.behavior;
+package com.kirchhoff.coordinatebehavior.behavior;
 
 import android.content.Context;
 import android.support.design.widget.CoordinatorLayout;
@@ -8,10 +8,6 @@ import android.util.AttributeSet;
 import android.view.View;
 
 import java.util.List;
-
-/**
- * @author Kirchhoff-
- */
 
 public class CustomRotateBehavior extends CoordinatorLayout.Behavior {
 
