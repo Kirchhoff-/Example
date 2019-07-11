@@ -1,4 +1,4 @@
-package com.example.kirchhoff.example.ui.recycler.diffutil.ex2
+package com.kirchhoff.thingdiffutils
 
 import io.reactivex.Flowable
 import io.reactivex.schedulers.Schedulers

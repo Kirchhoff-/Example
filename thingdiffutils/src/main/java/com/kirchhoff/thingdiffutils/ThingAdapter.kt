@@ -1,9 +1,8 @@
-package com.example.kirchhoff.example.ui.recycler.diffutil.ex2
+package com.kirchhoff.thingdiffutils
 
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import com.example.kirchhoff.example.R
 import java.util.*
 
 class ThingAdapter : RecyclerView.Adapter<ThingViewHolder>() {

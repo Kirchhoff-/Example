@@ -1,4 +1,4 @@
-package com.example.kirchhoff.example.ui.recycler.diffutil.ex2
+package com.kirchhoff.thingdiffutils
 
 import android.os.Bundle
 import android.support.v4.util.Pair
@@ -6,7 +6,6 @@ import android.support.v7.app.AppCompatActivity
 import android.support.v7.util.DiffUtil
 import android.support.v7.widget.DefaultItemAnimator
 import android.support.v7.widget.RecyclerView
-import com.example.kirchhoff.example.R
 import io.reactivex.android.schedulers.AndroidSchedulers.mainThread
 import io.reactivex.disposables.Disposable
 import io.reactivex.schedulers.Schedulers.computation
