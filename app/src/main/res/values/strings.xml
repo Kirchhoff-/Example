@@ -1,53 +1,11 @@
 <resources>
     <string name="app_name">Example</string>
-
     <string name="recyclerview.with.search">RecyclerView with search</string>
-
-    <string name="data.binding">Data binding</string>
-    <string name="data.binding.example">Data binding example</string>
-
     <string name="fab_animation_example">Fab animation example</string>
-
-    <string name="vp.without.fragment.title">VP without fragment</string>
     <string name="vp.without.fragment">ViewPager without fragment example</string>
-
-    <!-- Resources for TimeDiffUtilActivity -->
     <string name="diff.util.example.2">DiffUtil Example 2</string>
-
     <string name="countdown.label.title">Countdown label</string>
-
-    <!-- Resources for SCoordinatorBehaviorActivity-->
     <string name="coordinator.layout.behavior.title">Coordinate layout behavior</string>
-
-    <!-- MvpRecyclerViewActivity -->
     <string name="mvp.recycler.view.title">Mvp RecyclerView</string>
-
-    <!-- KeyboardWatcherActivity -->
-    <string name="keyboard.watcher.title">KeyboardWatcher</string>
-
-    <!-- ArchitectureExampleActivity -->
-    <string name="architecture.example">ArchitectureExample</string>
-
-    <!-- ArchitectureComponentActivity-->
-    <string name="architecture.component">ArchitectureComponent</string>
-
-    <!-- CurvedBottomBar -->
     <string name="curved.bottom.bar">Curved BottomBar</string>
-
-    <!-- Architecture Types -->
-    <string name="mvc">MVC</string>
-    <string name="mvp">MVP</string>
-    <string name="mvvm">MVVM</string>
-
-    <string name="send">Send</string>
-    <string name="share">Share</string>
-    <string name="communicate">Communicate</string>
-    <string name="tools">Tools</string>
-    <string name="camera">Camera</string>
-    <string name="slideshow">Slideshow</string>
-    <string name="gallery">Gallery</string>
-    <string name="reject">Reject</string>
-
-    <string name="next">Next</string>
-    <string name="loading">Loading…</string>
 </resources>
