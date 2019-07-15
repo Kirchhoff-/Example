@@ -15,13 +15,9 @@ android {
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
 
-    dataBinding {
-        enabled = true
-    }
-
     buildTypes {
         debug {
-            testCoverageEnabled true
+            minifyEnabled false
         }
         release {
             minifyEnabled false
@@ -32,21 +28,7 @@ android {
 
 dependencies {
     implementation libraries.supportAppCompat
-    implementation libraries.supportDesign
-    implementation libraries.supportRecyclerView
-    implementation libraries.supportCardView
-    implementation libraries.constraintLayout
-
-    implementation libraries.archComponent
-
     implementation libraries.kotlin
-
-    implementation libraries.rxAndroid
-    implementation libraries.rxJava
-
-    implementation libraries.gson
-    implementation libraries.glide
-    kapt libraries.glideCompiler
 
     implementation project(path: ':curvedbottombar')
     implementation project(path: ':viewpagerwithoutfragment')
