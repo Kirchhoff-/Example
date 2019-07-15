@@ -48,51 +48,51 @@
             android:text="@string/time_diff_utils_example" />
 
         <Button
+            android:id="@+id/likeButtonClick"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="onLikeButtonClick"
             android:text="@string/like_button_title" />
 
         <Button
+            android:id="@+id/countDownLabel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="onCountDownLabel"
             android:text="@string/countdown.label.title" />
 
         <Button
+            android:id="@+id/simpleTransition"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="simpleTransition"
             android:text="@string/simple.transition.title" />
 
         <Button
+            android:id="@+id/customCoordinateLayoutBehavior"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="customCoordinateLayoutBehavior"
             android:text="@string/coordinator.layout.behavior.title" />
 
         <Button
+            android:id="@+id/mvpRecycler"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="mvpRecycler"
             android:text="@string/mvp.recycler.view.title" />
 
         <Button
+            android:id="@+id/thingDiffUtils"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="diffUtilExample2"
             android:text="@string/diff.util.example.2" />
 
         <Button
+            android:id="@+id/fastRecyclerViewExample"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="fastRecyclerViewExample"
             android:text="@string/fast.recycler.view" />
 
         <Button
+            android:id="@+id/curvedBottomBarExample"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="curvedBottomBarExample"
             android:text="@string/curved.bottom.bar" />
 
     </LinearLayout>
