@@ -95,6 +95,12 @@
             android:layout_height="wrap_content"
             android:text="@string/curved.bottom.bar" />
 
+        <Button
+            android:id="@+id/circularRevealFragmentAnimationExample"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/circular_reveal_fragment_animation_example" />
+
     </LinearLayout>
 
 </ScrollView>

@@ -9,6 +9,7 @@ import com.example.likebutton.LikeButtonActivity
 import com.example.recyclercollapsing.RecyclerCollapsingToolbarActivity
 import com.example.recyclerswipe.RecyclerCustomSwipeActivity
 import com.example.timediffutils.TimeDiffUtilActivity
+import com.kirchhoff.circularrevealfragment.CircularFragmentAnimationActivity
 import com.kirchhoff.coordinatebehavior.CoordinatorBehaviorActivity
 import com.kirchhoff.countdownlabel.CountdownLabelActivity
 import com.kirchhoff.curvedbottombar.CurvedBottomBarActivity
@@ -40,6 +41,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         findViewById<View>(R.id.thingDiffUtils).setOnClickListener(this)
         findViewById<View>(R.id.fastRecyclerViewExample).setOnClickListener(this)
         findViewById<View>(R.id.curvedBottomBarExample).setOnClickListener(this)
+        findViewById<View>(R.id.circularRevealFragmentAnimationExample).setOnClickListener(this)
     }
 
     override fun onClick(view: View) {
@@ -58,6 +60,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             view.id == R.id.thingDiffUtils -> ThingDiffUtilActivity::class.java
             view.id == R.id.fastRecyclerViewExample -> FastRecyclerViewActivity::class.java
             view.id == R.id.curvedBottomBarExample -> CurvedBottomBarActivity::class.java
+            view.id == R.id.circularRevealFragmentAnimationExample -> CircularFragmentAnimationActivity::class.java
             else -> MainActivity::class.java
         }
 
