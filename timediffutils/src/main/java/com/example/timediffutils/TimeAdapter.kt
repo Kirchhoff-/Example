@@ -8,10 +8,9 @@ import io.reactivex.android.schedulers.AndroidSchedulers
 
 class TimeAdapter : BaseAdapter<Time, TimeViewHolder>() {
 
-
     override fun getItemViewId() = R.layout.r_time_diff
 
-    override fun instantiateViewHolder(view: android.view.View?) = TimeViewHolder(view)
+    override fun instantiateViewHolder(view: android.view.View) = TimeViewHolder(view)
 
     fun setDataSource(flowable: io.reactivex.Flowable<List<Time>>): io.reactivex.disposables.Disposable {
         var newList: List<Time> = emptyList()
@@ -24,24 +23,24 @@ class TimeAdapter : BaseAdapter<Time, TimeViewHolder>() {
     }
 
     @Suppress("UNCHECKED_CAST")
-    override fun onBindViewHolder(holder: TimeViewHolder?, position: Int, payloads: MutableList<Any>?) {
-        if (payloads?.isEmpty() ?: true) {
+    override fun onBindViewHolder(holder: TimeViewHolder, position: Int, payloads: MutableList<Any>) {
+        if (payloads.isEmpty() ?: true) {
             super.onBindViewHolder(holder, position, payloads)
         } else {
-            val set = payloads?.firstOrNull() as Set<String>?
+            val set = payloads.firstOrNull() as Set<String>?
             set?.forEach {
                 when (it) {
                     TimeDiffCallback.Companion.ID -> {
-                        holder?.tvId?.text = getItem(position).id
+                        holder.tvId?.text = getItem(position).id
                     }
                     TimeDiffCallback.Companion.HOURS -> {
-                        holder?.tvHours?.setFormatDigit(getItem(position).hours)
+                        holder.tvHours?.setFormatDigit(getItem(position).hours)
                     }
                     TimeDiffCallback.Companion.MINUTES -> {
-                        holder?.tvMinutes?.setFormatDigit(getItem(position).minute)
+                        holder.tvMinutes?.setFormatDigit(getItem(position).minute)
                     }
                     TimeDiffCallback.Companion.SECONDS -> {
-                        holder?.tvSeconds?.setFormatDigit(getItem(position).seconds)
+                        holder.tvSeconds?.setFormatDigit(getItem(position).seconds)
                     }
                     else -> super.onBindViewHolder(holder, position, payloads)
                 }

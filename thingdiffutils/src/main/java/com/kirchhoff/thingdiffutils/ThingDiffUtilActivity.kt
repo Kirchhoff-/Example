@@ -37,7 +37,7 @@ class ThingDiffUtilActivity : AppCompatActivity() {
         disposable = ThingRepository
                 .simulateThings(2, TimeUnit.SECONDS)
                 .scan<Pair<List<Thing>, DiffUtil.DiffResult>>(initialPair) { pair, next ->
-                    val callback = DiffUtilCallback(pair.first, next)
+                    val callback = DiffUtilCallback(pair.first!!, next)
                     val result = DiffUtil.calculateDiff(callback)
                     Pair.create(next, result)
                 }
@@ -45,8 +45,8 @@ class ThingDiffUtilActivity : AppCompatActivity() {
                 .subscribeOn(computation())
                 .observeOn(mainThread())
                 .subscribe { listDiffResultPair ->
-                    adapter.setThings(listDiffResultPair.first)
-                    listDiffResultPair.second.dispatchUpdatesTo(adapter)
+                    adapter.setThings(listDiffResultPair.first!!)
+                    listDiffResultPair.second?.dispatchUpdatesTo(adapter)
                 }
     }
 

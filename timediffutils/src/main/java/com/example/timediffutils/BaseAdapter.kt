@@ -1,6 +1,7 @@
 package com.example.timediffutils
 
 import android.support.v7.widget.RecyclerView
+import android.view.ViewGroup
 
 
 abstract class BaseAdapter<D, VH : BaseViewHolder<D>> : RecyclerView.Adapter<VH>() {
@@ -9,15 +10,15 @@ abstract class BaseAdapter<D, VH : BaseViewHolder<D>> : RecyclerView.Adapter<VH>
 
     override fun getItemCount(): Int = listSource.size
 
-    override fun onCreateViewHolder(parent: android.view.ViewGroup?, viewType: Int): VH {
-        val inflater = android.view.LayoutInflater.from(parent?.context)
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): VH {
+        val inflater = android.view.LayoutInflater.from(parent.context)
         val view = inflater.inflate(getItemViewId(), parent, false)
         return instantiateViewHolder(view)
     }
 
     abstract fun getItemViewId(): Int
 
-    abstract fun instantiateViewHolder(view: android.view.View?): VH
+    abstract fun instantiateViewHolder(view: android.view.View): VH
 
     override fun onBindViewHolder(holder: VH, position: Int) {
         holder.onBind(getItem(position))

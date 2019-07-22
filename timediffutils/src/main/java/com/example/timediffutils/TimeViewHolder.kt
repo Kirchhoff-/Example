@@ -6,7 +6,7 @@ import com.example.timediffutils.extensions.setFormatDigit
 import com.kirchhoff.timediffutils.R
 
 
-class TimeViewHolder(itemView: android.view.View?) : BaseViewHolder<Time>(itemView) {
+class TimeViewHolder(itemView: android.view.View) : BaseViewHolder<Time>(itemView) {
 
     companion object {
         @JvmStatic
@@ -18,12 +18,12 @@ class TimeViewHolder(itemView: android.view.View?) : BaseViewHolder<Time>(itemVi
         }
     }
 
-    val vFirstDivider by lazy { itemView?.findViewById<TextView>(R.id.vFirstDivider) }
-    val vSecondDivider by lazy { itemView?.findViewById<TextView>(R.id.vSecondDivider) }
-    val tvId by lazy { itemView?.findViewById<TextView>(R.id.tvId) }
-    val tvHours by lazy { itemView?.findViewById<TextView>(R.id.tvHours) }
-    val tvMinutes by lazy { itemView?.findViewById<TextView>(R.id.tvMinutes) }
-    val tvSeconds by lazy { itemView?.findViewById<TextView>(R.id.tvSeconds) }
+    val vFirstDivider by lazy { itemView.findViewById<TextView>(R.id.vFirstDivider) }
+    val vSecondDivider by lazy { itemView.findViewById<TextView>(R.id.vSecondDivider) }
+    val tvId by lazy { itemView.findViewById<TextView>(R.id.tvId) }
+    val tvHours by lazy { itemView.findViewById<TextView>(R.id.tvHours) }
+    val tvMinutes by lazy { itemView.findViewById<TextView>(R.id.tvMinutes) }
+    val tvSeconds by lazy { itemView.findViewById<TextView>(R.id.tvSeconds) }
 
     init {
         TimeViewHolder.Companion.valueAnimator.addUpdateListener {
