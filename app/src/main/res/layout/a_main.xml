@@ -101,6 +101,12 @@
             android:layout_height="wrap_content"
             android:text="@string/circular_reveal_fragment_animation_example" />
 
+	    <Button
+		    android:id="@+id/bFragmentCommunication"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:text="@string/fragment_communication_example" />
+
     </LinearLayout>
 
 </ScrollView>
