@@ -26,22 +26,12 @@ class DashboardFragment : Fragment() {
 
         view.findViewById<FloatingActionButton>(R.id.fab1).setOnClickListener {
             val positions = it.findLocationOfCenterOnTheScreen()
-            fragmentManager?.let {
-                fragmentManager.beginTransaction()
-                        .add(R.id.container, OneFragment.newInstance(positions))
-                        .addToBackStack(null)
-                        .commit()
-            }
+            fragmentManager?.beginTransaction()?.add(R.id.container, OneFragment.newInstance(positions))?.addToBackStack(null)?.commit()
         }
 
         view.findViewById<FloatingActionButton>(R.id.fab2).setOnClickListener {
             val positions = it.findLocationOfCenterOnTheScreen()
-            fragmentManager?.let {
-                fragmentManager.beginTransaction()
-                        .add(R.id.container, TwoFragment.newInstance(positions))
-                        .addToBackStack(null)
-                        .commit()
-            }
+            fragmentManager?.beginTransaction()?.add(R.id.container, TwoFragment.newInstance(positions))?.addToBackStack(null)?.commit()
         }
     }
 }
