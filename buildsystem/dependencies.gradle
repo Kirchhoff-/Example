@@ -11,6 +11,8 @@ ext.versions = [
         supportLibs        : '26.1.0',
         constraintLayout   : '1.1.3',
 
+		archComponent      : '1.1.1',
+
         kotlin             : '1.3.10',
 
         rxJava             : '2.1.0',
@@ -28,6 +30,8 @@ ext.libraries = [
         supportDesign           : "com.android.support:design:$versions.supportLibs",
         supportCardView         : "com.android.support:cardview-v7:$versions.supportLibs",
         constraintLayout        : "com.android.support.constraint:constraint-layout:$versions.constraintLayout",
+
+		archComponent           : "android.arch.lifecycle:extensions:$versions.archComponent",
 
         rxAndroid               : "io.reactivex.rxjava2:rxandroid:$versions.rxAndroid",
         rxJava                  : "io.reactivex.rxjava2:rxjava:$versions.rxJava",

@@ -1,0 +1,16 @@
+<manifest package="com.kirchhoff.fragmentcommunication"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<application>
+		<activity
+			android:name="com.kirchhoff.fragmentcommunication.FragmentCommunicationActivity"
+			android:label="@string/fragment_communication_title" />
+		<activity
+			android:name="com.kirchhoff.fragmentcommunication.contract.FragmentCommunicationInterfaceActivity"
+			android:label="@string/fragment_communication_interface" />
+		<activity
+			android:name="com.kirchhoff.fragmentcommunication.viewmodel.FragmentCommunicationViewModelActivity"
+			android:label="@string/fragment_communication_view_model" />
+	</application>
+
+</manifest>
