@@ -5,12 +5,11 @@ import android.graphics.*
 import android.support.design.widget.BottomNavigationView
 import android.util.AttributeSet
 
-@Suppress("JoinDeclarationAndAssignment")
 class CurvedBottomNavigationView @JvmOverloads constructor(context: Context, attrs: AttributeSet? = null,
                                                            defStyleAttr: Int = 0) : BottomNavigationView(context, attrs, defStyleAttr) {
 
-    private val path: Path
-    private val paint: Paint
+    private val path: Path = Path()
+    private val paint: Paint = Paint()
 
     private val radius: Int
     private val firstCurveStartPoint: Point
@@ -24,8 +23,6 @@ class CurvedBottomNavigationView @JvmOverloads constructor(context: Context, att
     private val secondCurveControlPoint2: Point
 
     init {
-        path = Path()
-        paint = Paint()
         with(paint) {
             style = Paint.Style.FILL_AND_STROKE
             color = Color.WHITE
