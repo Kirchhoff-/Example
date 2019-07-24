@@ -5,8 +5,8 @@ import android.view.View
 import android.widget.TextView
 
 class StateViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-    var name: TextView = itemView.findViewById(R.id.name)
-    var location: TextView = itemView.findViewById(R.id.location)
+    private val name: TextView = itemView.findViewById(R.id.name)
+    private val location: TextView = itemView.findViewById(R.id.location)
 
     fun bind(state: State) {
         name.text = state.name

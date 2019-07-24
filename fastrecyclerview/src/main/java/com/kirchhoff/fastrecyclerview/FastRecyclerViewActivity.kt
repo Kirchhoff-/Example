@@ -4,7 +4,6 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
-import java.util.*
 
 class FastRecyclerViewActivity : AppCompatActivity() {
 
@@ -18,151 +17,148 @@ class FastRecyclerViewActivity : AppCompatActivity() {
     }
 
     private fun mockData(): List<State> {
-        val stateList = ArrayList<State>()
-        stateList.add(State("Alabama", "AL"))
-        stateList.add(State("Alaska", "AK"))
-        stateList.add(State("Alberta", "AB"))
-        stateList.add(State("American Samoa", "AS"))
-        stateList.add(State("Arizona", "AZ"))
-        stateList.add(State("Arkansas", "AR"))
-        stateList.add(State("Armed Forces (AE)", "AE"))
-        stateList.add(State("Armed Forces Americas", "AA"))
-        stateList.add(State("Armed Forces Pacific", "AP"))
-        stateList.add(State("British Columbia", "BC"))
-        stateList.add(State("California", "CA"))
-        stateList.add(State("Colorado", "CO"))
-        stateList.add(State("Connecticut", "CT"))
-        stateList.add(State("Delaware", "DE"))
-        stateList.add(State("District Of Columbia", "DC"))
-        stateList.add(State("Florida", "FL"))
-        stateList.add(State("Georgia", "GA"))
-        stateList.add(State("Guam", "GU"))
-        stateList.add(State("Hawaii", "HI"))
-        stateList.add(State("Idaho", "ID"))
-        stateList.add(State("Illinois", "IL"))
-        stateList.add(State("Indiana", "IN"))
-        stateList.add(State("Iowa", "IA"))
-        stateList.add(State("Kansas", "KS"))
-        stateList.add(State("Kentucky", "KY"))
-        stateList.add(State("Louisiana", "LA"))
-        stateList.add(State("Maine", "ME"))
-        stateList.add(State("Manitoba", "MB"))
-        stateList.add(State("Maryland", "MD"))
-        stateList.add(State("Massachusetts", "MA"))
-        stateList.add(State("Michigan", "MI"))
-        stateList.add(State("Minnesota", "MN"))
-        stateList.add(State("Mississippi", "MS"))
-        stateList.add(State("Missouri", "MO"))
-        stateList.add(State("Montana", "MT"))
-        stateList.add(State("Nebraska", "NE"))
-        stateList.add(State("Nevada", "NV"))
-        stateList.add(State("New Brunswick", "NB"))
-        stateList.add(State("New Hampshire", "NH"))
-        stateList.add(State("New Jersey", "NJ"))
-        stateList.add(State("New Mexico", "NM"))
-        stateList.add(State("New York", "NY"))
-        stateList.add(State("Newfoundland", "NF"))
-        stateList.add(State("North Carolina", "NC"))
-        stateList.add(State("North Dakota", "ND"))
-        stateList.add(State("Northwest Territories", "NT"))
-        stateList.add(State("Nova Scotia", "NS"))
-        stateList.add(State("Nunavut", "NU"))
-        stateList.add(State("Ohio", "OH"))
-        stateList.add(State("Oklahoma", "OK"))
-        stateList.add(State("Ontario", "ON"))
-        stateList.add(State("Oregon", "OR"))
-        stateList.add(State("Pennsylvania", "PA"))
-        stateList.add(State("Prince Edward Island", "PE"))
-        stateList.add(State("Puerto Rico", "PR"))
-        stateList.add(State("Quebec", "PQ"))
-        stateList.add(State("Rhode Island", "RI"))
-        stateList.add(State("Saskatchewan", "SK"))
-        stateList.add(State("South Carolina", "SC"))
-        stateList.add(State("South Dakota", "SD"))
-        stateList.add(State("Tennessee", "TN"))
-        stateList.add(State("Texas", "TX"))
-        stateList.add(State("Utah", "UT"))
-        stateList.add(State("Vermont", "VT"))
-        stateList.add(State("Virgin Islands", "VI"))
-        stateList.add(State("Virginia", "VA"))
-        stateList.add(State("Washington", "WA"))
-        stateList.add(State("West Virginia", "WV"))
-        stateList.add(State("Wisconsin", "WI"))
-        stateList.add(State("Wyoming", "WY"))
-        stateList.add(State("Yukon Territory", "YT"))
-
-        stateList.add(State("Alabama", "AL"))
-        stateList.add(State("Alaska", "AK"))
-        stateList.add(State("Alberta", "AB"))
-        stateList.add(State("American Samoa", "AS"))
-        stateList.add(State("Arizona", "AZ"))
-        stateList.add(State("Arkansas", "AR"))
-        stateList.add(State("Armed Forces (AE)", "AE"))
-        stateList.add(State("Armed Forces Americas", "AA"))
-        stateList.add(State("Armed Forces Pacific", "AP"))
-        stateList.add(State("British Columbia", "BC"))
-        stateList.add(State("California", "CA"))
-        stateList.add(State("Colorado", "CO"))
-        stateList.add(State("Connecticut", "CT"))
-        stateList.add(State("Delaware", "DE"))
-        stateList.add(State("District Of Columbia", "DC"))
-        stateList.add(State("Florida", "FL"))
-        stateList.add(State("Georgia", "GA"))
-        stateList.add(State("Guam", "GU"))
-        stateList.add(State("Hawaii", "HI"))
-        stateList.add(State("Idaho", "ID"))
-        stateList.add(State("Illinois", "IL"))
-        stateList.add(State("Indiana", "IN"))
-        stateList.add(State("Iowa", "IA"))
-        stateList.add(State("Kansas", "KS"))
-        stateList.add(State("Kentucky", "KY"))
-        stateList.add(State("Louisiana", "LA"))
-        stateList.add(State("Maine", "ME"))
-        stateList.add(State("Manitoba", "MB"))
-        stateList.add(State("Maryland", "MD"))
-        stateList.add(State("Massachusetts", "MA"))
-        stateList.add(State("Michigan", "MI"))
-        stateList.add(State("Minnesota", "MN"))
-        stateList.add(State("Mississippi", "MS"))
-        stateList.add(State("Missouri", "MO"))
-        stateList.add(State("Montana", "MT"))
-        stateList.add(State("Nebraska", "NE"))
-        stateList.add(State("Nevada", "NV"))
-        stateList.add(State("New Brunswick", "NB"))
-        stateList.add(State("New Hampshire", "NH"))
-        stateList.add(State("New Jersey", "NJ"))
-        stateList.add(State("New Mexico", "NM"))
-        stateList.add(State("New York", "NY"))
-        stateList.add(State("Newfoundland", "NF"))
-        stateList.add(State("North Carolina", "NC"))
-        stateList.add(State("North Dakota", "ND"))
-        stateList.add(State("Northwest Territories", "NT"))
-        stateList.add(State("Nova Scotia", "NS"))
-        stateList.add(State("Nunavut", "NU"))
-        stateList.add(State("Ohio", "OH"))
-        stateList.add(State("Oklahoma", "OK"))
-        stateList.add(State("Ontario", "ON"))
-        stateList.add(State("Oregon", "OR"))
-        stateList.add(State("Pennsylvania", "PA"))
-        stateList.add(State("Prince Edward Island", "PE"))
-        stateList.add(State("Puerto Rico", "PR"))
-        stateList.add(State("Quebec", "PQ"))
-        stateList.add(State("Rhode Island", "RI"))
-        stateList.add(State("Saskatchewan", "SK"))
-        stateList.add(State("South Carolina", "SC"))
-        stateList.add(State("South Dakota", "SD"))
-        stateList.add(State("Tennessee", "TN"))
-        stateList.add(State("Texas", "TX"))
-        stateList.add(State("Utah", "UT"))
-        stateList.add(State("Vermont", "VT"))
-        stateList.add(State("Virgin Islands", "VI"))
-        stateList.add(State("Virginia", "VA"))
-        stateList.add(State("Washington", "WA"))
-        stateList.add(State("West Virginia", "WV"))
-        stateList.add(State("Wisconsin", "WI"))
-        stateList.add(State("Wyoming", "WY"))
-        stateList.add(State("Yukon Territory", "YT"))
-
-        return stateList
+        return listOf(
+                State("Alabama", "AL"),
+                State("Alaska", "AK"),
+                State("Alberta", "AB"),
+                State("American Samoa", "AS"),
+                State("Arizona", "AZ"),
+                State("Arkansas", "AR"),
+                State("Armed Forces (AE)", "AE"),
+                State("Armed Forces Americas", "AA"),
+                State("Armed Forces Pacific", "AP"),
+                State("British Columbia", "BC"),
+                State("California", "CA"),
+                State("Colorado", "CO"),
+                State("Connecticut", "CT"),
+                State("Delaware", "DE"),
+                State("District Of Columbia", "DC"),
+                State("Florida", "FL"),
+                State("Georgia", "GA"),
+                State("Guam", "GU"),
+                State("Hawaii", "HI"),
+                State("Idaho", "ID"),
+                State("Illinois", "IL"),
+                State("Indiana", "IN"),
+                State("Iowa", "IA"),
+                State("Kansas", "KS"),
+                State("Kentucky", "KY"),
+                State("Louisiana", "LA"),
+                State("Maine", "ME"),
+                State("Manitoba", "MB"),
+                State("Maryland", "MD"),
+                State("Massachusetts", "MA"),
+                State("Michigan", "MI"),
+                State("Minnesota", "MN"),
+                State("Mississippi", "MS"),
+                State("Missouri", "MO"),
+                State("Montana", "MT"),
+                State("Nebraska", "NE"),
+                State("Nevada", "NV"),
+                State("New Brunswick", "NB"),
+                State("New Hampshire", "NH"),
+                State("New Jersey", "NJ"),
+                State("New Mexico", "NM"),
+                State("New York", "NY"),
+                State("Newfoundland", "NF"),
+                State("North Carolina", "NC"),
+                State("North Dakota", "ND"),
+                State("Northwest Territories", "NT"),
+                State("Nova Scotia", "NS"),
+                State("Nunavut", "NU"),
+                State("Ohio", "OH"),
+                State("Oklahoma", "OK"),
+                State("Ontario", "ON"),
+                State("Oregon", "OR"),
+                State("Pennsylvania", "PA"),
+                State("Prince Edward Island", "PE"),
+                State("Puerto Rico", "PR"),
+                State("Quebec", "PQ"),
+                State("Rhode Island", "RI"),
+                State("Saskatchewan", "SK"),
+                State("South Carolina", "SC"),
+                State("South Dakota", "SD"),
+                State("Tennessee", "TN"),
+                State("Texas", "TX"),
+                State("Utah", "UT"),
+                State("Vermont", "VT"),
+                State("Virgin Islands", "VI"),
+                State("Virginia", "VA"),
+                State("Washington", "WA"),
+                State("West Virginia", "WV"),
+                State("Wisconsin", "WI"),
+                State("Wyoming", "WY"),
+                State("Yukon Territory", "YT"),
+                State("Alabama", "AL"),
+                State("Alaska", "AK"),
+                State("Alberta", "AB"),
+                State("American Samoa", "AS"),
+                State("Arizona", "AZ"),
+                State("Arkansas", "AR"),
+                State("Armed Forces (AE)", "AE"),
+                State("Armed Forces Americas", "AA"),
+                State("Armed Forces Pacific", "AP"),
+                State("British Columbia", "BC"),
+                State("California", "CA"),
+                State("Colorado", "CO"),
+                State("Connecticut", "CT"),
+                State("Delaware", "DE"),
+                State("District Of Columbia", "DC"),
+                State("Florida", "FL"),
+                State("Georgia", "GA"),
+                State("Guam", "GU"),
+                State("Hawaii", "HI"),
+                State("Idaho", "ID"),
+                State("Illinois", "IL"),
+                State("Indiana", "IN"),
+                State("Iowa", "IA"),
+                State("Kansas", "KS"),
+                State("Kentucky", "KY"),
+                State("Louisiana", "LA"),
+                State("Maine", "ME"),
+                State("Manitoba", "MB"),
+                State("Maryland", "MD"),
+                State("Massachusetts", "MA"),
+                State("Michigan", "MI"),
+                State("Minnesota", "MN"),
+                State("Mississippi", "MS"),
+                State("Missouri", "MO"),
+                State("Montana", "MT"),
+                State("Nebraska", "NE"),
+                State("Nevada", "NV"),
+                State("New Brunswick", "NB"),
+                State("New Hampshire", "NH"),
+                State("New Jersey", "NJ"),
+                State("New Mexico", "NM"),
+                State("New York", "NY"),
+                State("Newfoundland", "NF"),
+                State("North Carolina", "NC"),
+                State("North Dakota", "ND"),
+                State("Northwest Territories", "NT"),
+                State("Nova Scotia", "NS"),
+                State("Nunavut", "NU"),
+                State("Ohio", "OH"),
+                State("Oklahoma", "OK"),
+                State("Ontario", "ON"),
+                State("Oregon", "OR"),
+                State("Pennsylvania", "PA"),
+                State("Prince Edward Island", "PE"),
+                State("Puerto Rico", "PR"),
+                State("Quebec", "PQ"),
+                State("Rhode Island", "RI"),
+                State("Saskatchewan", "SK"),
+                State("South Carolina", "SC"),
+                State("South Dakota", "SD"),
+                State("Tennessee", "TN"),
+                State("Texas", "TX"),
+                State("Utah", "UT"),
+                State("Vermont", "VT"),
+                State("Virgin Islands", "VI"),
+                State("Virginia", "VA"),
+                State("Washington", "WA"),
+                State("West Virginia", "WV"),
+                State("Wisconsin", "WI"),
+                State("Wyoming", "WY"),
+                State("Yukon Territory", "YT"))
     }
 }

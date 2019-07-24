@@ -8,8 +8,7 @@ import android.view.ViewGroup
 class FastRecyclerViewAdapter internal constructor(private val data: List<State>) : RecyclerView.Adapter<StateViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): StateViewHolder {
-        val inflater = LayoutInflater.from(parent.context)
-        val personCell = inflater.inflate(R.layout.r_fast_recycler, parent, false)
+        val personCell = LayoutInflater.from(parent.context).inflate(R.layout.r_fast_recycler, parent, false)
         return StateViewHolder(personCell)
     }
 
@@ -17,7 +16,5 @@ class FastRecyclerViewAdapter internal constructor(private val data: List<State>
         holder.bind(data[position])
     }
 
-    override fun getItemCount(): Int {
-        return data.size
-    }
+    override fun getItemCount() = data.size
 }
