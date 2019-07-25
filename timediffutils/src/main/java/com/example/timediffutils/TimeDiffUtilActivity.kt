@@ -3,6 +3,8 @@ package com.example.timediffutils
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.RecyclerView
+import com.example.timediffutils.adapter.TimeAdapter
+import com.example.timediffutils.data.Time
 import com.kirchhoff.timediffutils.R
 import io.reactivex.Flowable
 import io.reactivex.disposables.Disposable
@@ -17,7 +19,7 @@ class TimeDiffUtilActivity : AppCompatActivity() {
 
     private val adapter = TimeAdapter()
 
-    var disposable: Disposable? = null
+    private var disposable: Disposable? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -39,7 +41,7 @@ class TimeDiffUtilActivity : AppCompatActivity() {
     }
 
     override fun onDestroy() {
-        if (disposable?.isDisposed ?: false)
+        if (disposable?.isDisposed == true)
             disposable?.dispose()
 
         super.onDestroy()

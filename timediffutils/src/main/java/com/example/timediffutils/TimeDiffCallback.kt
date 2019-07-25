@@ -1,11 +1,9 @@
 package com.example.timediffutils
 
 import android.support.v7.util.DiffUtil
+import com.example.timediffutils.data.Time
 
-/**
- * @author Kirchhoff-
- */
-class TimeDiffCallback(val oldList: List<Time>, val newList: List<Time>) : DiffUtil.Callback() {
+class TimeDiffCallback(private val oldList: List<Time>, private val newList: List<Time>) : DiffUtil.Callback() {
 
     companion object {
         const val ID = "ID"
@@ -24,36 +22,36 @@ class TimeDiffCallback(val oldList: List<Time>, val newList: List<Time>) : DiffU
     override fun areContentsTheSame(oldItemPosition: Int, newItemPosition: Int): Boolean {
         val new = newList[newItemPosition]
         val old = oldList[oldItemPosition]
-        val isIdEquels = new.id == old.id
-        val isHoursEquels = new.hours == old.hours
-        val isMinuteEquels = new.minute == old.minute
-        val isSecondsEquels = new.seconds == old.seconds
-        return isIdEquels && isHoursEquels && isMinuteEquels && isSecondsEquels
+        val isIdEquals = new.id == old.id
+        val isHoursEquals = new.hours == old.hours
+        val isMinuteEquals = new.minute == old.minute
+        val isSecondsEquals = new.seconds == old.seconds
+        return isIdEquals && isHoursEquals && isMinuteEquals && isSecondsEquals
     }
 
     override fun getChangePayload(oldItemPosition: Int, newItemPosition: Int): Any? {
         val new = newList[newItemPosition]
         val old = oldList[oldItemPosition]
-        val isIdEquels = new.id == old.id
-        val isHoursEquels = new.hours == old.hours
-        val isMinuteEquels = new.minute == old.minute
-        val isSecondsEquels = new.seconds == old.seconds
+        val isIdEquals = new.id == old.id
+        val isHoursEquals = new.hours == old.hours
+        val isMinuteEquals = new.minute == old.minute
+        val isSecondsEquals = new.seconds == old.seconds
         val set = mutableSetOf<String>()
 
-        if (isIdEquels.not()) {
-            set.add(TimeDiffCallback.Companion.ID)
+        if (isIdEquals.not()) {
+            set.add(ID)
         }
 
-        if (isHoursEquels.not()) {
-            set.add(TimeDiffCallback.Companion.HOURS)
+        if (isHoursEquals.not()) {
+            set.add(HOURS)
         }
 
-        if (isMinuteEquels.not()) {
-            set.add(TimeDiffCallback.Companion.MINUTES)
+        if (isMinuteEquals.not()) {
+            set.add(MINUTES)
         }
 
-        if (isSecondsEquels.not()) {
-            set.add(TimeDiffCallback.Companion.SECONDS)
+        if (isSecondsEquals.not()) {
+            set.add(SECONDS)
         }
 
         return set

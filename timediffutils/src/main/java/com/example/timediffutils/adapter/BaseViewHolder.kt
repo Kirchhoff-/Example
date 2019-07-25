@@ -1,4 +1,4 @@
-package com.example.timediffutils
+package com.example.timediffutils.adapter
 
 import android.support.v7.widget.RecyclerView
 
