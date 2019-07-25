@@ -1,6 +1,8 @@
-package com.example.timediffutils
+package com.example.timediffutils.adapter
 
 import android.support.v7.util.DiffUtil.calculateDiff
+import com.example.timediffutils.TimeDiffCallback
+import com.example.timediffutils.data.Time
 import com.example.timediffutils.extensions.setFormatDigit
 import com.kirchhoff.timediffutils.R
 import io.reactivex.android.schedulers.AndroidSchedulers
@@ -24,23 +26,23 @@ class TimeAdapter : BaseAdapter<Time, TimeViewHolder>() {
 
     @Suppress("UNCHECKED_CAST")
     override fun onBindViewHolder(holder: TimeViewHolder, position: Int, payloads: MutableList<Any>) {
-        if (payloads.isEmpty() ?: true) {
+        if (payloads.isEmpty()) {
             super.onBindViewHolder(holder, position, payloads)
         } else {
             val set = payloads.firstOrNull() as Set<String>?
             set?.forEach {
                 when (it) {
-                    TimeDiffCallback.Companion.ID -> {
-                        holder.tvId?.text = getItem(position).id
+                    TimeDiffCallback.ID -> {
+                        holder.tvId.text = getItem(position).id
                     }
-                    TimeDiffCallback.Companion.HOURS -> {
-                        holder.tvHours?.setFormatDigit(getItem(position).hours)
+                    TimeDiffCallback.HOURS -> {
+                        holder.tvHours.setFormatDigit(getItem(position).hours)
                     }
-                    TimeDiffCallback.Companion.MINUTES -> {
-                        holder.tvMinutes?.setFormatDigit(getItem(position).minute)
+                    TimeDiffCallback.MINUTES -> {
+                        holder.tvMinutes.setFormatDigit(getItem(position).minute)
                     }
-                    TimeDiffCallback.Companion.SECONDS -> {
-                        holder.tvSeconds?.setFormatDigit(getItem(position).seconds)
+                    TimeDiffCallback.SECONDS -> {
+                        holder.tvSeconds.setFormatDigit(getItem(position).seconds)
                     }
                     else -> super.onBindViewHolder(holder, position, payloads)
                 }
