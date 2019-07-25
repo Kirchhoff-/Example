@@ -1,3 +1,4 @@
 <resources>
-	<string name="mvp.recycler.view.title">Mvp RecyclerView</string>
+    <string name="mvp_recyclerview_title">Mvp RecyclerView</string>
+    <string name="mvp_recyclerview_example">Mvp RecyclerView example</string>
 </resources>

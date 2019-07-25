@@ -2,7 +2,9 @@
 	xmlns:android="http://schemas.android.com/apk/res/android">
 
 	<application>
-		<activity android:name=".VPWithoutFragmentActivity" />
+        <activity
+            android:name=".VPWithoutFragmentActivity"
+            android:label="@string/vp_without_fragment_title" />
 	</application>
 
 </manifest>

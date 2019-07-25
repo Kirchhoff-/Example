@@ -3,7 +3,9 @@
     package="com.kirchhoff.curvedbottombar">
 
     <application>
-        <activity android:name=".CurvedBottomBarActivity" />
+        <activity
+            android:name=".CurvedBottomBarActivity"
+            android:label="@string/curved_bottombar_title" />
     </application>
 
 </manifest>

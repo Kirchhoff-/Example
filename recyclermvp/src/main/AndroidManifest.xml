@@ -4,7 +4,7 @@
 	<application>
 		<activity
 			android:name=".MvpRecyclerViewActivity"
-			android:label="@string/mvp.recycler.view.title" />
+            android:label="@string/mvp_recyclerview_title" />
 	</application>
 
 </manifest>

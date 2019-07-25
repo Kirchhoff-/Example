@@ -2,7 +2,9 @@
 	xmlns:android="http://schemas.android.com/apk/res/android">
 
 	<application>
-		<activity android:name=".CoordinatorBehaviorActivity" />
+        <activity
+            android:name=".CoordinatorBehaviorActivity"
+            android:label="@string/coordinator_layout_behavior_title" />
 	</application>
 
 </manifest>
