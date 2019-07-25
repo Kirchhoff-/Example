@@ -15,7 +15,7 @@
             android:id="@+id/recyclerViewWithSearch"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/recyclerview.with.search" />
+            android:text="@string/recyclerview_with_search_example" />
 
         <Button
             android:id="@+id/fabAnimationExample"
@@ -39,7 +39,7 @@
             android:id="@+id/vpWithoutFragment"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/vp.without.fragment" />
+            android:text="@string/vp_without_fragment_example" />
 
         <Button
             android:id="@+id/timeDiffUtil"
@@ -57,7 +57,7 @@
             android:id="@+id/countDownLabel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/countdown.label.title" />
+            android:text="@string/countdown_example" />
 
         <Button
             android:id="@+id/simpleTransition"
@@ -69,31 +69,31 @@
             android:id="@+id/customCoordinateLayoutBehavior"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/coordinator.layout.behavior.title" />
+            android:text="@string/coordinator_layout_behavior_title" />
 
         <Button
             android:id="@+id/mvpRecycler"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/mvp.recycler.view.title" />
+            android:text="@string/mvp_recyclerview_example" />
 
         <Button
             android:id="@+id/thingDiffUtils"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/diff.util.example.2" />
+            android:text="@string/thing_diffutils_example" />
 
         <Button
             android:id="@+id/fastRecyclerViewExample"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/fast.recycler.view" />
+            android:text="@string/fast_recycler_view" />
 
         <Button
             android:id="@+id/curvedBottomBarExample"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/curved.bottom.bar" />
+            android:text="@string/curved_bottombar_example" />
 
         <Button
             android:id="@+id/circularRevealFragmentAnimationExample"

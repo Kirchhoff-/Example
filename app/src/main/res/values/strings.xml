@@ -1,11 +1,3 @@
 <resources>
     <string name="app_name">Example</string>
-    <string name="recyclerview.with.search">RecyclerView with search</string>
-    <string name="fab_animation_example">Fab animation example</string>
-    <string name="vp.without.fragment">ViewPager without fragment example</string>
-    <string name="diff.util.example.2">DiffUtil Example 2</string>
-    <string name="countdown.label.title">Countdown label</string>
-    <string name="coordinator.layout.behavior.title">Coordinate layout behavior</string>
-    <string name="mvp.recycler.view.title">Mvp RecyclerView</string>
-    <string name="curved.bottom.bar">Curved BottomBar</string>
 </resources>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="thing_diffutils_title">Thing diffUtils</string>
+    <string name="thing_diffutils_example">Thing diffUtils example</string>
+</resources>

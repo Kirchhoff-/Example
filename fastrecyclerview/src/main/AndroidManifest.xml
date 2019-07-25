@@ -4,7 +4,7 @@
 	<application>
 		<activity
 			android:name=".FastRecyclerViewActivity"
-			android:label="@string/fast.recycler.view" />
+            android:label="@string/fast_recycler_view" />
 	</application>
 
 </manifest>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 	<string name="recyclerview_with_search_title">RecyclerView with search</string>
+    <string name="recyclerview_with_search_example">RecyclerView with search example</string>
 	<string name="search">Search</string>
 </resources>
