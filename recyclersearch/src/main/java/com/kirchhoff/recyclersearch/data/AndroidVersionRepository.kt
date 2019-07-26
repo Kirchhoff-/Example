@@ -3,7 +3,7 @@ package com.kirchhoff.recyclersearch.data
 class AndroidVersionRepository {
 
     fun getAndroidVersionsList(): List<AndroidVersion> {
-        val resultList = listOf(
+        return listOf(
                 AndroidVersion("1.5", "Cupcake", "API level 3"),
                 AndroidVersion("1.6", "Donut", "API level 4"),
                 AndroidVersion("2.0-2.1", "Eclair", "API level 5 - 7"),
@@ -16,8 +16,6 @@ class AndroidVersionRepository {
                 AndroidVersion("5.0-5.1", "Lollipop", "API level 21-22"),
                 AndroidVersion("6.0", "Marshmallow", "API level 23"),
                 AndroidVersion("7.0-7.1", "Nougat", "API level 24-25"))
-
-        return resultList
     }
 
 }

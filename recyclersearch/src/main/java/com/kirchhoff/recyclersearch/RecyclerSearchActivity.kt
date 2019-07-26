@@ -1,7 +1,6 @@
 package com.kirchhoff.recyclersearch
 
 import android.os.Bundle
-import android.support.v4.view.MenuItemCompat
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
@@ -33,7 +32,7 @@ class RecyclerSearchActivity : AppCompatActivity() {
         menuInflater.inflate(R.menu.recycler_search, menu)
 
         val search = menu.findItem(R.id.search)
-        val searchView = MenuItemCompat.getActionView(search) as SearchView
+        val searchView = search.actionView as SearchView
         search(searchView)
         return true
     }
