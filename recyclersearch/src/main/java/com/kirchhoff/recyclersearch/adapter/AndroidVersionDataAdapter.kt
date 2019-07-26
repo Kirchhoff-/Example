@@ -29,7 +29,7 @@ class AndroidVersionDataAdapter(initialList: List<AndroidVersion>) : RecyclerVie
     override fun getFilter(): Filter {
 
         return object : Filter() {
-            override fun performFiltering(charSequence: CharSequence): Filter.FilterResults {
+            override fun performFiltering(charSequence: CharSequence): FilterResults {
 
                 val charString = charSequence.toString()
 
@@ -49,12 +49,13 @@ class AndroidVersionDataAdapter(initialList: List<AndroidVersion>) : RecyclerVie
                     filList
                 }
 
-                val filterResults = Filter.FilterResults()
+                val filterResults = FilterResults()
                 filterResults.values = filteredList
                 return filterResults
             }
 
-            override fun publishResults(charSequence: CharSequence, filterResults: Filter.FilterResults) {
+            @Suppress("UNCHECKED_CAST")
+            override fun publishResults(charSequence: CharSequence, filterResults: FilterResults) {
                 filteredList = filterResults.values as ArrayList<AndroidVersion>
                 notifyDataSetChanged()
             }
