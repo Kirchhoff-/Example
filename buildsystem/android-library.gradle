@@ -12,6 +12,10 @@ android {
 		targetSdkVersion versions.targetSdk
 	}
 
+	lintOptions {
+		disable 'Typos', 'ContentDescription'
+	}
+
 }
 
 dependencies {
