@@ -17,6 +17,8 @@ ext.versions = [
 
         rxJava             : '2.1.0',
 		rxAndroid          : '2.0.1',
+
+		glide 			   : '4.9.0'
 ]
 
 ext.gradlePlugins = [
@@ -37,4 +39,7 @@ ext.libraries = [
         rxJava                  : "io.reactivex.rxjava2:rxjava:$versions.rxJava",
 
         kotlin                  : "org.jetbrains.kotlin:kotlin-stdlib:$versions.kotlin",
+
+		glide                   : "com.github.bumptech.glide:glide:$versions.glide",
+		glideCompiler           : "com.github.bumptech.glide:compiler:$versions.glide",
 ]
