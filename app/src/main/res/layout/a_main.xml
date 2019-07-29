@@ -107,6 +107,12 @@
 		    android:layout_height="wrap_content"
 		    android:text="@string/fragment_communication_example" />
 
+	    <Button
+		    android:id="@+id/bGmailSelecting"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:text="@string/gmail_selecting_example" />
+
     </LinearLayout>
 
 </ScrollView>

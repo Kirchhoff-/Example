@@ -15,7 +15,6 @@ android {
 	lintOptions {
 		disable 'Typos', 'ContentDescription'
 	}
-
 }
 
 dependencies {

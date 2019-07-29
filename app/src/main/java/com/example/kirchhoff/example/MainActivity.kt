@@ -16,6 +16,7 @@ import com.kirchhoff.curvedbottombar.CurvedBottomBarActivity
 import com.kirchhoff.fabanimation.FabAnimationActivity
 import com.kirchhoff.fastrecyclerview.FastRecyclerViewActivity
 import com.kirchhoff.fragmentcommunication.FragmentCommunicationActivity
+import com.kirchhoff.gmailselectinganimation.GmailSelectionActivity
 import com.kirchhoff.recyclermvp.MvpRecyclerViewActivity
 import com.kirchhoff.recyclersearch.RecyclerSearchActivity
 import com.kirchhoff.simpletransition.SimpleTransitionActivity
@@ -44,6 +45,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         findViewById<View>(R.id.curvedBottomBarExample).setOnClickListener(this)
         findViewById<View>(R.id.circularRevealFragmentAnimationExample).setOnClickListener(this)
         findViewById<View>(R.id.bFragmentCommunication).setOnClickListener(this)
+        findViewById<View>(R.id.bGmailSelecting).setOnClickListener(this)
     }
 
     override fun onClick(view: View) {
@@ -64,6 +66,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             view.id == R.id.curvedBottomBarExample -> CurvedBottomBarActivity::class.java
             view.id == R.id.circularRevealFragmentAnimationExample -> CircularFragmentAnimationActivity::class.java
             view.id == R.id.bFragmentCommunication -> FragmentCommunicationActivity::class.java
+            view.id == R.id.bGmailSelecting -> GmailSelectionActivity::class.java
             else -> MainActivity::class.java
         }
 

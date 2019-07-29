@@ -1,0 +1,10 @@
+apply from: '../buildsystem/android-library.gradle'
+apply plugin: 'kotlin-android-extensions'
+
+androidExtensions { experimental = true }
+
+dependencies {
+	implementation libraries.supportDesign
+	implementation libraries.glide
+	annotationProcessor libraries.glideCompiler
+}
