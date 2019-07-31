@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity
 import android.view.View
 
 import com.example.likebutton.LikeButtonActivity
+import com.example.raindropview.RainDropActivity
 import com.example.recyclercollapsing.RecyclerCollapsingToolbarActivity
 import com.example.recyclerswipe.RecyclerCustomSwipeActivity
 import com.example.timediffutils.TimeDiffUtilActivity
@@ -46,6 +47,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         findViewById<View>(R.id.circularRevealFragmentAnimationExample).setOnClickListener(this)
         findViewById<View>(R.id.bFragmentCommunication).setOnClickListener(this)
         findViewById<View>(R.id.bGmailSelecting).setOnClickListener(this)
+        findViewById<View>(R.id.bRaindropExample).setOnClickListener(this)
     }
 
     override fun onClick(view: View) {
@@ -67,6 +69,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             view.id == R.id.circularRevealFragmentAnimationExample -> CircularFragmentAnimationActivity::class.java
             view.id == R.id.bFragmentCommunication -> FragmentCommunicationActivity::class.java
             view.id == R.id.bGmailSelecting -> GmailSelectionActivity::class.java
+            view.id == R.id.bRaindropExample -> RainDropActivity::class.java
             else -> MainActivity::class.java
         }
 
