@@ -47,4 +47,5 @@ dependencies {
     implementation project(path: ':circularrevealfragment')
     implementation project(path: ':fragmentcommunication')
     implementation project(path: ':gmailselectinganimation')
+    implementation project(path: ':raindropview')
 }

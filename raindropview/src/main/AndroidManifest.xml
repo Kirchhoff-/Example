@@ -1,0 +1,10 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.raindropview">
+
+    <application>
+        <activity
+            android:name=".RainDropActivity"
+            android:label="@string/raindrop_view_title" />
+    </application>
+
+</manifest>
