@@ -119,6 +119,12 @@
             android:layout_height="wrap_content"
             android:text="@string/raindrop_view_example" />
 
+        <Button
+            android:id="@+id/bRecyclerSmoothSwipe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/recycler_smooth_swipe_example" />
+
     </LinearLayout>
 
 </ScrollView>

@@ -1,4 +1,4 @@
-include ':app', ':raindropview',
+include ':app', ':raindropview', ':recyclersmoothswipe',
 		':gmailselectinganimation',
 		':curvedbottombar',
 		':viewpagerwithoutfragment',
