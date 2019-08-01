@@ -1,0 +1,10 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.recyclersmoothswipe">
+
+    <application>
+        <activity
+            android:name=".RecyclerSmoothSwipeActivity"
+            android:label="@string/recycler_smooth_swipe_title" />
+    </application>
+
+</manifest>
