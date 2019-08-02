@@ -125,6 +125,12 @@
             android:layout_height="wrap_content"
             android:text="@string/recycler_smooth_swipe_example" />
 
+        <Button
+            android:id="@+id/bConstraintLayoutAnimation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/constraint_layout_animation_example" />
+
     </LinearLayout>
 
 </ScrollView>

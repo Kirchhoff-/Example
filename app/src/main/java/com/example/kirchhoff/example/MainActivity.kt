@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.View
+import com.example.constraintanimation.ConstraintLayoutAnimationActivity
 
 import com.example.likebutton.LikeButtonActivity
 import com.example.raindropview.RainDropActivity
@@ -50,6 +51,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         findViewById<View>(R.id.bGmailSelecting).setOnClickListener(this)
         findViewById<View>(R.id.bRaindropExample).setOnClickListener(this)
         findViewById<View>(R.id.bRecyclerSmoothSwipe).setOnClickListener(this)
+        findViewById<View>(R.id.bConstraintLayoutAnimation).setOnClickListener(this)
     }
 
     override fun onClick(view: View) {
@@ -73,6 +75,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             view.id == R.id.bGmailSelecting -> GmailSelectionActivity::class.java
             view.id == R.id.bRaindropExample -> RainDropActivity::class.java
             view.id == R.id.bRecyclerSmoothSwipe -> RecyclerSmoothSwipeActivity::class.java
+            view.id == R.id.bConstraintLayoutAnimation -> ConstraintLayoutAnimationActivity::class.java
             else -> MainActivity::class.java
         }
 
