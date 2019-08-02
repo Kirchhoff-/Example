@@ -1,0 +1,10 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.constraintanimation">
+
+    <application>
+        <activity
+            android:name=".ConstraintLayoutAnimationActivity"
+            android:label="@string/constraint_layout_animation_title" />
+    </application>
+
+</manifest>
