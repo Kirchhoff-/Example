@@ -1,0 +1,10 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.recyclerdragdrop">
+
+    <application>
+        <activity
+            android:name=".RecyclerViewDragDropActivity"
+            android:label="@string/recycler_view_drag_and_drop_title" />
+    </application>
+
+</manifest>

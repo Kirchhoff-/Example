@@ -50,4 +50,5 @@ dependencies {
     implementation project(path: ':raindropview')
     implementation project(path: ':recyclersmoothswipe')
     implementation project(path: ':constraintanimation')
+    implementation project(path: ':recyclerdragdrop')
 }

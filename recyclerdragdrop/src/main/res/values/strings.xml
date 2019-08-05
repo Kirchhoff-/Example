@@ -1,0 +1,4 @@
+<resources>
+    <string name="recycler_view_drag_and_drop_title">RecyclerView Drag and Drop</string>
+    <string name="recycler_view_drag_and_drop_example">RecyclerView Drag and Drop example</string>
+</resources>
