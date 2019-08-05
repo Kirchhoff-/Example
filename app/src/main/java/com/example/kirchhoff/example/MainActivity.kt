@@ -5,10 +5,10 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.View
 import com.example.constraintanimation.ConstraintLayoutAnimationActivity
-
 import com.example.likebutton.LikeButtonActivity
 import com.example.raindropview.RainDropActivity
 import com.example.recyclercollapsing.RecyclerCollapsingToolbarActivity
+import com.example.recyclerdragdrop.RecyclerViewDragDropActivity
 import com.example.recyclersmoothswipe.RecyclerSmoothSwipeActivity
 import com.example.recyclerswipe.RecyclerCustomSwipeActivity
 import com.example.timediffutils.TimeDiffUtilActivity
@@ -52,6 +52,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         findViewById<View>(R.id.bRaindropExample).setOnClickListener(this)
         findViewById<View>(R.id.bRecyclerSmoothSwipe).setOnClickListener(this)
         findViewById<View>(R.id.bConstraintLayoutAnimation).setOnClickListener(this)
+        findViewById<View>(R.id.bRecyclerDragDrop).setOnClickListener(this)
     }
 
     override fun onClick(view: View) {
@@ -76,6 +77,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             view.id == R.id.bRaindropExample -> RainDropActivity::class.java
             view.id == R.id.bRecyclerSmoothSwipe -> RecyclerSmoothSwipeActivity::class.java
             view.id == R.id.bConstraintLayoutAnimation -> ConstraintLayoutAnimationActivity::class.java
+            view.id == R.id.bRecyclerDragDrop -> RecyclerViewDragDropActivity::class.java
             else -> MainActivity::class.java
         }
 

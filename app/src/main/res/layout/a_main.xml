@@ -131,6 +131,12 @@
             android:layout_height="wrap_content"
             android:text="@string/constraint_layout_animation_example" />
 
+        <Button
+            android:id="@+id/bRecyclerDragDrop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/recycler_view_drag_and_drop_example" />
+
     </LinearLayout>
 
 </ScrollView>
