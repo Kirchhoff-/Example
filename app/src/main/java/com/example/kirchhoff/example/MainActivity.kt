@@ -10,7 +10,6 @@ import com.example.raindropview.RainDropActivity
 import com.example.recyclercollapsing.RecyclerCollapsingToolbarActivity
 import com.example.recyclerdragdrop.RecyclerViewDragDropActivity
 import com.example.recyclersmoothswipe.RecyclerSmoothSwipeActivity
-import com.example.recyclerswipe.RecyclerCustomSwipeActivity
 import com.example.timediffutils.TimeDiffUtilActivity
 import com.kirchhoff.circularrevealfragment.CircularFragmentAnimationActivity
 import com.kirchhoff.coordinatebehavior.CoordinatorBehaviorActivity
@@ -34,7 +33,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         findViewById<View>(R.id.recyclerViewWithSearch).setOnClickListener(this)
         findViewById<View>(R.id.fabAnimationExample).setOnClickListener(this)
-        findViewById<View>(R.id.customRecyclerSwipe).setOnClickListener(this)
         findViewById<View>(R.id.recyclerCollapsing).setOnClickListener(this)
         findViewById<View>(R.id.vpWithoutFragment).setOnClickListener(this)
         findViewById<View>(R.id.timeDiffUtil).setOnClickListener(this)
@@ -59,7 +57,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         val resultClass = when {
             view.id == R.id.recyclerViewWithSearch -> RecyclerSearchActivity::class.java
             view.id == R.id.fabAnimationExample -> FabAnimationActivity::class.java
-            view.id == R.id.customRecyclerSwipe -> RecyclerCustomSwipeActivity::class.java
             view.id == R.id.recyclerCollapsing -> RecyclerCollapsingToolbarActivity::class.java
             view.id == R.id.vpWithoutFragment -> VPWithoutFragmentActivity::class.java
             view.id == R.id.timeDiffUtil -> TimeDiffUtilActivity::class.java
