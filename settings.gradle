@@ -16,7 +16,6 @@ include ':app',
 		':likebutton',
 		':recyclercollapsing',
 		':timediffutils',
-		':recyclerswipe',
 		':thingdiffutils',
 		':circularrevealfragment',
 		':fragmentcommunication'

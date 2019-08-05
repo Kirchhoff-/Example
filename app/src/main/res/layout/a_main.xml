@@ -24,12 +24,6 @@
 	        android:text="@string/fab_animation_example" />
 
         <Button
-            android:id="@+id/customRecyclerSwipe"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/custom_recycler_swipe_example" />
-
-        <Button
             android:id="@+id/recyclerCollapsing"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
