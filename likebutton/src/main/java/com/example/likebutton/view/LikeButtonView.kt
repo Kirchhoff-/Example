@@ -21,9 +21,11 @@ import com.kirchhoff.likebutton.R
 class LikeButtonView @JvmOverloads constructor(context: Context, attrs: AttributeSet? = null,
                                                defStyleAttr: Int = 0) : FrameLayout(context, attrs, defStyleAttr), View.OnClickListener {
 
-    private val DECELERATE_INTERPOLATOR = DecelerateInterpolator()
-    private val ACCELERATE_DECELERATE_INTERPOLATOR = AccelerateDecelerateInterpolator()
-    private val OVERSHOOT_INTERPOLATOR = OvershootInterpolator(4f)
+    companion object {
+        private val DECELERATE_INTERPOLATOR = DecelerateInterpolator()
+        private val ACCELERATE_DECELERATE_INTERPOLATOR = AccelerateDecelerateInterpolator()
+        private val OVERSHOOT_INTERPOLATOR = OvershootInterpolator(4f)
+    }
 
     private val ivStar: ImageView
     private val vDotsView: DotsView
@@ -126,6 +128,11 @@ class LikeButtonView @JvmOverloads constructor(context: Context, attrs: Attribut
             }
         }
 
+        return true
+    }
+
+    override fun performClick(): Boolean {
+        super.performClick()
         return true
     }
 }

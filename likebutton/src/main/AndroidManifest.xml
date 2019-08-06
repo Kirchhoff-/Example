@@ -4,6 +4,7 @@
     <application>
         <activity
             android:name="com.example.likebutton.LikeButtonActivity"
+            android:theme="@style/LikeButtonTheme"
             android:label="@string/like_button_title" />
     </application>
 
