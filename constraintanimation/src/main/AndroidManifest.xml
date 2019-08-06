@@ -4,7 +4,8 @@
     <application>
         <activity
             android:name=".ConstraintLayoutAnimationActivity"
-            android:label="@string/constraint_layout_animation_title" />
+            android:label="@string/constraint_layout_animation_title"
+            android:theme="@style/ConstraintAnimationTheme" />
     </application>
 
 </manifest>
