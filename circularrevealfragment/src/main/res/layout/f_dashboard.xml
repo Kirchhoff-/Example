@@ -4,20 +4,18 @@
 	xmlns:tools="http://schemas.android.com/tools"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
-	android:background="#000"
+	android:theme="@style/BlackBackground"
 	tools:context=".fragments.DashboardFragment">
-
 
 	<TextView
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		android:gravity="center"
-		android:text=":)"
+		android:text="@string/smile"
 		android:textColor="#fff"
 		android:textSize="54sp"
 		app:layout_constraintBottom_toBottomOf="parent"
 		app:layout_constraintTop_toTopOf="parent" />
-
 
 	<android.support.design.widget.FloatingActionButton
 		android:id="@+id/fab1"
@@ -30,7 +28,6 @@
 		app:layout_constraintEnd_toEndOf="parent"
 		app:srcCompat="@android:drawable/ic_media_next" />
 
-
 	<android.support.design.widget.FloatingActionButton
 		android:id="@+id/fab2"
 		android:layout_width="wrap_content"
@@ -41,6 +38,5 @@
 		app:layout_constraintBottom_toBottomOf="parent"
 		app:layout_constraintStart_toStartOf="parent"
 		app:srcCompat="@android:drawable/ic_media_previous" />
-
 
 </android.support.constraint.ConstraintLayout>
