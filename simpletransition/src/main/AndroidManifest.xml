@@ -5,13 +5,13 @@
 
 		<activity
 			android:name=".SimpleTransitionActivity"
-			android:label="@string/simple.transition.title"
-			android:theme="@style/AppTheme.TransitionAnimation" />
+			android:label="@string/simple_transition_title"
+			android:theme="@style/SimpleTransitionTheme" />
 
 		<activity
 			android:name=".SimpleTransitionDetailsActivity"
-			android:label="@string/simple.transition.details.title"
-			android:theme="@style/AppTheme.TransitionAnimation" />
+			android:label="@string/simple_transition_details_title"
+			android:theme="@style/SimpleTransitionTheme" />
 
 	</application>
 

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="simple.transition.title">SimpleTransition</string>
-	<string name="simple.transition.details.title">SimpleTransitionDetails</string>
+	<string name="simple_transition_title">SimpleTransition</string>
+	<string name="simple_transition_details_title">SimpleTransitionDetails</string>
+	<string name="simple_transition_example">Simple transition example</string>
 	<string name="transition">transition</string>
 	<string name="android"> Large parts of Android are written in Java and its APIs are designed to be called primarily from Java. It is possible to develop C and C++ app using the Android Native Development Kit (NDK), however it is not something that Google promotes.</string>
 	<string name="ios">The programming language of iOS(and Mac OS) is Objective-C and C. You have to use Xcode platform to develop iOS apps</string>
