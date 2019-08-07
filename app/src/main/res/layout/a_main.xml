@@ -57,7 +57,7 @@
             android:id="@+id/simpleTransition"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/simple.transition.title" />
+            android:text="@string/simple_transition_example" />
 
         <Button
             android:id="@+id/customCoordinateLayoutBehavior"
