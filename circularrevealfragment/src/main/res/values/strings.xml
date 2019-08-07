@@ -2,4 +2,6 @@
 <resources>
 	<string name="circular_reveal_fragment_animation_title">Circular reveal fragment animation</string>
 	<string name="circular_reveal_fragment_animation_example">Circular reveal fragment example</string>
+	<string name="hello_world">Hello world!</string>
+	<string name="smile">:)</string>
 </resources>

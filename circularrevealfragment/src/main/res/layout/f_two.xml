@@ -3,16 +3,15 @@
 	xmlns:tools="http://schemas.android.com/tools"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
-	android:background="@color/colorRed"
+	android:theme="@style/RedBackground"
 	tools:context=".fragments.TwoFragment">
 
 	<TextView
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
 		android:gravity="center"
-		android:text="Hello world!"
+		android:text="@string/hello_world"
 		android:textColor="#fff"
 		android:textSize="54sp" />
-
 
 </FrameLayout>
