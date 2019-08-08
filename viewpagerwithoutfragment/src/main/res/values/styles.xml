@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="RedBackground">
+        <item name="android:background">@android:color/holo_red_dark</item>
+    </style>
+
+    <style name="BlueBackground">
+        <item name="android:background">@android:color/holo_blue_dark</item>
+    </style>
+
+    <style name="OrangeBackground">
+        <item name="android:background">@android:color/holo_orange_dark</item>
+    </style>
+</resources>
