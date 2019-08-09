@@ -23,29 +23,18 @@ class ConstraintLayoutAnimationActivity : AppCompatActivity() {
         ivBackground = findViewById(R.id.ivBackground)
 
         ivBackground.setOnClickListener {
-            if (show) hideComponents() else showComponents()
+            updateComponent(show)
+            show = show.not()
         }
     }
 
-    private fun showComponents() {
-        show = true
-
+    private fun updateComponent(show: Boolean) {
         val constraintSet = ConstraintSet()
-        constraintSet.clone(this, R.layout.a_constraint_layout_animation_details)
-
-        val transition = ChangeBounds()
-        transition.interpolator = AnticipateOvershootInterpolator(1.0f)
-        transition.duration = 1200
-
-        TransitionManager.beginDelayedTransition(constraint, transition)
-        constraintSet.applyTo(constraint)
-    }
-
-    private fun hideComponents() {
-        show = false
-
-        val constraintSet = ConstraintSet()
-        constraintSet.clone(this, R.layout.a_constraint_layout_animation)
+        val resultLayout = if (show)
+            R.layout.a_constraint_layout_animation
+        else
+            R.layout.a_constraint_layout_animation_details
+        constraintSet.clone(this, resultLayout)
 
         val transition = ChangeBounds()
         transition.interpolator = AnticipateOvershootInterpolator(1.0f)
