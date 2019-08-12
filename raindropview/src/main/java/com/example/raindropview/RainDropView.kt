@@ -1,6 +1,5 @@
 package com.example.raindropview
 
-import android.annotation.SuppressLint
 import android.content.Context
 import android.graphics.Canvas
 import android.graphics.Color
@@ -41,7 +40,6 @@ class RainDropView @JvmOverloads constructor(context: Context,
         if (rainDropList.isNotEmpty() && isAttachedToWindow) invalidate()
     }
 
-    @SuppressLint("ClickableViewAccessibility")
     override fun onTouchEvent(event: MotionEvent): Boolean {
         val pointerIndex = event.actionIndex
         when (event.actionMasked) {
@@ -50,10 +48,16 @@ class RainDropView @JvmOverloads constructor(context: Context,
             MotionEvent.ACTION_UP,
             MotionEvent.ACTION_POINTER_UP -> {
                 rainDropList.add(RainDrop(event.getX(pointerIndex), event.getY(pointerIndex), maxRadius))
+                performClick()
                 invalidate()
                 return true
             }
         }
         return super.onTouchEvent(event)
+    }
+
+    override fun performClick(): Boolean {
+        super.performClick()
+        return true
     }
 }
