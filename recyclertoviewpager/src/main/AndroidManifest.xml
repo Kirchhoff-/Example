@@ -1,0 +1,10 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.recyclertoviewpager">
+
+    <application>
+        <activity
+            android:name=".RecyclerToViewPagerActivity"
+            android:label="@string/recycler_to_viewpager_title" />
+    </application>
+
+</manifest>

@@ -21,7 +21,7 @@
             android:id="@+id/fabAnimationExample"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-	        android:text="@string/fab_animation_example" />
+            android:text="@string/fab_animation_example" />
 
         <Button
             android:id="@+id/recyclerCollapsing"
@@ -95,17 +95,17 @@
             android:layout_height="wrap_content"
             android:text="@string/circular_reveal_fragment_animation_example" />
 
-	    <Button
-		    android:id="@+id/bFragmentCommunication"
-		    android:layout_width="match_parent"
-		    android:layout_height="wrap_content"
-		    android:text="@string/fragment_communication_example" />
+        <Button
+            android:id="@+id/bFragmentCommunication"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fragment_communication_example" />
 
-	    <Button
-		    android:id="@+id/bGmailSelecting"
-		    android:layout_width="match_parent"
-		    android:layout_height="wrap_content"
-		    android:text="@string/gmail_selecting_example" />
+        <Button
+            android:id="@+id/bGmailSelecting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/gmail_selecting_example" />
 
         <Button
             android:id="@+id/bRaindropExample"
@@ -130,6 +130,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/recycler_view_drag_and_drop_example" />
+
+        <Button
+            android:id="@+id/bRecyclerToViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/recycler_to_viewpager_title" />
 
     </LinearLayout>
 
