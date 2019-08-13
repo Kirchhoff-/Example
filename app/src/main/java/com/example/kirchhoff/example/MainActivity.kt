@@ -10,6 +10,7 @@ import com.example.raindropview.RainDropActivity
 import com.example.recyclercollapsing.RecyclerCollapsingToolbarActivity
 import com.example.recyclerdragdrop.RecyclerViewDragDropActivity
 import com.example.recyclersmoothswipe.RecyclerSmoothSwipeActivity
+import com.example.simpletransition.SimpleTransitionActivity
 import com.example.recyclertoviewpager.RecyclerToViewPagerActivity
 import com.example.timediffutils.TimeDiffUtilActivity
 import com.kirchhoff.circularrevealfragment.CircularFragmentAnimationActivity
@@ -22,7 +23,6 @@ import com.kirchhoff.fragmentcommunication.FragmentCommunicationActivity
 import com.kirchhoff.gmailselectinganimation.GmailSelectionActivity
 import com.kirchhoff.recyclermvp.MvpRecyclerViewActivity
 import com.kirchhoff.recyclersearch.RecyclerSearchActivity
-import com.kirchhoff.simpletransition.SimpleTransitionActivity
 import com.kirchhoff.thingdiffutils.ThingDiffUtilActivity
 import com.kirchhoff.viewpagerwithoutfragment.VPWithoutFragmentActivity
 

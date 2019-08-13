@@ -1,4 +1,4 @@
-package com.kirchhoff.simpletransition
+package com.example.simpletransition
 
 import android.graphics.Color
 import android.os.Bundle

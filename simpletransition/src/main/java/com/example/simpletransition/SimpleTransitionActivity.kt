@@ -1,4 +1,4 @@
-package com.kirchhoff.simpletransition
+package com.example.simpletransition
 
 import android.content.Intent
 import android.os.Bundle
