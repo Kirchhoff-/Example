@@ -1,0 +1,10 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.prefixedittext">
+
+    <application>
+        <activity
+            android:name=".PrefixEditTextActivity"
+            android:label="@string/prefix_edittext_title" />
+    </application>
+
+</manifest>
