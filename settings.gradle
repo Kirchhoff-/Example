@@ -1,4 +1,4 @@
-include ':app', ':recyclertoviewpager',
+include ':app', ':recyclertoviewpager', ':prefixedittext',
 		':recyclerdragdrop',
 		':raindropview',
 		':recyclersmoothswipe',

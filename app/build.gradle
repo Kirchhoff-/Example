@@ -51,4 +51,5 @@ dependencies {
     implementation project(path: ':constraintanimation')
     implementation project(path: ':recyclerdragdrop')
     implementation project(path: ':recyclertoviewpager')
+    implementation project(path: ':prefixedittext')
 }

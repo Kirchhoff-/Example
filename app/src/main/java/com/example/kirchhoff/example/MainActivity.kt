@@ -10,8 +10,8 @@ import com.example.raindropview.RainDropActivity
 import com.example.recyclercollapsing.RecyclerCollapsingToolbarActivity
 import com.example.recyclerdragdrop.RecyclerViewDragDropActivity
 import com.example.recyclersmoothswipe.RecyclerSmoothSwipeActivity
-import com.example.simpletransition.SimpleTransitionActivity
 import com.example.recyclertoviewpager.RecyclerToViewPagerActivity
+import com.example.simpletransition.SimpleTransitionActivity
 import com.example.timediffutils.TimeDiffUtilActivity
 import com.kirchhoff.circularrevealfragment.CircularFragmentAnimationActivity
 import com.kirchhoff.coordinatebehavior.CoordinatorBehaviorActivity
@@ -53,6 +53,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         findViewById<View>(R.id.bConstraintLayoutAnimation).setOnClickListener(this)
         findViewById<View>(R.id.bRecyclerDragDrop).setOnClickListener(this)
         findViewById<View>(R.id.bRecyclerToViewPager).setOnClickListener(this)
+        findViewById<View>(R.id.bPrefixEditText).setOnClickListener(this)
     }
 
     override fun onClick(view: View) {
@@ -78,6 +79,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             view.id == R.id.bConstraintLayoutAnimation -> ConstraintLayoutAnimationActivity::class.java
             view.id == R.id.bRecyclerDragDrop -> RecyclerViewDragDropActivity::class.java
             view.id == R.id.bRecyclerToViewPager -> RecyclerToViewPagerActivity::class.java
+            view.id == R.id.bPrefixEditText -> PrefixEditTextActivity::class.java
             else -> MainActivity::class.java
         }
 
