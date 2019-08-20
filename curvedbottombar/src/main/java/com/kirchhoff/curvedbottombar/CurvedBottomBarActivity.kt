@@ -1,12 +1,8 @@
 package com.kirchhoff.curvedbottombar
 
-import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import com.example.core.ui.BaseActivity
 
-class CurvedBottomBarActivity : AppCompatActivity() {
+class CurvedBottomBarActivity : BaseActivity() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_curved_bottom_bar)
-    }
+    override fun getLayoutId() = R.layout.activity_curved_bottom_bar
 }

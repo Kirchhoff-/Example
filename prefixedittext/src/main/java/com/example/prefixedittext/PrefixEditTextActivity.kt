@@ -1,12 +1,8 @@
 package com.example.prefixedittext
 
-import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import com.example.core.ui.BaseActivity
 
-class PrefixEditTextActivity : AppCompatActivity() {
+class PrefixEditTextActivity : BaseActivity() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.a_prefix_edittext)
-    }
+    override fun getLayoutId() = R.layout.a_prefix_edittext
 }
