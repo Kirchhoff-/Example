@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity
 import android.view.View
 import com.example.constraintanimation.ConstraintLayoutAnimationActivity
 import com.example.likebutton.LikeButtonActivity
+import com.example.prefixedittext.PrefixEditTextActivity
 import com.example.raindropview.RainDropActivity
 import com.example.recyclercollapsing.RecyclerCollapsingToolbarActivity
 import com.example.recyclerdragdrop.RecyclerViewDragDropActivity

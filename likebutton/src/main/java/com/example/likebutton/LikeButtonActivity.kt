@@ -1,13 +1,9 @@
 package com.example.likebutton
 
-import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import com.example.core.ui.BaseActivity
 import com.kirchhoff.likebutton.R
 
-class LikeButtonActivity : AppCompatActivity() {
+class LikeButtonActivity : BaseActivity() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.a_like_button)
-    }
+    override fun getLayoutId() = R.layout.a_like_button
 }
