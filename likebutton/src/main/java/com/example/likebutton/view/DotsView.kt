@@ -78,18 +78,34 @@ class DotsView @JvmOverloads constructor(context: Context, attrs: AttributeSet? 
 
     private fun drawOuterDotsFrame(canvas: Canvas) {
         for (i in 0 until DOTS_COUNT) {
-            val cX = (centerX + currentRadius1 * Math.cos(i.toDouble() * OUTER_DOTS_POSITION_ANGLE.toDouble() * Math.PI / 180)).toInt()
-            val cY = (centerY + currentRadius1 * Math.sin(i.toDouble() * OUTER_DOTS_POSITION_ANGLE.toDouble() * Math.PI / 180)).toInt()
-            canvas.drawCircle(cX.toFloat(), cY.toFloat(), currentDotSize1, circlePaints[i % circlePaints.size]!!)
+            val cX = getCenterPointForOuterDots(true, i)
+            val cY = getCenterPointForOuterDots(false, i)
+            canvas.drawCircle(cX, cY, currentDotSize1, circlePaints[i % circlePaints.size]!!)
         }
+    }
+
+    private fun getCenterPointForOuterDots(isXCoordinate: Boolean, dot: Int): Float {
+        val angle = dot.toDouble() * OUTER_DOTS_POSITION_ANGLE.toDouble() * Math.PI / 180
+
+        val resultAngle = if (isXCoordinate) Math.cos(angle) else Math.sin(angle)
+
+        return centerX + currentRadius1 * resultAngle.toFloat()
     }
 
     private fun drawInnerDotsFrame(canvas: Canvas) {
         for (i in 0 until DOTS_COUNT) {
-            val cX = (centerX + currentRadius2 * Math.cos((i * OUTER_DOTS_POSITION_ANGLE - 10) * Math.PI / 180)).toInt()
-            val cY = (centerY + currentRadius2 * Math.sin((i * OUTER_DOTS_POSITION_ANGLE - 10) * Math.PI / 180)).toInt()
-            canvas.drawCircle(cX.toFloat(), cY.toFloat(), currentDotSize2, circlePaints[(i + 1) % circlePaints.size]!!)
+            val cX = getCenterPointForInnerDots(true, i)
+            val cY = getCenterPointForInnerDots(false, i)
+            canvas.drawCircle(cX, cY, currentDotSize2, circlePaints[(i + 1) % circlePaints.size]!!)
         }
+    }
+
+    private fun getCenterPointForInnerDots(isXCoordinate: Boolean, dot: Int): Float {
+        val angle = (dot * OUTER_DOTS_POSITION_ANGLE - 10) * Math.PI / 180
+
+        val resultAngle = if (isXCoordinate) Math.cos(angle) else Math.sin(angle)
+
+        return centerX + currentRadius2 * resultAngle.toFloat()
     }
 
     private fun updateInnerDotsPosition() {
