@@ -52,4 +52,5 @@ dependencies {
     implementation project(path: ':recyclerdragdrop')
     implementation project(path: ':recyclertoviewpager')
     implementation project(path: ':prefixedittext')
+    implementation project(path: ':bottomnavigationview')
 }

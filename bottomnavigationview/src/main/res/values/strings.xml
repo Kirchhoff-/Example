@@ -1,0 +1,28 @@
+<resources>
+    <string name="bottomnavigationview_title">BottomNavigationView</string>
+    <string name="bottomnavigationview_example">BottomNavigationView example</string>
+    <string name="zero">0</string>
+    <string name="click">Click</string>
+    <string name="home_text">Home text</string>
+
+    <string name="title_home">Home</string>
+    <string name="title_action">Action</string>
+    <string name="title_information">Information</string>
+
+    <string name="long_text">To favor composition over inheritance is a design principle that gives
+        the design higher flexibility. It is more natural to build business-domain classes out of
+        various components than trying to find commonality between them and creating a family tree.
+        For example, a gas pedal and a wheel share very few common traits, yet are both vital
+        components in a car. What they can do and how they can be used to benefit the car is easily
+        defined. Composition also provides a more stable business domain in the long term as it is
+        less prone to the quirks of the family members. In other words, it is better to compose
+        what an object can do (HAS-A) than extend what it is (IS-A).[1]
+        Initial design is simplified by identifying system object behaviors in separate interfaces
+        instead of creating a hierarchical relationship to distribute behaviors among
+        business-domain classes via inheritance. This approach more easily accommodates future
+        requirements changes that would otherwise require a complete restructuring of
+        business-domain classes in the inheritance model. Additionally, it avoids problems often
+        associated with relatively minor changes to an inheritance-based model that
+        includes several generations of classes.
+        Some languages, notably Go, use type composition exclusively</string>
+</resources>

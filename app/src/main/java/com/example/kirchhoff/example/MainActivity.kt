@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.View
+import com.example.bottomnavigationview.BottomNavigationViewActivity
 import com.example.constraintanimation.ConstraintLayoutAnimationActivity
 import com.example.likebutton.LikeButtonActivity
 import com.example.prefixedittext.PrefixEditTextActivity
@@ -54,6 +55,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         findViewById<View>(R.id.bConstraintLayoutAnimation).setOnClickListener(this)
         findViewById<View>(R.id.bRecyclerDragDrop).setOnClickListener(this)
         findViewById<View>(R.id.bRecyclerToViewPager).setOnClickListener(this)
+        findViewById<View>(R.id.bBottomNavigationView).setOnClickListener(this)
         findViewById<View>(R.id.bPrefixEditText).setOnClickListener(this)
     }
 
@@ -80,6 +82,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             view.id == R.id.bConstraintLayoutAnimation -> ConstraintLayoutAnimationActivity::class.java
             view.id == R.id.bRecyclerDragDrop -> RecyclerViewDragDropActivity::class.java
             view.id == R.id.bRecyclerToViewPager -> RecyclerToViewPagerActivity::class.java
+            view.id == R.id.bBottomNavigationView -> BottomNavigationViewActivity::class.java
             view.id == R.id.bPrefixEditText -> PrefixEditTextActivity::class.java
             else -> MainActivity::class.java
         }

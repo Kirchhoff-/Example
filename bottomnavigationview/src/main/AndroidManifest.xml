@@ -1,0 +1,9 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.bottomnavigationview">
+
+    <application>
+        <activity
+            android:name=".BottomNavigationViewActivity"
+            android:label="@string/bottomnavigationview_title" />
+    </application>
+</manifest>
