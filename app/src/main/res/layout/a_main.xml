@@ -143,6 +143,12 @@
             android:layout_height="wrap_content"
             android:text="@string/prefix_edittext_example" />
 
+        <Button
+            android:id="@+id/bBottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bottomnavigationview_example" />
+
     </LinearLayout>
 
 </ScrollView>
