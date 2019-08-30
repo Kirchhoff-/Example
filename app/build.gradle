@@ -53,4 +53,5 @@ dependencies {
     implementation project(path: ':recyclertoviewpager')
     implementation project(path: ':prefixedittext')
     implementation project(path: ':bottomnavigationview')
+    implementation project(path: ':activitytoservice')
 }
