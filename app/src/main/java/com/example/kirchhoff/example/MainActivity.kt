@@ -15,6 +15,7 @@ import com.example.recyclersmoothswipe.RecyclerSmoothSwipeActivity
 import com.example.recyclertoviewpager.RecyclerToViewPagerActivity
 import com.example.simpletransition.SimpleTransitionActivity
 import com.example.timediffutils.TimeDiffUtilActivity
+import com.kirchhoff.activitytoservice.ActivityToService
 import com.kirchhoff.circularrevealfragment.CircularFragmentAnimationActivity
 import com.kirchhoff.coordinatebehavior.CoordinatorBehaviorActivity
 import com.kirchhoff.countdownlabel.CountdownLabelActivity
@@ -57,6 +58,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         findViewById<View>(R.id.bRecyclerToViewPager).setOnClickListener(this)
         findViewById<View>(R.id.bBottomNavigationView).setOnClickListener(this)
         findViewById<View>(R.id.bPrefixEditText).setOnClickListener(this)
+        findViewById<View>(R.id.bActivityToService).setOnClickListener(this)
     }
 
     override fun onClick(view: View) {
@@ -84,6 +86,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             view.id == R.id.bRecyclerToViewPager -> RecyclerToViewPagerActivity::class.java
             view.id == R.id.bBottomNavigationView -> BottomNavigationViewActivity::class.java
             view.id == R.id.bPrefixEditText -> PrefixEditTextActivity::class.java
+            view.id == R.id.bActivityToService -> ActivityToService::class.java
             else -> MainActivity::class.java
         }
 

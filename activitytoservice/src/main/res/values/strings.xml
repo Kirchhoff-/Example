@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="activity_to_service_title">Activity to Service</string>
+	<string name="activity_to_service_example">Activity to Service example</string>
+	<string name="sms_receiver">Sms Receiver</string>
+	<string name="result_receiver">Result Receiver</string>
+	<string name="handler">Handler</string>
+</resources>

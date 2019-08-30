@@ -1,0 +1,22 @@
+<manifest package="com.kirchhoff.activitytoservice"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<application>
+		<activity
+			android:name=".ActivityToService"
+			android:label="@string/activity_to_service_title" />
+
+		<activity
+			android:name=".broadcast.SMSActivity"
+			android:label="@string/sms_receiver" />
+
+		<activity
+			android:name=".resultreceiver.ResultReceiverActivity"
+			android:label="@string/result_receiver" />
+
+		<service android:name=".resultreceiver.CustomIntentService" />
+
+		<activity android:name=".handler.HandlerActivity" />
+		<service android:name=".handler.CustomHandlerIntentService" />
+	</application>
+</manifest>

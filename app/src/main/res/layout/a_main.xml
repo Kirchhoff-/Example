@@ -149,6 +149,12 @@
             android:layout_height="wrap_content"
             android:text="@string/bottomnavigationview_example" />
 
+	    <Button
+		    android:id="@+id/bActivityToService"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:text="@string/activity_to_service_example" />
+
     </LinearLayout>
 
 </ScrollView>
