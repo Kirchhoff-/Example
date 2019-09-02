@@ -38,16 +38,18 @@ class FabAnimationActivity : AppCompatActivity(), View.OnClickListener {
             fab.startAnimation(animationHelper.rotateBackwardAnimation())
             fab1.startAnimation(animationHelper.closeAnimation())
             fab2.startAnimation(animationHelper.closeAnimation())
-            fab1.isClickable = false
-            fab2.isClickable = false
-            isFabOpen = false
         } else {
             fab.startAnimation(animationHelper.rotateForwardAnimation())
             fab1.startAnimation(animationHelper.openAnimation())
             fab2.startAnimation(animationHelper.openAnimation())
-            fab1.isClickable = true
-            fab2.isClickable = true
-            isFabOpen = true
         }
+
+        isFabOpen = !isFabOpen
+        updateButton(isFabOpen)
+    }
+
+    private fun updateButton(isClickable: Boolean) {
+        fab1.isClickable = isClickable
+        fab2.isClickable = isClickable
     }
 }
