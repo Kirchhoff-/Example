@@ -54,4 +54,5 @@ dependencies {
     implementation project(path: ':prefixedittext')
     implementation project(path: ':bottomnavigationview')
     implementation project(path: ':activitytoservice')
+    implementation project(path: ':lazybind')
 }
