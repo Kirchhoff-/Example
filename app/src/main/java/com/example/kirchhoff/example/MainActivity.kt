@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity
 import android.view.View
 import com.example.bottomnavigationview.BottomNavigationViewActivity
 import com.example.constraintanimation.ConstraintLayoutAnimationActivity
+import com.example.lazybind.LazyBindActivity
 import com.example.likebutton.LikeButtonActivity
 import com.example.prefixedittext.PrefixEditTextActivity
 import com.example.raindropview.RainDropActivity
@@ -59,6 +60,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         findViewById<View>(R.id.bBottomNavigationView).setOnClickListener(this)
         findViewById<View>(R.id.bPrefixEditText).setOnClickListener(this)
         findViewById<View>(R.id.bActivityToService).setOnClickListener(this)
+        findViewById<View>(R.id.bLazyBind).setOnClickListener(this)
     }
 
     override fun onClick(view: View) {
@@ -87,6 +89,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             view.id == R.id.bBottomNavigationView -> BottomNavigationViewActivity::class.java
             view.id == R.id.bPrefixEditText -> PrefixEditTextActivity::class.java
             view.id == R.id.bActivityToService -> ActivityToService::class.java
+            view.id == R.id.bLazyBind -> LazyBindActivity::class.java
             else -> MainActivity::class.java
         }
 

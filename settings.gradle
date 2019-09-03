@@ -1,4 +1,4 @@
-include ':app', ':core', ':activitytoservice',
+include ':app', ':core', ':activitytoservice', ':lazybind',
         ':bottomnavigationview',
 		':recyclertoviewpager',
 		':prefixedittext',
