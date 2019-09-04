@@ -1,0 +1,6 @@
+<resources>
+    <string name="screenshot_title">Screenshot</string>
+    <string name="screenshot_example">Screenshot example</string>
+    <string name="screenshot_make">Make Screenshot</string>
+    <string name="screenshot_toolbar_make">Make Screenshot with Toolbar</string>
+</resources>

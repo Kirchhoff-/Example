@@ -14,6 +14,7 @@ import com.example.recyclercollapsing.RecyclerCollapsingToolbarActivity
 import com.example.recyclerdragdrop.RecyclerViewDragDropActivity
 import com.example.recyclersmoothswipe.RecyclerSmoothSwipeActivity
 import com.example.recyclertoviewpager.RecyclerToViewPagerActivity
+import com.example.screenshot.ScreenshotActivity
 import com.example.simpletransition.SimpleTransitionActivity
 import com.example.timediffutils.TimeDiffUtilActivity
 import com.kirchhoff.activitytoservice.ActivityToService
@@ -61,6 +62,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         findViewById<View>(R.id.bPrefixEditText).setOnClickListener(this)
         findViewById<View>(R.id.bActivityToService).setOnClickListener(this)
         findViewById<View>(R.id.bLazyBind).setOnClickListener(this)
+        findViewById<View>(R.id.bScreenshot).setOnClickListener(this)
     }
 
     override fun onClick(view: View) {
@@ -90,6 +92,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             view.id == R.id.bPrefixEditText -> PrefixEditTextActivity::class.java
             view.id == R.id.bActivityToService -> ActivityToService::class.java
             view.id == R.id.bLazyBind -> LazyBindActivity::class.java
+            view.id == R.id.bScreenshot -> ScreenshotActivity::class.java
             else -> MainActivity::class.java
         }
 
