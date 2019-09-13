@@ -31,71 +31,119 @@ import com.kirchhoff.recyclersearch.RecyclerSearchActivity
 import com.kirchhoff.thingdiffutils.ThingDiffUtilActivity
 import com.kirchhoff.viewpagerwithoutfragment.VPWithoutFragmentActivity
 
-class MainActivity : AppCompatActivity(), View.OnClickListener {
+@Suppress("UNUSED_PARAMETER")
+class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.a_main)
-
-        findViewById<View>(R.id.recyclerViewWithSearch).setOnClickListener(this)
-        findViewById<View>(R.id.fabAnimationExample).setOnClickListener(this)
-        findViewById<View>(R.id.recyclerCollapsing).setOnClickListener(this)
-        findViewById<View>(R.id.vpWithoutFragment).setOnClickListener(this)
-        findViewById<View>(R.id.timeDiffUtil).setOnClickListener(this)
-        findViewById<View>(R.id.likeButtonClick).setOnClickListener(this)
-        findViewById<View>(R.id.countDownLabel).setOnClickListener(this)
-        findViewById<View>(R.id.simpleTransition).setOnClickListener(this)
-        findViewById<View>(R.id.customCoordinateLayoutBehavior).setOnClickListener(this)
-        findViewById<View>(R.id.mvpRecycler).setOnClickListener(this)
-        findViewById<View>(R.id.thingDiffUtils).setOnClickListener(this)
-        findViewById<View>(R.id.fastRecyclerViewExample).setOnClickListener(this)
-        findViewById<View>(R.id.curvedBottomBarExample).setOnClickListener(this)
-        findViewById<View>(R.id.circularRevealFragmentAnimationExample).setOnClickListener(this)
-        findViewById<View>(R.id.bFragmentCommunication).setOnClickListener(this)
-        findViewById<View>(R.id.bGmailSelecting).setOnClickListener(this)
-        findViewById<View>(R.id.bRaindropExample).setOnClickListener(this)
-        findViewById<View>(R.id.bRecyclerSmoothSwipe).setOnClickListener(this)
-        findViewById<View>(R.id.bConstraintLayoutAnimation).setOnClickListener(this)
-        findViewById<View>(R.id.bRecyclerDragDrop).setOnClickListener(this)
-        findViewById<View>(R.id.bRecyclerToViewPager).setOnClickListener(this)
-        findViewById<View>(R.id.bBottomNavigationView).setOnClickListener(this)
-        findViewById<View>(R.id.bPrefixEditText).setOnClickListener(this)
-        findViewById<View>(R.id.bActivityToService).setOnClickListener(this)
-        findViewById<View>(R.id.bLazyBind).setOnClickListener(this)
-        findViewById<View>(R.id.bScreenshot).setOnClickListener(this)
     }
 
-    override fun onClick(view: View) {
-        val resultClass = when {
-            view.id == R.id.recyclerViewWithSearch -> RecyclerSearchActivity::class.java
-            view.id == R.id.fabAnimationExample -> FabAnimationActivity::class.java
-            view.id == R.id.recyclerCollapsing -> RecyclerCollapsingToolbarActivity::class.java
-            view.id == R.id.vpWithoutFragment -> VPWithoutFragmentActivity::class.java
-            view.id == R.id.timeDiffUtil -> TimeDiffUtilActivity::class.java
-            view.id == R.id.likeButtonClick -> LikeButtonActivity::class.java
-            view.id == R.id.countDownLabel -> CountdownLabelActivity::class.java
-            view.id == R.id.simpleTransition -> SimpleTransitionActivity::class.java
-            view.id == R.id.customCoordinateLayoutBehavior -> CoordinatorBehaviorActivity::class.java
-            view.id == R.id.mvpRecycler -> MvpRecyclerViewActivity::class.java
-            view.id == R.id.thingDiffUtils -> ThingDiffUtilActivity::class.java
-            view.id == R.id.fastRecyclerViewExample -> FastRecyclerViewActivity::class.java
-            view.id == R.id.curvedBottomBarExample -> CurvedBottomBarActivity::class.java
-            view.id == R.id.circularRevealFragmentAnimationExample -> CircularFragmentAnimationActivity::class.java
-            view.id == R.id.bFragmentCommunication -> FragmentCommunicationActivity::class.java
-            view.id == R.id.bGmailSelecting -> GmailSelectionActivity::class.java
-            view.id == R.id.bRaindropExample -> RainDropActivity::class.java
-            view.id == R.id.bRecyclerSmoothSwipe -> RecyclerSmoothSwipeActivity::class.java
-            view.id == R.id.bConstraintLayoutAnimation -> ConstraintLayoutAnimationActivity::class.java
-            view.id == R.id.bRecyclerDragDrop -> RecyclerViewDragDropActivity::class.java
-            view.id == R.id.bRecyclerToViewPager -> RecyclerToViewPagerActivity::class.java
-            view.id == R.id.bBottomNavigationView -> BottomNavigationViewActivity::class.java
-            view.id == R.id.bPrefixEditText -> PrefixEditTextActivity::class.java
-            view.id == R.id.bActivityToService -> ActivityToService::class.java
-            view.id == R.id.bLazyBind -> LazyBindActivity::class.java
-            view.id == R.id.bScreenshot -> ScreenshotActivity::class.java
-            else -> MainActivity::class.java
-        }
+    fun recyclerViewWithSearch(view: View) {
+        startActivity(RecyclerSearchActivity::class.java)
+    }
 
-        startActivity(Intent(this, resultClass))
+    fun fabAnimation(view: View) {
+        startActivity(FabAnimationActivity::class.java)
+    }
+
+    fun recyclerCollapsing(view: View) {
+        startActivity(RecyclerCollapsingToolbarActivity::class.java)
+    }
+
+    fun vpWithoutFragment(view: View) {
+        startActivity(VPWithoutFragmentActivity::class.java)
+    }
+
+    fun timeDiffUtil(view: View) {
+        startActivity(TimeDiffUtilActivity::class.java)
+    }
+
+    fun likeButtonClick(view: View) {
+        startActivity(LikeButtonActivity::class.java)
+    }
+
+    fun countDownLabel(view: View) {
+        startActivity(CountdownLabelActivity::class.java)
+    }
+
+    fun simpleTransition(view: View) {
+        startActivity(SimpleTransitionActivity::class.java)
+    }
+
+    fun customCoordinateLayoutBehavior(view: View) {
+        startActivity(CoordinatorBehaviorActivity::class.java)
+    }
+
+    fun mvpRecycler(view: View) {
+        startActivity(MvpRecyclerViewActivity::class.java)
+    }
+
+    fun thingDiffUtils(view: View) {
+        startActivity(ThingDiffUtilActivity::class.java)
+    }
+
+    fun fastRecyclerViewExample(view: View) {
+        startActivity(FastRecyclerViewActivity::class.java)
+    }
+
+    fun curvedBottomBarExample(view: View) {
+        startActivity(CurvedBottomBarActivity::class.java)
+    }
+
+    fun circularRevealFragmentAnimationExample(view: View) {
+        startActivity(CircularFragmentAnimationActivity::class.java)
+    }
+
+    fun fragmentCommunication(view: View) {
+        startActivity(FragmentCommunicationActivity::class.java)
+    }
+
+    fun gmailSelecting(view: View) {
+        startActivity(GmailSelectionActivity::class.java)
+    }
+
+    fun raindropExample(view: View) {
+        startActivity(RainDropActivity::class.java)
+    }
+
+    fun recyclerSmoothSwipe(view: View) {
+        startActivity(RecyclerSmoothSwipeActivity::class.java)
+    }
+
+    fun constraintLayoutAnimation(view: View) {
+        startActivity(ConstraintLayoutAnimationActivity::class.java)
+    }
+
+    fun recyclerDragDrop(view: View) {
+        startActivity(RecyclerViewDragDropActivity::class.java)
+    }
+
+    fun recyclerToViewPager(view: View) {
+        startActivity(RecyclerToViewPagerActivity::class.java)
+    }
+
+    fun prefixEditText(view: View) {
+        startActivity(PrefixEditTextActivity::class.java)
+    }
+
+    fun bottomNavigationView(view: View) {
+        startActivity(BottomNavigationViewActivity::class.java)
+    }
+
+    fun activityToService(view: View) {
+        startActivity(ActivityToService::class.java)
+    }
+
+    fun lazyBind(view: View) {
+        startActivity(LazyBindActivity::class.java)
+    }
+
+    fun screenshot(view: View) {
+        startActivity(ScreenshotActivity::class.java)
+    }
+
+    private fun startActivity(cls: Class<*>) {
+        startActivity(Intent(this, cls))
     }
 }
