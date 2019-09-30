@@ -1,12 +1,12 @@
 package com.example.recyclerdragdrop.adapter.holder
 
 import android.annotation.SuppressLint
-import android.support.v7.widget.RecyclerView
-import android.support.v7.widget.helper.ItemTouchHelper
 import android.view.MotionEvent
 import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.recyclerview.widget.ItemTouchHelper
+import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.recyclerdragdrop.R
 import com.example.recyclerdragdrop.data.User

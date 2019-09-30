@@ -1,8 +1,8 @@
 package com.example.timediffutils
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
-import android.support.v7.widget.RecyclerView
+import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.RecyclerView
 import com.example.timediffutils.adapter.TimeAdapter
 import com.example.timediffutils.data.Time
 import com.kirchhoff.timediffutils.R

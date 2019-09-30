@@ -1,8 +1,8 @@
 package com.kirchhoff.recyclersearch.adapter
 
-import android.support.v7.widget.RecyclerView
 import android.view.View
 import android.widget.TextView
+import androidx.recyclerview.widget.RecyclerView
 import com.kirchhoff.recyclersearch.R
 import com.kirchhoff.recyclersearch.data.AndroidVersion
 

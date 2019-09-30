@@ -2,7 +2,6 @@ package com.kirchhoff.gmailselectinganimation.view
 
 import android.content.Context
 import android.graphics.Camera
-import android.support.v4.view.animation.FastOutSlowInInterpolator
 import android.util.AttributeSet
 import android.view.View
 import android.view.animation.Animation
@@ -10,6 +9,7 @@ import android.view.animation.Transformation
 import android.widget.Checkable
 import android.widget.ImageView
 import android.widget.ViewFlipper
+import androidx.interpolator.view.animation.FastOutSlowInInterpolator
 import com.kirchhoff.gmailselectinganimation.R
 import com.kirchhoff.gmailselectinganimation.view.SwivelAnimation.Companion.toChecked
 import com.kirchhoff.gmailselectinganimation.view.SwivelAnimation.Companion.toNotChecked

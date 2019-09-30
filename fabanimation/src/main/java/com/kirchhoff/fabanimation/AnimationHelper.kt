@@ -1,9 +1,9 @@
 package com.kirchhoff.fabanimation
 
 import android.content.Context
-import android.support.annotation.AnimRes
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
+import androidx.annotation.AnimRes
 
 internal class AnimationHelper(private val context: Context) {
 

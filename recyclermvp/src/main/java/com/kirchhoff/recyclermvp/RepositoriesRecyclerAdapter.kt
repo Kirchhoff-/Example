@@ -1,8 +1,8 @@
 package com.kirchhoff.recyclermvp
 
-import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.recyclerview.widget.RecyclerView
 
 class RepositoriesRecyclerAdapter(private val presenter: RepositoriesListPresenter) : RecyclerView.Adapter<RepositoryViewHolder>() {
 

@@ -1,9 +1,9 @@
 package com.kirchhoff.fabanimation
 
 import android.os.Bundle
-import android.support.design.widget.FloatingActionButton
-import android.support.v7.app.AppCompatActivity
 import android.view.View
+import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class FabAnimationActivity : AppCompatActivity(), View.OnClickListener {
 

@@ -1,15 +1,15 @@
 package com.example.recyclertoviewpager.fragment
 
 import android.os.Bundle
-import android.support.v4.app.Fragment
-import android.support.v4.app.SharedElementCallback
-import android.support.v7.widget.GridLayoutManager
-import android.support.v7.widget.RecyclerView
 import android.transition.TransitionInflater
 import android.view.LayoutInflater
 import android.view.View
 import android.view.View.OnLayoutChangeListener
 import android.view.ViewGroup
+import androidx.core.app.SharedElementCallback
+import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.recyclertoviewpager.R
 import com.example.recyclertoviewpager.RecyclerToViewPagerActivity

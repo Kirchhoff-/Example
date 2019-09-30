@@ -2,8 +2,8 @@ package com.kirchhoff.fragmentcommunication
 
 import android.content.Intent
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
 import android.view.View
+import androidx.appcompat.app.AppCompatActivity
 import com.kirchhoff.fragmentcommunication.contract.FragmentCommunicationInterfaceActivity
 import com.kirchhoff.fragmentcommunication.viewmodel.FragmentCommunicationViewModelActivity
 

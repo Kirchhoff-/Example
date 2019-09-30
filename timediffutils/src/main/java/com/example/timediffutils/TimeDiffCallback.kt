@@ -1,6 +1,6 @@
 package com.example.timediffutils
 
-import android.support.v7.util.DiffUtil
+import androidx.recyclerview.widget.DiffUtil
 import com.example.timediffutils.data.Time
 
 class TimeDiffCallback(private val oldList: List<Time>, private val newList: List<Time>) : DiffUtil.Callback() {

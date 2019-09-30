@@ -2,8 +2,8 @@ package com.example.prefixedittext
 
 import android.content.Context
 import android.graphics.Canvas
-import android.support.v7.widget.AppCompatEditText
 import android.util.AttributeSet
+import androidx.appcompat.widget.AppCompatEditText
 
 internal class PrefixEditText @JvmOverloads constructor(
         context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0

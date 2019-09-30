@@ -1,6 +1,6 @@
 package com.example.recyclertoviewpager.data
 
-import android.support.annotation.DrawableRes
+import androidx.annotation.DrawableRes
 import com.example.recyclertoviewpager.R
 
 @DrawableRes
