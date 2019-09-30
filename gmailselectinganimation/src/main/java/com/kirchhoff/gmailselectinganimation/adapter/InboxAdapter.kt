@@ -1,8 +1,8 @@
 package com.kirchhoff.gmailselectinganimation.adapter
 
-import android.support.v7.recyclerview.extensions.ListAdapter
-import android.support.v7.util.DiffUtil
 import android.view.ViewGroup
+import androidx.recyclerview.widget.DiffUtil
+import androidx.recyclerview.widget.ListAdapter
 import com.kirchhoff.gmailselectinganimation.data.EmailUiModel
 
 class InboxAdapter : ListAdapter<EmailUiModel, EmailViewHolder>(EmailDiffer) {

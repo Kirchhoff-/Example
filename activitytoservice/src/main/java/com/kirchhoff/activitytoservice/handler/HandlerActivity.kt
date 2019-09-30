@@ -4,8 +4,8 @@ import android.content.Intent
 import android.os.Bundle
 import android.os.Message
 import android.os.Messenger
-import android.support.v7.app.AppCompatActivity
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 
 
 internal class HandlerActivity : AppCompatActivity(), CustomHandler.AppReceiver {

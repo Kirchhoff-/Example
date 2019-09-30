@@ -1,7 +1,7 @@
 package com.kirchhoff.circularrevealfragment
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import com.kirchhoff.circularrevealfragment.fragments.DashboardFragment
 import com.kirchhoff.circularrevealfragment.utils.ExitWithAnimation
 import com.kirchhoff.circularrevealfragment.utils.exitCircularReveal

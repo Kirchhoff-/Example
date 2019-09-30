@@ -1,14 +1,13 @@
 package com.example.recyclertoviewpager.fragment
 
 import android.os.Bundle
-import android.support.v4.app.Fragment
-import android.support.v4.view.ViewPager
 import android.transition.TransitionInflater
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import androidx.viewpager.widget.ViewPager
 import com.example.recyclertoviewpager.ImagePagerAdapter
-
 import com.example.recyclertoviewpager.R
 import com.example.recyclertoviewpager.RecyclerToViewPagerActivity
 
@@ -51,7 +50,7 @@ internal class ImagePagerFragment : Fragment() {
         sharedElementEnterTransition = transition
 
         // A similar mapping is set at the GridFragment with a setExitSharedElementCallback.
-        setEnterSharedElementCallback(object : android.support.v4.app.SharedElementCallback() {
+        setEnterSharedElementCallback(object : androidx.core.app.SharedElementCallback() {
             override fun onMapSharedElements(names: List<String>?, sharedElements: MutableMap<String, View>?) {
                 super.onMapSharedElements(names, sharedElements)
                 // visible). To locate the fragment, call instantiateItem with the selection position.

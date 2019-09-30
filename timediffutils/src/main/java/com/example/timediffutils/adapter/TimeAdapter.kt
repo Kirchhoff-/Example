@@ -1,6 +1,6 @@
 package com.example.timediffutils.adapter
 
-import android.support.v7.util.DiffUtil.calculateDiff
+import androidx.recyclerview.widget.DiffUtil.calculateDiff
 import com.example.timediffutils.TimeDiffCallback
 import com.example.timediffutils.data.Time
 import com.example.timediffutils.extensions.setFormatDigit

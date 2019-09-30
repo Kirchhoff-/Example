@@ -1,12 +1,11 @@
 package com.example.recyclerdragdrop.adapter
 
-import android.support.v7.widget.RecyclerView
-import android.support.v7.widget.helper.ItemTouchHelper
 import android.text.TextUtils
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-
+import androidx.recyclerview.widget.ItemTouchHelper
+import androidx.recyclerview.widget.RecyclerView
 import com.example.recyclerdragdrop.R
 import com.example.recyclerdragdrop.adapter.holder.HeaderViewHolder
 import com.example.recyclerdragdrop.adapter.holder.UserViewHolder
@@ -14,7 +13,7 @@ import com.example.recyclerdragdrop.data.User
 import com.example.recyclerdragdrop.helper.SwipeAndDragHelper
 
 internal class UserListAdapter(private val usersList: MutableList<User>) :
-        RecyclerView.Adapter<RecyclerView.ViewHolder>(), SwipeAndDragHelper.ActionCompletionContract {
+        RecyclerView.Adapter< RecyclerView.ViewHolder>(), SwipeAndDragHelper.ActionCompletionContract {
 
     private lateinit var touchHelper: ItemTouchHelper
 

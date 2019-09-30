@@ -1,6 +1,6 @@
 package com.kirchhoff.thingdiffutils
 
-import android.support.v7.util.DiffUtil
+import androidx.recyclerview.widget.DiffUtil
 
 class DiffUtilCallback(private val current: List<Thing>,
                        private val next: List<Thing>) : DiffUtil.Callback() {

@@ -1,13 +1,13 @@
 package com.example.bottomnavigationview
 
 import android.os.Bundle
-import android.support.design.widget.BottomNavigationView
-import android.support.v4.app.Fragment
-import android.support.v4.app.FragmentManager
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentManager
 import com.example.bottomnavigationview.fragment.ActionFragment
 import com.example.bottomnavigationview.fragment.HomeFragment
 import com.example.bottomnavigationview.fragment.InformationFragment
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 
 class BottomNavigationViewActivity : AppCompatActivity() {
@@ -30,8 +30,7 @@ class BottomNavigationViewActivity : AppCompatActivity() {
         fm.beginTransaction().add(R.id.mainContainer, homeFragment, "1").commit()
     }
 
-    private val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener {
-        item ->
+    private val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
         when (item.itemId) {
             R.id.navigation_home -> changeFragment(homeFragment)
             R.id.navigation_action -> changeFragment(actionFragment)

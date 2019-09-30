@@ -1,10 +1,10 @@
 package com.kirchhoff.recyclersearch.adapter
 
-import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.Filter
 import android.widget.Filterable
+import androidx.recyclerview.widget.RecyclerView
 import com.kirchhoff.recyclersearch.R
 import com.kirchhoff.recyclersearch.data.AndroidVersion
 import java.util.*

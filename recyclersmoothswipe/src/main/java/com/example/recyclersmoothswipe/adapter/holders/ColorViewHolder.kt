@@ -2,11 +2,11 @@ package com.example.recyclersmoothswipe.adapter.holders
 
 import android.content.Context
 import android.graphics.Color
-import android.support.v7.widget.RecyclerView
 import android.util.Log
 import android.view.View
 import android.widget.FrameLayout
 import android.widget.Toast
+import androidx.recyclerview.widget.RecyclerView
 import com.example.recyclersmoothswipe.R
 
 internal open class ColorViewHolder(private val context: Context, view: View) : RecyclerView.ViewHolder(view) {

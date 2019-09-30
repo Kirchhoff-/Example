@@ -1,7 +1,7 @@
 package com.kirchhoff.fragmentcommunication.viewmodel
 
-import android.arch.lifecycle.MutableLiveData
-import android.arch.lifecycle.ViewModel
+import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
 
 class TextViewModel : ViewModel() {
     val message = MutableLiveData<String>()

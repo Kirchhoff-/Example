@@ -1,7 +1,7 @@
 package com.kirchhoff.viewpagerwithoutfragment
 
-import android.support.annotation.LayoutRes
-import android.support.annotation.StringRes
+import androidx.annotation.LayoutRes
+import androidx.annotation.StringRes
 
 enum class CustomPagerEnum(@param:StringRes @field:StringRes val titleResId: Int,
                            @param:LayoutRes @field:LayoutRes val layoutResId: Int) {

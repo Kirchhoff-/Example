@@ -1,8 +1,8 @@
 package com.kirchhoff.recyclermvp
 
-import android.support.v7.widget.RecyclerView
 import android.view.View
 import android.widget.TextView
+import androidx.recyclerview.widget.RecyclerView
 
 class RepositoryViewHolder internal constructor(itemView: View) : RecyclerView.ViewHolder(itemView), RepositoryRowView {
 

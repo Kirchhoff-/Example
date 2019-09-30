@@ -1,7 +1,7 @@
 package com.kirchhoff.fragmentcommunication.viewmodel
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import com.kirchhoff.fragmentcommunication.R
 import com.kirchhoff.fragmentcommunication.viewmodel.fragment.FirstViewModelFragment
 import com.kirchhoff.fragmentcommunication.viewmodel.fragment.SecondViewModelFragment

@@ -1,14 +1,12 @@
 package com.example.recyclertoviewpager.adapter.listener
 
-import android.support.v4.app.Fragment
 import android.transition.TransitionSet
 import android.view.View
 import android.widget.ImageView
-
+import androidx.fragment.app.Fragment
 import com.example.recyclertoviewpager.R
 import com.example.recyclertoviewpager.RecyclerToViewPagerActivity
 import com.example.recyclertoviewpager.fragment.ImagePagerFragment
-
 import java.util.concurrent.atomic.AtomicBoolean
 
 internal class ViewHolderListenerImpl internal constructor(private val fragment: Fragment) : ViewHolderListener {
