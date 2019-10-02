@@ -4,5 +4,5 @@ dependencies {
     implementation libraries.constraintLayout
     implementation libraries.supportRecyclerView
     implementation libraries.glide
-    annotationProcessor libraries.glideCompiler
+    kapt libraries.glideCompiler
 }
