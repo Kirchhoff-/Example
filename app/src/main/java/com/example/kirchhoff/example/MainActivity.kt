@@ -143,6 +143,10 @@ class MainActivity : AppCompatActivity() {
         startActivity(ScreenshotActivity::class.java)
     }
 
+    fun progressBarCustomization(view: View) {
+        startActivity(ProgressBarCustomizationActivity::class.java)
+    }
+
     private fun startActivity(cls: Class<*>) {
         startActivity(Intent(this, cls))
     }

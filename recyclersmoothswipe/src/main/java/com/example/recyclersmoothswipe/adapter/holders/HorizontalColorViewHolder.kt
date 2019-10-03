@@ -2,7 +2,6 @@ package com.example.recyclersmoothswipe.adapter.holders
 
 import android.content.Context
 import android.view.View
-import  LinearLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.recyclersmoothswipe.R

@@ -1,0 +1,11 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.progressbarcustomization">
+
+    <application>
+        <activity
+            android:name=".ProgressBarCustomizationActivity"
+            android:label="@string/progress_bar_customization_title" />
+    </application>
+
+</manifest>
+
