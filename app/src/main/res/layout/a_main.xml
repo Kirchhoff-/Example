@@ -172,19 +172,19 @@
             android:onClick="bottomNavigationView"
             android:text="@string/bottomnavigationview_example" />
 
-	    <Button
-		    android:id="@+id/bActivityToService"
-		    android:layout_width="match_parent"
-		    android:layout_height="wrap_content"
+        <Button
+            android:id="@+id/bActivityToService"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:onClick="activityToService"
-		    android:text="@string/activity_to_service_example" />
+            android:text="@string/activity_to_service_example" />
 
         <Button
             android:id="@+id/bLazyBind"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="lazyBind"
-            android:text="@string/lazy_bind_example"/>
+            android:text="@string/lazy_bind_example" />
 
         <Button
             android:id="@+id/bScreenshot"
@@ -192,6 +192,12 @@
             android:layout_height="wrap_content"
             android:onClick="screenshot"
             android:text="@string/screenshot_example" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="progressBarCustomization"
+            android:text="@string/progress_bar_customization_example" />
 
     </LinearLayout>
 

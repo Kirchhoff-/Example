@@ -56,4 +56,5 @@ dependencies {
     implementation project(path: ':activitytoservice')
     implementation project(path: ':lazybind')
     implementation project(path: ':screenshot')
+    implementation project(path: ':progressbarcustomization')
 }

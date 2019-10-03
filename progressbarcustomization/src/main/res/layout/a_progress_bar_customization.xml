@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:orientation="vertical">
+
+    <ProgressBar
+        android:id="@+id/pbFirst"
+        style="@style/ProgressBarHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:theme="@style/ProgressBarHorizontal" />
+
+    <ProgressBar
+        android:id="@+id/pbSecond"
+        style="@style/ProgressBarRectangle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="32dp"
+        android:secondaryProgress="60" />
+
+    <Button
+        android:id="@+id/bStartProgress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/start_progress" />
+
+</LinearLayout>
