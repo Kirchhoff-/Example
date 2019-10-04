@@ -41,6 +41,6 @@ class BottomNavigationViewActivity : AppCompatActivity() {
 
     private fun changeFragment(fragment: Fragment) {
         fm.beginTransaction().hide(active).show(fragment).commit()
-        active = homeFragment
+        active = fragment
     }
 }

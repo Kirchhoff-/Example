@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tvInformation"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/long_text"
-        android:textSize="24sp" />
-
-</ScrollView>
+    android:orientation="vertical"
+    android:scrollbars="vertical"
+    android:text="@string/long_text"
+    android:textSize="24sp"
+    android:theme="@style/FragmentBackground" />

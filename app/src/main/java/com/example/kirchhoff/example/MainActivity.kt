@@ -9,6 +9,7 @@ import com.example.constraintanimation.ConstraintLayoutAnimationActivity
 import com.example.lazybind.LazyBindActivity
 import com.example.likebutton.LikeButtonActivity
 import com.example.prefixedittext.PrefixEditTextActivity
+import com.example.progressbarcustomization.ProgressBarCustomizationActivity
 import com.example.raindropview.RainDropActivity
 import com.example.recyclercollapsing.RecyclerCollapsingToolbarActivity
 import com.example.recyclerdragdrop.RecyclerViewDragDropActivity
