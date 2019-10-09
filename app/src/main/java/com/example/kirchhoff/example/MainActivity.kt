@@ -6,6 +6,7 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.example.bottomnavigationview.BottomNavigationViewActivity
 import com.example.constraintanimation.ConstraintLayoutAnimationActivity
+import com.example.custommenuitem.CustomMenuItemActivity
 import com.example.lazybind.LazyBindActivity
 import com.example.likebutton.LikeButtonActivity
 import com.example.prefixedittext.PrefixEditTextActivity
@@ -146,6 +147,10 @@ class MainActivity : AppCompatActivity() {
 
     fun progressBarCustomization(view: View) {
         startActivity(ProgressBarCustomizationActivity::class.java)
+    }
+
+    fun customMenuItem(view: View) {
+        startActivity(CustomMenuItemActivity::class.java)
     }
 
     private fun startActivity(cls: Class<*>) {
