@@ -1,0 +1,10 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.custommenuitem">
+
+    <application android:supportsRtl="false">
+        <activity
+            android:name=".CustomMenuItemActivity"
+            android:label="@string/custom_menu_item_title" />
+    </application>
+
+</manifest>

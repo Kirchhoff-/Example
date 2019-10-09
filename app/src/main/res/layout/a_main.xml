@@ -199,6 +199,12 @@
             android:onClick="progressBarCustomization"
             android:text="@string/progress_bar_customization_example" />
 
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="customMenuItem"
+            android:text="@string/custom_menu_item_title" />
+
     </LinearLayout>
 
 </ScrollView>
