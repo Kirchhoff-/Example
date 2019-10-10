@@ -23,6 +23,15 @@
         android:layout_marginTop="32dp"
         android:secondaryProgress="60" />
 
+    <ProgressBar
+        android:id="@+id/pbThird"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="10dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="32dp"
+        android:progressDrawable="@drawable/custom_progressbar_vertical" />
+
     <Button
         android:id="@+id/bStartProgress"
         android:layout_width="match_parent"
