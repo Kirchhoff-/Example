@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.kirchhoff.example.RecyclerViewExamplesActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/recyclerViewWithSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="recyclerViewWithSearch"
+            android:text="@string/recyclerview_with_search_example" />
+
+        <Button
+            android:id="@+id/recyclerCollapsing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="recyclerCollapsing"
+            android:text="@string/recycler_collapsing_example" />
+
+        <Button
+            android:id="@+id/mvpRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="mvpRecycler"
+            android:text="@string/mvp_recyclerview_example" />
+
+        <Button
+            android:id="@+id/fastRecyclerViewExample"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="fastRecyclerViewExample"
+            android:text="@string/fast_recycler_view" />
+
+        <Button
+            android:id="@+id/bRecyclerSmoothSwipe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="recyclerSmoothSwipe"
+            android:text="@string/recycler_smooth_swipe_example" />
+
+        <Button
+            android:id="@+id/bRecyclerDragDrop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="recyclerDragDrop"
+            android:text="@string/recycler_view_drag_and_drop_example" />
+
+        <Button
+            android:id="@+id/bRecyclerToViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="recyclerToViewPager"
+            android:text="@string/recycler_to_viewpager_title" />
+
+        <Button
+            android:id="@+id/timeDiffUtil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="timeDiffUtil"
+            android:text="@string/time_diff_utils_example" />
+
+        <Button
+            android:id="@+id/thingDiffUtils"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="thingDiffUtils"
+            android:text="@string/thing_diffutils_example" />
+
+    </LinearLayout>
+
+</ScrollView>
