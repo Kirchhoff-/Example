@@ -39,9 +39,9 @@ class AndroidVersionDataAdapter(initialList: List<AndroidVersion>) : RecyclerVie
                     val filList = ArrayList<AndroidVersion>()
 
                     for (androidVersion in list) {
-                        if (androidVersion.api.toLowerCase().contains(charString) ||
-                                androidVersion.name.toLowerCase().contains(charString) ||
-                                androidVersion.version.toLowerCase().contains(charString)) {
+                        if (androidVersion.api.toLowerCase(Locale.getDefault()).contains(charString) ||
+                                androidVersion.name.toLowerCase(Locale.getDefault()).contains(charString) ||
+                                androidVersion.version.toLowerCase(Locale.getDefault()).contains(charString)) {
                             filList.add(androidVersion)
                         }
                     }
