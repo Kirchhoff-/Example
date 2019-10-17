@@ -2,7 +2,7 @@ package com.kirchhoff.thingdiffutils
 
 import io.reactivex.Flowable
 import io.reactivex.schedulers.Schedulers
-import java.util.*
+import java.util.Random
 import java.util.concurrent.TimeUnit
 
 object ThingRepository {
@@ -29,7 +29,7 @@ object ThingRepository {
 
     private fun shuffle(things: MutableList<Thing>): List<Thing> {
         val shuffled = ArrayList<Thing>(things.size)
-        while (!things.isEmpty()) {
+        while (things.isNotEmpty()) {
             val thing = things.removeAt(random.nextInt(things.size))
             shuffled.add(thing)
         }

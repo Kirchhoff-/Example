@@ -56,5 +56,4 @@ class TimeDiffCallback(private val oldList: List<Time>, private val newList: Lis
 
         return set
     }
-
 }

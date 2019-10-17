@@ -6,4 +6,5 @@ data class EmailUiModel(
         val preview: String,
         val isSelected: () -> Boolean,
         val setSelected: (Boolean) -> Unit,
-        val onClick: () -> Unit)
+        val onClick: () -> Unit
+)

@@ -9,8 +9,11 @@ import com.kirchhoff.timediffutils.R
 import io.reactivex.Flowable
 import io.reactivex.disposables.Disposable
 import io.reactivex.schedulers.Schedulers
-import java.util.*
-import java.util.Calendar.*
+import java.util.Calendar.HOUR_OF_DAY
+import java.util.Calendar.MINUTE
+import java.util.Calendar.SECOND
+import java.util.Calendar.getInstance
+import java.util.TimeZone
 import java.util.concurrent.TimeUnit
 
 class TimeDiffUtilActivity : AppCompatActivity() {

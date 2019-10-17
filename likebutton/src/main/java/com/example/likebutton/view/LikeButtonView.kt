@@ -14,12 +14,13 @@ import android.view.animation.DecelerateInterpolator
 import android.view.animation.OvershootInterpolator
 import android.widget.FrameLayout
 import android.widget.ImageView
-
 import com.kirchhoff.likebutton.R
 
-
-class LikeButtonView @JvmOverloads constructor(context: Context, attrs: AttributeSet? = null,
-                                               defStyleAttr: Int = 0) : FrameLayout(context, attrs, defStyleAttr), View.OnClickListener {
+class LikeButtonView @JvmOverloads constructor(
+        context: Context,
+        attrs: AttributeSet? = null,
+        defStyleAttr: Int = 0
+) : FrameLayout(context, attrs, defStyleAttr), View.OnClickListener {
 
     companion object {
         private val DECELERATE_INTERPOLATOR = DecelerateInterpolator()

@@ -6,7 +6,6 @@ import com.example.timediffutils.data.Time
 import com.example.timediffutils.extensions.setFormatDigit
 import com.kirchhoff.timediffutils.R
 
-
 class TimeViewHolder(itemView: android.view.View) : BaseViewHolder<Time>(itemView) {
 
     companion object {

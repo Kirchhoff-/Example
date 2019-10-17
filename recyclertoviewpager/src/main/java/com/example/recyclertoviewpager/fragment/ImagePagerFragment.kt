@@ -18,8 +18,11 @@ internal class ImagePagerFragment : Fragment() {
 
     private var viewPager: ViewPager? = null
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
-                              savedInstanceState: Bundle?): View? {
+    override fun onCreateView(
+            inflater: LayoutInflater,
+            container: ViewGroup?,
+            savedInstanceState: Bundle?
+    ): View? {
         viewPager = inflater.inflate(R.layout.f_pager, container, false) as ViewPager
         viewPager!!.adapter = ImagePagerAdapter(this)
         // Set the current position and add a listener that will update the selection coordinator when

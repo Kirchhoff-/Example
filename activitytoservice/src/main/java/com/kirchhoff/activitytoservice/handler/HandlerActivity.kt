@@ -7,7 +7,6 @@ import android.os.Messenger
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
-
 internal class HandlerActivity : AppCompatActivity(), CustomHandler.AppReceiver {
 
     override fun onCreate(savedInstanceState: Bundle?) {

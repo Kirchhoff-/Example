@@ -9,7 +9,6 @@ import com.example.recyclerdragdrop.adapter.UserListAdapter
 import com.example.recyclerdragdrop.data.UsersRepository
 import com.example.recyclerdragdrop.helper.SwipeAndDragHelper
 
-
 class RecyclerViewDragDropActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {

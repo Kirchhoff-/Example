@@ -7,7 +7,6 @@ import com.example.timediffutils.extensions.setFormatDigit
 import com.kirchhoff.timediffutils.R
 import io.reactivex.android.schedulers.AndroidSchedulers
 
-
 class TimeAdapter : BaseAdapter<Time, TimeViewHolder>() {
 
     override fun getItemViewId() = R.layout.r_time_diff
@@ -49,5 +48,4 @@ class TimeAdapter : BaseAdapter<Time, TimeViewHolder>() {
             }
         }
     }
-
 }

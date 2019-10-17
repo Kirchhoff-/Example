@@ -7,7 +7,8 @@ import android.widget.Filterable
 import androidx.recyclerview.widget.RecyclerView
 import com.kirchhoff.recyclersearch.R
 import com.kirchhoff.recyclersearch.data.AndroidVersion
-import java.util.*
+import java.util.Locale
+import kotlin.collections.ArrayList
 
 class AndroidVersionDataAdapter(initialList: List<AndroidVersion>) : RecyclerView.Adapter<AndroidVersionViewHolder>(), Filterable {
 

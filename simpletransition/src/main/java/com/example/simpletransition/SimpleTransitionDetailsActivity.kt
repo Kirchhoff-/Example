@@ -8,7 +8,6 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 
-
 class SimpleTransitionDetailsActivity : AppCompatActivity() {
 
     private lateinit var tvDesc: TextView

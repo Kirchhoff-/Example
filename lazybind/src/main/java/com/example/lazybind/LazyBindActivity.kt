@@ -5,7 +5,7 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.lazybind.extensions.bindView
 
-class LazyBindActivity: AppCompatActivity() {
+class LazyBindActivity : AppCompatActivity() {
 
     private val tvFirst by bindView<TextView>(R.id.tvFirst)
     private val tvSecond: TextView by bindView(R.id.tvSecond)

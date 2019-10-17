@@ -8,10 +8,12 @@ import android.util.AttributeSet
 import android.view.MotionEvent
 import android.view.View
 
-class RainDropView @JvmOverloads constructor(context: Context,
-                                             attrs: AttributeSet? = null,
-                                             defStyleAttr: Int = 0,
-                                             defStyleRes: Int = 0) :
+class RainDropView @JvmOverloads constructor(
+        context: Context,
+        attrs: AttributeSet? = null,
+        defStyleAttr: Int = 0,
+        defStyleRes: Int = 0
+) :
         View(context, attrs, defStyleAttr, defStyleRes) {
 
     private val paint = Paint()
@@ -19,7 +21,6 @@ class RainDropView @JvmOverloads constructor(context: Context,
             .apply { style = Paint.Style.STROKE }
             .apply { isAntiAlias = true }
             .apply { strokeWidth = 2f }
-
 
     private var rainDropList: MutableList<RainDrop> = mutableListOf()
     private val maxRadius by lazy {

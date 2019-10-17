@@ -9,7 +9,6 @@ import com.example.bottomnavigationview.fragment.HomeFragment
 import com.example.bottomnavigationview.fragment.InformationFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
-
 class BottomNavigationViewActivity : AppCompatActivity() {
 
     private val homeFragment: Fragment = HomeFragment()

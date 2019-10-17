@@ -8,5 +8,4 @@ internal interface ViewHolderListener {
     fun onLoadCompleted(view: ImageView, adapterPosition: Int)
 
     fun onItemClicked(view: View, adapterPosition: Int)
-
 }
