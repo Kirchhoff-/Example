@@ -27,9 +27,15 @@ internal class SwipeAndDragHelper(private val contract: ActionCompletionContract
 
     override fun isLongPressDragEnabled() = false
 
-    override fun onChildDraw(c: Canvas, recyclerView: RecyclerView,
-                             viewHolder: RecyclerView.ViewHolder, dX: Float, dY: Float,
-                             actionState: Int, isCurrentlyActive: Boolean) {
+    override fun onChildDraw(
+            c: Canvas,
+            recyclerView: RecyclerView,
+            viewHolder: RecyclerView.ViewHolder,
+            dX: Float,
+            dY: Float,
+            actionState: Int,
+            isCurrentlyActive: Boolean
+    ) {
         if (actionState == ItemTouchHelper.ACTION_STATE_SWIPE) {
             val alpha = 1 - Math.abs(dX) / recyclerView.width
             viewHolder.itemView.alpha = alpha

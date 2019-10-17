@@ -6,13 +6,17 @@ import android.util.AttributeSet
 import androidx.appcompat.widget.AppCompatEditText
 
 internal class PrefixEditText @JvmOverloads constructor(
-        context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
+        context: Context,
+        attrs: AttributeSet? = null,
+        defStyleAttr: Int = 0
 ) : AppCompatEditText(context, attrs, defStyleAttr) {
 
     private var mOriginalLeftPadding = -1f
 
-    override fun onMeasure(widthMeasureSpec: Int,
-                           heightMeasureSpec: Int) {
+    override fun onMeasure(
+            widthMeasureSpec: Int,
+            heightMeasureSpec: Int
+    ) {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec)
         calculatePrefix()
     }

@@ -66,7 +66,8 @@ class SwivelCheckView constructor(context: Context, attrs: AttributeSet) : ViewF
 private class SwivelAnimation(
         private val rotation: ClosedFloatingPointRange<Float>,
         private val calculateCenterX: () -> Float,
-        private val updateDisplayedSide: (DisplaySide) -> Unit) : Animation() {
+        private val updateDisplayedSide: (DisplaySide) -> Unit
+) : Animation() {
 
     private val camera = Camera()
 

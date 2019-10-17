@@ -9,7 +9,6 @@ import androidx.recyclerview.widget.RecyclerView
 import io.reactivex.android.schedulers.AndroidSchedulers.mainThread
 import io.reactivex.disposables.Disposable
 import io.reactivex.schedulers.Schedulers.computation
-import java.util.*
 import java.util.concurrent.TimeUnit
 
 class ThingDiffUtilActivity : AppCompatActivity() {

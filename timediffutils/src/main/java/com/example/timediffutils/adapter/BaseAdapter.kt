@@ -3,7 +3,6 @@ package com.example.timediffutils.adapter
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 
-
 abstract class BaseAdapter<D, VH : BaseViewHolder<D>> : RecyclerView.Adapter<VH>() {
 
     var listSource: List<D> = emptyList()
@@ -26,4 +25,3 @@ abstract class BaseAdapter<D, VH : BaseViewHolder<D>> : RecyclerView.Adapter<VH>
 
     fun getItem(position: Int) = listSource[position]
 }
-

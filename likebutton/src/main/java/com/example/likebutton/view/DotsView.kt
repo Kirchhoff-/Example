@@ -7,11 +7,13 @@ import android.graphics.Paint
 import android.util.AttributeSet
 import android.util.Property
 import android.view.View
-
 import com.example.likebutton.utils.MathUtils
 
-class DotsView @JvmOverloads constructor(context: Context, attrs: AttributeSet? = null,
-                                         defStyleAttr: Int = 0) : View(context, attrs, defStyleAttr) {
+class DotsView @JvmOverloads constructor(
+        context: Context,
+        attrs: AttributeSet? = null,
+        defStyleAttr: Int = 0
+) : View(context, attrs, defStyleAttr) {
 
     companion object {
         val DOTS_PROGRESS: Property<DotsView, Float> = object : Property<DotsView, Float>(Float::class.java, "dotsProgress") {
@@ -161,4 +163,3 @@ class DotsView @JvmOverloads constructor(context: Context, attrs: AttributeSet? 
         circlePaints[3]?.alpha = alpha
     }
 }
-

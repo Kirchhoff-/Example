@@ -17,5 +17,4 @@ class AndroidVersionRepository {
                 AndroidVersion("6.0", "Marshmallow", "API level 23"),
                 AndroidVersion("7.0-7.1", "Nougat", "API level 24-25"))
     }
-
 }

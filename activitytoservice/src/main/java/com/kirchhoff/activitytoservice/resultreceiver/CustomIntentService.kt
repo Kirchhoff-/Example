@@ -18,7 +18,7 @@ internal class CustomIntentService : IntentService(CustomIntentService::class.ja
          *  */
         val receiver = intent.getParcelableExtra<ResultReceiver>("receiver")
 
-        //Process background task here!
+        // Process background task here!
         try {
             Thread.sleep(2000)
         } catch (e: InterruptedException) {

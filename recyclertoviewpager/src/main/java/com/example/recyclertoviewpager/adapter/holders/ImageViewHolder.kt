@@ -13,10 +13,11 @@ import com.example.recyclertoviewpager.R
 import com.example.recyclertoviewpager.adapter.listener.ViewHolderListener
 import com.example.recyclertoviewpager.data.IMAGE_DRAWABLES
 
-
-internal class ImageViewHolder(itemView: View,
-                               private val requestManager: RequestManager,
-                               private val viewHolderListener: ViewHolderListener) : RecyclerView.ViewHolder(itemView), View.OnClickListener {
+internal class ImageViewHolder(
+        itemView: View,
+        private val requestManager: RequestManager,
+        private val viewHolderListener: ViewHolderListener
+) : RecyclerView.ViewHolder(itemView), View.OnClickListener {
 
     private val image: ImageView = itemView.findViewById(R.id.card_image)
 
@@ -35,18 +36,26 @@ internal class ImageViewHolder(itemView: View,
                 .load(IMAGE_DRAWABLES[adapterPosition])
                 .listener(object : RequestListener<Drawable> {
 
-                    override fun onResourceReady(resource: Drawable?, model: Any?, target: Target<Drawable>?,
-                                                 dataSource: DataSource?, isFirstResource: Boolean): Boolean {
+                    override fun onResourceReady(
+                            resource: Drawable?,
+                            model: Any?,
+                            target: Target<Drawable>?,
+                            dataSource: DataSource?,
+                            isFirstResource: Boolean
+                    ): Boolean {
                         viewHolderListener.onLoadCompleted(image, adapterPosition)
                         return false
                     }
 
-                    override fun onLoadFailed(e: GlideException?, model: Any?, target: Target<Drawable>?,
-                                              isFirstResource: Boolean): Boolean {
+                    override fun onLoadFailed(
+                            e: GlideException?,
+                            model: Any?,
+                            target: Target<Drawable>?,
+                            isFirstResource: Boolean
+                    ): Boolean {
                         viewHolderListener.onLoadCompleted(image, adapterPosition)
                         return false
                     }
-
                 })
                 .into(image)
     }

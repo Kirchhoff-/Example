@@ -8,7 +8,6 @@ import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.LinearLayout
 import android.widget.TextView
-import java.util.*
 
 class CustomAdapter internal constructor(private val context: Context, list: List<Array<String>>) : BaseAdapter() {
 
@@ -36,5 +35,4 @@ class CustomAdapter internal constructor(private val context: Context, list: Lis
         tvEmail.text = array[1]
         return row
     }
-
 }

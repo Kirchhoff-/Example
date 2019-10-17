@@ -21,5 +21,4 @@ class SecondViewModelFragment : Fragment() {
         textViewModel?.message?.observe(this, Observer<String> { text -> tvRandomString.text = text })
         return rootView
     }
-
 }

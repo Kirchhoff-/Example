@@ -8,7 +8,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.app.ActivityOptionsCompat
 import androidx.core.content.ContextCompat
-import java.util.*
 
 class SimpleTransitionActivity : AppCompatActivity() {
 
@@ -29,7 +28,7 @@ class SimpleTransitionActivity : AppCompatActivity() {
             val transitionName = getString(R.string.transition)
             val options = ActivityOptionsCompat.makeSceneTransitionAnimation(this@SimpleTransitionActivity,
                     view, // Starting view
-                    transitionName    // The String
+                    transitionName // The String
             )
             ActivityCompat.startActivity(this@SimpleTransitionActivity, intent, options.toBundle())
         }

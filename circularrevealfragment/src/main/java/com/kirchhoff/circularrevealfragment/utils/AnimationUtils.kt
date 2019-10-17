@@ -14,8 +14,17 @@ import android.view.animation.DecelerateInterpolator
 fun View.startCircularReveal(fromLeft: Boolean) {
     addOnLayoutChangeListener(object : View.OnLayoutChangeListener {
 
-        override fun onLayoutChange(v: View, left: Int, top: Int, right: Int, bottom: Int, oldLeft: Int, oldTop: Int,
-                                    oldRight: Int, oldBottom: Int) {
+        override fun onLayoutChange(
+                v: View,
+                left: Int,
+                top: Int,
+                right: Int,
+                bottom: Int,
+                oldLeft: Int,
+                oldTop: Int,
+                oldRight: Int,
+                oldBottom: Int
+        ) {
             v.removeOnLayoutChangeListener(this)
             val cx = if (fromLeft) v.left else v.right
             val cy = v.bottom

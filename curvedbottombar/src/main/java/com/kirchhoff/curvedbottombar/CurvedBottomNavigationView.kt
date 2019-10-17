@@ -5,8 +5,11 @@ import android.graphics.*
 import android.util.AttributeSet
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
-class CurvedBottomNavigationView @JvmOverloads constructor(context: Context, attrs: AttributeSet? = null,
-                                                           defStyleAttr: Int = 0) : BottomNavigationView(context, attrs, defStyleAttr) {
+class CurvedBottomNavigationView @JvmOverloads constructor(
+        context: Context,
+        attrs: AttributeSet? = null,
+        defStyleAttr: Int = 0
+) : BottomNavigationView(context, attrs, defStyleAttr) {
 
     private val path: Path = Path()
     private val paint: Paint = Paint()
@@ -82,5 +85,4 @@ class CurvedBottomNavigationView @JvmOverloads constructor(context: Context, att
         super.onDraw(canvas)
         canvas?.drawPath(path, paint)
     }
-
 }

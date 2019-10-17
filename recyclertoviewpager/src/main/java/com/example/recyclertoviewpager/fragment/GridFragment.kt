@@ -23,8 +23,11 @@ internal class GridFragment : Fragment() {
 
     private var recyclerView: RecyclerView? = null
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
-                              savedInstanceState: Bundle?): View? {
+    override fun onCreateView(
+            inflater: LayoutInflater,
+            container: ViewGroup?,
+            savedInstanceState: Bundle?
+    ): View? {
         recyclerView = inflater.inflate(R.layout.f_grid, container, false) as RecyclerView
         recyclerView!!.layoutManager = GridLayoutManager(context, 2)
         recyclerView!!.adapter = GridAdapter(Glide.with(this), ViewHolderListenerImpl(this))
@@ -46,15 +49,17 @@ internal class GridFragment : Fragment() {
      */
     private fun scrollToPosition() {
         recyclerView!!.addOnLayoutChangeListener(object : OnLayoutChangeListener {
-            override fun onLayoutChange(v: View,
-                                        left: Int,
-                                        top: Int,
-                                        right: Int,
-                                        bottom: Int,
-                                        oldLeft: Int,
-                                        oldTop: Int,
-                                        oldRight: Int,
-                                        oldBottom: Int) {
+            override fun onLayoutChange(
+                    v: View,
+                    left: Int,
+                    top: Int,
+                    right: Int,
+                    bottom: Int,
+                    oldLeft: Int,
+                    oldTop: Int,
+                    oldRight: Int,
+                    oldBottom: Int
+            ) {
                 recyclerView!!.removeOnLayoutChangeListener(this)
                 val layoutManager = recyclerView!!.layoutManager
                 val viewAtPosition = layoutManager!!.findViewByPosition(RecyclerToViewPagerActivity.currentPosition)

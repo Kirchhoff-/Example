@@ -2,15 +2,21 @@ package com.example.likebutton.view
 
 import android.animation.ArgbEvaluator
 import android.content.Context
-import android.graphics.*
+import android.graphics.Bitmap
+import android.graphics.Canvas
+import android.graphics.Paint
+import android.graphics.PorterDuff
+import android.graphics.PorterDuffXfermode
 import android.util.AttributeSet
 import android.util.Property
 import android.view.View
 import com.example.likebutton.utils.MathUtils
 
-
-class CircleView @JvmOverloads constructor(context: Context, attrs: AttributeSet? = null,
-                                           defStyleAttr: Int = 0) : View(context, attrs, defStyleAttr) {
+class CircleView @JvmOverloads constructor(
+        context: Context,
+        attrs: AttributeSet? = null,
+        defStyleAttr: Int = 0
+) : View(context, attrs, defStyleAttr) {
 
     private val argbEvaluator = ArgbEvaluator()
     private val circlePaint = Paint()

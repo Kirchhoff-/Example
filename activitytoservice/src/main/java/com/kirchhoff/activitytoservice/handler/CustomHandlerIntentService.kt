@@ -17,7 +17,7 @@ internal class CustomHandlerIntentService : IntentService(CustomHandlerIntentSer
          *  */
         val messenger = intent.getParcelableExtra<Messenger>("handler")
 
-        //Process background task here!
+        // Process background task here!
         try {
             Thread.sleep(2000)
         } catch (e: InterruptedException) {
