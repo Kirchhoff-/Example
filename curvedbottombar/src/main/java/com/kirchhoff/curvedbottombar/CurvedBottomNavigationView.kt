@@ -1,14 +1,18 @@
 package com.kirchhoff.curvedbottombar
 
 import android.content.Context
-import android.graphics.*
+import android.graphics.Canvas
+import android.graphics.Color
+import android.graphics.Paint
+import android.graphics.Path
+import android.graphics.Point
 import android.util.AttributeSet
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class CurvedBottomNavigationView @JvmOverloads constructor(
-        context: Context,
-        attrs: AttributeSet? = null,
-        defStyleAttr: Int = 0
+    context: Context,
+    attrs: AttributeSet? = null,
+    defStyleAttr: Int = 0
 ) : BottomNavigationView(context, attrs, defStyleAttr) {
 
     private val path: Path = Path()

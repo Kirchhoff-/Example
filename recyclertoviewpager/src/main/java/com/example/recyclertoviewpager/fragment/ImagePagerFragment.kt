@@ -19,9 +19,9 @@ internal class ImagePagerFragment : Fragment() {
     private var viewPager: ViewPager? = null
 
     override fun onCreateView(
-            inflater: LayoutInflater,
-            container: ViewGroup?,
-            savedInstanceState: Bundle?
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
     ): View? {
         viewPager = inflater.inflate(R.layout.f_pager, container, false) as ViewPager
         viewPager!!.adapter = ImagePagerAdapter(this)

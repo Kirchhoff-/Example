@@ -10,8 +10,8 @@ import com.example.recyclertoviewpager.adapter.listener.ViewHolderListener
 import com.example.recyclertoviewpager.data.IMAGE_DRAWABLES
 
 internal class GridAdapter(
-        private val requestManager: RequestManager,
-        private val viewHolderListener: ViewHolderListener
+    private val requestManager: RequestManager,
+    private val viewHolderListener: ViewHolderListener
 ) : RecyclerView.Adapter<ImageViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, p1: Int): ImageViewHolder {

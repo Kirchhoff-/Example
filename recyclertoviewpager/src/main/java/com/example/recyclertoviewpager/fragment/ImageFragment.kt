@@ -21,9 +21,9 @@ import com.example.recyclertoviewpager.R
 internal class ImageFragment : Fragment() {
 
     override fun onCreateView(
-            inflater: LayoutInflater,
-            container: ViewGroup?,
-            savedInstanceState: Bundle?
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.f_image, container, false)
 
@@ -39,10 +39,10 @@ internal class ImageFragment : Fragment() {
                 .load(imageRes)
                 .listener(object : RequestListener<Drawable> {
                     override fun onLoadFailed(
-                            e: GlideException?,
-                            model: Any,
-                            target: Target<Drawable>,
-                            isFirstResource: Boolean
+                        e: GlideException?,
+                        model: Any,
+                        target: Target<Drawable>,
+                        isFirstResource: Boolean
                     ): Boolean {
                         // The postponeEnterTransition is called on the parent ImagePagerFragment, so the
                         // startPostponedEnterTransition() should also be called on it to get the transition
@@ -52,11 +52,11 @@ internal class ImageFragment : Fragment() {
                     }
 
                     override fun onResourceReady(
-                            resource: Drawable,
-                            model: Any,
-                            target: Target<Drawable>,
-                            dataSource: DataSource,
-                            isFirstResource: Boolean
+                        resource: Drawable,
+                        model: Any,
+                        target: Target<Drawable>,
+                        dataSource: DataSource,
+                        isFirstResource: Boolean
                     ): Boolean {
                         // The postponeEnterTransition is called on the parent ImagePagerFragment, so the
                         // startPostponedEnterTransition() should also be called on it to get the transition

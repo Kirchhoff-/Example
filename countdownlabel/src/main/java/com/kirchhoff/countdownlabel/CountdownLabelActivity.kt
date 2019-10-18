@@ -4,7 +4,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import java.util.*
+import java.util.Date
 import java.util.concurrent.TimeUnit
 
 class CountdownLabelActivity : AppCompatActivity() {

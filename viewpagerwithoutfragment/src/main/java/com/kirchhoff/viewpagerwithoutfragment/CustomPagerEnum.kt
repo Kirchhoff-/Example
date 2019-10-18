@@ -4,8 +4,8 @@ import androidx.annotation.LayoutRes
 import androidx.annotation.StringRes
 
 enum class CustomPagerEnum(
-        @param:StringRes @field:StringRes val titleResId: Int,
-        @param:LayoutRes @field:LayoutRes val layoutResId: Int
+    @param:StringRes @field:StringRes val titleResId: Int,
+    @param:LayoutRes @field:LayoutRes val layoutResId: Int
 ) {
     RED(R.string.red, R.layout.v_red),
     BLUE(R.string.blue, R.layout.v_blue),

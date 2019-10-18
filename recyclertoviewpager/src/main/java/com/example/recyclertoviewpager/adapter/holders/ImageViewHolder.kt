@@ -14,9 +14,9 @@ import com.example.recyclertoviewpager.adapter.listener.ViewHolderListener
 import com.example.recyclertoviewpager.data.IMAGE_DRAWABLES
 
 internal class ImageViewHolder(
-        itemView: View,
-        private val requestManager: RequestManager,
-        private val viewHolderListener: ViewHolderListener
+    itemView: View,
+    private val requestManager: RequestManager,
+    private val viewHolderListener: ViewHolderListener
 ) : RecyclerView.ViewHolder(itemView), View.OnClickListener {
 
     private val image: ImageView = itemView.findViewById(R.id.card_image)
@@ -37,21 +37,21 @@ internal class ImageViewHolder(
                 .listener(object : RequestListener<Drawable> {
 
                     override fun onResourceReady(
-                            resource: Drawable?,
-                            model: Any?,
-                            target: Target<Drawable>?,
-                            dataSource: DataSource?,
-                            isFirstResource: Boolean
+                        resource: Drawable?,
+                        model: Any?,
+                        target: Target<Drawable>?,
+                        dataSource: DataSource?,
+                        isFirstResource: Boolean
                     ): Boolean {
                         viewHolderListener.onLoadCompleted(image, adapterPosition)
                         return false
                     }
 
                     override fun onLoadFailed(
-                            e: GlideException?,
-                            model: Any?,
-                            target: Target<Drawable>?,
-                            isFirstResource: Boolean
+                        e: GlideException?,
+                        model: Any?,
+                        target: Target<Drawable>?,
+                        isFirstResource: Boolean
                     ): Boolean {
                         viewHolderListener.onLoadCompleted(image, adapterPosition)
                         return false

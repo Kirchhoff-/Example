@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.bottomnavigationview.BottomNavigationViewActivity
 import com.example.constraintanimation.ConstraintLayoutAnimationActivity
 import com.example.custommenuitem.CustomMenuItemActivity
+import com.example.kirchhoff.example.extension.startActivity
 import com.example.lazybind.LazyBindActivity
 import com.example.likebutton.LikeButtonActivity
 import com.example.prefixedittext.PrefixEditTextActivity
