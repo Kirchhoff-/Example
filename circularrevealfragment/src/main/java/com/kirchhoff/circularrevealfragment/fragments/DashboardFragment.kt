@@ -12,7 +12,6 @@ import com.kirchhoff.circularrevealfragment.utils.findLocationOfCenterOnTheScree
 class DashboardFragment : Fragment() {
 
     companion object {
-        @JvmStatic
         fun newInstance(): DashboardFragment = DashboardFragment()
     }
 
@@ -29,12 +28,20 @@ class DashboardFragment : Fragment() {
 
         view.findViewById<FloatingActionButton>(R.id.fab1).setOnClickListener {
             val positions = it.findLocationOfCenterOnTheScreen()
-            fragmentManager?.beginTransaction()?.add(R.id.container, OneFragment.newInstance(positions))?.addToBackStack(null)?.commit()
+            fragmentManager?.beginTransaction()?.add(R.id.container,
+                    createFragmentWithPosition(FirstFragment(), positions))?.addToBackStack(null)?.commit()
         }
 
         view.findViewById<FloatingActionButton>(R.id.fab2).setOnClickListener {
             val positions = it.findLocationOfCenterOnTheScreen()
-            fragmentManager?.beginTransaction()?.add(R.id.container, TwoFragment.newInstance(positions))?.addToBackStack(null)?.commit()
+            fragmentManager?.beginTransaction()?.add(R.id.container,
+                    createFragmentWithPosition(SecondFragment(), positions))?.addToBackStack(null)?.commit()
         }
+    }
+
+    private fun createFragmentWithPosition(fragment: BaseCircularRevealFragment, positions: IntArray): Fragment {
+        fragment.posX = positions[0]
+        fragment.posY = positions[1]
+        return fragment
     }
 }

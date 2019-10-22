@@ -4,7 +4,7 @@
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
 	android:theme="@style/RedBackground"
-	tools:context=".fragments.TwoFragment">
+	tools:context=".fragments.SecondFragment">
 
 	<TextView
 		android:layout_width="match_parent"
