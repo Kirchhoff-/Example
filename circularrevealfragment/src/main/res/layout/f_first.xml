@@ -4,7 +4,7 @@
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
 	android:theme="@style/BlueBackground"
-	tools:context=".fragments.OneFragment">
+	tools:context=".fragments.FirstFragment">
 
 	<TextView
 		android:layout_width="match_parent"
