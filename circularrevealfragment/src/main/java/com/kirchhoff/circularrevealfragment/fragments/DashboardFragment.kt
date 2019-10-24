@@ -25,18 +25,14 @@ class DashboardFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        view.findViewById<FloatingActionButton>(R.id.fab1).setOnClickListener { openFragment(FirstFragment()) }
+        view.findViewById<FloatingActionButton>(R.id.fab2).setOnClickListener { openFragment(SecondFragment()) }
+    }
 
-        view.findViewById<FloatingActionButton>(R.id.fab1).setOnClickListener {
-            val positions = it.findLocationOfCenterOnTheScreen()
-            fragmentManager?.beginTransaction()?.add(R.id.container,
-                    createFragmentWithPosition(FirstFragment(), positions))?.addToBackStack(null)?.commit()
-        }
-
-        view.findViewById<FloatingActionButton>(R.id.fab2).setOnClickListener {
-            val positions = it.findLocationOfCenterOnTheScreen()
-            fragmentManager?.beginTransaction()?.add(R.id.container,
-                    createFragmentWithPosition(SecondFragment(), positions))?.addToBackStack(null)?.commit()
-        }
+    private fun openFragment(fragment: BaseCircularRevealFragment) {
+        val positions = view!!.findLocationOfCenterOnTheScreen()
+        fragmentManager?.beginTransaction()?.add(R.id.container,
+                createFragmentWithPosition(fragment, positions))?.addToBackStack(null)?.commit()
     }
 
     private fun createFragmentWithPosition(fragment: BaseCircularRevealFragment, positions: IntArray): Fragment {
