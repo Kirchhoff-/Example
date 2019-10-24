@@ -19,21 +19,16 @@ internal class UserListAdapter(private val usersList: MutableList<User>) :
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
         val view: View
-        when (viewType) {
-            USER_TYPE -> {
-                view = LayoutInflater.from(parent.context)
-                        .inflate(R.layout.item_user, parent, false)
-                return UserViewHolder(view, touchHelper)
-            }
+        return when (viewType) {
             HEADER_TYPE -> {
                 view = LayoutInflater.from(parent.context)
                         .inflate(R.layout.item_user_header, parent, false)
-                return HeaderViewHolder(view)
+                HeaderViewHolder(view)
             }
             else -> {
                 view = LayoutInflater.from(parent.context)
                         .inflate(R.layout.item_user, parent, false)
-                return UserViewHolder(view, touchHelper)
+                UserViewHolder(view, touchHelper)
             }
         }
     }
