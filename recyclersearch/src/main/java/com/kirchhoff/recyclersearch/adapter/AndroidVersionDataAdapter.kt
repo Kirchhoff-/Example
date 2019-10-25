@@ -27,39 +27,44 @@ class AndroidVersionDataAdapter(initialList: List<AndroidVersion>) : RecyclerVie
 
     override fun getItemCount() = filteredList.size
 
-    override fun getFilter(): Filter {
+    override fun getFilter() = FilterImpl()
 
-        return object : Filter() {
-            override fun performFiltering(charSequence: CharSequence): FilterResults {
+    inner class FilterImpl : Filter() {
 
-                val charString = charSequence.toString()
+        override fun performFiltering(charSequence: CharSequence?): FilterResults {
+            val charString = charSequence.toString()
 
-                filteredList = if (charString.isEmpty()) {
-                    list
-                } else {
-                    val filList = ArrayList<AndroidVersion>()
-
-                    for (androidVersion in list) {
-                        if (androidVersion.api.toLowerCase(Locale.getDefault()).contains(charString) ||
-                                androidVersion.name.toLowerCase(Locale.getDefault()).contains(charString) ||
-                                androidVersion.version.toLowerCase(Locale.getDefault()).contains(charString)) {
-                            filList.add(androidVersion)
-                        }
+            filteredList = if (charString.isEmpty()) {
+                list
+            } else {
+                val filList = ArrayList<AndroidVersion>()
+                for (androidVersion in list) {
+                    if (containsAny(charString, androidVersion.api, androidVersion.name, androidVersion.version)) {
+                        filList.add(androidVersion)
                     }
-
-                    filList
                 }
-
-                val filterResults = FilterResults()
-                filterResults.values = filteredList
-                return filterResults
+                filList
             }
 
-            @Suppress("UNCHECKED_CAST")
-            override fun publishResults(charSequence: CharSequence, filterResults: FilterResults) {
-                filteredList = filterResults.values as ArrayList<AndroidVersion>
-                notifyDataSetChanged()
+            val filterResults = FilterResults()
+            filterResults.values = filteredList
+            return filterResults
+        }
+
+        @Suppress("UNCHECKED_CAST")
+        override fun publishResults(charSequence: CharSequence, filterResults: FilterResults) {
+            filteredList = filterResults.values as ArrayList<AndroidVersion>
+            notifyDataSetChanged()
+        }
+
+        private fun containsAny(searchedString: String, vararg values: String): Boolean {
+            for (value in values) {
+                if (value.toLowerCase(Locale.getDefault()).contains(searchedString)) {
+                    return true
+                }
             }
+
+            return false
         }
     }
 }
