@@ -37,13 +37,7 @@ class AndroidVersionDataAdapter(initialList: List<AndroidVersion>) : RecyclerVie
             filteredList = if (charString.isEmpty()) {
                 list
             } else {
-                val filList = ArrayList<AndroidVersion>()
-                for (androidVersion in list) {
-                    if (containsAny(charString, androidVersion.api, androidVersion.name, androidVersion.version)) {
-                        filList.add(androidVersion)
-                    }
-                }
-                filList
+                list.filter { containsAny(charString, it.api, it.name, it.version) } as ArrayList<AndroidVersion>
             }
 
             val filterResults = FilterResults()
