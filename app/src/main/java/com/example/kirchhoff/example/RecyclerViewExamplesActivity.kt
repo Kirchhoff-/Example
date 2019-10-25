@@ -10,7 +10,6 @@ import com.example.recyclersmoothswipe.RecyclerSmoothSwipeActivity
 import com.example.recyclertoviewpager.RecyclerToViewPagerActivity
 import com.example.timediffutils.TimeDiffUtilActivity
 import com.kirchhoff.fastrecyclerview.FastRecyclerViewActivity
-import com.kirchhoff.recyclermvp.MvpRecyclerViewActivity
 import com.kirchhoff.recyclersearch.RecyclerSearchActivity
 import com.kirchhoff.thingdiffutils.ThingDiffUtilActivity
 
@@ -28,10 +27,6 @@ class RecyclerViewExamplesActivity : AppCompatActivity() {
 
     fun recyclerCollapsing(view: View) {
         startActivity(RecyclerCollapsingToolbarActivity::class.java)
-    }
-
-    fun mvpRecycler(view: View) {
-        startActivity(MvpRecyclerViewActivity::class.java)
     }
 
     fun fastRecyclerViewExample(view: View) {

@@ -26,13 +26,6 @@
             android:text="@string/recycler_collapsing_example" />
 
         <Button
-            android:id="@+id/mvpRecycler"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="mvpRecycler"
-            android:text="@string/mvp_recyclerview_example" />
-
-        <Button
             android:id="@+id/fastRecyclerViewExample"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
