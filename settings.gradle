@@ -11,7 +11,6 @@ include ':app', ':core', ':activitytoservice', ':lazybind', ':screenshot', ':pro
 		':viewpagerwithoutfragment',
 		':fabanimation',
 		':fastrecyclerview',
-		':recyclermvp',
 		':coordinatorbehavior',
 		':countdownlabel',
 		':recyclersearch',

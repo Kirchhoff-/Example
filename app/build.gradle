@@ -34,7 +34,6 @@ dependencies {
     implementation project(path: ':viewpagerwithoutfragment')
     implementation project(path: ':fabanimation')
     implementation project(path: ':fastrecyclerview')
-    implementation project(path: ':recyclermvp')
     implementation project(path: ':coordinatorbehavior')
     implementation project(path: ':countdownlabel')
     implementation project(path: ':recyclersearch')
