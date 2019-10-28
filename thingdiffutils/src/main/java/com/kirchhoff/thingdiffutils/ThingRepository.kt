@@ -37,9 +37,8 @@ object ThingRepository {
     }
 
     private fun newThing(id: Int): Thing {
-        val first = (random.nextInt(25) + 65).toChar()
-        val second = (random.nextInt(25) + 65).toChar()
-        val third = (random.nextInt(25) + 65).toChar()
-        return Thing(id, String(charArrayOf(first, second, third)), random.nextInt())
+        return Thing(id, String(charArrayOf(randomChar(), randomChar(), randomChar())), random.nextInt())
     }
+
+    private fun randomChar() = (random.nextInt(25) + 65).toChar()
 }
