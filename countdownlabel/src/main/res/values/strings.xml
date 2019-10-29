@@ -3,23 +3,23 @@
 	<string name="countdown_title">Countdown label</string>
     <string name="countdown_example">Countdown example</string>
 	<plurals name="days">
-		<item quantity="zero">%d Days</item>
-		<item quantity="one">%d Day</item>
-		<item quantity="other">%d Days</item>
+		<item quantity="zero">\u0020%d Days</item>
+		<item quantity="one">\u0020%d Day</item>
+		<item quantity="other">\u0020%d Days</item>
 	</plurals>
 	<plurals name="hours">
-		<item quantity="zero">%d Hours</item>
-		<item quantity="one">%d Hour</item>
-		<item quantity="other">%d Hours</item>
+		<item quantity="zero">\u0020%d Hours</item>
+		<item quantity="one">\u0020%d Hour</item>
+		<item quantity="other">\u0020%d Hours</item>
 	</plurals>
 	<plurals name="minutes">
-		<item quantity="zero">%d Minutes</item>
-		<item quantity="one">%d Minute</item>
-		<item quantity="other">%d Minutes</item>
+		<item quantity="zero">\u0020%d Minutes</item>
+		<item quantity="one">\u0020%d Minute</item>
+		<item quantity="other">\u0020%d Minutes</item>
 	</plurals>
 	<plurals name="seconds">
-		<item quantity="zero">%d Seconds</item>
-		<item quantity="one">%d Second</item>
-		<item quantity="other">%d Seconds</item>
+		<item quantity="zero">\u0020%d Seconds</item>
+		<item quantity="one">\u0020%d Second</item>
+		<item quantity="other">\u0020%d Seconds</item>
 	</plurals>
 </resources>
