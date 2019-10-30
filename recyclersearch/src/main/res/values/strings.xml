@@ -3,4 +3,49 @@
 	<string name="recyclerview_with_search_title">RecyclerView with search</string>
     <string name="recyclerview_with_search_example">RecyclerView with search example</string>
 	<string name="search">Search</string>
+
+	<string-array name="android_version">
+		<item>1.5</item>
+		<item>1.6</item>
+		<item>2.0–2.1</item>
+		<item>2.2</item>
+		<item>2.3</item>
+		<item>3.0–3.2</item>
+		<item>4.0</item>
+		<item>4.1–4.3</item>
+		<item>4.4</item>
+		<item>5.0–5.1</item>
+		<item>6.0</item>
+		<item>7.0–7.1</item>
+	</string-array>
+
+	<string-array name="android_version_text">
+		<item>Cupcake</item>
+		<item>Donut</item>
+		<item>Eclair</item>
+		<item>Froyo</item>
+		<item>Gingerbread</item>
+		<item>Honeycomb</item>
+		<item>Ice Cream Sandwich</item>
+		<item>JellyBean</item>
+		<item>KitKat</item>
+		<item>Lollipop</item>
+		<item>Marshmallow</item>
+		<item>Nougat</item>
+	</string-array>
+
+	<string-array name="android_version_api">
+		<item>API level 3</item>
+		<item>API level 4</item>
+		<item>API level 5–7</item>
+		<item>API level 8</item>
+		<item>API level 9–10</item>
+		<item>API level 11–13</item>
+		<item>API level 14–15</item>
+		<item>API level 16–18</item>
+		<item>API level 19</item>
+		<item>API level 21–22</item>
+		<item>API level 23</item>
+		<item>API level 24–25</item>
+	</string-array>
 </resources>

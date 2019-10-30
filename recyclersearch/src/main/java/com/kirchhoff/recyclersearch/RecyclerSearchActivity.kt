@@ -23,7 +23,7 @@ class RecyclerSearchActivity : AppCompatActivity() {
 
         val recyclerView = findViewById<RecyclerView>(R.id.recyclerView)
         recyclerView.layoutManager = LinearLayoutManager(this)
-        adapter = AndroidVersionDataAdapter(AndroidVersionRepository().getAndroidVersionsList())
+        adapter = AndroidVersionDataAdapter(AndroidVersionRepository(this).getAndroidVersionsList())
         recyclerView.adapter = adapter
     }
 
