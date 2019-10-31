@@ -31,26 +31,36 @@ class ThingDiffUtilActivity : AppCompatActivity() {
 
         val emptyList = ArrayList<Thing>()
         adapter.setThings(emptyList)
-        val initialPair = Pair.create<List<Thing>, DiffUtil.DiffResult>(emptyList, null)
 
-        disposable = ThingRepository
-                .simulateThings(2, TimeUnit.SECONDS)
-                .scan<Pair<List<Thing>, DiffUtil.DiffResult>>(initialPair) { pair, next ->
-                    val callback = DiffUtilCallback(pair.first!!, next)
-                    val result = DiffUtil.calculateDiff(callback)
-                    Pair.create(next, result)
-                }
-                .skip(1)
-                .subscribeOn(computation())
-                .observeOn(mainThread())
-                .subscribe { listDiffResultPair ->
-                    adapter.setThings(listDiffResultPair.first!!)
-                    listDiffResultPair.second?.dispatchUpdatesTo(adapter)
-                }
+        disposable = getThings()
     }
 
     override fun onStop() {
         super.onStop()
         disposable?.dispose()
+    }
+
+    private fun getThings(): Disposable {
+        return ThingRepository
+                .simulateThings(2, TimeUnit.SECONDS)
+                .scan(Pair.create<List<Thing>, DiffUtil.DiffResult>(emptyList(), null), getScanPair())
+                .skip(1)
+                .workComputationObserveOnMain()
+                .subscribe(getSubscriber())
+    }
+
+    private fun getScanPair() : (Pair<List<Thing>, DiffUtil.DiffResult>, List<Thing>) -> Pair<List<Thing>, DiffUtil.DiffResult> {
+        return { pair, next ->
+            val callback = DiffUtilCallback(pair.first!!, next)
+            val result = DiffUtil.calculateDiff(callback)
+            Pair.create(next, result)
+        }
+    }
+
+    private fun getSubscriber(): (Pair<List<Thing>, DiffUtil.DiffResult>) -> Unit {
+        return { listDiffResultPair ->
+            adapter.setThings(listDiffResultPair.first!!)
+            listDiffResultPair.second?.dispatchUpdatesTo(adapter)
+        }
     }
 }
