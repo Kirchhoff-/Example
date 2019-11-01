@@ -3,9 +3,10 @@ package com.example.timediffutils.adapter
 import androidx.recyclerview.widget.DiffUtil.calculateDiff
 import com.example.timediffutils.TimeDiffCallback
 import com.example.timediffutils.data.Time
-import com.example.timediffutils.extensions.setFormatDigit
 import com.kirchhoff.timediffutils.R
+import io.reactivex.Flowable
 import io.reactivex.android.schedulers.AndroidSchedulers
+import io.reactivex.disposables.Disposable
 
 class TimeAdapter : BaseAdapter<Time, TimeViewHolder>() {
 
@@ -13,7 +14,7 @@ class TimeAdapter : BaseAdapter<Time, TimeViewHolder>() {
 
     override fun instantiateViewHolder(view: android.view.View) = TimeViewHolder(view)
 
-    fun setDataSource(flowable: io.reactivex.Flowable<List<Time>>): io.reactivex.disposables.Disposable {
+    fun setDataSource(flowable: Flowable<List<Time>>): Disposable {
         var newList: List<Time> = emptyList()
         return flowable
                 .doOnNext { newList = it }
@@ -29,23 +30,7 @@ class TimeAdapter : BaseAdapter<Time, TimeViewHolder>() {
             super.onBindViewHolder(holder, position, payloads)
         } else {
             val set = payloads.firstOrNull() as Set<String>?
-            set?.forEach {
-                when (it) {
-                    TimeDiffCallback.ID -> {
-                        holder.tvId.text = getItem(position).id
-                    }
-                    TimeDiffCallback.HOURS -> {
-                        holder.tvHours.setFormatDigit(getItem(position).hours)
-                    }
-                    TimeDiffCallback.MINUTES -> {
-                        holder.tvMinutes.setFormatDigit(getItem(position).minute)
-                    }
-                    TimeDiffCallback.SECONDS -> {
-                        holder.tvSeconds.setFormatDigit(getItem(position).seconds)
-                    }
-                    else -> super.onBindViewHolder(holder, position, payloads)
-                }
-            }
+            set?.forEach { _ -> holder.onBind(getItem(position)) }
         }
     }
 }
