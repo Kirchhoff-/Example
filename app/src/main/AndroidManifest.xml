@@ -26,6 +26,9 @@
             android:name=".RecyclerViewExamplesActivity"
             android:label="@string/recycler_view_examples" />
 
+        <activity android:name=".FragmentsActivity"
+            android:label="@string/fragments_examples"/>
+
     </application>
 
 </manifest>

@@ -18,6 +18,12 @@
             android:text="@string/recycler_view_examples" />
 
         <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="fragmentsExamples"
+            android:text="@string/fragments_examples"/>
+
+        <Button
             android:id="@+id/fabAnimationExample"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -65,20 +71,6 @@
             android:layout_height="wrap_content"
             android:onClick="curvedBottomBarExample"
             android:text="@string/curved_bottombar_example" />
-
-        <Button
-            android:id="@+id/circularRevealFragmentAnimationExample"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="circularRevealFragmentAnimationExample"
-            android:text="@string/circular_reveal_fragment_animation_example" />
-
-        <Button
-            android:id="@+id/bFragmentCommunication"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="fragmentCommunication"
-            android:text="@string/fragment_communication_example" />
 
         <Button
             android:id="@+id/bGmailSelecting"

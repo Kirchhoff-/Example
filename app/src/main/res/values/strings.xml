@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Example</string>
     <string name="recycler_view_examples">RecyclerView examples</string>
+    <string name="fragments_examples">Fragments examples</string>
 </resources>
