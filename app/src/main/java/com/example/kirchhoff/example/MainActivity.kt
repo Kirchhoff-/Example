@@ -36,6 +36,10 @@ class MainActivity : AppCompatActivity() {
         startActivity(RecyclerViewExamplesActivity::class.java)
     }
 
+    fun fragmentsExamples(view: View) {
+        startActivity(FragmentsActivity::class.java)
+    }
+
     fun fabAnimation(view: View) {
         startActivity(FabAnimationActivity::class.java)
     }
@@ -62,14 +66,6 @@ class MainActivity : AppCompatActivity() {
 
     fun curvedBottomBarExample(view: View) {
         startActivity(CurvedBottomBarActivity::class.java)
-    }
-
-    fun circularRevealFragmentAnimationExample(view: View) {
-        startActivity(CircularFragmentAnimationActivity::class.java)
-    }
-
-    fun fragmentCommunication(view: View) {
-        startActivity(FragmentCommunicationActivity::class.java)
     }
 
     fun gmailSelecting(view: View) {
