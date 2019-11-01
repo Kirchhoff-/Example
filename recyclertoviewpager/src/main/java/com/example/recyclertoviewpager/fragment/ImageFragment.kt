@@ -37,36 +37,33 @@ internal class ImageFragment : Fragment() {
         // Load the image with Glide to prevent OOM error when the image drawables are very large.
         Glide.with(this)
                 .load(imageRes)
-                .listener(object : RequestListener<Drawable> {
-                    override fun onLoadFailed(
-                        e: GlideException?,
-                        model: Any,
-                        target: Target<Drawable>,
-                        isFirstResource: Boolean
-                    ): Boolean {
-                        // The postponeEnterTransition is called on the parent ImagePagerFragment, so the
-                        // startPostponedEnterTransition() should also be called on it to get the transition
-                        // going in case of a failure.
-                        parentFragment!!.startPostponedEnterTransition()
-                        return false
-                    }
-
-                    override fun onResourceReady(
-                        resource: Drawable,
-                        model: Any,
-                        target: Target<Drawable>,
-                        dataSource: DataSource,
-                        isFirstResource: Boolean
-                    ): Boolean {
-                        // The postponeEnterTransition is called on the parent ImagePagerFragment, so the
-                        // startPostponedEnterTransition() should also be called on it to get the transition
-                        // going when the image is ready.
-                        parentFragment!!.startPostponedEnterTransition()
-                        return false
-                    }
-                })
+                .listener(ImageRequestListener())
                 .into(view.findViewById<View>(R.id.image) as ImageView)
         return view
+    }
+
+    private inner class ImageRequestListener : RequestListener<Drawable> {
+
+        override fun onLoadFailed(
+            e: GlideException?,
+            model: Any?,
+            target: Target<Drawable>?,
+            isFirstResource: Boolean
+        ): Boolean {
+            parentFragment!!.startPostponedEnterTransition()
+            return false
+        }
+
+        override fun onResourceReady(
+            resource: Drawable?,
+            model: Any?,
+            target: Target<Drawable>?,
+            dataSource: DataSource?,
+            isFirstResource: Boolean
+        ): Boolean {
+            parentFragment!!.startPostponedEnterTransition()
+            return false
+        }
     }
 
     companion object {
