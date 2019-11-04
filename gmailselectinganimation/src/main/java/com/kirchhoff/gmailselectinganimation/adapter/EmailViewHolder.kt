@@ -19,23 +19,27 @@ class EmailViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
     fun bind(email: EmailUiModel) {
         tvPreview.text = email.preview
         itemView.setOnClickListener { email.onClick() }
+        downloadImage(email.contactImageUrl)
+        avatarView.setChecked(email.isSelected(), shouldAnimate = false)
+        setAvatarClickListener(email)
+    }
 
-        avatarView.apply {
-            Glide.with(context)
-                    .load(email.contactImageUrl)
-                    .apply(RequestOptions.circleCropTransform())
-                    .into(imageView())
-            setChecked(email.isSelected(), shouldAnimate = false)
-            setOnClickListener {
-                val targetState = !isChecked
-                setChecked(targetState, shouldAnimate = true)
-                email.setSelected(targetState)
-            }
+    private fun downloadImage(url: String) {
+        Glide.with(avatarView.context)
+                .load(url)
+                .apply(RequestOptions.circleCropTransform())
+                .into(avatarView.imageView())
+    }
+
+    private fun setAvatarClickListener(email: EmailUiModel) {
+        avatarView.setOnClickListener {
+            val targetState = !avatarView.isChecked
+            avatarView.setChecked(targetState, shouldAnimate = true)
+            email.setSelected(targetState)
         }
     }
 
     companion object {
-
         fun inflate(parent: ViewGroup): EmailViewHolder = LayoutInflater.from(parent.context).let {
             val view = it.inflate(R.layout.view_email, parent, false)
             return EmailViewHolder(view)
