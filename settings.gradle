@@ -15,7 +15,6 @@ include ':app', ':core', ':activitytoservice', ':lazybind', ':screenshot', ':pro
 		':countdownlabel',
 		':recyclersearch',
 		':simpletransition',
-		':likebutton',
 		':recyclercollapsing',
 		':timediffutils',
 		':thingdiffutils',

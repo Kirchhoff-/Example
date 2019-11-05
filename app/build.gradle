@@ -38,7 +38,6 @@ dependencies {
     implementation project(path: ':countdownlabel')
     implementation project(path: ':recyclersearch')
     implementation project(path: ':simpletransition')
-    implementation project(path: ':likebutton')
     implementation project(path: ':recyclercollapsing')
     implementation project(path: ':timediffutils')
     implementation project(path: ':thingdiffutils')

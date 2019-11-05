@@ -38,13 +38,6 @@
             android:text="@string/vp_without_fragment_example" />
 
         <Button
-            android:id="@+id/likeButtonClick"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="likeButtonClick"
-            android:text="@string/like_button_title" />
-
-        <Button
             android:id="@+id/countDownLabel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

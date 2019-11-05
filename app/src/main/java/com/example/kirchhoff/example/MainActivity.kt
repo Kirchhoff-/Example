@@ -8,19 +8,16 @@ import com.example.constraintanimation.ConstraintLayoutAnimationActivity
 import com.example.custommenuitem.CustomMenuItemActivity
 import com.example.kirchhoff.example.extension.startActivity
 import com.example.lazybind.LazyBindActivity
-import com.example.likebutton.LikeButtonActivity
 import com.example.prefixedittext.PrefixEditTextActivity
 import com.example.progressbarcustomization.ProgressBarCustomizationActivity
 import com.example.raindropview.RainDropActivity
 import com.example.screenshot.ScreenshotActivity
 import com.example.simpletransition.SimpleTransitionActivity
 import com.kirchhoff.activitytoservice.ActivityToService
-import com.kirchhoff.circularrevealfragment.CircularFragmentAnimationActivity
 import com.kirchhoff.coordinatebehavior.CoordinatorBehaviorActivity
 import com.kirchhoff.countdownlabel.CountdownLabelActivity
 import com.kirchhoff.curvedbottombar.CurvedBottomBarActivity
 import com.kirchhoff.fabanimation.FabAnimationActivity
-import com.kirchhoff.fragmentcommunication.FragmentCommunicationActivity
 import com.kirchhoff.gmailselectinganimation.GmailSelectionActivity
 import com.kirchhoff.viewpagerwithoutfragment.VPWithoutFragmentActivity
 
@@ -46,10 +43,6 @@ class MainActivity : AppCompatActivity() {
 
     fun vpWithoutFragment(view: View) {
         startActivity(VPWithoutFragmentActivity::class.java)
-    }
-
-    fun likeButtonClick(view: View) {
-        startActivity(LikeButtonActivity::class.java)
     }
 
     fun countDownLabel(view: View) {
