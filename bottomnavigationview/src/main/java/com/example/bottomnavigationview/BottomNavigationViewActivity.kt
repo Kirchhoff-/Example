@@ -1,9 +1,11 @@
 package com.example.bottomnavigationview
 
 import android.os.Bundle
+import androidx.annotation.IdRes
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
+import androidx.fragment.app.FragmentTransaction
 import com.example.bottomnavigationview.fragment.ActionFragment
 import com.example.bottomnavigationview.fragment.HomeFragment
 import com.example.bottomnavigationview.fragment.InformationFragment
@@ -42,8 +44,13 @@ class BottomNavigationViewActivity : AppCompatActivity() {
     }
 
     private fun initFragments() {
-        fm.beginTransaction().add(R.id.mainContainer, informationFragment, "3").hide(informationFragment).commit()
-        fm.beginTransaction().add(R.id.mainContainer, actionFragment, "2").hide(actionFragment).commit()
-        fm.beginTransaction().add(R.id.mainContainer, homeFragment, "1").commit()
+        createFragmentTransaction(R.id.mainContainer, informationFragment, "3").hide(informationFragment).commit()
+        createFragmentTransaction(R.id.mainContainer, actionFragment, "2").hide(actionFragment).commit()
+        createFragmentTransaction(R.id.mainContainer, homeFragment, "1").commit()
+    }
+
+    private fun createFragmentTransaction(@IdRes containerViewId: Int,
+                                          fragment: Fragment, tag: String?): FragmentTransaction {
+        return fm.beginTransaction().add(containerViewId, fragment, tag)
     }
 }
