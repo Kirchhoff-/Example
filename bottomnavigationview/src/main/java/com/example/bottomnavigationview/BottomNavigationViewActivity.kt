@@ -24,9 +24,7 @@ class BottomNavigationViewActivity : AppCompatActivity() {
         val navigation = findViewById<BottomNavigationView>(R.id.navigation)
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
 
-        fm.beginTransaction().add(R.id.mainContainer, informationFragment, "3").hide(informationFragment).commit()
-        fm.beginTransaction().add(R.id.mainContainer, actionFragment, "2").hide(actionFragment).commit()
-        fm.beginTransaction().add(R.id.mainContainer, homeFragment, "1").commit()
+        initFragments()
     }
 
     private val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
@@ -41,5 +39,11 @@ class BottomNavigationViewActivity : AppCompatActivity() {
     private fun changeFragment(fragment: Fragment) {
         fm.beginTransaction().hide(active).show(fragment).commit()
         active = fragment
+    }
+
+    private fun initFragments() {
+        fm.beginTransaction().add(R.id.mainContainer, informationFragment, "3").hide(informationFragment).commit()
+        fm.beginTransaction().add(R.id.mainContainer, actionFragment, "2").hide(actionFragment).commit()
+        fm.beginTransaction().add(R.id.mainContainer, homeFragment, "1").commit()
     }
 }
