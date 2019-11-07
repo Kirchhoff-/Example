@@ -28,19 +28,10 @@ class TimeDiffUtilActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.a_time_diff_util)
 
-        val timeZonesIds = resources.getStringArray(R.array.timezones_ids).asIterable()
-
         recyclerView.setHasFixedSize(true)
         recyclerView.adapter = adapter
 
-        val flowable = Flowable.fromIterable(timeZonesIds)
-                .map { getInstance(TimeZone.getTimeZone(it)) }
-                .map { Time(it.timeZone.id, it.get(HOUR_OF_DAY), it.get(MINUTE), it.get(SECOND)) }
-                .toList()
-                .repeatWhen { it.delay(1, TimeUnit.SECONDS) }
-                .subscribeOn(Schedulers.computation())
-
-        disposable = adapter.setDataSource(flowable)
+        disposable = adapter.setDataSource(createDataSource(resources.getStringArray(R.array.timezones_ids).asIterable()))
     }
 
     override fun onDestroy() {
@@ -48,5 +39,14 @@ class TimeDiffUtilActivity : AppCompatActivity() {
             disposable?.dispose()
 
         super.onDestroy()
+    }
+
+    private fun createDataSource(timeZonesIds: Iterable<String>): Flowable<List<Time>> {
+        return Flowable.fromIterable(timeZonesIds)
+                .map { getInstance(TimeZone.getTimeZone(it)) }
+                .map { Time(it.timeZone.id, it.get(HOUR_OF_DAY), it.get(MINUTE), it.get(SECOND)) }
+                .toList()
+                .repeatWhen { it.delay(1, TimeUnit.SECONDS) }
+                .subscribeOn(Schedulers.computation())
     }
 }
