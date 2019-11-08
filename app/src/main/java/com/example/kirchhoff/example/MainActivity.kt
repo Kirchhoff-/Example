@@ -37,16 +37,16 @@ class MainActivity : AppCompatActivity() {
         startActivity(FragmentsActivity::class.java)
     }
 
+    fun viewsExamples(view: View) {
+        startActivity(ViewsExample::class.java)
+    }
+
     fun fabAnimation(view: View) {
         startActivity(FabAnimationActivity::class.java)
     }
 
     fun vpWithoutFragment(view: View) {
         startActivity(VPWithoutFragmentActivity::class.java)
-    }
-
-    fun countDownLabel(view: View) {
-        startActivity(CountdownLabelActivity::class.java)
     }
 
     fun simpleTransition(view: View) {
@@ -57,28 +57,12 @@ class MainActivity : AppCompatActivity() {
         startActivity(CoordinatorBehaviorActivity::class.java)
     }
 
-    fun curvedBottomBarExample(view: View) {
-        startActivity(CurvedBottomBarActivity::class.java)
-    }
-
     fun gmailSelecting(view: View) {
         startActivity(GmailSelectionActivity::class.java)
     }
 
-    fun raindropExample(view: View) {
-        startActivity(RainDropActivity::class.java)
-    }
-
     fun constraintLayoutAnimation(view: View) {
         startActivity(ConstraintLayoutAnimationActivity::class.java)
-    }
-
-    fun prefixEditText(view: View) {
-        startActivity(PrefixEditTextActivity::class.java)
-    }
-
-    fun bottomNavigationView(view: View) {
-        startActivity(BottomNavigationViewActivity::class.java)
     }
 
     fun activityToService(view: View) {
@@ -91,10 +75,6 @@ class MainActivity : AppCompatActivity() {
 
     fun screenshot(view: View) {
         startActivity(ScreenshotActivity::class.java)
-    }
-
-    fun progressBarCustomization(view: View) {
-        startActivity(ProgressBarCustomizationActivity::class.java)
     }
 
     fun customMenuItem(view: View) {
