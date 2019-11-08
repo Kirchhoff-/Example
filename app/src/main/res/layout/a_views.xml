@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.kirchhoff.example.ViewsExample">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/countDownLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="countDownLabel"
+            android:text="@string/countdown_example" />
+
+        <Button
+            android:id="@+id/curvedBottomBarExample"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="curvedBottomBarExample"
+            android:text="@string/curved_bottombar_example" />
+
+        <Button
+            android:id="@+id/bRaindropExample"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="raindropExample"
+            android:text="@string/raindrop_view_example" />
+
+        <Button
+            android:id="@+id/bPrefixEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="prefixEditText"
+            android:text="@string/prefix_edittext_example" />
+
+        <Button
+            android:id="@+id/bBottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="bottomNavigationView"
+            android:text="@string/bottomnavigationview_example" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="progressBarCustomization"
+            android:text="@string/progress_bar_customization_example" />
+
+    </LinearLayout>
+
+</ScrollView>

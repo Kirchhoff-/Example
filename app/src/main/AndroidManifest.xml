@@ -29,6 +29,8 @@
         <activity android:name=".FragmentsActivity"
             android:label="@string/fragments_examples"/>
 
-    </application>
+        <activity android:name=".ViewsExample"
+            android:label="@string/views_examples"/>
 
+    </application>
 </manifest>
