@@ -43,7 +43,7 @@ internal class SwipeAndDragHelper(private val contract: ActionCompletionContract
         super.onChildDraw(c, recyclerView, viewHolder, dX, dY, actionState, isCurrentlyActive)
     }
 
-    interface ActionCompletionContract {
+    internal interface ActionCompletionContract {
         fun onViewMoved(oldPosition: Int, newPosition: Int)
 
         fun onViewSwiped(position: Int)
