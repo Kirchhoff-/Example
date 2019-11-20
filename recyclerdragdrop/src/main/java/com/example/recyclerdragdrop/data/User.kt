@@ -7,5 +7,16 @@ internal data class User(
     val type: String
 ) {
 
+    constructor(name: String, imageUrl: String, type: String) : this(generateUserId(), name, imageUrl, type)
+
     constructor(user: User) : this(user.id, user.name, user.imageUrl, user.type)
+
+    companion object {
+        private var userId = -1
+
+        private fun generateUserId(): Int {
+            userId += 1
+            return userId
+        }
+    }
 }
