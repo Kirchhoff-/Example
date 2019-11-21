@@ -9,6 +9,8 @@ internal data class User(
 
     constructor(name: String, imageUrl: String, type: String) : this(generateUserId(), name, imageUrl, type)
 
+    constructor(type: String) : this(generateUserId(), "", "", type)
+
     constructor(user: User) : this(user.id, user.name, user.imageUrl, user.type)
 
     companion object {

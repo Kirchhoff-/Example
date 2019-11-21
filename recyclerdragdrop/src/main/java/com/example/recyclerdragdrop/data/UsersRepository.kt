@@ -14,7 +14,7 @@ internal class UsersRepository {
 
         private fun provideDevelopersList(): List<User> {
             return listOf(
-                    User("", "", "Developers"),
+                    User(DEVELOPERS),
                     User("Frederick Hoffman", "https://randomuser.me/api/portraits/men/52.jpg", "Developers"),
                     User("Calvin Young", "https://randomuser.me/api/portraits/men/78.jpg", "Developers"),
                     User("Jeanette Reid", "https://randomuser.me/api/portraits/women/37.jpg", "Developers"),
@@ -25,7 +25,7 @@ internal class UsersRepository {
 
         private fun provideDesignersList(): List<User> {
             return listOf(
-                    User("", "", "Designers"),
+                    User(DESIGNERS),
                     User("Jeanette Simmmons", "https://randomuser.me/api/portraits/women/3.jpg", "Designers"),
                     User("Wallace Lambert", "https://randomuser.me/api/portraits/men/53.jpg", "Designers"),
                     User("Andy Clark", "https://randomuser.me/api/portraits/men/68.jpg", "Designers"),
@@ -36,7 +36,7 @@ internal class UsersRepository {
 
         private fun provideTeamLeadsList(): List<User> {
             return listOf(
-                    User("", "", "Team Leads"),
+                    User(TEAM_LEADS),
                     User("Bernice Lawson", "https://randomuser.me/api/portraits/women/20.jpg", "Team Leads"),
                     User("Camila Elliott", "https://randomuser.me/api/portraits/women/60.jpg", "Team Leads"),
                     User("Gerald Webb", "https://randomuser.me/api/portraits/men/55.jpg", "Team Leads"),
@@ -47,12 +47,17 @@ internal class UsersRepository {
 
         private fun provideTeamManagersList(): List<User> {
             return listOf(
-                    User("", "", "Team Managers"),
+                    User(TEAM_MANAGERS),
                     User("Daryl Banks", "https://randomuser.me/api/portraits/men/4.jpg", "Team Managers"),
                     User("Veronica Vargas", "https://randomuser.me/api/portraits/women/14.jpg", "Team Managers"),
                     User("Natalie Jacobs", "https://randomuser.me/api/portraits/women/0.jpg", "Team Managers"),
                     User("Beverly Kennedy", "https://randomuser.me/api/portraits/women/30.jpg", "Team Managers")
             )
         }
+
+        private const val DEVELOPERS = "Developers"
+        private const val DESIGNERS = "Designers"
+        private const val TEAM_LEADS = "Team Leads"
+        private const val TEAM_MANAGERS = "Team Managers"
     }
 }
