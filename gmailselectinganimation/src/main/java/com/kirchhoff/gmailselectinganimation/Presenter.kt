@@ -45,7 +45,7 @@ internal class Presenter {
             Email("9", "judy@example.com", "Zonbi tattered for solum oculi eorum defunctis go lum cerebro")
     )
 
-    interface View {
+    internal interface View {
         fun display(emails: List<EmailUiModel>)
 
         fun openEmail(emailId: String)
