@@ -34,7 +34,7 @@ class CurvedBottomNavigationView @JvmOverloads constructor(
             style = Paint.Style.FILL_AND_STROKE
             color = Color.WHITE
         }
-        radius = 256 / 2
+        radius = RADIUS
         firstCurveStartPoint = Point()
         firstCurveEndPoint = Point()
         firstCurveControlPoint1 = Point()
@@ -49,17 +49,17 @@ class CurvedBottomNavigationView @JvmOverloads constructor(
     override fun onSizeChanged(w: Int, h: Int, oldw: Int, oldh: Int) {
         super.onSizeChanged(w, h, oldw, oldh)
 
-        firstCurveStartPoint.set(width / 2 - radius * 2 - radius / 3, 0)
-        firstCurveEndPoint.set(width / 2, radius + radius / 4)
+        firstCurveStartPoint.set(width / HALF - DOUBLE_RADIUS - THIRD_RADIUS, 0)
+        firstCurveEndPoint.set(width / HALF, RADIUS + QUARTER_RADIUS)
 
-        secondCurveStartPoint.set(width / 2, radius + radius / 4)
-        secondCurveEndPoint.set(width / 2 + radius * 2 + radius / 3, 0)
+        secondCurveStartPoint.set(width / HALF, RADIUS + QUARTER_RADIUS)
+        secondCurveEndPoint.set(width / HALF + DOUBLE_RADIUS + THIRD_RADIUS, 0)
 
-        firstCurveControlPoint1.set(firstCurveStartPoint.x + radius + radius / 4, firstCurveStartPoint.y)
-        firstCurveControlPoint2.set(firstCurveEndPoint.x - radius * 2 + radius, firstCurveEndPoint.y)
+        firstCurveControlPoint1.set(firstCurveStartPoint.x + RADIUS + QUARTER_RADIUS, firstCurveStartPoint.y)
+        firstCurveControlPoint2.set(firstCurveEndPoint.x - DOUBLE_RADIUS + radius, firstCurveEndPoint.y)
 
-        secondCurveControlPoint1.set(secondCurveStartPoint.x + radius * 2 - radius, secondCurveStartPoint.y)
-        secondCurveControlPoint2.set(secondCurveEndPoint.x - (radius + radius / 4), secondCurveEndPoint.y)
+        secondCurveControlPoint1.set(secondCurveStartPoint.x + DOUBLE_RADIUS, secondCurveStartPoint.y)
+        secondCurveControlPoint2.set(secondCurveEndPoint.x - (RADIUS + QUARTER_RADIUS), secondCurveEndPoint.y)
 
         path.apply {
             reset()
@@ -88,5 +88,13 @@ class CurvedBottomNavigationView @JvmOverloads constructor(
     override fun onDraw(canvas: Canvas?) {
         super.onDraw(canvas)
         canvas?.drawPath(path, paint)
+    }
+
+    companion object {
+        private const val HALF = 2
+        private const val RADIUS = 128
+        private const val DOUBLE_RADIUS = 256
+        private const val QUARTER_RADIUS = 32
+        private const val THIRD_RADIUS = 96
     }
 }
