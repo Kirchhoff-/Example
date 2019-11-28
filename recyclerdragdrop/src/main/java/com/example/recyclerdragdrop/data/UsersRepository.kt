@@ -1,6 +1,6 @@
 package com.example.recyclerdragdrop.data
 
-internal class UsersRepository {
+internal class UsersRepository private constructor() {
 
     companion object {
         fun provideUsersList(): MutableList<User> {
