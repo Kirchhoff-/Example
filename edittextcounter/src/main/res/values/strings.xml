@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="edit_text_counter_title">EditText counter title</string>
+    <string name="edit_text_counter_example">EditText counter example</string>
+    <string name="edit_text_counter_hint">Type here something</string>
+</resources>

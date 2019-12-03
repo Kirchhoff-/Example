@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.example.bottomnavigationview.BottomNavigationViewActivity
+import com.example.edittextcounter.EditTextCounterActivity
 import com.example.kirchhoff.example.extension.startActivity
 import com.example.prefixedittext.PrefixEditTextActivity
 import com.example.progressbarcustomization.ProgressBarCustomizationActivity
@@ -41,5 +42,9 @@ class ViewsExample: AppCompatActivity() {
 
     fun progressBarCustomization(view: View) {
         startActivity(ProgressBarCustomizationActivity::class.java)
+    }
+
+    fun editTextCounter(view: View) {
+        startActivity(EditTextCounterActivity::class.java)
     }
 }
