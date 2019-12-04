@@ -43,18 +43,18 @@ class RainDropView @JvmOverloads constructor(
 
     override fun onTouchEvent(event: MotionEvent): Boolean {
         val pointerIndex = event.actionIndex
-        when (event.actionMasked) {
+        return when (event.actionMasked) {
             MotionEvent.ACTION_DOWN,
-            MotionEvent.ACTION_POINTER_DOWN -> return true
+            MotionEvent.ACTION_POINTER_DOWN -> true
             MotionEvent.ACTION_UP,
             MotionEvent.ACTION_POINTER_UP -> {
                 rainDropList.add(RainDrop(event.getX(pointerIndex), event.getY(pointerIndex), maxRadius))
                 performClick()
                 invalidate()
-                return true
+                true
             }
+            else -> super.onTouchEvent(event)
         }
-        return super.onTouchEvent(event)
     }
 
     override fun performClick(): Boolean {
