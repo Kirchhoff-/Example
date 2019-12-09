@@ -6,9 +6,7 @@ import androidx.core.util.Pair
 import androidx.recyclerview.widget.DefaultItemAnimator
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
-import io.reactivex.android.schedulers.AndroidSchedulers.mainThread
 import io.reactivex.disposables.Disposable
-import io.reactivex.schedulers.Schedulers.computation
 import java.util.concurrent.TimeUnit
 
 class ThingDiffUtilActivity : AppCompatActivity() {
