@@ -13,7 +13,7 @@ import com.kirchhoff.countdownlabel.CountdownLabelActivity
 import com.kirchhoff.curvedbottombar.CurvedBottomBarActivity
 
 @Suppress("UNUSED_PARAMETER")
-class ViewsExample: AppCompatActivity() {
+class ViewsExample : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
