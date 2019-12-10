@@ -8,7 +8,7 @@ import com.kirchhoff.circularrevealfragment.CircularFragmentAnimationActivity
 import com.kirchhoff.fragmentcommunication.FragmentCommunicationActivity
 
 @Suppress("UNUSED_PARAMETER")
-class FragmentsActivity: AppCompatActivity() {
+class FragmentsActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
