@@ -7,7 +7,6 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.kirchhoff.circularrevealfragment.R
-import com.kirchhoff.circularrevealfragment.utils.findLocationOfCenterOnTheScreen
 
 class DashboardFragment : Fragment() {
 
@@ -39,5 +38,13 @@ class DashboardFragment : Fragment() {
         fragment.posX = positions[0]
         fragment.posY = positions[1]
         return fragment
+    }
+
+    private fun View.findLocationOfCenterOnTheScreen(): IntArray {
+        val positions = intArrayOf(0, 0)
+        getLocationInWindow(positions)
+        positions[0] = positions[0] + width / 2
+        positions[1] = positions[1] + height / 2
+        return positions
     }
 }

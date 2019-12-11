@@ -1,10 +1,15 @@
 package com.kirchhoff.circularrevealfragment
 
+import android.animation.Animator
+import android.animation.AnimatorListenerAdapter
 import android.os.Bundle
+import android.view.View
+import android.view.ViewAnimationUtils
+import android.view.animation.DecelerateInterpolator
 import androidx.appcompat.app.AppCompatActivity
 import com.kirchhoff.circularrevealfragment.fragments.DashboardFragment
-import com.kirchhoff.circularrevealfragment.utils.ExitWithAnimation
-import com.kirchhoff.circularrevealfragment.utils.exitCircularReveal
+import com.kirchhoff.circularrevealfragment.fragments.ExitWithAnimation
+import kotlin.math.hypot
 
 class CircularFragmentAnimationActivity : AppCompatActivity() {
 
@@ -27,5 +32,24 @@ class CircularFragmentAnimationActivity : AppCompatActivity() {
                 super.onBackPressed()
             }
         }
+    }
+
+    private fun View.exitCircularReveal(exitX: Int, exitY: Int, block: () -> Unit) {
+        val startRadius = hypot(this.width.toDouble(), this.height.toDouble())
+        ViewAnimationUtils.createCircularReveal(this, exitX, exitY, startRadius.toFloat(), 0f).apply {
+            duration = ANIMATION_DURATION
+            interpolator = DecelerateInterpolator(1f)
+            addListener(object : AnimatorListenerAdapter() {
+                override fun onAnimationEnd(animation: Animator?) {
+                    block()
+                    super.onAnimationEnd(animation)
+                }
+            })
+            start()
+        }
+    }
+
+    companion object {
+        private const val ANIMATION_DURATION = 350L
     }
 }
