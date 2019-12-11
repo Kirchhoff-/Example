@@ -24,7 +24,7 @@ internal class FirstInterfaceFragment : Fragment() {
         this.textClickListener = textClickListener
     }
 
-    interface TextClickedListener {
+    internal interface TextClickedListener {
         fun sendText(text: String)
     }
 }
