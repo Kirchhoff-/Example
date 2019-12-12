@@ -1,17 +1,15 @@
 package com.kirchhoff.countdownlabel
 
-fun Long.days(): Int {
-    return (this / (1000 * 60 * 60 * 24) % 7).toInt()
-}
+fun Long.days() = (this / (MILLISECOND * SECONDS_IN_MINUTE * MINUTES_IN_HOUR * HOURS_IN_DAY) % DAYS_IN_WEEK).toInt()
 
-fun Long.hours(): Int {
-    return (this / (1000 * 60 * 60) % 24).toInt()
-}
+fun Long.hours() = (this / (MILLISECOND * SECONDS_IN_MINUTE * MINUTES_IN_HOUR) % HOURS_IN_DAY).toInt()
 
-fun Long.minutes(): Int {
-    return (this / (1000 * 60) % 60).toInt()
-}
+fun Long.minutes() = (this / (MILLISECOND * MINUTES_IN_HOUR) % SECONDS_IN_MINUTE).toInt()
 
-fun Long.seconds(): Int {
-    return (this / 1000).toInt() % 60
-}
+fun Long.seconds() = (this / MILLISECOND).toInt() % SECONDS_IN_MINUTE
+
+const val MILLISECOND = 1000
+const val SECONDS_IN_MINUTE = 60
+const val MINUTES_IN_HOUR = 60
+const val HOURS_IN_DAY = 24
+const val DAYS_IN_WEEK = 7
