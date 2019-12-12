@@ -47,7 +47,7 @@ class ThingDiffUtilActivity : AppCompatActivity() {
                 .subscribe(getSubscriber())
     }
 
-    private fun getScanPair() : (Pair<List<Thing>, DiffUtil.DiffResult>, List<Thing>) -> Pair<List<Thing>, DiffUtil.DiffResult> {
+    private fun getScanPair(): (Pair<List<Thing>, DiffUtil.DiffResult>, List<Thing>) -> Pair<List<Thing>, DiffUtil.DiffResult> {
         return { pair, next ->
             val callback = DiffUtilCallback(pair.first!!, next)
             val result = DiffUtil.calculateDiff(callback)
