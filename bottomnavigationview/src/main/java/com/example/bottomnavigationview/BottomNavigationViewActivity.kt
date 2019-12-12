@@ -49,8 +49,11 @@ class BottomNavigationViewActivity : AppCompatActivity() {
         createFragmentTransaction(R.id.mainContainer, homeFragment, "1").commit()
     }
 
-    private fun createFragmentTransaction(@IdRes containerViewId: Int,
-                                          fragment: Fragment, tag: String?): FragmentTransaction {
+    private fun createFragmentTransaction(
+        @IdRes containerViewId: Int,
+        fragment: Fragment,
+        tag: String?
+    ): FragmentTransaction {
         return fm.beginTransaction().add(containerViewId, fragment, tag)
     }
 }

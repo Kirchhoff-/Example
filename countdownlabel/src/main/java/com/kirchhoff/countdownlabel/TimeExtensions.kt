@@ -1,7 +1,7 @@
 package com.kirchhoff.countdownlabel
 
 fun Long.days(): Int {
-   return (this / (1000 * 60 * 60 * 24) % 7).toInt()
+    return (this / (1000 * 60 * 60 * 24) % 7).toInt()
 }
 
 fun Long.hours(): Int {
