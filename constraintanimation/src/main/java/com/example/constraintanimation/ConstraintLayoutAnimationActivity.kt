@@ -30,10 +30,11 @@ class ConstraintLayoutAnimationActivity : AppCompatActivity() {
 
     private fun updateComponent(show: Boolean) {
         val constraintSet = ConstraintSet()
-        val resultLayout = if (show)
+        val resultLayout = if (show) {
             R.layout.a_constraint_layout_animation
-        else
+        } else {
             R.layout.a_constraint_layout_animation_details
+        }
         constraintSet.clone(this, resultLayout)
 
         val transition = ChangeBounds()
