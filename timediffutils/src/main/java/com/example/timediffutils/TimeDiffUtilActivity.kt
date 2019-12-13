@@ -35,8 +35,9 @@ class TimeDiffUtilActivity : AppCompatActivity() {
     }
 
     override fun onDestroy() {
-        if (disposable?.isDisposed == true)
+        if (disposable?.isDisposed == true) {
             disposable?.dispose()
+        }
 
         super.onDestroy()
     }
