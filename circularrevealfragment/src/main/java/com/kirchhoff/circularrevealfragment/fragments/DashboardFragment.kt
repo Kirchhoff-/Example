@@ -5,22 +5,17 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.example.core.ui.BaseFragment
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.kirchhoff.circularrevealfragment.R
 
-class DashboardFragment : Fragment() {
+class DashboardFragment : BaseFragment() {
 
     companion object {
         fun newInstance(): DashboardFragment = DashboardFragment()
     }
 
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        return inflater.inflate(R.layout.f_dashboard, container, false)
-    }
+    override fun getLayoutId() = R.layout.f_dashboard
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
