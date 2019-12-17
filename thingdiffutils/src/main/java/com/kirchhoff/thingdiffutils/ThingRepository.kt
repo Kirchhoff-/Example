@@ -36,9 +36,8 @@ object ThingRepository {
         return shuffled
     }
 
-    private fun newThing(id: Int): Thing {
-        return Thing(id, String(charArrayOf(randomChar(), randomChar(), randomChar())), random.nextInt())
-    }
+    private fun newThing(id: Int) = Thing(id, String(charArrayOf(randomChar(), randomChar(),
+            randomChar())), random.nextInt())
 
     private fun randomChar() = (random.nextInt(25) + 65).toChar()
 }
