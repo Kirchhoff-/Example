@@ -7,14 +7,13 @@ import java.util.concurrent.TimeUnit
 
 object ThingRepository {
 
-    private const val COUNT = 100
     private val random = Random()
 
     fun simulateThings(interval: Long, timeUnit: TimeUnit): Flowable<List<Thing>> {
         return Flowable
                 .interval(0, interval, timeUnit, Schedulers.computation())
                 .map {
-                    shuffle(randomThings()).subList(0, (COUNT * 0.8f).toInt())
+                    shuffle(randomThings()).subList(0, SHUFFLE_COEFFICIENT)
                 }
     }
 
@@ -39,5 +38,10 @@ object ThingRepository {
     private fun newThing(id: Int) = Thing(id, String(charArrayOf(randomChar(), randomChar(),
             randomChar())), random.nextInt())
 
-    private fun randomChar() = (random.nextInt(25) + 65).toChar()
+    private fun randomChar() = (random.nextInt(CHAR_BOUND) + CHAR_COEFFICIENT).toChar()
+
+    private const val COUNT = 100
+    private const val SHUFFLE_COEFFICIENT = 80
+    private const val CHAR_BOUND = 25
+    private const val CHAR_COEFFICIENT = 65
 }
