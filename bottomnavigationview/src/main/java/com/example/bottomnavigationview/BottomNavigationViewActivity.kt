@@ -5,7 +5,6 @@ import androidx.annotation.IdRes
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
-import androidx.fragment.app.FragmentTransaction
 import com.example.bottomnavigationview.fragment.ActionFragment
 import com.example.bottomnavigationview.fragment.HomeFragment
 import com.example.bottomnavigationview.fragment.InformationFragment
@@ -53,7 +52,5 @@ class BottomNavigationViewActivity : AppCompatActivity() {
         @IdRes containerViewId: Int,
         fragment: Fragment,
         tag: String?
-    ): FragmentTransaction {
-        return fm.beginTransaction().add(containerViewId, fragment, tag)
-    }
+    ) = fm.beginTransaction().add(containerViewId, fragment, tag)
 }
