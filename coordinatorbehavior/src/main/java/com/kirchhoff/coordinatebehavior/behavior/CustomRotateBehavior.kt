@@ -13,7 +13,7 @@ class CustomRotateBehavior(context: Context, attrs: AttributeSet) : CoordinatorL
     override fun onDependentViewChanged(parent: CoordinatorLayout, child: View, dependency: View): Boolean {
         val translationY = getFabTranslationYForSnackbar(parent, child)
         val percentComplete = -translationY / dependency.height
-        child.rotation = 180 * percentComplete
+        child.rotation = ROTATION_ANGLE * percentComplete
         child.translationY = translationY
         return false
     }
@@ -32,5 +32,9 @@ class CustomRotateBehavior(context: Context, attrs: AttributeSet) : CoordinatorL
         }
 
         return minOffset
+    }
+
+    companion object {
+        private const val ROTATION_ANGLE = 180
     }
 }
