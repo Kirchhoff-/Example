@@ -31,4 +31,8 @@ class ActivityToService : AppCompatActivity(), View.OnClickListener {
         val intent = Intent(this, targetActivity)
         startActivity(intent)
     }
+
+    companion object {
+        internal const val DELAY = 2000L
+    }
 }
