@@ -4,6 +4,7 @@ import android.app.IntentService
 import android.content.Intent
 import android.os.Message
 import android.os.Messenger
+import com.kirchhoff.activitytoservice.ActivityToService
 
 internal class CustomHandlerIntentService : IntentService(CustomHandlerIntentService::class.java.name) {
 
@@ -19,7 +20,7 @@ internal class CustomHandlerIntentService : IntentService(CustomHandlerIntentSer
 
         // Process background task here!
         try {
-            Thread.sleep(2000)
+            Thread.sleep(ActivityToService.DELAY)
         } catch (e: InterruptedException) {
             e.printStackTrace()
         }
