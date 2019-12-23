@@ -44,7 +44,7 @@ class CustomMenuItemActivity : BaseActivity() {
                 true
             }
             R.id.menu_item_refresh -> {
-                alertCount = (alertCount + 1) % 11
+                alertCount = (alertCount + 1)
                 updateAlertIcon()
                 return true
             }
@@ -53,12 +53,7 @@ class CustomMenuItemActivity : BaseActivity() {
     }
 
     private fun updateAlertIcon() {
-        if (alertCount in 1..9) {
-            tvViewAlertCount.text = alertCount.toString()
-        } else {
-            tvViewAlertCount.text = ""
-        }
-
+        tvViewAlertCount.text = alertCount.toString()
         redCircle.visibility = if (alertCount > 0) VISIBLE else GONE
     }
 }
