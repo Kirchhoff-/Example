@@ -8,7 +8,8 @@ import com.google.android.material.snackbar.Snackbar
 
 class CustomRotateBehavior(context: Context, attrs: AttributeSet) : CoordinatorLayout.Behavior<View>(context, attrs) {
 
-    override fun layoutDependsOn(parent: CoordinatorLayout, child: View, dependency: View) = dependency is Snackbar.SnackbarLayout
+    override fun layoutDependsOn(parent: CoordinatorLayout, child: View, dependency: View) =
+            dependency is Snackbar.SnackbarLayout
 
     override fun onDependentViewChanged(parent: CoordinatorLayout, child: View, dependency: View): Boolean {
         val translationY = getFabTranslationYForSnackbar(parent, child)
