@@ -38,10 +38,15 @@ class ConstraintLayoutAnimationActivity : AppCompatActivity() {
         constraintSet.clone(this, resultLayout)
 
         val transition = ChangeBounds()
-        transition.interpolator = AnticipateOvershootInterpolator(1.0f)
-        transition.duration = 1200
+        transition.interpolator = AnticipateOvershootInterpolator(TENSION)
+        transition.duration = DURATION
 
         TransitionManager.beginDelayedTransition(constraint, transition)
         constraintSet.applyTo(constraint)
+    }
+
+    companion object AnimationInfo {
+        private const val TENSION = 1.0f
+        private const val DURATION = 1200L
     }
 }
