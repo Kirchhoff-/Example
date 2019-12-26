@@ -26,8 +26,9 @@ class CircularFragmentAnimationActivity : AppCompatActivity() {
         with(supportFragmentManager.findFragmentById(R.id.container)) {
             // Check if the current fragment implements the [ExitWithAnimation] interface or not
             // Also check if the [ExitWithAnimation.isToBeExitedWithAnimation] is `true` or not
-            if ((this as? ExitWithAnimation)?.isToBeExitedWithAnimation() == true && (this.posX != null || this.posY != null)) {
-                this.view?.exitCircularReveal(this.posX!!, this.posY!!) { super.onBackPressed() } ?: super.onBackPressed()
+            if ((this as? ExitWithAnimation)?.isToBeExitedWithAnimation() == true &&
+                    (posX != null || posY != null)) {
+                this.view?.exitCircularReveal(posX!!, posY!!) { super.onBackPressed() } ?: super.onBackPressed()
             } else {
                 super.onBackPressed()
             }
