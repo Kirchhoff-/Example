@@ -18,7 +18,7 @@ class CountdownLabelActivity : AppCompatActivity() {
             try {
                 tvCount.text = formatDate(futureDate)
             } finally {
-                countdownHandler?.postDelayed(this, 500L)
+                countdownHandler?.postDelayed(this, DELAY)
             }
         }
     }
@@ -29,7 +29,7 @@ class CountdownLabelActivity : AppCompatActivity() {
         tvCount = findViewById(R.id.tvCount)
 
         futureDate = Date()
-        futureDate.time = futureDate.time + 100000000
+        futureDate.time = futureDate.time + FUTURE_TIME
     }
 
     override fun onStart() {
@@ -76,5 +76,10 @@ class CountdownLabelActivity : AppCompatActivity() {
         }
 
         return ""
+    }
+
+    companion object {
+        private const val DELAY = 500L
+        private const val FUTURE_TIME = 100000000
     }
 }
