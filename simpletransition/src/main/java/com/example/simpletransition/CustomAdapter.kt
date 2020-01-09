@@ -1,17 +1,17 @@
 package com.example.simpletransition
 
 import android.content.Context
-import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.LinearLayout
 import android.widget.TextView
+import androidx.core.content.ContextCompat
 
-class CustomAdapter internal constructor(private val context: Context, list: List<Array<String>>) : BaseAdapter() {
+internal class CustomAdapter(private val context: Context, list: List<TransitionItem>) : BaseAdapter() {
 
-    private val arrayList: ArrayList<Array<String>> = ArrayList(list)
+    private val arrayList = ArrayList(list)
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
         val row: View
@@ -22,17 +22,17 @@ class CustomAdapter internal constructor(private val context: Context, list: Lis
 
     override fun getCount() = arrayList.size
 
-    override fun getItem(position: Int) = arrayList[position]
+    override fun getItem(position: Int): TransitionItem = arrayList[position]
 
     override fun getItemId(position: Int) = position.toLong()
 
-    private fun createRow(row: View, array: Array<String>): View {
+    private fun createRow(row: View, item: TransitionItem): View {
         val layout = row.findViewById<LinearLayout>(R.id.layout)
-        layout.setBackgroundColor(Color.parseColor(array[3]))
+        layout.setBackgroundColor(ContextCompat.getColor(context, item.color))
         val tvName = row.findViewById<TextView>(R.id.tvName)
-        tvName.text = array[0]
-        val tvEmail = row.findViewById<TextView>(R.id.tvEmail)
-        tvEmail.text = array[1]
+        tvName.text = item.title
+        val tvLanguage = row.findViewById<TextView>(R.id.tvLanguage)
+        tvLanguage.text = item.language
         return row
     }
 }

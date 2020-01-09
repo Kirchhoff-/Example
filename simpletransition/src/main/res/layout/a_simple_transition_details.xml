@@ -14,7 +14,6 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textColor="@android:color/white" />
 
-
     <TextView
         android:id="@+id/tvLanguage"
         android:layout_width="match_parent"
@@ -24,7 +23,6 @@
         android:gravity="center"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textColor="@android:color/white" />
-
 
     <TextView
         android:id="@+id/tvDesc"
