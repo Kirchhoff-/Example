@@ -16,7 +16,7 @@
         android:textColor="@android:color/white" />
 
     <TextView
-        android:id="@+id/tvEmail"
+        android:id="@+id/tvLanguage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"

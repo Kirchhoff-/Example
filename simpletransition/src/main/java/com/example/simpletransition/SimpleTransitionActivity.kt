@@ -7,7 +7,6 @@ import android.widget.ListView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.app.ActivityOptionsCompat
-import androidx.core.content.ContextCompat
 
 class SimpleTransitionActivity : AppCompatActivity() {
 
@@ -15,8 +14,7 @@ class SimpleTransitionActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.a_simple_transition)
 
-        val values = ArrayList<Array<String>>()
-        fillDataArray(values)
+        val values = createData()
 
         val list = findViewById<ListView>(R.id.list)
         list.adapter = CustomAdapter(this, values)
@@ -34,10 +32,10 @@ class SimpleTransitionActivity : AppCompatActivity() {
         }
     }
 
-    private fun fillDataArray(values: ArrayList<Array<String>>) {
-        values.add(arrayOf("Android", "Java", getString(R.string.android), '#' + Integer.toHexString(ContextCompat.getColor(this, R.color.green_900))))
-        values.add(arrayOf("iOS", "Swift", getString(R.string.ios), '#' + Integer.toHexString(ContextCompat.getColor(this, R.color.yellow_700))))
-        values.add(arrayOf("Xamarin", "C#", getString(R.string.xamarin), '#' + Integer.toHexString(ContextCompat.getColor(this, R.color.pink_700))))
-        values.add(arrayOf("PhoneGap", "HTML CSS and JScript", getString(R.string.phonegap), '#' + Integer.toHexString(ContextCompat.getColor(this, R.color.brown_800))))
+    private fun createData(): List<TransitionItem> {
+        return listOf(TransitionItem("Android", "Java", getString(R.string.android), R.color.green_900),
+                TransitionItem("iOS", "Swift", getString(R.string.ios), R.color.yellow_700),
+                TransitionItem("Xamarin", "C#", getString(R.string.xamarin), R.color.pink_700),
+                TransitionItem("PhoneGap", "HTML CSS and JScript", getString(R.string.phonegap), R.color.brown_800))
     }
 }
