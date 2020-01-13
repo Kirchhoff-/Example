@@ -4,7 +4,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 
-class FastRecyclerViewAdapter internal constructor(private val data: List<State>) : RecyclerView.Adapter<StateViewHolder>() {
+internal class FastRecyclerViewAdapter(private val data: List<State>) : RecyclerView.Adapter<StateViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): StateViewHolder {
         val personCell = LayoutInflater.from(parent.context).inflate(R.layout.r_fast_recycler, parent, false)
