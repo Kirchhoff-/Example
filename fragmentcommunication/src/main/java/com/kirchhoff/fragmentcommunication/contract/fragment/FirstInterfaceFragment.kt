@@ -16,7 +16,8 @@ internal class FirstInterfaceFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val rootView = inflater.inflate(R.layout.f_first_interface, container, false)
         val edInit: EditText = rootView.findViewById(R.id.edInit)
-        rootView.findViewById<Button>(R.id.bSend).setOnClickListener { textClickListener?.sendText(edInit.text.toString()) }
+        rootView.findViewById<Button>(R.id.bSend)
+                .setOnClickListener { textClickListener?.sendText(edInit.text.toString()) }
         return rootView
     }
 
