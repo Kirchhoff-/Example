@@ -11,7 +11,9 @@ class DiffUtilCallback(
 
     override fun getNewListSize() = next.size
 
-    override fun areItemsTheSame(oldItemPosition: Int, newItemPosition: Int) = current[oldItemPosition] == next[newItemPosition]
+    override fun areItemsTheSame(oldItemPosition: Int, newItemPosition: Int) =
+            current[oldItemPosition] == next[newItemPosition]
 
-    override fun areContentsTheSame(oldItemPosition: Int, newItemPosition: Int) = current[oldItemPosition] == next[newItemPosition]
+    override fun areContentsTheSame(oldItemPosition: Int, newItemPosition: Int) =
+            current[oldItemPosition] == next[newItemPosition]
 }
