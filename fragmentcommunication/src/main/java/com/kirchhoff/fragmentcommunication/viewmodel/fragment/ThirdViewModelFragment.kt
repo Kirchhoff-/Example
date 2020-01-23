@@ -17,8 +17,12 @@ class ThirdViewModelFragment : Fragment() {
         val rootView = inflater.inflate(R.layout.f_third_view_model, container, false)
         val tvReverseRandomString = rootView.findViewById<TextView>(R.id.tvReverseRandomString)
 
-        val textViewModel = activity?.let { ViewModelProviders.of(it).get(TextViewModel::class.java) }
-        textViewModel?.message?.observe(this, Observer<String> { text -> tvReverseRandomString.text = text?.reversed() })
+        val textViewModel = activity?.let {
+            ViewModelProviders.of(it).get(TextViewModel::class.java)
+        }
+        textViewModel?.message?.observe(this, Observer<String> {
+            text -> tvReverseRandomString.text = text?.reversed()
+        })
         return rootView
     }
 }
