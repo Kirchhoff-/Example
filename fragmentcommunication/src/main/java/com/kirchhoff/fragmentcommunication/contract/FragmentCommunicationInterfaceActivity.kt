@@ -7,7 +7,8 @@ import com.kirchhoff.fragmentcommunication.R
 import com.kirchhoff.fragmentcommunication.contract.fragment.FirstInterfaceFragment
 import com.kirchhoff.fragmentcommunication.contract.fragment.SecondInterfaceFragment
 
-internal class FragmentCommunicationInterfaceActivity : AppCompatActivity(), FirstInterfaceFragment.TextClickedListener {
+internal class FragmentCommunicationInterfaceActivity : AppCompatActivity(),
+        FirstInterfaceFragment.TextClickedListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,7 +28,8 @@ internal class FragmentCommunicationInterfaceActivity : AppCompatActivity(), Fir
     }
 
     override fun sendText(text: String) {
-        val secondInterfaceFragment = supportFragmentManager.findFragmentById(R.id.secondContainer) as SecondInterfaceFragment
+        val secondInterfaceFragment = supportFragmentManager
+                .findFragmentById(R.id.secondContainer) as SecondInterfaceFragment
         secondInterfaceFragment.updateText(text)
     }
 }
