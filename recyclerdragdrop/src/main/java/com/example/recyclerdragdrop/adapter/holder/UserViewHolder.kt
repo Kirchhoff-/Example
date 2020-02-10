@@ -11,7 +11,8 @@ import com.bumptech.glide.Glide
 import com.example.recyclerdragdrop.R
 import com.example.recyclerdragdrop.data.User
 
-internal class UserViewHolder(itemView: View, private val touchHelper: ItemTouchHelper) : RecyclerView.ViewHolder(itemView) {
+internal class UserViewHolder(itemView: View, private val touchHelper: ItemTouchHelper) :
+    RecyclerView.ViewHolder(itemView) {
 
     private val ivAvatar: ImageView = itemView.findViewById(R.id.ivAvatar)
     private val tvName: TextView = itemView.findViewById(R.id.tvName)
