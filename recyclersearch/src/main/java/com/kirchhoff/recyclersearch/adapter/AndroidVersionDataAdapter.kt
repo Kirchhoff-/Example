@@ -10,7 +10,8 @@ import com.kirchhoff.recyclersearch.data.AndroidVersion
 import java.util.Locale
 import kotlin.collections.ArrayList
 
-class AndroidVersionDataAdapter(initialList: List<AndroidVersion>) : RecyclerView.Adapter<AndroidVersionViewHolder>(), Filterable {
+class AndroidVersionDataAdapter(initialList: List<AndroidVersion>) :
+        RecyclerView.Adapter<AndroidVersionViewHolder>(), Filterable {
 
     private val list: ArrayList<AndroidVersion> = ArrayList(initialList)
     private var filteredList: ArrayList<AndroidVersion> = ArrayList(initialList)
