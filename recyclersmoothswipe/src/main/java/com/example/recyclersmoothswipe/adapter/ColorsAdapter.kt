@@ -8,9 +8,11 @@ import com.example.recyclersmoothswipe.R
 import com.example.recyclersmoothswipe.adapter.holders.ColorViewHolder
 import com.example.recyclersmoothswipe.adapter.holders.HorizontalColorViewHolder
 
-internal class ColorsAdapter(private val context: Context) : RecyclerView.Adapter<ColorViewHolder>() {
+internal class ColorsAdapter(private val context: Context) :
+    RecyclerView.Adapter<ColorViewHolder>() {
 
-    private val item = listOf("#FF0000", LIST, "#00FF00", LIST, "#0000FF", LIST, "#FFFF00", LIST, "#FF00FF", LIST, "#00FFFF")
+    private val item = listOf("#FF0000", LIST, "#00FF00", LIST, "#0000FF",
+            LIST, "#FFFF00", LIST, "#FF00FF", LIST, "#00FFFF")
 
     companion object {
         const val LIST = "LIST"
@@ -35,5 +37,6 @@ internal class ColorsAdapter(private val context: Context) : RecyclerView.Adapte
 
     override fun getItemCount() = item.size
 
-    override fun getItemViewType(position: Int) = if (item[position] == LIST) TYPE_LIST else TYPE_NORMAL
+    override fun getItemViewType(position: Int) =
+            if (item[position] == LIST) TYPE_LIST else TYPE_NORMAL
 }
