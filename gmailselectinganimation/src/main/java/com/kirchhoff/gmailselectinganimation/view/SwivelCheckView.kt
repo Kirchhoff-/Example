@@ -14,7 +14,8 @@ import com.kirchhoff.gmailselectinganimation.R
 import com.kirchhoff.gmailselectinganimation.view.SwivelAnimation.Companion.toChecked
 import com.kirchhoff.gmailselectinganimation.view.SwivelAnimation.Companion.toNotChecked
 
-class SwivelCheckView constructor(context: Context, attrs: AttributeSet) : ViewFlipper(context, attrs), Checkable {
+class SwivelCheckView constructor(context: Context, attrs: AttributeSet) :
+    ViewFlipper(context, attrs), Checkable {
 
     private val imageView: ImageView
     private val calculateCenterX = { width * 0.5f }
@@ -100,10 +101,17 @@ private class SwivelAnimation(
         fun toChecked(calculateCenterX: () -> Float, updateDisplayedSide: (DisplaySide) -> Unit) =
                 createAnimation(ROTATION_TO_CHECKED, calculateCenterX, updateDisplayedSide)
 
-        fun toNotChecked(calculateCenterX: () -> Float, updateDisplayedSide: (DisplaySide) -> Unit) =
+        fun toNotChecked(
+            calculateCenterX: () -> Float,
+            updateDisplayedSide: (DisplaySide) -> Unit
+        ) =
                 createAnimation(ROTATION_TO_NOT_CHECKED, calculateCenterX, updateDisplayedSide)
 
-        private fun createAnimation(rotation: ClosedFloatingPointRange<Float>, calculateCenterX: () -> Float, updateDisplayedSide: (DisplaySide) -> Unit): Animation {
+        private fun createAnimation(
+            rotation: ClosedFloatingPointRange<Float>,
+            calculateCenterX: () -> Float,
+            updateDisplayedSide: (DisplaySide) -> Unit
+        ): Animation {
             return SwivelAnimation(rotation, calculateCenterX, updateDisplayedSide).apply {
                 duration = DURATION_MS
                 interpolator = FastOutSlowInInterpolator()
