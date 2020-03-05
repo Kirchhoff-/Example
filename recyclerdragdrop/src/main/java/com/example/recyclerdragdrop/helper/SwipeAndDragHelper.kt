@@ -4,10 +4,15 @@ import android.graphics.Canvas
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.RecyclerView
 import com.example.recyclerdragdrop.adapter.holder.HeaderViewHolder
+import kotlin.math.abs
 
-internal class SwipeAndDragHelper(private val contract: ActionCompletionContract) : ItemTouchHelper.Callback() {
+internal class SwipeAndDragHelper(private val contract: ActionCompletionContract) :
+    ItemTouchHelper.Callback() {
 
-    override fun getMovementFlags(recyclerView: RecyclerView, viewHolder: RecyclerView.ViewHolder): Int {
+    override fun getMovementFlags(
+        recyclerView: RecyclerView,
+        viewHolder: RecyclerView.ViewHolder
+    ): Int {
         if (viewHolder is HeaderViewHolder) {
             return 0
         }
@@ -16,7 +21,11 @@ internal class SwipeAndDragHelper(private val contract: ActionCompletionContract
         return makeMovementFlags(dragFlags, swipeFlags)
     }
 
-    override fun onMove(recyclerView: RecyclerView, viewHolder: RecyclerView.ViewHolder, target: RecyclerView.ViewHolder): Boolean {
+    override fun onMove(
+        recyclerView: RecyclerView,
+        viewHolder: RecyclerView.ViewHolder,
+        target: RecyclerView.ViewHolder
+    ): Boolean {
         contract.onViewMoved(viewHolder.adapterPosition, target.adapterPosition)
         return true
     }
@@ -37,7 +46,7 @@ internal class SwipeAndDragHelper(private val contract: ActionCompletionContract
         isCurrentlyActive: Boolean
     ) {
         if (actionState == ItemTouchHelper.ACTION_STATE_SWIPE) {
-            val alpha = 1 - Math.abs(dX) / recyclerView.width
+            val alpha = 1 - abs(dX) / recyclerView.width
             viewHolder.itemView.alpha = alpha
         }
         super.onChildDraw(c, recyclerView, viewHolder, dX, dY, actionState, isCurrentlyActive)
