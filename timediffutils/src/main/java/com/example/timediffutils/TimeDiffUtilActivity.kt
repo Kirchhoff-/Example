@@ -31,7 +31,8 @@ class TimeDiffUtilActivity : AppCompatActivity() {
         recyclerView.setHasFixedSize(true)
         recyclerView.adapter = adapter
 
-        disposable = adapter.setDataSource(createDataSource(resources.getStringArray(R.array.timezones_ids).asIterable()))
+        disposable = adapter.setDataSource(createDataSource(
+                resources.getStringArray(R.array.timezones_ids).asIterable()))
     }
 
     override fun onDestroy() {
