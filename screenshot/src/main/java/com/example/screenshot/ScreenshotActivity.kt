@@ -35,8 +35,7 @@ class ScreenshotActivity : AppCompatActivity(), View.OnClickListener {
         val bgDrawable = view.background
         if (bgDrawable != null) {
             bgDrawable.draw(canvas)
-        }
-        else canvas.drawColor(Color.WHITE)
+        } else canvas.drawColor(Color.WHITE)
         view.draw(canvas)
         return returnedBitmap
     }
