@@ -5,6 +5,7 @@
 
 [![codebeat badge](https://codebeat.co/badges/d3e48efd-ea16-4ab8-8588-84f5684a7e7f)](https://codebeat.co/projects/github-com-kirchhoff-example-master)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/50d1a5bf9a7847ef900fdc238a9bfdf7)](https://www.codacy.com/manual/dmitriy.gorbunov.work/Example?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Kirchhoff-/Example&amp;utm_campaign=Badge_Grade)
+[![CodeFactor](https://www.codefactor.io/repository/github/kirchhoff-/example/badge)](https://www.codefactor.io/repository/github/kirchhoff-/example)
 
 [![Hits-of-Code](https://hitsofcode.com/github/Kirchhoff-/Example)](https://hitsofcode.com/view/github/Kirchhoff-/Example)
 
