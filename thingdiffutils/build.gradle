@@ -1,7 +1,7 @@
 apply from: '../buildsystem/android-library.gradle'
 
 dependencies {
-	implementation libraries.supportDesign
+	implementation libraries.material
 	implementation libraries.rxAndroid
 	implementation libraries.rxJava
 }
