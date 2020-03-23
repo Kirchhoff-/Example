@@ -2,7 +2,7 @@ apply from: '../buildsystem/android-library.gradle'
 
 dependencies {
     implementation libraries.constraintLayout
-    implementation libraries.supportRecyclerView
+    implementation libraries.recyclerView
     implementation libraries.glide
     kapt libraries.glideCompiler
 }

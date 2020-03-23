@@ -27,7 +27,7 @@ android {
 }
 
 dependencies {
-    implementation libraries.supportAppCompat
+    implementation libraries.appCompat
     implementation libraries.kotlin
 
     implementation project(path: ':curvedbottombar')

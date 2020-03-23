@@ -20,5 +20,5 @@ android {
 
 dependencies {
     implementation libraries.kotlin
-    implementation libraries.supportAppCompat
+    implementation libraries.material
 }

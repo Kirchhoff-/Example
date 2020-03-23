@@ -4,7 +4,7 @@ apply plugin: 'kotlin-android-extensions'
 androidExtensions { experimental = true }
 
 dependencies {
-	implementation libraries.supportDesign
+	implementation libraries.material
 	implementation libraries.glide
 	kapt libraries.glideCompiler
 }

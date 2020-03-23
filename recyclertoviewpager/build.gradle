@@ -1,8 +1,8 @@
 apply from: '../buildsystem/android-library.gradle'
 
 dependencies {
-    implementation libraries.supportCardView
-    implementation libraries.supportRecyclerView
+    implementation libraries.cardView
+    implementation libraries.recyclerView
     implementation libraries.glide
     kapt libraries.glideCompiler
 }
