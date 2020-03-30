@@ -1,17 +1,19 @@
 version: 2.1
-
 jobs:
   build:
+    working_directory: ~/code
     docker:
       - image: circleci/android:api-28
+    environment:
+      JVM_OPTS: -Xmx3200m
     steps:
       - checkout
-      - run: echo $CIRCLE_JOB
       - run:
-          name: Single command -  echo
-          command: echo $CIRCLE_USERNAME
+          name: Chmod permissions
+          command: sudo chmod +x ./gradlew
       - run:
-          name: Muti-line commands - echo & echo
-          command: |
-            echo $CIRCLE_REPOSITORY_URL
-            echo $CIRCLE_BRANCH
+          name: Download Dependencies
+          command: ./gradlew androidDependencies
+      - run:
+          name: Run Android Lint
+          command: ./gradlew lint
