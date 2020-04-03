@@ -17,3 +17,6 @@ jobs:
       - run:
           name: Run Android Lint
           command: ./gradlew lint
+      - run:
+          name: Run Ktlint
+          command: ./gradlew ktlint
