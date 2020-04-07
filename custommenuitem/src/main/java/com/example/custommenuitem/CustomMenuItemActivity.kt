@@ -24,13 +24,15 @@ class CustomMenuItemActivity : BaseActivity() {
 
     override fun onPrepareOptionsMenu(menu: Menu?): Boolean {
         val alertMenuItem = menu?.findItem(R.id.menu_item_alerts)
-        val rootView = alertMenuItem?.actionView as FrameLayout
+        val rootView = alertMenuItem?.actionView
 
-        redCircle = rootView.findViewById(R.id.view_alert_red_circle) as FrameLayout
-        tvViewAlertCount = rootView.findViewById(R.id.tvViewAlertCount) as TextView
+        if (rootView != null) {
+            redCircle = rootView.findViewById(R.id.view_alert_red_circle)
+            tvViewAlertCount = rootView.findViewById(R.id.tvViewAlertCount)
 
-        rootView.setOnClickListener {
-            onOptionsItemSelected(alertMenuItem)
+            rootView.setOnClickListener {
+                onOptionsItemSelected(alertMenuItem)
+            }
         }
 
         return super.onPrepareOptionsMenu(menu)
