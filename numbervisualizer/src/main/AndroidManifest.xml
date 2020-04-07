@@ -1,0 +1,10 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kirchhoff.numbervisualizer">
+
+    <application>
+        <activity
+            android:name=".NumberVisualizerActivity"
+            android:label="@string/number_visualizer_title" />
+    </application>
+
+</manifest>

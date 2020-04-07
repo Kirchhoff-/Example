@@ -20,4 +20,5 @@ include ':app', ':core', ':activitytoservice', ':lazybind', ':screenshot', ':pro
 		':timediffutils',
 		':thingdiffutils',
 		':circularrevealfragment',
-		':fragmentcommunication'
+		':fragmentcommunication' ,
+		':numbervisualizer'

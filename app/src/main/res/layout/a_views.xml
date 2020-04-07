@@ -58,6 +58,12 @@
             android:onClick="editTextCounter"
             android:text="@string/edit_text_counter_example" />
 
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="numberVisualizer"
+            android:text="@string/number_visualizer_example" />
+
     </LinearLayout>
 
 </ScrollView>
