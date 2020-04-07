@@ -11,6 +11,7 @@ import com.example.progressbarcustomization.ProgressBarCustomizationActivity
 import com.example.raindropview.RainDropActivity
 import com.kirchhoff.countdownlabel.CountdownLabelActivity
 import com.kirchhoff.curvedbottombar.CurvedBottomBarActivity
+import com.kirchhoff.numbervisualizer.NumberVisualizerActivity
 
 @Suppress("UNUSED_PARAMETER")
 class ViewsExample : AppCompatActivity() {
@@ -46,5 +47,9 @@ class ViewsExample : AppCompatActivity() {
 
     fun editTextCounter(view: View) {
         startActivity(EditTextCounterActivity::class.java)
+    }
+
+    fun numberVisualizer(view: View) {
+        startActivity(NumberVisualizerActivity::class.java)
     }
 }

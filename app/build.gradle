@@ -57,4 +57,5 @@ dependencies {
     implementation project(path: ':progressbarcustomization')
     implementation project(path: ':custommenuitem')
     implementation project(path: ':edittextcounter')
+    implementation project(path: ':numbervisualizer')
 }
