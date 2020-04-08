@@ -13,6 +13,7 @@ internal class CustomAdapter(private val context: Context, list: List<Transition
 
     private val arrayList = ArrayList(list)
 
+    @Suppress("UnsafeCast")
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
         val row: View
         val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
