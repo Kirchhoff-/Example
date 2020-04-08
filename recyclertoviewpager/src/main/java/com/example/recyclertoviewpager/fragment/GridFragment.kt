@@ -21,21 +21,22 @@ import com.example.recyclertoviewpager.adapter.listener.ViewHolderListenerImpl
  */
 internal class GridFragment : Fragment() {
 
-    private var recyclerView: RecyclerView? = null
+    private lateinit var recyclerView: RecyclerView
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        recyclerView = inflater.inflate(R.layout.f_grid, container, false) as RecyclerView
-        recyclerView!!.layoutManager = GridLayoutManager(context, 2)
-        recyclerView!!.adapter = GridAdapter(Glide.with(this), ViewHolderListenerImpl(this))
+        val view = inflater.inflate(R.layout.f_grid, container, false)
+        recyclerView = view.findViewById(R.id.recyclerView)
+        recyclerView.layoutManager = GridLayoutManager(context, 2)
+        recyclerView.adapter = GridAdapter(Glide.with(this), ViewHolderListenerImpl(this))
 
         prepareTransitions()
         postponeEnterTransition()
 
-        return recyclerView
+        return view
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -48,7 +49,7 @@ internal class GridFragment : Fragment() {
      * navigating back from the grid.
      */
     private fun scrollToPosition() {
-        recyclerView!!.addOnLayoutChangeListener(object : OnLayoutChangeListener {
+        recyclerView.addOnLayoutChangeListener(object : OnLayoutChangeListener {
             override fun onLayoutChange(
                 v: View,
                 left: Int,
@@ -60,14 +61,14 @@ internal class GridFragment : Fragment() {
                 oldRight: Int,
                 oldBottom: Int
             ) {
-                recyclerView!!.removeOnLayoutChangeListener(this)
-                val layoutManager = recyclerView!!.layoutManager
+                recyclerView.removeOnLayoutChangeListener(this)
+                val layoutManager = recyclerView.layoutManager
                 val viewAtPosition = layoutManager!!.findViewByPosition(RecyclerToViewPagerActivity.currentPosition)
                 // Scroll to position if the view for the current position is null (not currently part of
                 // layout manager children), or it's not completely visible.
                 if (viewAtPosition == null || layoutManager
                                 .isViewPartiallyVisible(viewAtPosition, false, true)) {
-                    recyclerView!!.post { layoutManager.scrollToPosition(RecyclerToViewPagerActivity.currentPosition) }
+                    recyclerView.post { layoutManager.scrollToPosition(RecyclerToViewPagerActivity.currentPosition) }
                 }
             }
         })
@@ -85,7 +86,7 @@ internal class GridFragment : Fragment() {
         setExitSharedElementCallback(object : SharedElementCallback() {
             override fun onMapSharedElements(names: List<String>?, sharedElements: MutableMap<String, View>?) {
                 super.onMapSharedElements(names, sharedElements)
-                val selectedViewHolder = recyclerView!!
+                val selectedViewHolder = recyclerView
                         .findViewHolderForAdapterPosition(RecyclerToViewPagerActivity.currentPosition)
                 if (selectedViewHolder?.itemView == null) {
                     return
