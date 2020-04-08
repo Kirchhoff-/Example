@@ -5,7 +5,6 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
 import androidx.annotation.DrawableRes
 import androidx.fragment.app.Fragment
 import com.bumptech.glide.Glide
@@ -65,7 +64,7 @@ internal class ImageFragment : Fragment() {
                         return false
                     }
                 })
-                .into(view.findViewById<View>(R.id.image) as ImageView)
+                .into(view.findViewById(R.id.image))
         return view
     }
 
