@@ -13,8 +13,8 @@ import kotlin.collections.ArrayList
 class AndroidVersionDataAdapter(initialList: List<AndroidVersion>) :
         RecyclerView.Adapter<AndroidVersionViewHolder>(), Filterable {
 
-    private val list: ArrayList<AndroidVersion> = ArrayList(initialList)
-    private var filteredList: ArrayList<AndroidVersion> = ArrayList(initialList)
+    private val list: List<AndroidVersion> = ArrayList(initialList)
+    private var filteredList: List<AndroidVersion> = ArrayList(initialList)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): AndroidVersionViewHolder {
         val view = LayoutInflater.from(parent.context)
@@ -38,7 +38,7 @@ class AndroidVersionDataAdapter(initialList: List<AndroidVersion>) :
             filteredList = if (charString.isEmpty()) {
                 list
             } else {
-                list.filter { containsAny(charString, it.api, it.name, it.version) } as ArrayList<AndroidVersion>
+                list.filter { containsAny(charString, it.api, it.name, it.version) }
             }
 
             val filterResults = FilterResults()

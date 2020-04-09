@@ -31,8 +31,10 @@ class RecyclerSearchActivity : AppCompatActivity() {
         menuInflater.inflate(R.menu.recycler_search, menu)
 
         val search = menu.findItem(R.id.search)
-        val searchView = search.actionView as SearchView
-        search(searchView)
+        val searchView = search.actionView
+        if (searchView is SearchView) {
+            search(searchView)
+        }
         return true
     }
 
