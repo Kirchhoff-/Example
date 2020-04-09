@@ -16,19 +16,20 @@ import com.example.recyclertoviewpager.RecyclerToViewPagerActivity
  */
 internal class ImagePagerFragment : Fragment() {
 
-    private var viewPager: ViewPager? = null
+    private lateinit var viewPager: ViewPager
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        viewPager = inflater.inflate(R.layout.f_pager, container, false) as ViewPager
-        viewPager!!.adapter = ImagePagerAdapter(this)
+        val view = inflater.inflate(R.layout.f_pager, container, false)
+        viewPager = view.findViewById(R.id.view_pager)
+        viewPager.adapter = ImagePagerAdapter(this)
         // Set the current position and add a listener that will update the selection coordinator when
         // paging the images.
-        viewPager!!.currentItem = RecyclerToViewPagerActivity.currentPosition
-        viewPager!!.addOnPageChangeListener(object : ViewPager.SimpleOnPageChangeListener() {
+        viewPager.currentItem = RecyclerToViewPagerActivity.currentPosition
+        viewPager.addOnPageChangeListener(object : ViewPager.SimpleOnPageChangeListener() {
             override fun onPageSelected(position: Int) {
                 RecyclerToViewPagerActivity.currentPosition = position
             }
@@ -47,6 +48,7 @@ internal class ImagePagerFragment : Fragment() {
     /**
      * Prepares the shared element transition from and back to the grid fragment.
      */
+    @SuppressWarnings("UnsafeCast")
     private fun prepareSharedElementTransition() {
         val transition = TransitionInflater.from(context)
                 .inflateTransition(R.transition.image_shared_element_transition)
@@ -59,8 +61,8 @@ internal class ImagePagerFragment : Fragment() {
                 // visible). To locate the fragment, call instantiateItem with the selection position.
                 // At this stage, the method will simply return the fragment at the position and will
                 // not create a new one.
-                val currentFragment = viewPager!!.adapter!!
-                        .instantiateItem(viewPager!!, RecyclerToViewPagerActivity.currentPosition) as Fragment
+                val currentFragment = viewPager.adapter!!
+                        .instantiateItem(viewPager, RecyclerToViewPagerActivity.currentPosition) as Fragment
                 val view = currentFragment.view ?: return
 
                 // Map the first shared element name to the child ImageView.

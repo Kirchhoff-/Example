@@ -25,6 +25,7 @@ internal class ViewHolderListenerImpl internal constructor(private val fragment:
         fragment.startPostponedEnterTransition()
     }
 
+    @SuppressWarnings("UnsafeCast")
     override fun onItemClicked(view: View, adapterPosition: Int) {
         RecyclerToViewPagerActivity.currentPosition = adapterPosition
 
