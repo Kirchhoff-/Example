@@ -33,6 +33,7 @@ internal class UserListAdapter(private val usersList: MutableList<User>) :
         }
     }
 
+    @SuppressWarnings("UnsafeCast")
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
         val itemViewType = getItemViewType(position)
         if (itemViewType == USER_TYPE) {
