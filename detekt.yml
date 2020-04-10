@@ -525,8 +525,7 @@ style:
   UnusedPrivateClass:
     active: true
   UnusedPrivateMember:
-    active: true
-    allowedNames: '(_|ignored|expected|serialVersionUID)'
+    active: false
   UseDataClass:
     active: false
     excludeAnnotatedClasses: ""
