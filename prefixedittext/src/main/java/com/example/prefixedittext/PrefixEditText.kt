@@ -5,6 +5,7 @@ import android.graphics.Canvas
 import android.util.AttributeSet
 import androidx.appcompat.widget.AppCompatEditText
 
+@SuppressWarnings("UnsafeCast")
 internal class PrefixEditText @JvmOverloads constructor(
     context: Context,
     attrs: AttributeSet? = null,
