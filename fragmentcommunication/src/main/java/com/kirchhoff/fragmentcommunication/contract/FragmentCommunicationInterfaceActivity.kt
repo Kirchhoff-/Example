@@ -29,7 +29,9 @@ internal class FragmentCommunicationInterfaceActivity : AppCompatActivity(),
 
     override fun sendText(text: String) {
         val secondInterfaceFragment = supportFragmentManager
-                .findFragmentById(R.id.secondContainer) as SecondInterfaceFragment
-        secondInterfaceFragment.updateText(text)
+                .findFragmentById(R.id.secondContainer)
+        if (secondInterfaceFragment is SecondInterfaceFragment) {
+            secondInterfaceFragment.updateText(text)
+        }
     }
 }
