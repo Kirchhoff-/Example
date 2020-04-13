@@ -15,6 +15,7 @@ class CustomPagerAdapter constructor(private val context: Context) : PagerAdapte
         return layout
     }
 
+    @SuppressWarnings("UnsafeCast")
     override fun destroyItem(container: ViewGroup, position: Int, view: Any) {
         container.removeView(view as View)
     }
