@@ -15,6 +15,7 @@ import com.kirchhoff.fabanimation.FabAnimationActivity
 import com.kirchhoff.gmailselectinganimation.GmailSelectionActivity
 import com.kirchhoff.viewpagerwithoutfragment.VPWithoutFragmentActivity
 
+@SuppressWarnings("TooManyFunctions")
 @Suppress("UNUSED_PARAMETER")
 class MainActivity : AppCompatActivity() {
 
