@@ -85,7 +85,7 @@ private class SwivelAnimation(
         matrix.preTranslate(-centerX, 0f)
         matrix.postTranslate(centerX, 0f)
 
-        val displaySide = if (degrees >= 90) DisplaySide.BACK else DisplaySide.FRONT
+        val displaySide = if (degrees >= RIGHT_ANGLE) DisplaySide.BACK else DisplaySide.FRONT
         updateDisplayedSide(displaySide)
         if (displaySide == DisplaySide.BACK) {
             matrix.preScale(-1f, 1f, centerX, 0f)
@@ -94,6 +94,7 @@ private class SwivelAnimation(
 
     companion object {
 
+        private const val RIGHT_ANGLE = 90
         private val ROTATION_TO_CHECKED = 0f..180f
         private val ROTATION_TO_NOT_CHECKED = 180f..0f
         private const val DURATION_MS = 320L
