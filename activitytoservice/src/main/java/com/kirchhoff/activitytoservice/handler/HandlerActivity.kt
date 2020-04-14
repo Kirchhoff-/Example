@@ -24,6 +24,7 @@ internal class HandlerActivity : AppCompatActivity(), CustomHandler.AppReceiver 
         startService(intent)
     }
 
+    @SuppressWarnings("UnsafeCast")
     override fun onReceiveResult(message: Message) {
         /*
          * Handle the results from the intent service here!
