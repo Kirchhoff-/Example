@@ -12,12 +12,12 @@ internal class CustomIntentService : IntentService(CustomIntentService::class.ja
         const val STATUS_FINISHED = 1
     }
 
-    override fun onHandleIntent(intent: Intent) {
+    override fun onHandleIntent(intent: Intent?) {
 
         /*
          We pass the ResultReceiver from the activity to the intent service via intent.
          *  */
-        val receiver = intent.getParcelableExtra<ResultReceiver>("receiver")
+        val receiver = intent?.getParcelableExtra<ResultReceiver>("receiver")
 
         // Process background task here!
         try {
@@ -31,6 +31,6 @@ internal class CustomIntentService : IntentService(CustomIntentService::class.ja
          * we can pass the status of the service back to the activity using the resultReceiver
          *  */
         val b = Bundle()
-        receiver.send(STATUS_FINISHED, b)
+        receiver?.send(STATUS_FINISHED, b)
     }
 }
