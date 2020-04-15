@@ -12,11 +12,11 @@ internal class CustomHandlerIntentService : IntentService(CustomHandlerIntentSer
         const val STATUS_FINISHED = 1
     }
 
-    override fun onHandleIntent(intent: Intent) {
+    override fun onHandleIntent(intent: Intent?) {
         /*
          * Pass the Handler from the activity to the intent service via intent.
          *  */
-        val messenger = intent.getParcelableExtra<Messenger>("handler")
+        val messenger = intent?.getParcelableExtra<Messenger>("handler")
 
         // Process background task here!
         try {
@@ -32,6 +32,6 @@ internal class CustomHandlerIntentService : IntentService(CustomHandlerIntentSer
         val msg = Message()
         msg.obj = "Sending message to UI after completion of background task!"
         msg.what = STATUS_FINISHED
-        messenger.send(msg)
+        messenger?.send(msg)
     }
 }

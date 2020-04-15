@@ -19,16 +19,16 @@ class SimpleTransitionDetailsActivity : AppCompatActivity() {
         val transitionItem = intent.getParcelableExtra<TransitionItem>("parameter")
 
         val layout = findViewById<RelativeLayout>(R.id.layout)
-        layout.setBackgroundColor(ContextCompat.getColor(this, transitionItem.color))
-
         val tvHeading = findViewById<TextView>(R.id.tvHeading)
-        tvHeading.text = transitionItem.title
-
         val tvLanguage = findViewById<TextView>(R.id.tvLanguage)
-        tvLanguage.text = transitionItem.language
-
         tvDesc = findViewById(R.id.tvDesc)
-        tvDesc.text = transitionItem.description
+
+        transitionItem?.let {
+            layout.setBackgroundColor(ContextCompat.getColor(this, transitionItem.color))
+            tvHeading.text = transitionItem.title
+            tvLanguage.text = transitionItem.language
+            tvDesc.text = transitionItem.description
+        }
     }
 
     override fun onBackPressed() {

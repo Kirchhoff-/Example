@@ -22,8 +22,8 @@ class GmailSelectionActivity : AppCompatActivity(), Presenter.View {
         presenter.startPresenting(this, savedInstanceState?.getParcelable(KEY_STATE))
     }
 
-    override fun onSaveInstanceState(outState: Bundle?) {
-        outState?.putParcelable(KEY_STATE, presenter.state())
+    override fun onSaveInstanceState(outState: Bundle) {
+        outState.putParcelable(KEY_STATE, presenter.state())
         super.onSaveInstanceState(outState)
     }
 

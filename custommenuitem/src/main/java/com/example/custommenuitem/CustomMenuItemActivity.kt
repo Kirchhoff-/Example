@@ -38,8 +38,8 @@ class CustomMenuItemActivity : BaseActivity() {
         return super.onPrepareOptionsMenu(menu)
     }
 
-    override fun onOptionsItemSelected(item: MenuItem?): Boolean {
-        return when (item?.itemId) {
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId) {
             R.id.menu_item_alerts -> {
                 alertCount = 0
                 updateAlertIcon()
