@@ -1,8 +1,5 @@
 package com.example.raindropview
 
-import com.example.core.ui.BaseActivity
+import androidx.appcompat.app.AppCompatActivity
 
-class RainDropActivity : BaseActivity() {
-
-    override fun getLayoutId() = R.layout.a_raindrop
-}
+class RainDropActivity : AppCompatActivity(R.layout.a_raindrop)

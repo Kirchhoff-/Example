@@ -4,9 +4,9 @@ import android.os.Bundle
 import android.os.Handler
 import android.widget.Button
 import android.widget.ProgressBar
-import com.example.core.ui.BaseActivity
+import androidx.appcompat.app.AppCompatActivity
 
-class ProgressBarCustomizationActivity : BaseActivity() {
+class ProgressBarCustomizationActivity : AppCompatActivity(R.layout.a_progress_bar_customization) {
 
     private lateinit var pbFirst: ProgressBar
     private lateinit var pbSecond: ProgressBar
@@ -28,8 +28,6 @@ class ProgressBarCustomizationActivity : BaseActivity() {
         super.onStop()
         handler.removeCallbacks(progressRunnable)
     }
-
-    override fun getLayoutId() = R.layout.a_progress_bar_customization
 
     private fun startProgress() {
         handler.postDelayed(progressRunnable, DELAY_MILLIS)

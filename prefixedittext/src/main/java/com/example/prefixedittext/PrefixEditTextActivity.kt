@@ -1,8 +1,5 @@
 package com.example.prefixedittext
 
-import com.example.core.ui.BaseActivity
+import androidx.appcompat.app.AppCompatActivity
 
-class PrefixEditTextActivity : BaseActivity() {
-
-    override fun getLayoutId() = R.layout.a_prefix_edittext
-}
+class PrefixEditTextActivity : AppCompatActivity(R.layout.a_prefix_edittext)

@@ -6,15 +6,13 @@ import android.view.View.GONE
 import android.view.View.VISIBLE
 import android.widget.FrameLayout
 import android.widget.TextView
-import com.example.core.ui.BaseActivity
+import androidx.appcompat.app.AppCompatActivity
 
-class CustomMenuItemActivity : BaseActivity() {
+class CustomMenuItemActivity : AppCompatActivity(R.layout.a_custom_menu_item) {
 
     private lateinit var redCircle: FrameLayout
     private lateinit var tvViewAlertCount: TextView
     private var alertCount = 0
-
-    override fun getLayoutId() = R.layout.a_custom_menu_item
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         super.onCreateOptionsMenu(menu)
