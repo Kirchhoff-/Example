@@ -4,10 +4,12 @@ import android.os.Bundle
 import android.view.View
 import android.view.ViewAnimationUtils
 import android.view.animation.DecelerateInterpolator
-import com.example.core.ui.BaseFragment
+import androidx.annotation.LayoutRes
+import androidx.fragment.app.Fragment
 import kotlin.math.hypot
 
-internal abstract class BaseCircularRevealFragment : BaseFragment(), ExitWithAnimation {
+internal abstract class BaseCircularRevealFragment(@LayoutRes contentLayoutId: Int) :
+    Fragment(contentLayoutId), ExitWithAnimation {
 
     override var posX: Int? = null
     override var posY: Int? = null
