@@ -1,9 +1,6 @@
 package com.example.bottomnavigationview.fragment
 
+import androidx.fragment.app.Fragment
 import com.example.bottomnavigationview.R
-import com.example.core.ui.BaseFragment
 
-internal class HomeFragment : BaseFragment() {
-
-    override fun getLayoutId() = R.layout.f_home
-}
+internal class HomeFragment : Fragment(R.layout.f_home)

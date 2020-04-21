@@ -2,8 +2,7 @@ package com.kirchhoff.circularrevealfragment.fragments
 
 import com.kirchhoff.circularrevealfragment.R
 
-internal class FirstFragment : BaseCircularRevealFragment() {
+internal class FirstFragment : BaseCircularRevealFragment(R.layout.f_first) {
     override fun isToBeExitedWithAnimation(): Boolean = true
-    override fun getLayoutId() = R.layout.f_first
     override fun circularRevealFromLeft() = false
 }

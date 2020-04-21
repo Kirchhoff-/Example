@@ -1,4 +1,4 @@
-include ':app', ':core', ':activitytoservice', ':lazybind', ':screenshot', ':progressbarcustomization', ':custommenuitem',
+include ':app', ':activitytoservice', ':lazybind', ':screenshot', ':progressbarcustomization', ':custommenuitem',
         ':edittextcounter',
         ':bottomnavigationview',
 		':recyclertoviewpager',

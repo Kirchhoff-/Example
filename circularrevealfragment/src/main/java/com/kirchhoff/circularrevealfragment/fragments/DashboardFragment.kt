@@ -3,17 +3,14 @@ package com.kirchhoff.circularrevealfragment.fragments
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
-import com.example.core.ui.BaseFragment
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.kirchhoff.circularrevealfragment.R
 
-class DashboardFragment : BaseFragment() {
+class DashboardFragment : Fragment(R.layout.f_dashboard) {
 
     companion object {
         fun newInstance(): DashboardFragment = DashboardFragment()
     }
-
-    override fun getLayoutId() = R.layout.f_dashboard
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
