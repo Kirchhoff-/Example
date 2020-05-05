@@ -16,7 +16,7 @@ import java.util.Calendar.getInstance
 import java.util.TimeZone
 import java.util.concurrent.TimeUnit
 
-class TimeDiffUtilActivity : AppCompatActivity() {
+class TimeDiffUtilActivity : AppCompatActivity(R.layout.a_time_diff_util) {
 
     private val recyclerView by lazy { findViewById<RecyclerView>(R.id.recyclerView) }
 
@@ -26,7 +26,6 @@ class TimeDiffUtilActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.a_time_diff_util)
 
         recyclerView.setHasFixedSize(true)
         recyclerView.adapter = adapter

@@ -5,7 +5,7 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
-class FabAnimationActivity : AppCompatActivity(), View.OnClickListener {
+class FabAnimationActivity : AppCompatActivity(R.layout.a_fab_animation), View.OnClickListener {
 
     private lateinit var fab: FloatingActionButton
     private lateinit var fab1: FloatingActionButton
@@ -16,7 +16,6 @@ class FabAnimationActivity : AppCompatActivity(), View.OnClickListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.a_fab_animation)
         setSupportActionBar(findViewById(R.id.toolbar))
         animationHelper = AnimationHelper(this)
         fab = findViewById(R.id.fab)

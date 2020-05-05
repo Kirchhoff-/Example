@@ -4,7 +4,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.recyclertoviewpager.fragment.GridFragment
 
-class RecyclerToViewPagerActivity : AppCompatActivity() {
+class RecyclerToViewPagerActivity : AppCompatActivity(R.layout.a_recycler_to_viewpager) {
 
     companion object {
         var currentPosition: Int = 0
@@ -13,7 +13,6 @@ class RecyclerToViewPagerActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.a_recycler_to_viewpager)
         if (savedInstanceState != null) {
             currentPosition = savedInstanceState.getInt(KEY_CURRENT_POSITION, 0)
             // Return here to prevent adding additional GridFragments when changing orientation.

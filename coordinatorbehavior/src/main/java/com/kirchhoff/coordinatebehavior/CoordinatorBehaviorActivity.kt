@@ -5,11 +5,10 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.snackbar.Snackbar
 
-class CoordinatorBehaviorActivity : AppCompatActivity() {
+class CoordinatorBehaviorActivity : AppCompatActivity(R.layout.a_coordinate_behavior) {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.a_coordinate_behavior)
 
         findViewById<View>(R.id.bApply).setOnClickListener { view -> showSnackbar(view, "Button with custom behavior") }
         findViewById<View>(R.id.fab).setOnClickListener { view -> showSnackbar(view, "FAB with custom behavior") }

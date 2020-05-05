@@ -1,6 +1,5 @@
 package com.example.kirchhoff.example
 
-import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.example.constraintanimation.ConstraintLayoutAnimationActivity
@@ -17,12 +16,7 @@ import com.kirchhoff.viewpagerwithoutfragment.VPWithoutFragmentActivity
 
 @SuppressWarnings("TooManyFunctions")
 @Suppress("UNUSED_PARAMETER")
-class MainActivity : AppCompatActivity() {
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.a_main)
-    }
+class MainActivity : AppCompatActivity(R.layout.a_main) {
 
     fun recyclerViewExamples(view: View) {
         startActivity(RecyclerViewExamplesActivity::class.java)

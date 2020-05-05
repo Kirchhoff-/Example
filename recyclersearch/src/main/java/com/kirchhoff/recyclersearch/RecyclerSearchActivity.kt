@@ -10,13 +10,12 @@ import androidx.recyclerview.widget.RecyclerView
 import com.kirchhoff.recyclersearch.adapter.AndroidVersionDataAdapter
 import com.kirchhoff.recyclersearch.data.AndroidVersionRepository
 
-class RecyclerSearchActivity : AppCompatActivity() {
+class RecyclerSearchActivity : AppCompatActivity(R.layout.a_recycler_search) {
 
     private lateinit var adapter: AndroidVersionDataAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.a_recycler_search)
 
         val toolbar = findViewById<Toolbar>(R.id.toolbar)
         setSupportActionBar(toolbar)

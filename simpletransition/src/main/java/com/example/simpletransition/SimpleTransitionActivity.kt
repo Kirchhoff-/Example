@@ -8,11 +8,10 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.app.ActivityOptionsCompat
 
-class SimpleTransitionActivity : AppCompatActivity() {
+class SimpleTransitionActivity : AppCompatActivity(R.layout.a_simple_transition) {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.a_simple_transition)
 
         val values = createData()
 

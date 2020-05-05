@@ -9,13 +9,12 @@ import android.widget.Button
 import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
 
-class ScreenshotActivity : AppCompatActivity(), View.OnClickListener {
+class ScreenshotActivity : AppCompatActivity(R.layout.a_screenshot), View.OnClickListener {
 
     private lateinit var rootLayout: LinearLayout
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.a_screenshot)
         rootLayout = findViewById(R.id.rootLayout)
 
         findViewById<Button>(R.id.bScreenshot).setOnClickListener(this)

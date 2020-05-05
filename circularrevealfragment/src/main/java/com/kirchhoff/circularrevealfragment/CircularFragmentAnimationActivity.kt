@@ -11,11 +11,10 @@ import com.kirchhoff.circularrevealfragment.fragments.DashboardFragment
 import com.kirchhoff.circularrevealfragment.fragments.ExitWithAnimation
 import kotlin.math.hypot
 
-class CircularFragmentAnimationActivity : AppCompatActivity() {
+class CircularFragmentAnimationActivity : AppCompatActivity(R.layout.a_circular_fragment_animation) {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.a_circular_fragment_animation)
 
         supportFragmentManager.beginTransaction()
                 .replace(R.id.container, DashboardFragment.newInstance())

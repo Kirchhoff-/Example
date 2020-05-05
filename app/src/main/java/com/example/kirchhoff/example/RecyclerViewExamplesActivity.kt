@@ -1,6 +1,5 @@
 package com.example.kirchhoff.example
 
-import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.example.kirchhoff.example.extension.startActivity
@@ -14,12 +13,7 @@ import com.kirchhoff.recyclersearch.RecyclerSearchActivity
 import com.kirchhoff.thingdiffutils.ThingDiffUtilActivity
 
 @Suppress("UNUSED_PARAMETER")
-class RecyclerViewExamplesActivity : AppCompatActivity() {
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.a_recycler_view_examples)
-    }
+class RecyclerViewExamplesActivity : AppCompatActivity(R.layout.a_recycler_view_examples) {
 
     fun recyclerViewWithSearch(view: View) {
         startActivity(RecyclerSearchActivity::class.java)

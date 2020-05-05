@@ -8,13 +8,12 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 
-class SimpleTransitionDetailsActivity : AppCompatActivity() {
+class SimpleTransitionDetailsActivity : AppCompatActivity(R.layout.a_simple_transition_details) {
 
     private lateinit var tvDesc: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.a_simple_transition_details)
 
         val transitionItem = intent.getParcelableExtra<TransitionItem>("parameter")
 
