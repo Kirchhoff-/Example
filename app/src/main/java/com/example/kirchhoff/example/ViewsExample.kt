@@ -1,6 +1,5 @@
 package com.example.kirchhoff.example
 
-import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.example.bottomnavigationview.BottomNavigationViewActivity
@@ -14,12 +13,7 @@ import com.kirchhoff.curvedbottombar.CurvedBottomBarActivity
 import com.kirchhoff.numbervisualizer.NumberVisualizerActivity
 
 @Suppress("UNUSED_PARAMETER")
-class ViewsExample : AppCompatActivity() {
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.a_views)
-    }
+class ViewsExample : AppCompatActivity(R.layout.a_views) {
 
     fun countDownLabel(view: View) {
         startActivity(CountdownLabelActivity::class.java)

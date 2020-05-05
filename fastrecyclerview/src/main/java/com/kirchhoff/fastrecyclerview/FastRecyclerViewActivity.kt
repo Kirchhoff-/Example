@@ -5,11 +5,10 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
-class FastRecyclerViewActivity : AppCompatActivity() {
+class FastRecyclerViewActivity : AppCompatActivity(R.layout.a_fast_recycler_view) {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.a_fast_recycler_view)
 
         val recyclerView: RecyclerView = findViewById(R.id.recyclerView)
         recyclerView.layoutManager = LinearLayoutManager(this)

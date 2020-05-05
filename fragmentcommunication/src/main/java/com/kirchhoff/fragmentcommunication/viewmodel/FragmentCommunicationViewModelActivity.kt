@@ -7,11 +7,11 @@ import com.kirchhoff.fragmentcommunication.viewmodel.fragment.FirstViewModelFrag
 import com.kirchhoff.fragmentcommunication.viewmodel.fragment.SecondViewModelFragment
 import com.kirchhoff.fragmentcommunication.viewmodel.fragment.ThirdViewModelFragment
 
-internal class FragmentCommunicationViewModelActivity : AppCompatActivity() {
+internal class FragmentCommunicationViewModelActivity :
+        AppCompatActivity(R.layout.a_fragment_communication_view_model) {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.a_fragment_communication_view_model)
 
         supportFragmentManager.beginTransaction()
                 .add(R.id.firstContainer, FirstViewModelFragment())

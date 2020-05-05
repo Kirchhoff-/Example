@@ -7,7 +7,7 @@ import androidx.annotation.PluralsRes
 import androidx.appcompat.app.AppCompatActivity
 import java.util.Date
 
-class CountdownLabelActivity : AppCompatActivity() {
+class CountdownLabelActivity : AppCompatActivity(R.layout.a_countdown_label) {
 
     private lateinit var tvCount: TextView
     private lateinit var futureDate: Date
@@ -25,7 +25,6 @@ class CountdownLabelActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.a_countdown_label)
         tvCount = findViewById(R.id.tvCount)
 
         futureDate = Date()

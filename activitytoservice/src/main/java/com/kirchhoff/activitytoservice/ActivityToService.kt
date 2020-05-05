@@ -9,11 +9,10 @@ import com.kirchhoff.activitytoservice.broadcast.SMSActivity
 import com.kirchhoff.activitytoservice.handler.HandlerActivity
 import com.kirchhoff.activitytoservice.resultreceiver.ResultReceiverActivity
 
-class ActivityToService : AppCompatActivity(), View.OnClickListener {
+class ActivityToService : AppCompatActivity(R.layout.a_activity_to_service), View.OnClickListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.a_activity_to_service)
 
         findViewById<Button>(R.id.smsReceiver).setOnClickListener(this)
         findViewById<Button>(R.id.resultReceiver).setOnClickListener(this)

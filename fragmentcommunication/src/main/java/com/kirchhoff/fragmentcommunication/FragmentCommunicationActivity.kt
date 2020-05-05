@@ -7,11 +7,10 @@ import androidx.appcompat.app.AppCompatActivity
 import com.kirchhoff.fragmentcommunication.contract.FragmentCommunicationInterfaceActivity
 import com.kirchhoff.fragmentcommunication.viewmodel.FragmentCommunicationViewModelActivity
 
-class FragmentCommunicationActivity : AppCompatActivity() {
+class FragmentCommunicationActivity : AppCompatActivity(R.layout.a_fragment_communication) {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.a_fragment_communication)
         val bInterface: Button = findViewById(R.id.bInterfaceCommunication)
         val bViewModel: Button = findViewById(R.id.bViewModelCommunication)
         bInterface.setOnClickListener { open(FragmentCommunicationInterfaceActivity::class.java) }

@@ -7,12 +7,11 @@ import com.kirchhoff.fragmentcommunication.R
 import com.kirchhoff.fragmentcommunication.contract.fragment.FirstInterfaceFragment
 import com.kirchhoff.fragmentcommunication.contract.fragment.SecondInterfaceFragment
 
-internal class FragmentCommunicationInterfaceActivity : AppCompatActivity(),
+internal class FragmentCommunicationInterfaceActivity : AppCompatActivity(R.layout.a_fragment_communication_interface),
         FirstInterfaceFragment.TextClickedListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.a_fragment_communication_interface)
 
         supportFragmentManager.beginTransaction()
                 .add(R.id.firstContainer, FirstInterfaceFragment())

@@ -9,11 +9,10 @@ import com.example.recyclerdragdrop.adapter.UserListAdapter
 import com.example.recyclerdragdrop.data.UsersRepository
 import com.example.recyclerdragdrop.helper.SwipeAndDragHelper
 
-class RecyclerViewDragDropActivity : AppCompatActivity() {
+class RecyclerViewDragDropActivity : AppCompatActivity(R.layout.a_recycler_view_drag_drop) {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.a_recycler_view_drag_drop)
 
         val recyclerView: RecyclerView = findViewById(R.id.recyclerView)
         recyclerView.layoutManager = LinearLayoutManager(this)

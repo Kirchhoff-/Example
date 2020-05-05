@@ -1,6 +1,5 @@
 package com.kirchhoff.thingdiffutils
 
-import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.util.Pair
 import androidx.recyclerview.widget.DefaultItemAnimator
@@ -9,15 +8,10 @@ import androidx.recyclerview.widget.RecyclerView
 import io.reactivex.disposables.Disposable
 import java.util.concurrent.TimeUnit
 
-class ThingDiffUtilActivity : AppCompatActivity() {
+class ThingDiffUtilActivity : AppCompatActivity(R.layout.a_thing_diff_util) {
 
     private lateinit var adapter: ThingAdapter
     private var disposable: Disposable? = null
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.a_thing_diff_util)
-    }
 
     override fun onStart() {
         super.onStart()

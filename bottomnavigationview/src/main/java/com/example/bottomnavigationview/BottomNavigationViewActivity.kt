@@ -10,7 +10,7 @@ import com.example.bottomnavigationview.fragment.HomeFragment
 import com.example.bottomnavigationview.fragment.InformationFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
-class BottomNavigationViewActivity : AppCompatActivity() {
+class BottomNavigationViewActivity : AppCompatActivity(R.layout.a_bottomnavigationview) {
 
     private val homeFragment: Fragment = HomeFragment()
     private val actionFragment: Fragment = ActionFragment()
@@ -20,7 +20,6 @@ class BottomNavigationViewActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.a_bottomnavigationview)
 
         val navigation = findViewById<BottomNavigationView>(R.id.navigation)
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)

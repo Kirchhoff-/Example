@@ -9,14 +9,13 @@ import com.kirchhoff.gmailselectinganimation.data.EmailUiModel
 
 private const val KEY_STATE = "presenter-state"
 
-class GmailSelectionActivity : AppCompatActivity(), Presenter.View {
+class GmailSelectionActivity : AppCompatActivity(R.layout.activity_gmail_selecting), Presenter.View {
 
     private val presenter = Presenter()
     private val inboxAdapter = InboxAdapter()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_gmail_selecting)
         val rvInbox: RecyclerView = findViewById(R.id.rvInbox)
         rvInbox.adapter = inboxAdapter
         presenter.startPresenting(this, savedInstanceState?.getParcelable(KEY_STATE))

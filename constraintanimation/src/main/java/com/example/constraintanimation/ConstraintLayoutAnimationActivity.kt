@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.constraintlayout.widget.ConstraintSet
 
-class ConstraintLayoutAnimationActivity : AppCompatActivity() {
+class ConstraintLayoutAnimationActivity : AppCompatActivity(R.layout.a_constraint_layout_animation) {
 
     private var show = false
 
@@ -18,7 +18,6 @@ class ConstraintLayoutAnimationActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.a_constraint_layout_animation)
         constraint = findViewById(R.id.constraint)
         ivBackground = findViewById(R.id.ivBackground)
 
