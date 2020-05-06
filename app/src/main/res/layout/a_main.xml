@@ -98,6 +98,12 @@
             android:onClick="customMenuItem"
             android:text="@string/custom_menu_item_title" />
 
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="autoDisposable"
+            android:text="@string/autodisposable_title"/>
+
     </LinearLayout>
 
 </ScrollView>

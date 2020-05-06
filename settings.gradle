@@ -22,3 +22,4 @@ include ':app', ':activitytoservice', ':lazybind', ':screenshot', ':progressbarc
 		':circularrevealfragment',
 		':fragmentcommunication' ,
 		':numbervisualizer'
+include ':autodisposable'
