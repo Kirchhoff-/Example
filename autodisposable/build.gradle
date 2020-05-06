@@ -1,0 +1,6 @@
+apply from: '../buildsystem/android-library.gradle'
+
+dependencies {
+    implementation libraries.rxAndroid
+    implementation libraries.rxJava
+}

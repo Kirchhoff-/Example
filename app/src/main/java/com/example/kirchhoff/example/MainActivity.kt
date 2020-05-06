@@ -10,6 +10,7 @@ import com.example.lazybind.LazyBindActivity
 import com.example.screenshot.ScreenshotActivity
 import com.example.simpletransition.SimpleTransitionActivity
 import com.kirchhoff.activitytoservice.ActivityToService
+import com.kirchhoff.autodisposable.AutoDisposableActivity
 import com.kirchhoff.coordinatebehavior.CoordinatorBehaviorActivity
 import com.kirchhoff.fabanimation.FabAnimationActivity
 import com.kirchhoff.gmailselectinganimation.GmailSelectionActivity
@@ -74,5 +75,9 @@ class MainActivity : AppCompatActivity() {
 
     fun customMenuItem(view: View) {
         startActivity(CustomMenuItemActivity::class.java)
+    }
+
+    fun autoDisposable(view: View) {
+        startActivity(AutoDisposableActivity::class.java)
     }
 }
