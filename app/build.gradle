@@ -59,4 +59,5 @@ dependencies {
     implementation project(path: ':edittextcounter')
     implementation project(path: ':numbervisualizer')
     implementation project(path: ':autodisposable')
+    implementation project(path: ':stateviewgroup')
 }

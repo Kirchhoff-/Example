@@ -1,4 +1,9 @@
-include ':app', ':activitytoservice', ':lazybind', ':screenshot', ':progressbarcustomization', ':custommenuitem',
+include ':app',
+		':activitytoservice',
+		':lazybind',
+		':screenshot',
+		':progressbarcustomization',
+		':custommenuitem',
         ':edittextcounter',
         ':bottomnavigationview',
 		':recyclertoviewpager',
@@ -21,5 +26,6 @@ include ':app', ':activitytoservice', ':lazybind', ':screenshot', ':progressbarc
 		':thingdiffutils',
 		':circularrevealfragment',
 		':fragmentcommunication' ,
-		':numbervisualizer'
-include ':autodisposable'
+		':numbervisualizer',
+		':autodisposable',
+		':stateviewgroup'

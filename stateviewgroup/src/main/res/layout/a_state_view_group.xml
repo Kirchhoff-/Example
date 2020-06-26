@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".StateViewGroupActivity">
+
+    <com.kirchhoff.stateviewgroup.view.ViewGroupButton
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="8dp"
+        app:icon="@drawable/ic_satisfied"
+        android:text="@string/state_view_group_debug_text"
+        android:layout_gravity="center"/>
+
+    <com.kirchhoff.stateviewgroup.view.ViewGroupCheckableButton
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="8dp"
+        app:icon="@drawable/ic_satisfied"
+        android:text="@string/state_view_group_debug_text"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

@@ -11,6 +11,7 @@ import com.example.raindropview.RainDropActivity
 import com.kirchhoff.countdownlabel.CountdownLabelActivity
 import com.kirchhoff.curvedbottombar.CurvedBottomBarActivity
 import com.kirchhoff.numbervisualizer.NumberVisualizerActivity
+import com.kirchhoff.stateviewgroup.StateViewGroupActivity
 
 @Suppress("UNUSED_PARAMETER")
 class ViewsExample : AppCompatActivity(R.layout.a_views) {
@@ -45,5 +46,9 @@ class ViewsExample : AppCompatActivity(R.layout.a_views) {
 
     fun numberVisualizer(view: View) {
         startActivity(NumberVisualizerActivity::class.java)
+    }
+
+    fun stateViewGroup(view: View) {
+        startActivity(StateViewGroupActivity::class.java)
     }
 }
