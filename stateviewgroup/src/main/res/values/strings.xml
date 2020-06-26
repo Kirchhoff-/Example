@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="state_view_group_title">StateViewGroup</string>
+    <string name="state_view_group_example">StateViewGroup example</string>
+    <string name="state_view_group_debug_text">Debug</string>
+</resources>

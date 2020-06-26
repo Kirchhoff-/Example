@@ -64,6 +64,12 @@
             android:onClick="numberVisualizer"
             android:text="@string/number_visualizer_example" />
 
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="stateViewGroup"
+            android:text="@string/state_view_group_example"/>
+
     </LinearLayout>
 
 </ScrollView>

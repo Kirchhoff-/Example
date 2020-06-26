@@ -1,0 +1,67 @@
+package com.kirchhoff.stateviewgroup.view
+
+import android.content.Context
+import android.util.AttributeSet
+import android.view.View
+import android.widget.Checkable
+import android.widget.CheckedTextView
+import android.widget.ImageView
+import androidx.core.content.ContextCompat
+import androidx.core.content.res.use
+import androidx.core.view.children
+import com.kirchhoff.stateviewgroup.R
+
+class ViewGroupCheckableButton @JvmOverloads constructor(
+    context: Context,
+    attrs: AttributeSet? = null,
+    defStyleAttr: Int = 0
+) : ViewGroupButton(context, attrs, defStyleAttr), Checkable {
+
+    private var checked = false
+
+    init {
+        val civIcon: ImageView = findViewById(R.id.civIcon)
+        val civIndicator: CheckableImageView = findViewById(R.id.civIndicator)
+        val ctvLabel: CheckedTextView = findViewById(R.id.ctvLabel)
+
+        context.theme.obtainStyledAttributes(attrs, R.styleable.ViewGroupCheckableButton, 0, 0).use {
+            isChecked = it.getBoolean(R.styleable.ViewGroupCheckableButton_android_checked, isChecked)
+        }
+
+        background = context.getDrawable(R.drawable.checkable_background_selector)
+        civIcon.imageTintList = ContextCompat.getColorStateList(context, R.color.checkable_text_color_selector)
+        civIndicator.imageTintList = ContextCompat.getColorStateList(context, R.color.checkable_icon_tint_selector)
+        ctvLabel.setTextColor(ContextCompat.getColorStateList(context, R.color.checkable_icon_tint_selector))
+    }
+
+    override fun isChecked() = checked
+
+    override fun toggle() {
+        isChecked = !checked
+    }
+
+    override fun setChecked(checked: Boolean) {
+        if (this.checked != checked) {
+            this.checked = checked
+            children.filterIsInstance<Checkable>().forEach { it.isChecked = checked }
+            refreshDrawableState()
+        }
+    }
+
+    override fun performClick(): Boolean {
+        toggle()
+        return super.performClick()
+    }
+
+    override fun onCreateDrawableState(extraSpace: Int): IntArray {
+        val drawableState = super.onCreateDrawableState(extraSpace + 1)
+        if (isChecked) {
+            View.mergeDrawableStates(drawableState, STATE_CHECKED)
+        }
+        return drawableState
+    }
+
+    companion object {
+        private val STATE_CHECKED = intArrayOf(android.R.attr.state_checked)
+    }
+}

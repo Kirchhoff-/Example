@@ -1,0 +1,9 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kirchhoff.stateviewgroup">
+
+    <application>
+        <activity
+            android:name=".StateViewGroupActivity"
+            android:label="@string/state_view_group_title" />
+    </application>
+</manifest>
