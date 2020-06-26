@@ -20,18 +20,14 @@ class ViewGroupCheckableButton @JvmOverloads constructor(
     private var checked = false
 
     init {
-        val civIcon: ImageView = findViewById(R.id.civIcon)
-        val civIndicator: CheckableImageView = findViewById(R.id.civIndicator)
-        val ctvLabel: CheckedTextView = findViewById(R.id.ctvLabel)
-
         context.theme.obtainStyledAttributes(attrs, R.styleable.ViewGroupCheckableButton, 0, 0).use {
             isChecked = it.getBoolean(R.styleable.ViewGroupCheckableButton_android_checked, isChecked)
         }
 
         background = context.getDrawable(R.drawable.checkable_background_selector)
-        civIcon.imageTintList = ContextCompat.getColorStateList(context, R.color.checkable_text_color_selector)
-        civIndicator.imageTintList = ContextCompat.getColorStateList(context, R.color.checkable_icon_tint_selector)
-        ctvLabel.setTextColor(ContextCompat.getColorStateList(context, R.color.checkable_icon_tint_selector))
+        findViewById<ImageView>(R.id.civIcon).imageTintList = ContextCompat.getColorStateList(context, R.color.checkable_text_color_selector)
+        findViewById<CheckableImageView>(R.id.civIndicator).imageTintList = ContextCompat.getColorStateList(context, R.color.checkable_icon_tint_selector)
+        findViewById<CheckedTextView>(R.id.ctvLabel).setTextColor(ContextCompat.getColorStateList(context, R.color.checkable_icon_tint_selector))
     }
 
     override fun isChecked() = checked
