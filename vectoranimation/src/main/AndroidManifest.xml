@@ -1,0 +1,10 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kirchhoff.vectoranimation">
+
+    <application>
+        <activity
+            android:name=".VectorAnimationActivity"
+            android:label="@string/vector_animation_title" />
+    </application>
+
+</manifest>
