@@ -13,6 +13,7 @@ import com.kirchhoff.autodisposable.AutoDisposableActivity
 import com.kirchhoff.coordinatebehavior.CoordinatorBehaviorActivity
 import com.kirchhoff.fabanimation.FabAnimationActivity
 import com.kirchhoff.gmailselectinganimation.GmailSelectionActivity
+import com.kirchhoff.vectoranimation.VectorAnimationActivity
 import com.kirchhoff.viewpagerwithoutfragment.VPWithoutFragmentActivity
 
 @SuppressWarnings("TooManyFunctions")
@@ -73,5 +74,9 @@ class MainActivity : AppCompatActivity(R.layout.a_main) {
 
     fun autoDisposable(view: View) {
         startActivity(AutoDisposableActivity::class.java)
+    }
+
+    fun vectorAnimation(view: View) {
+        startActivity(VectorAnimationActivity::class.java)
     }
 }

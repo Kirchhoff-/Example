@@ -102,7 +102,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="autoDisposable"
-            android:text="@string/autodisposable_title"/>
+            android:text="@string/autodisposable_title" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="vectorAnimation"
+            android:text="@string/vector_animation_example" />
 
     </LinearLayout>
 
