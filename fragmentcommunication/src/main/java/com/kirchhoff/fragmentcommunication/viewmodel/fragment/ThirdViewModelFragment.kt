@@ -20,7 +20,7 @@ class ThirdViewModelFragment : Fragment() {
         val textViewModel = activity?.let {
             ViewModelProviders.of(it).get(TextViewModel::class.java)
         }
-        textViewModel?.message?.observe(this, Observer<String> {
+        textViewModel?.message?.observe(viewLifecycleOwner, Observer<String> {
             text -> tvReverseRandomString.text = text?.reversed()
         })
         return rootView
