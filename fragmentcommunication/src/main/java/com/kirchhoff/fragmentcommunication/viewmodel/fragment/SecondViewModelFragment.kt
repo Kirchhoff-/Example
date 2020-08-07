@@ -18,7 +18,7 @@ class SecondViewModelFragment : Fragment() {
         val tvRandomString = rootView.findViewById<TextView>(R.id.tvRandomString)
 
         val textViewModel = activity?.let { ViewModelProviders.of(it).get(TextViewModel::class.java) }
-        textViewModel?.message?.observe(this, Observer<String> { text -> tvRandomString.text = text })
+        textViewModel?.message?.observe(viewLifecycleOwner, Observer<String> { text -> tvRandomString.text = text })
         return rootView
     }
 }
