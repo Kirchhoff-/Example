@@ -29,4 +29,5 @@ include ':app',
 		':numbervisualizer',
 		':autodisposable',
 		':stateviewgroup',
-		':vectoranimation'
+		':vectoranimation',
+		':telegramloadinganimation'

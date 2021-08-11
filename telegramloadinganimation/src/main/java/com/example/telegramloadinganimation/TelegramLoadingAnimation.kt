@@ -1,0 +1,5 @@
+package com.example.telegramloadinganimation
+
+import androidx.appcompat.app.AppCompatActivity
+
+class TelegramLoadingAnimation: AppCompatActivity(R.layout.a_telegram_loading_animation)

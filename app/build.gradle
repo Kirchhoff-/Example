@@ -61,4 +61,5 @@ dependencies {
     implementation project(path: ':autodisposable')
     implementation project(path: ':stateviewgroup')
     implementation project(path: ':vectoranimation')
+    implementation project(path: ':telegramloadinganimation')
 }
