@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="telegram_loading_animation_title">Telegram loading animation</string>
+    <string name="telegram_loading_animation_example">Telegram loading animation example</string>
+</resources>

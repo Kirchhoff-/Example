@@ -8,6 +8,7 @@ import com.example.kirchhoff.example.extension.startActivity
 import com.example.prefixedittext.PrefixEditTextActivity
 import com.example.progressbarcustomization.ProgressBarCustomizationActivity
 import com.example.raindropview.RainDropActivity
+import com.example.telegramloadinganimation.TelegramLoadingAnimation
 import com.kirchhoff.countdownlabel.CountdownLabelActivity
 import com.kirchhoff.curvedbottombar.CurvedBottomBarActivity
 import com.kirchhoff.numbervisualizer.NumberVisualizerActivity
@@ -50,5 +51,9 @@ class ViewsExample : AppCompatActivity(R.layout.a_views) {
 
     fun stateViewGroup(view: View) {
         startActivity(StateViewGroupActivity::class.java)
+    }
+
+    fun telegramLoadingAnimation(view: View) {
+        startActivity(TelegramLoadingAnimation::class.java)
     }
 }
