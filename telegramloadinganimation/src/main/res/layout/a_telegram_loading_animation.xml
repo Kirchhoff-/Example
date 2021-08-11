@@ -3,9 +3,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Telegram loading animation" />
+    <com.example.telegramloadinganimation.views.ChatProgressView
+        android:id="@+id/vChatProgress"
+        android:layout_width="@dimen/chat_progress_view_size"
+        android:layout_height="@dimen/chat_progress_view_size"
+        android:layout_gravity="center" />
 
 </FrameLayout>
