@@ -44,7 +44,7 @@ class CustomMenuItemActivity : AppCompatActivity(R.layout.a_custom_menu_item) {
                 true
             }
             R.id.menu_item_refresh -> {
-                alertCount = (alertCount + 1)
+                alertCount += 1
                 updateAlertIcon()
                 return true
             }
