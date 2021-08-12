@@ -139,7 +139,7 @@ class ChatProgressView @JvmOverloads constructor(
      */
     private fun normalize(angle: Float): Float {
         val decimal = angle - angle.toInt()
-        return (angle.toInt() % MAX_ANGLE) + decimal
+        return angle.toInt() % MAX_ANGLE + decimal
     }
 
     private fun convertToSweepAngle(progress: Float): Float =

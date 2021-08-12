@@ -22,4 +22,4 @@ jobs:
           command: ./gradlew ktlint
       - run:
           name: Run Detekt
-          command: ./gradlew detektCheck
+          command: ./gradlew detekt
