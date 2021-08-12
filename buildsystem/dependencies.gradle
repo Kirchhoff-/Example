@@ -7,7 +7,7 @@ ext.versions = [
         targetSdk          : 29,
         compileSdk         : 29,
         buildTools         : '29.0.3',
-        detekt             : '1.0.0.RC8',
+        detekt             : '1.12.0',
 
         androidX           : '1.1.0',
         androidKtx         : '1.2.0',
@@ -27,7 +27,8 @@ ext.versions = [
 ext.gradlePlugins = [
         android: "com.android.tools.build:gradle:$versions.androidGradlePlugin",
         kotlin : "org.jetbrains.kotlin:kotlin-gradle-plugin:$versions.kotlin",
-        detekt : "io.gitlab.arturbosch.detekt:detekt-gradle-plugin:$versions.detekt"
+        detekt      : "io.gitlab.arturbosch.detekt:detekt-gradle-plugin:$versions.detekt",
+        detektPlugin: "io.gitlab.arturbosch.detekt"
 ]
 
 ext.libraries = [

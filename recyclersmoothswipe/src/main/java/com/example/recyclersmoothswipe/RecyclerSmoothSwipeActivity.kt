@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.recyclersmoothswipe.adapter.ColorsAdapter
+import com.example.recyclersmoothswipe.utils.OnItemTouchListenerAdapter
 
 class RecyclerSmoothSwipeActivity : AppCompatActivity(R.layout.a_recycler_smooth_swipe) {
 
@@ -16,8 +17,7 @@ class RecyclerSmoothSwipeActivity : AppCompatActivity(R.layout.a_recycler_smooth
         recyclerView.layoutManager = LinearLayoutManager(this)
         recyclerView.adapter = ColorsAdapter(this)
 
-        recyclerView.addOnItemTouchListener(object : RecyclerView.OnItemTouchListener {
-            override fun onTouchEvent(rv: RecyclerView, e: MotionEvent) {}
+        recyclerView.addOnItemTouchListener(object : OnItemTouchListenerAdapter() {
             override fun onInterceptTouchEvent(rv: RecyclerView, e: MotionEvent): Boolean {
                 if (e.action == MotionEvent.ACTION_DOWN &&
                         rv.scrollState == RecyclerView.SCROLL_STATE_SETTLING) {
@@ -25,8 +25,6 @@ class RecyclerSmoothSwipeActivity : AppCompatActivity(R.layout.a_recycler_smooth
                 }
                 return false
             }
-
-            override fun onRequestDisallowInterceptTouchEvent(disallowIntercept: Boolean) {}
         })
     }
 }

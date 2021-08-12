@@ -18,7 +18,7 @@ class SwivelCheckView constructor(context: Context, attrs: AttributeSet) :
     ViewFlipper(context, attrs), Checkable {
 
     private val imageView: ImageView
-    private val calculateCenterX = { width * 0.5f }
+    private val calculateCenterX = { width / 2f }
     private val updateDisplayedSide: (DisplaySide) -> Unit = { setDisplaySide(it) }
     private val toCheckedAnimation = toChecked(calculateCenterX, updateDisplayedSide)
     private val toNotCheckedAnimation = toNotChecked(calculateCenterX, updateDisplayedSide)
