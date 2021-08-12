@@ -4,7 +4,8 @@ buildscript {
 
     repositories {
         google()
-        jcenter()
+        mavenCentral()
+        maven { url "https://maven.pkg.jetbrains.space/public/p/kotlinx-html/maven" }
     }
     dependencies {
         classpath gradlePlugins.android
@@ -19,7 +20,8 @@ allprojects {
 
     repositories {
         google()
-        jcenter()
+        mavenCentral()
+        maven { url "https://maven.pkg.jetbrains.space/public/p/kotlinx-html/maven" }
     }
 }
 
