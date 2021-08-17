@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="lazy_bind_title">Lazy bind</string>
-    <string name="lazy_bind_example">Lazy bind example</string>
-    <string name="first_text">First text</string>
-    <string name="second_text">Second text</string>
-</resources>
