@@ -1,8 +1,0 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.lazybind">
-
-    <application>
-        <activity android:name=".LazyBindActivity"
-            android:label="@string/lazy_bind_title"/>
-    </application>
-</manifest>

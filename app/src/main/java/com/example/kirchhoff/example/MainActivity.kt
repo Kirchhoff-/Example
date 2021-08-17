@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.constraintanimation.ConstraintLayoutAnimationActivity
 import com.example.custommenuitem.CustomMenuItemActivity
 import com.example.kirchhoff.example.extension.startActivity
-import com.example.lazybind.LazyBindActivity
 import com.example.screenshot.ScreenshotActivity
 import com.example.simpletransition.SimpleTransitionActivity
 import com.kirchhoff.activitytoservice.ActivityToService
@@ -58,10 +57,6 @@ class MainActivity : AppCompatActivity(R.layout.a_main) {
 
     fun activityToService(view: View) {
         startActivity(ActivityToService::class.java)
-    }
-
-    fun lazyBind(view: View) {
-        startActivity(LazyBindActivity::class.java)
     }
 
     fun screenshot(view: View) {
