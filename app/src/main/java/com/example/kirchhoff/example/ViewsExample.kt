@@ -2,6 +2,7 @@ package com.example.kirchhoff.example
 
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import com.example.bidirectionviewpager.BiDirectionViewPagerActivity
 import com.example.bottomnavigationview.BottomNavigationViewActivity
 import com.example.edittextcounter.EditTextCounterActivity
 import com.example.kirchhoff.example.extension.startActivity
@@ -55,5 +56,9 @@ class ViewsExample : AppCompatActivity(R.layout.a_views) {
 
     fun telegramLoadingAnimation(view: View) {
         startActivity(TelegramLoadingAnimation::class.java)
+    }
+
+    fun biDirectionViewPagerExample(view: View) {
+        startActivity(BiDirectionViewPagerActivity::class.java)
     }
 }

@@ -1,0 +1,8 @@
+<resources>
+    <string name="bidirectionviewpager_title">BiDirection ViewPager</string>
+    <string name="bidirectionviewpager_example">BiDirection ViewPager example</string>
+    <string name="bidirectionviewpager_scenery">Scenery</string>
+    <string name="bidirectionviewpager_corgi">Corgi</string>
+    <string name="bidirectionviewpager_interior">Interior</string>
+    <string name="bidirectionviewpager_animals">Animals</string>
+</resources>
