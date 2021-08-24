@@ -29,4 +29,5 @@ include ':app',
 		':autodisposable',
 		':stateviewgroup',
 		':vectoranimation',
-		':telegramloadinganimation'
+		':telegramloadinganimation',
+		':bidirectionviewpager'

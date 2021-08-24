@@ -76,6 +76,12 @@
             android:onClick="telegramLoadingAnimation"
             android:text="@string/telegram_loading_animation_example"/>
 
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="biDirectionViewPagerExample"
+            android:text="@string/bidirectionviewpager_example"/>
+
     </LinearLayout>
 
 </ScrollView>
