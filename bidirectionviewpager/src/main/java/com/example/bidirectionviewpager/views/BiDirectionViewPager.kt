@@ -152,7 +152,7 @@ class BiDirectionViewPager @JvmOverloads constructor(
         }
 
         override fun isViewFromObject(view: View, _object: Any): Boolean {
-            val innerView = (_object as View)
+            val innerView = _object as View
             innerView.horizontalViewPager
             return view == innerView
         }

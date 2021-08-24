@@ -50,9 +50,9 @@ object MotionUtil {
              */
             fun fromAngle(angle: Double): Direction =
                 when {
-                    (inRange(angle, ANGLE_45, ANGLE_135)) -> UP
-                    (inRange(angle, ZERO_ANGLE, ANGLE_45) || inRange(angle, ANGLE_315, MAX_ANGLE)) -> RIGHT
-                    (inRange(angle, ANGLE_225, ANGLE_315)) -> DOWN
+                    inRange(angle, ANGLE_45, ANGLE_135) -> UP
+                    inRange(angle, ZERO_ANGLE, ANGLE_45) || inRange(angle, ANGLE_315, MAX_ANGLE) -> RIGHT
+                    inRange(angle, ANGLE_225, ANGLE_315) -> DOWN
                     else -> LEFT
                 }
 
