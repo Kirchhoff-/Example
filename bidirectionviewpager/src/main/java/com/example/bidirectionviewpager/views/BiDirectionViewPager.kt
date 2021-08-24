@@ -41,18 +41,10 @@ class BiDirectionViewPager @JvmOverloads constructor(
         val action = event.actionMasked
         val currentPoint = Point(event.x.toInt(), event.y.toInt())
 
-        when (action) {
-            MotionEvent.ACTION_DOWN -> initialTouchPoint = Point(currentPoint)
-            MotionEvent.ACTION_UP -> initialTouchPoint = Point(0, 0)
-            else -> {
-                if (currentPoint.distanceFrom(initialTouchPoint) > fingerMoveThreshold) {
-                    val direction = MotionUtil.getDirection(initialTouchPoint, currentPoint)
-                    // check if the scrolling is vertical
-                    if (direction == MotionUtil.Direction.UP || direction == MotionUtil.Direction.DOWN) {
-                        return true
-                    }
-                }
-            }
+        initialTouchPoint = when (action) {
+            MotionEvent.ACTION_DOWN -> Point(currentPoint)
+            MotionEvent.ACTION_UP -> Point(0, 0)
+            else -> return checkVerticalScroll(currentPoint)
         }
 
         return false
@@ -109,6 +101,17 @@ class BiDirectionViewPager @JvmOverloads constructor(
         val newX = y / height * width
         val newY = x / width * height
         setLocation(newX, newY)
+    }
+
+    private fun checkVerticalScroll(currentPoint: Point): Boolean {
+        if (currentPoint.distanceFrom(initialTouchPoint) > fingerMoveThreshold) {
+            val direction = MotionUtil.getDirection(initialTouchPoint, currentPoint)
+            if (direction == MotionUtil.Direction.UP || direction == MotionUtil.Direction.DOWN) {
+                return true
+            }
+        }
+
+        return false
     }
 
     interface BiDirectionViewPagerAdapter {
