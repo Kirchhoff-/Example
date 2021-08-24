@@ -41,19 +41,16 @@ class BiDirectionViewPager @JvmOverloads constructor(
         val action = event.actionMasked
         val currentPoint = Point(event.x.toInt(), event.y.toInt())
 
-        if (action == MotionEvent.ACTION_DOWN) {
-            // mark the beginning, when finger touched down
-            initialTouchPoint = Point(currentPoint)
-        } else if (action == MotionEvent.ACTION_UP) {
-            // reset the marking, when finger is lifted up
-            initialTouchPoint = Point(0, 0)
-        } else {
-            val moveDistance = currentPoint.distanceFrom(initialTouchPoint)
-            if (moveDistance > fingerMoveThreshold) {
-                val direction = MotionUtil.getDirection(initialTouchPoint, currentPoint)
-                // check if the scrolling is vertical
-                if (direction == MotionUtil.Direction.UP || direction == MotionUtil.Direction.DOWN) {
-                    return true
+        when (action) {
+            MotionEvent.ACTION_DOWN -> initialTouchPoint = Point(currentPoint)
+            MotionEvent.ACTION_UP -> initialTouchPoint = Point(0, 0)
+            else -> {
+                if (currentPoint.distanceFrom(initialTouchPoint) > fingerMoveThreshold) {
+                    val direction = MotionUtil.getDirection(initialTouchPoint, currentPoint)
+                    // check if the scrolling is vertical
+                    if (direction == MotionUtil.Direction.UP || direction == MotionUtil.Direction.DOWN) {
+                        return true
+                    }
                 }
             }
         }
