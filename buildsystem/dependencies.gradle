@@ -15,6 +15,7 @@ ext.versions = [
         cardView           : '1.0.0',
 
         archComponent      : '2.2.0',
+        lifecycleRuntime   : '2.4.0',
 
         kotlin             : '1.4.30',
 
@@ -40,6 +41,7 @@ ext.libraries = [
         androidKtx      : "androidx.core:core-ktx:$versions.androidKtx",
 
         archComponent   : "androidx.lifecycle:lifecycle-extensions:$versions.archComponent",
+        lifecycleRuntime: "androidx.lifecycle:lifecycle-runtime-ktx:$versions.lifecycleRuntime",
 
         rxAndroid       : "io.reactivex.rxjava2:rxandroid:$versions.rxAndroid",
         rxJava          : "io.reactivex.rxjava2:rxjava:$versions.rxJava",

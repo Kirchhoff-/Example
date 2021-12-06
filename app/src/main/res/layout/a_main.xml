@@ -103,6 +103,12 @@
             android:onClick="vectorAnimation"
             android:text="@string/vector_animation_example" />
 
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="stateFlowInViewModel"
+            android:text="@string/state_flow_in_view_model_example" />
+
     </LinearLayout>
 
 </ScrollView>

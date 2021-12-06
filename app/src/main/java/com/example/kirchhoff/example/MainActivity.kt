@@ -7,6 +7,7 @@ import com.example.custommenuitem.CustomMenuItemActivity
 import com.example.kirchhoff.example.extension.startActivity
 import com.example.screenshot.ScreenshotActivity
 import com.example.simpletransition.SimpleTransitionActivity
+import com.example.stateflowinviewmodel.StateFlowInViewModelActivity
 import com.kirchhoff.activitytoservice.ActivityToService
 import com.kirchhoff.autodisposable.AutoDisposableActivity
 import com.kirchhoff.coordinatebehavior.CoordinatorBehaviorActivity
@@ -73,5 +74,9 @@ class MainActivity : AppCompatActivity(R.layout.a_main) {
 
     fun vectorAnimation(view: View) {
         startActivity(VectorAnimationActivity::class.java)
+    }
+
+    fun stateFlowInViewModel(view: View) {
+        startActivity(StateFlowInViewModelActivity::class.java)
     }
 }
