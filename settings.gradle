@@ -30,4 +30,5 @@ include ':app',
 		':stateviewgroup',
 		':vectoranimation',
 		':telegramloadinganimation',
-		':bidirectionviewpager'
+		':bidirectionviewpager',
+		':stateflowinviewmodel'

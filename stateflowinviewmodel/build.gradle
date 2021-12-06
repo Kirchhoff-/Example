@@ -1,0 +1,7 @@
+apply from: '../buildsystem/android-library.gradle'
+
+dependencies {
+    implementation libraries.archComponent
+    implementation libraries.constraintLayout
+    implementation libraries.lifecycleRuntime
+}
