@@ -7,7 +7,6 @@ import android.widget.Checkable
 import android.widget.CheckedTextView
 import android.widget.ImageView
 import androidx.core.content.res.use
-import androidx.core.view.children
 import com.kirchhoff.stateviewgroup.R
 import com.kirchhoff.stateviewgroup.extensions.setImageTint
 import com.kirchhoff.stateviewgroup.extensions.textColor
@@ -40,7 +39,12 @@ class ViewGroupCheckableButton @JvmOverloads constructor(
     override fun setChecked(checked: Boolean) {
         if (this.checked != checked) {
             this.checked = checked
-            children.filterIsInstance<Checkable>().forEach { it.isChecked = checked }
+            for (i in 0..childCount) {
+                val checkableChild = getChildAt(i)
+                if (checkableChild is Checkable) {
+                    checkableChild.isChecked = checked
+                }
+            }
             refreshDrawableState()
         }
     }

@@ -29,8 +29,11 @@ class TimeAdapter : BaseAdapter<Time, TimeViewHolder>() {
         if (payloads.isEmpty()) {
             super.onBindViewHolder(holder, position, payloads)
         } else {
-            val set = payloads.firstOrNull() as Set<String>?
-            set?.forEach { _ -> holder.onBind(getItem(position)) }
+            (payloads.firstOrNull() as Set<String>?)?.let {
+                for (i in 0..it.size) {
+                    holder.onBind(getItem(position))
+                }
+            }
         }
     }
 }
