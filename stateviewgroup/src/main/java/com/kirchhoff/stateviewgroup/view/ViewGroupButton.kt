@@ -7,7 +7,6 @@ import android.widget.CheckedTextView
 import android.widget.ImageView
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.content.res.use
-import androidx.core.view.children
 import com.kirchhoff.stateviewgroup.R
 import com.kirchhoff.stateviewgroup.extensions.setImageTint
 import com.kirchhoff.stateviewgroup.extensions.textColor
@@ -42,6 +41,8 @@ open class ViewGroupButton @JvmOverloads constructor(
 
     override fun setEnabled(enabled: Boolean) {
         super.setEnabled(enabled)
-        children.forEach { it.isEnabled = enabled }
+        for (i in 0..childCount) {
+            getChildAt(i)?.isEnabled = enabled
+        }
     }
 }

@@ -36,7 +36,7 @@ class RainDropView @JvmOverloads constructor(
 
     override fun onDraw(canvas: Canvas) {
         super.onDraw(canvas)
-        for (i in 0..rainDropList.size) {
+        for (i in 0 until rainDropList.size) {
             rainDropList[i].draw(canvas, paint)
         }
         rainDropList = rainDropList.filter { it.isValid() }.toMutableList()
