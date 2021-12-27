@@ -17,7 +17,7 @@ ext.versions = [
         archComponent      : '2.2.0',
         lifecycleRuntime   : '2.4.0',
 
-        kotlin             : '1.4.30',
+        kotlin             : '1.6.10',
 
         rxJava             : '2.1.0',
         rxAndroid          : '2.0.1',
