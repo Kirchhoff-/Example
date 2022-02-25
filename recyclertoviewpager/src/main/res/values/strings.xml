@@ -1,4 +1,3 @@
 <resources>
     <string name="recycler_to_viewpager_title">Recycler to ViewPager</string>
-    <string name="recycler_to_viewpager_example">Recycler to ViewPager example</string>
 </resources>

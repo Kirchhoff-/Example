@@ -1,4 +1,3 @@
 <resources>
     <string name="prefix_edittext_title">PrefixEditText</string>
-    <string name="prefix_edittext_example">PrefixEditText example</string>
 </resources>

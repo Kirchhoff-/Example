@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="progress_bar_customization_title">ProgressBar customization</string>
-    <string name="progress_bar_customization_example">ProgressBar customization example</string>
     <string name="start_progress">Start Progress</string>
 </resources>

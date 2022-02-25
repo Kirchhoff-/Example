@@ -1,6 +1,5 @@
 <resources>
     <string name="bottomnavigationview_title">BottomNavigationView</string>
-    <string name="bottomnavigationview_example">BottomNavigationView example</string>
     <string name="zero">0</string>
     <string name="click">Click</string>
     <string name="home_text">Home text</string>

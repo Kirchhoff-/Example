@@ -1,5 +1,4 @@
 <resources>
     <string name="coordinator_layout_behavior_title">Coordinate layout behavior</string>
-    <string name="coordinator_layout_behavior_example">Coordinate layout behavior example</string>
 	<string name="accept">Accept</string>
 </resources>

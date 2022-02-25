@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="vp_without_fragment_title">ViewPager without fragment</string>
-    <string name="vp_without_fragment_example">ViewPager without fragment example</string>
 	<string name="red">Red</string>
 	<string name="blue">Blue</string>
 	<string name="orange">Orange</string>

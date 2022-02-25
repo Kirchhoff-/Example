@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="custom_menu_item_title">Custom menu item</string>
-    <string name="custom_menu_item_example">Custom menu item example</string>
     <string name="refresh">Refresh</string>
     <string name="alerts">Alerts</string>
 </resources>

@@ -1,5 +1,6 @@
 package com.kirchhoff.recyclersearch.adapter
 
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.Filter
@@ -46,6 +47,7 @@ class AndroidVersionDataAdapter(initialList: List<AndroidVersion>) :
             return filterResults
         }
 
+        @SuppressLint("NotifyDataSetChanged")
         @Suppress("UNCHECKED_CAST")
         override fun publishResults(charSequence: CharSequence, filterResults: FilterResults) {
             filteredList = filterResults.values as ArrayList<AndroidVersion>

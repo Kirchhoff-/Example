@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="number_visualizer_title">NumberVisualizer</string>
-    <string name="number_visualizer_example">NumberVisualizer example</string>
 
     <string name="current_step_format">Current Step: %d</string>
     <string name="current_number_format">Current Number: %d</string>

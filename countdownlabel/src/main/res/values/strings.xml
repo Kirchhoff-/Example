@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 	<string name="countdown_title">Countdown label</string>
-    <string name="countdown_example">Countdown example</string>
 	<plurals name="days">
 		<item quantity="zero">\u0020%d Days</item>
 		<item quantity="one">\u0020%d Day</item>

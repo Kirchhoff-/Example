@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="state_flow_in_view_model_title">StateFlow in ViewModel</string>
-    <string name="state_flow_in_view_model_example">StateFlow in ViewModel example</string>
     <string name="state_flow_plus_one">Plus one</string>
 </resources>
