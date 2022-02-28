@@ -3,4 +3,37 @@
     <string name="recycler_view_examples">RecyclerView examples</string>
     <string name="fragments_examples">Fragments examples</string>
     <string name="views_examples">Views examples</string>
+
+    <string name="activity_to_service_example">Activity to Service example</string>
+    <string name="autodisposable_example">Autodisposable example</string>
+    <string name="bidirectionviewpager_example">BiDirection ViewPager example</string>
+    <string name="bottomnavigationview_example">BottomNavigationView example</string>
+    <string name="circular_reveal_fragment_animation_example">Circular reveal fragment example</string>
+    <string name="constraint_layout_animation_example">ConstraintLayout Animation Example</string>
+    <string name="coordinator_layout_behavior_example">Coordinate layout behavior example</string>
+    <string name="countdown_example">Countdown example</string>
+    <string name="curved_bottombar_example">Curved BottomBar example</string>
+    <string name="custom_menu_item_example">Custom menu item example</string>
+    <string name="edit_text_counter_example">EditText counter example</string>
+    <string name="fab_animation_example">Fab animation example</string>
+    <string name="fragment_communication_example">Fragment communication example</string>
+    <string name="gmail_selecting_example">Gmail selecting example</string>
+    <string name="number_visualizer_example">NumberVisualizer example</string>
+    <string name="prefix_edittext_example">PrefixEditText example</string>
+    <string name="progress_bar_customization_example">ProgressBar customization example</string>
+    <string name="raindrop_view_example">Raindrop View Example</string>
+    <string name="recycler_collapsing_example">Recycler collapsing example</string>
+    <string name="recycler_view_drag_and_drop_example">RecyclerView Drag and Drop example</string>
+    <string name="recyclerview_with_search_example">RecyclerView with search example</string>
+    <string name="recycler_smooth_swipe_example">RecyclerView smooth swipe example</string>
+    <string name="recycler_to_viewpager_example">Recycler to ViewPager example</string>
+    <string name="screenshot_example">Screenshot example</string>
+    <string name="simple_transition_example">Simple transition example</string>
+    <string name="state_flow_in_view_model_example">StateFlow in ViewModel example</string>
+    <string name="state_view_group_example">StateViewGroup example</string>
+    <string name="telegram_loading_animation_example">Telegram loading animation example</string>
+    <string name="thing_diffutils_example">Thing diffUtils example</string>
+    <string name="time_diff_utils_example">Time DiffUtils example</string>
+    <string name="vector_animation_example">Vector animation example</string>
+    <string name="vp_without_fragment_example">ViewPager without fragment example</string>
 </resources>

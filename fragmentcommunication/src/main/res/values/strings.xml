@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 	<string name="fragment_communication_title">Fragment communication</string>
-	<string name="fragment_communication_example">Fragment communication example</string>
 	<string name="fragment_communication_interface">Interface fragment communication</string>
 	<string name="fragment_communication_view_model">ViewModel fragment communication</string>
 	<string name="write_text_here">Write text here…</string>

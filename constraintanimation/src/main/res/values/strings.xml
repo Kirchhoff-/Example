@@ -1,6 +1,5 @@
 <resources>
     <string name="constraint_layout_animation_title">ConstraintLayout Animation</string>
-    <string name="constraint_layout_animation_example">ConstraintLayout Animation Example</string>
 
     <string name="information_text">The Mugello is a historic region and valley in northern Tuscany, in Italy. It is located to the north of the city of Florence and consists of the northernmost portion of the Metropolitan City of Florence.  It is connected to the separate Santerno river valley by the Futa Pass.</string>
     <string name="tap_for_info">Tap for info</string>

@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 	<string name="fab_animation">Fab animation</string>
-	<string name="fab_animation_example">Fab animation example</string>
 </resources>

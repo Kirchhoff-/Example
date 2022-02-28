@@ -1,6 +1,5 @@
 <resources>
     <string name="autodisposable_title">Autodisposable</string>
-    <string name="autodisposable_example">Autodisposable example</string>
     <string name="autodisposable_test_to_test">Click to test</string>
     <string name="autodisposable_finish">Finish</string>
     <string name="autodisposable_error">Error</string>

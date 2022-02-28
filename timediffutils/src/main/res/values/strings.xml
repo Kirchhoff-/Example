@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="time_diff_utils_title">Time Diff Utils</string>
-    <string name="time_diff_utils_example">Time DiffUtils example</string>
     <string name="colon">:</string>
 </resources>
