@@ -109,6 +109,12 @@
             android:onClick="stateFlowInViewModel"
             android:text="@string/state_flow_in_view_model_example" />
 
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="constraintLayoutFlow"
+            android:text="@string/constraint_layout_flow_example"/>
+
     </LinearLayout>
 
 </ScrollView>

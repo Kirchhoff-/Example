@@ -68,4 +68,5 @@ dependencies {
     implementation project(path: ':telegramloadinganimation')
     implementation project(path: ':bidirectionviewpager')
     implementation project(path: ':stateflowinviewmodel')
+    implementation project(path: ':constraintlayoutflow')
 }
