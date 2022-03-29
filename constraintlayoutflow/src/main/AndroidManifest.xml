@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.constraintlayoutflow">
+
+    <application>
+        <activity
+            android:name=".ConstraintLayoutFlowActivity"
+            android:label="@string/constraint_layout_flow_title" />
+    </application>
+
+</manifest>

@@ -3,6 +3,7 @@ package com.example.kirchhoff.example
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.example.constraintanimation.ConstraintLayoutAnimationActivity
+import com.example.constraintlayoutflow.ConstraintLayoutFlowActivity
 import com.example.custommenuitem.CustomMenuItemActivity
 import com.example.kirchhoff.example.extension.startActivity
 import com.example.screenshot.ScreenshotActivity
@@ -78,5 +79,9 @@ class MainActivity : AppCompatActivity(R.layout.a_main) {
 
     fun stateFlowInViewModel(view: View) {
         startActivity(StateFlowInViewModelActivity::class.java)
+    }
+
+    fun constraintLayoutFlow(view: View) {
+        startActivity(ConstraintLayoutFlowActivity::class.java)
     }
 }

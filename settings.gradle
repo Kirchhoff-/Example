@@ -31,4 +31,5 @@ include ':app',
 		':vectoranimation',
 		':telegramloadinganimation',
 		':bidirectionviewpager',
-		':stateflowinviewmodel'
+		':stateflowinviewmodel',
+		':constraintlayoutflow'
