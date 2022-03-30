@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.widget.CheckedTextView
 import android.widget.ImageView
 import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.core.content.ContextCompat
 import androidx.core.content.res.use
 import com.kirchhoff.stateviewgroup.R
 import com.kirchhoff.stateviewgroup.extensions.setImageTint
@@ -30,7 +31,7 @@ open class ViewGroupButton @JvmOverloads constructor(
             ctvLabel.text = it.getText(R.styleable.ViewGroupButton_android_text)
         }
 
-        background = context.getDrawable(R.drawable.background_selector)
+        background = ContextCompat.getDrawable(context, R.drawable.background_selector)
         civIcon.setImageTint(R.color.text_color_selector)
         civIndicator.setImageTint(R.color.icon_tint_selector)
         ctvLabel.textColor(R.color.icon_tint_selector)
