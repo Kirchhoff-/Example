@@ -6,6 +6,7 @@ import android.view.View
 import android.widget.Checkable
 import android.widget.CheckedTextView
 import android.widget.ImageView
+import androidx.core.content.ContextCompat
 import androidx.core.content.res.use
 import com.kirchhoff.stateviewgroup.R
 import com.kirchhoff.stateviewgroup.extensions.setImageTint
@@ -24,7 +25,7 @@ class ViewGroupCheckableButton @JvmOverloads constructor(
             isChecked = it.getBoolean(R.styleable.ViewGroupCheckableButton_android_checked, isChecked)
         }
 
-        background = context.getDrawable(R.drawable.checkable_background_selector)
+        background = ContextCompat.getDrawable(context, R.drawable.checkable_background_selector)
         findViewById<ImageView>(R.id.civIcon).setImageTint(R.color.checkable_text_color_selector)
         findViewById<CheckableImageView>(R.id.civIndicator).setImageTint(R.color.checkable_icon_tint_selector)
         findViewById<CheckedTextView>(R.id.ctvLabel).textColor(R.color.checkable_icon_tint_selector)
