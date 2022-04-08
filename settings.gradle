@@ -32,4 +32,5 @@ include ':app',
 		':telegramloadinganimation',
 		':bidirectionviewpager',
 		':stateflowinviewmodel',
-		':constraintlayoutflow'
+		':constraintlayoutflow',
+		 ':twittersplash'
