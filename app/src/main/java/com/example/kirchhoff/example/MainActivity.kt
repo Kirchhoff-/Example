@@ -9,6 +9,7 @@ import com.example.kirchhoff.example.extension.startActivity
 import com.example.screenshot.ScreenshotActivity
 import com.example.simpletransition.SimpleTransitionActivity
 import com.example.stateflowinviewmodel.StateFlowInViewModelActivity
+import com.example.twittersplash.TwitterSplashActivity
 import com.kirchhoff.activitytoservice.ActivityToService
 import com.kirchhoff.autodisposable.AutoDisposableActivity
 import com.kirchhoff.coordinatebehavior.CoordinatorBehaviorActivity
@@ -83,5 +84,9 @@ class MainActivity : AppCompatActivity(R.layout.a_main) {
 
     fun constraintLayoutFlow(view: View) {
         startActivity(ConstraintLayoutFlowActivity::class.java)
+    }
+
+    fun twitterSplashScreen(view: View) {
+        startActivity(TwitterSplashActivity::class.java)
     }
 }

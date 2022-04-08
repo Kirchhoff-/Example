@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="twitterColorPrimary">#1DA1F2</color>
+    <color name="twitterColorPrimaryDark">#1DA1F2</color>
+    <color name="twitterColorAccent">#03DAC5</color>
+</resources>

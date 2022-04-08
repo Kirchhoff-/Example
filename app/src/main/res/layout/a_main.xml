@@ -115,6 +115,12 @@
             android:onClick="constraintLayoutFlow"
             android:text="@string/constraint_layout_flow_example"/>
 
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="twitterSplashScreen"
+            android:text="@string/twitter_splash_screen_example"/>
+
     </LinearLayout>
 
 </ScrollView>

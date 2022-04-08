@@ -37,4 +37,5 @@
     <string name="vector_animation_example">Vector animation example</string>
     <string name="vp_without_fragment_example">ViewPager without fragment example</string>
     <string name="constraint_layout_flow_example">ConstraintLayout Flow example</string>
+    <string name="twitter_splash_screen_example">Twitter splash screen example</string>
 </resources>

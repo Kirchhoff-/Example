@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.twittersplash">
+
+    <application>
+        <activity
+            android:name=".TwitterSplashActivity"
+            android:label="@string/twitter_splash_screen_title" />
+    </application>
+
+</manifest>

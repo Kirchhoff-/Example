@@ -69,4 +69,5 @@ dependencies {
     implementation project(path: ':bidirectionviewpager')
     implementation project(path: ':stateflowinviewmodel')
     implementation project(path: ':constraintlayoutflow')
+    implementation project(path: ':twittersplash')
 }

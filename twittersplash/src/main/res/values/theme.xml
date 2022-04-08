@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/twitterColorPrimary</item>
+        <item name="colorPrimaryDark">@color/twitterColorPrimaryDark</item>
+        <item name="colorAccent">@color/twitterColorAccent</item>
+
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:background">@color/twitterColorPrimary</item>
+    </style>
+</resources>
