@@ -5,7 +5,8 @@
     <application>
         <activity
             android:name=".TwitterSplashActivity"
-            android:label="@string/twitter_splash_screen_title" />
+            android:label="@string/twitter_splash_screen_title"
+            android:theme="@style/TwitterScreenTheme" />
     </application>
 
 </manifest>
