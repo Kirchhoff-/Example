@@ -4,10 +4,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.bumptech.glide.Glide
+import com.example.bidirectionviewpager.databinding.RItemBinding
 import com.example.bidirectionviewpager.repository.CategoryImagesInfo
 import com.example.bidirectionviewpager.views.BiDirectionViewPager
-import kotlinx.android.synthetic.main.r_item.view.imageView
-import kotlinx.android.synthetic.main.r_item.view.textView
 
 class BiDirectionViewPagerAdapter(private val data: List<CategoryImagesInfo>) :
     BiDirectionViewPager.BiDirectionViewPagerAdapter {
@@ -25,12 +24,10 @@ class BiDirectionViewPagerAdapter(private val data: List<CategoryImagesInfo>) :
         val url = rowData[columnPosition.rem(originalSize)]
 
         if (viewHolder is VideoViewHolder) {
-            viewHolder.itemView.apply {
-                textView.text = groupName
-                Glide.with(imageView.context)
-                    .load(url)
-                    .into(imageView)
-            }
+            viewHolder.textView.text = groupName
+            Glide.with(viewHolder.imageView.context)
+                .load(url)
+                .into(viewHolder.imageView)
         }
     }
 
@@ -39,7 +36,11 @@ class BiDirectionViewPagerAdapter(private val data: List<CategoryImagesInfo>) :
     override fun getHorizontalItemCount(verticalPosition: Int): Int =
         data[verticalPosition].imagesLink.size * REPEAT_COUNT
 
-    class VideoViewHolder(itemView: View) : BiDirectionViewPager.ViewHolder(itemView)
+    private class VideoViewHolder(itemView: View) : BiDirectionViewPager.ViewHolder(itemView) {
+        private val binding = RItemBinding.bind(itemView)
+        val textView = binding.textView
+        val imageView = binding.imageView
+    }
 
     companion object {
         private const val REPEAT_COUNT = 30

@@ -13,7 +13,6 @@ import androidx.viewpager.widget.ViewPager
 import com.example.bidirectionviewpager.R
 import com.example.bidirectionviewpager.extensions.distanceFrom
 import com.example.bidirectionviewpager.utils.MotionUtil
-import kotlinx.android.synthetic.main.v_horizontal_view_pager.view.horizontalViewPager
 
 class BiDirectionViewPager @JvmOverloads constructor(
     context: Context,
@@ -84,14 +83,10 @@ class BiDirectionViewPager @JvmOverloads constructor(
         event.action = MotionEvent.ACTION_MOVE
     }
 
-    fun notifyDataSetChanged() {
-        adapter?.notifyDataSetChanged()
-    }
-
     @Suppress("unused")
     fun notifyDataSetChangedHorizontal(verticalPosition: Int) {
         (adapter as? BiDirectionViewPagerAdapterInternal)?.let {
-            it.viewList[verticalPosition]?.horizontalViewPager?.adapter?.notifyDataSetChanged()
+            it.viewList[verticalPosition]?.getHorizontalViewPager()?.adapter?.notifyDataSetChanged()
         }
     }
 
@@ -123,18 +118,15 @@ class BiDirectionViewPager @JvmOverloads constructor(
 
     abstract class ViewHolder(val itemView: View)
 
-    private class BiDirectionViewPagerAdapterInternal(val biAdapter: BiDirectionViewPagerAdapter) :
-        PagerAdapter() {
+    private inner class BiDirectionViewPagerAdapterInternal(
+        val biAdapter: BiDirectionViewPagerAdapter
+    ) : PagerAdapter() {
         val viewList = mutableMapOf<Int, View>()
 
         override fun instantiateItem(parent: ViewGroup, position: Int): Any {
-            val view = LayoutInflater.from(parent.context)
-                .inflate(R.layout.v_horizontal_view_pager, parent, false)
+            val view = LayoutInflater.from(parent.context).inflate(R.layout.v_horizontal_view_pager, parent, false)
             parent.addView(view)
-            view.apply {
-                horizontalViewPager.adapter = HorizontalViewPagerAdapter(biAdapter, position)
-            }
-
+            view.getHorizontalViewPager().adapter = HorizontalViewPagerAdapter(biAdapter, position)
             viewList[position] = view
 
             return view
@@ -142,21 +134,18 @@ class BiDirectionViewPager @JvmOverloads constructor(
 
         override fun destroyItem(parent: ViewGroup, position: Int, _object: Any) {
             val view = _object as View
-            view.apply {
-                (horizontalViewPager.adapter as HorizontalViewPagerAdapter).dispose()
-                horizontalViewPager.adapter = null
+            view.getHorizontalViewPager().let {
+                (it.adapter as? HorizontalViewPagerAdapter)?.dispose()
+                it.adapter = null
             }
             parent.removeView(view)
-
             viewList.remove(position)
         }
 
-        override fun isViewFromObject(view: View, _object: Any): Boolean {
-            val innerView = _object as View
-            innerView.horizontalViewPager
-            return view == innerView
-        }
+        override fun isViewFromObject(view: View, _object: Any): Boolean = view == _object
 
         override fun getCount() = biAdapter.getItemCount()
     }
+
+    private fun View.getHorizontalViewPager(): ViewPager = this.findViewById(R.id.horizontalViewPager)
 }
