@@ -38,4 +38,5 @@
     <string name="vp_without_fragment_example">ViewPager without fragment example</string>
     <string name="constraint_layout_flow_example">ConstraintLayout Flow example</string>
     <string name="twitter_splash_screen_example">Twitter splash screen example</string>
+    <string name="show_more_text_view_example">Show more TextView example</string>
 </resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="show_more_text_view_title">Show more TextView</string>
+    <string name="show_more_text_view_show_more">Show more</string>
+    <string name="show_more_text_view_show_less">Show less</string>
+    <string name="show_more_text_view_ellipsis_character">…</string>
+
+    <string name="show_more_text_view_custom_more">Custom more</string>
+    <string name="show_more_text_view_custom_less">Some custom less</string>
+    <string name="show_more_text_view_custom_ellipsis_character">+-+</string>
+
+    <string name="show_more_text_view_long_text_1">
+      OOP (Object-oriented programming) is a programming paradigm based on the concept of "objects", which can contain data and code: data in the form of fields (often known as attributes or properties), and code, in the form of procedures (often known as methods).
+      Terminology invoking "objects" and "oriented" in the modern sense of object-oriented programming made its first appearance at MIT in the late 1950s and early 1960s. In the environment of the artificial intelligence group, as early as 1960, "object" could refer to identified items (LISP atoms) with properties (attributes); Alan Kay later cited a detailed understanding of LISP internals as a strong influence on his thinking in 1966.
+    </string>
+
+    <string name="show_more_text_view_long_text_2">
+      In computer science, functional programming is a programming paradigm where programs are constructed by applying and composing functions. It is a declarative programming paradigm in which function definitions are trees of expressions that map values to other values, rather than a sequence of imperative statements which update the running state of the program.
+      In functional programming, functions are treated as first-class citizens, meaning that they can be bound to names (including local identifiers), passed as arguments, and returned from other functions, just as any other data type can. This allows programs to be written in a declarative and composable style, where small functions are combined in a modular manner.
+    </string>
+</resources>
