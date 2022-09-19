@@ -94,7 +94,7 @@ class ShowMoreTextView @JvmOverloads constructor(
     }
 
     private fun showMoreButton() {
-      val showMoreTextStartIndex = text.length - (ellipsisCharacter.length + showLessText.length)
+      val showMoreTextStartIndex = text.length - (ellipsisCharacter.length + showMoreText.length)
       val resultSpannableString = SpannableString(text)
 
       resultSpannableString.setSpan(
