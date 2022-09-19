@@ -68,19 +68,25 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="stateViewGroup"
-            android:text="@string/state_view_group_example"/>
+            android:text="@string/state_view_group_example" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="telegramLoadingAnimation"
-            android:text="@string/telegram_loading_animation_example"/>
+            android:text="@string/telegram_loading_animation_example" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="biDirectionViewPagerExample"
-            android:text="@string/bidirectionviewpager_example"/>
+            android:text="@string/bidirectionviewpager_example" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="showMoreTextViewExample"
+            android:text="@string/show_more_text_view_title" />
 
     </LinearLayout>
 

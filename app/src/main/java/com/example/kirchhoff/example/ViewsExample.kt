@@ -9,6 +9,7 @@ import com.example.kirchhoff.example.extension.startActivity
 import com.example.prefixedittext.PrefixEditTextActivity
 import com.example.progressbarcustomization.ProgressBarCustomizationActivity
 import com.example.raindropview.RainDropActivity
+import com.example.showmoretextview.ShowMoreTextViewActivity
 import com.example.telegramloadinganimation.TelegramLoadingAnimation
 import com.kirchhoff.countdownlabel.CountdownLabelActivity
 import com.kirchhoff.curvedbottombar.CurvedBottomBarActivity
@@ -60,5 +61,9 @@ class ViewsExample : AppCompatActivity(R.layout.a_views) {
 
     fun biDirectionViewPagerExample(view: View) {
         startActivity(BiDirectionViewPagerActivity::class.java)
+    }
+
+    fun showMoreTextViewExample(view: View) {
+        startActivity(ShowMoreTextViewActivity::class.java)
     }
 }

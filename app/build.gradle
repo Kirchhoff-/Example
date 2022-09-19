@@ -70,4 +70,5 @@ dependencies {
     implementation project(path: ':stateflowinviewmodel')
     implementation project(path: ':constraintlayoutflow')
     implementation project(path: ':twittersplash')
+    implementation project(path: ':showmoretextview')
 }

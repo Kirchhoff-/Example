@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ShowMoreTextView">
+        <attr name="showMoreText" format="string" />
+        <attr name="showLessText" format="string" />
+        <attr name="ellipsisCharacter" format="string" />
+        <attr name="showMoreTextColor" format="color" />
+        <attr name="showLessTextColor" format="color" />
+        <attr name="showLineCount" format="integer" />
+    </declare-styleable>
+</resources>
