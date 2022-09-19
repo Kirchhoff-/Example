@@ -20,36 +20,34 @@ class ShowMoreTextView @JvmOverloads constructor(
 
     private val layoutObserver = LayoutObserver()
     private val mainText: CharSequence
-
-    private var showMoreText: String
-    private var showLessText: String
-    private var ellipsisCharacter: String
-    private var showMoreTextColor: Int
-    private var showLessTextColor: Int
-    private var showLineCount: Int
+    private val data: Data
 
     private val typedArray =
         context.obtainStyledAttributes(attrs, R.styleable.ShowMoreTextView, defStyleAttr, 0)
 
     init {
         try {
-            showMoreText = typedArray.getString(R.styleable.ShowMoreTextView_showMoreText)
-                ?: resources.getString(R.string.show_more_text_view_show_more)
-            showLessText = typedArray.getString(R.styleable.ShowMoreTextView_showLessText)
-                ?: resources.getString(R.string.show_more_text_view_show_less)
-            ellipsisCharacter = typedArray.getString(R.styleable.ShowMoreTextView_ellipsisCharacter)
-                ?: resources.getString(R.string.show_more_text_view_ellipsis_character)
-
-            showMoreTextColor = typedArray.getColor(
-                R.styleable.ShowMoreTextView_showMoreTextColor,
-                ContextCompat.getColor(context, R.color.show_more_text_view_show_more_color)
+            data = Data(
+                showMoreText = typedArray.getString(R.styleable.ShowMoreTextView_showMoreText)
+                    ?: resources.getString(R.string.show_more_text_view_show_more),
+                showLessText = typedArray.getString(R.styleable.ShowMoreTextView_showLessText)
+                    ?: resources.getString(R.string.show_more_text_view_show_less),
+                ellipsisCharacter = typedArray.getString(R.styleable.ShowMoreTextView_ellipsisCharacter)
+                    ?: resources.getString(R.string.show_more_text_view_ellipsis_character),
+                showMoreTextColor = typedArray.getColor(
+                    R.styleable.ShowMoreTextView_showMoreTextColor,
+                    ContextCompat.getColor(context, R.color.show_more_text_view_show_more_color)
+                ),
+                showLessTextColor = typedArray.getColor(
+                    R.styleable.ShowMoreTextView_showLessTextColor,
+                    ContextCompat.getColor(context, R.color.show_more_text_view_show_less_color)
+                ),
+                showLineCount =
+                typedArray.getInt(
+                    R.styleable.ShowMoreTextView_showLineCount,
+                    DEFAULT_SHOW_LINE_COUNT
+                )
             )
-            showLessTextColor = typedArray.getColor(
-                R.styleable.ShowMoreTextView_showLessTextColor,
-                ContextCompat.getColor(context, R.color.show_more_text_view_show_less_color)
-            )
-            showLineCount =
-                typedArray.getInt(R.styleable.ShowMoreTextView_showLineCount, DEFAULT_SHOW_LINE_COUNT)
         } finally {
             typedArray.recycle()
         }
@@ -77,7 +75,7 @@ class ShowMoreTextView @JvmOverloads constructor(
 
             var showingText = ""
             var startIndex = 0
-            for (i in 0 until showLineCount) {
+            for (i in 0 until data.showLineCount) {
                 val end = layout.getLineEnd(i)
                 showingText += initialText.substring(startIndex, end)
                 startIndex = end
@@ -85,16 +83,17 @@ class ShowMoreTextView @JvmOverloads constructor(
 
             var resultText = showingText.substring(
                 0,
-                showingText.length - (ellipsisCharacter.length + showMoreText.length)
+                showingText.length - (data.ellipsisCharacter.length + data.showMoreText.length)
             )
-            resultText += ellipsisCharacter + showMoreText
+            resultText += data.ellipsisCharacter + data.showMoreText
 
             text = resultText
             showMoreButton()
         }
 
         private fun showMoreButton() {
-            val showMoreTextStartIndex = text.length - (ellipsisCharacter.length + showMoreText.length)
+            val showMoreTextStartIndex =
+                text.length - (data.ellipsisCharacter.length + data.showMoreText.length)
             val resultSpannableString = SpannableString(text)
 
             resultSpannableString.setSpan(
@@ -111,7 +110,7 @@ class ShowMoreTextView @JvmOverloads constructor(
             )
 
             resultSpannableString.setSpan(
-                ForegroundColorSpan(showMoreTextColor),
+                ForegroundColorSpan(data.showMoreTextColor),
                 showMoreTextStartIndex,
                 text.length,
                 Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
@@ -122,13 +121,13 @@ class ShowMoreTextView @JvmOverloads constructor(
         }
 
         private fun showLessButton() {
-            val resultSpannableString = SpannableString(text.toString() + showLessText)
-            val showLessTextStartIndex = resultSpannableString.length - showLessText.length
+            val resultSpannableString = SpannableString(text.toString() + data.showLessText)
+            val showLessTextStartIndex = resultSpannableString.length - data.showLessText.length
 
             resultSpannableString.setSpan(
                 object : ClickableSpan() {
                     override fun onClick(widget: View) {
-                        maxLines = showLineCount
+                        maxLines = data.showLineCount
                         initialize()
                     }
                 },
@@ -138,7 +137,7 @@ class ShowMoreTextView @JvmOverloads constructor(
             )
 
             resultSpannableString.setSpan(
-                ForegroundColorSpan(showLessTextColor),
+                ForegroundColorSpan(data.showLessTextColor),
                 showLessTextStartIndex,
                 resultSpannableString.length,
                 Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
@@ -148,4 +147,13 @@ class ShowMoreTextView @JvmOverloads constructor(
             setText(resultSpannableString, BufferType.SPANNABLE)
         }
     }
+
+    private data class Data(
+        val showMoreText: String,
+        val showLessText: String,
+        val ellipsisCharacter: String,
+        val showMoreTextColor: Int,
+        val showLessTextColor: Int,
+        val showLineCount: Int
+    )
 }
