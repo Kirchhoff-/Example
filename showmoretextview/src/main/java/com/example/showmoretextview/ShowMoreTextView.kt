@@ -13,139 +13,139 @@ import androidx.appcompat.widget.AppCompatTextView
 import androidx.core.content.ContextCompat
 
 class ShowMoreTextView @JvmOverloads constructor(
-  context: Context,
-  attrs: AttributeSet? = null,
-  defStyleAttr: Int = 0
+    context: Context,
+    attrs: AttributeSet? = null,
+    defStyleAttr: Int = 0
 ) : AppCompatTextView(context, attrs, defStyleAttr) {
 
-  private val layoutObserver = LayoutObserver()
-  private val mainText: CharSequence
+    private val layoutObserver = LayoutObserver()
+    private val mainText: CharSequence
 
-  private var showMoreText: String
-  private var showLessText: String
-  private var ellipsisCharacter: String
-  private var showMoreTextColor: Int
-  private var showLessTextColor: Int
-  private var showLineCount: Int
+    private var showMoreText: String
+    private var showLessText: String
+    private var ellipsisCharacter: String
+    private var showMoreTextColor: Int
+    private var showLessTextColor: Int
+    private var showLineCount: Int
 
-  private val typedArray =
-    context.obtainStyledAttributes(attrs, R.styleable.ShowMoreTextView, defStyleAttr, 0)
+    private val typedArray =
+        context.obtainStyledAttributes(attrs, R.styleable.ShowMoreTextView, defStyleAttr, 0)
 
-  init {
-    try {
-      showMoreText = typedArray.getString(R.styleable.ShowMoreTextView_showMoreText)
-        ?: resources.getString(R.string.show_more_text_view_show_more)
-      showLessText = typedArray.getString(R.styleable.ShowMoreTextView_showLessText)
-        ?: resources.getString(R.string.show_more_text_view_show_less)
-      ellipsisCharacter = typedArray.getString(R.styleable.ShowMoreTextView_ellipsisCharacter)
-        ?: resources.getString(R.string.show_more_text_view_ellipsis_character)
+    init {
+        try {
+            showMoreText = typedArray.getString(R.styleable.ShowMoreTextView_showMoreText)
+                ?: resources.getString(R.string.show_more_text_view_show_more)
+            showLessText = typedArray.getString(R.styleable.ShowMoreTextView_showLessText)
+                ?: resources.getString(R.string.show_more_text_view_show_less)
+            ellipsisCharacter = typedArray.getString(R.styleable.ShowMoreTextView_ellipsisCharacter)
+                ?: resources.getString(R.string.show_more_text_view_ellipsis_character)
 
-      showMoreTextColor = typedArray.getColor(
-        R.styleable.ShowMoreTextView_showMoreTextColor,
-        ContextCompat.getColor(context, R.color.show_more_text_view_show_more_color)
-      )
-      showLessTextColor = typedArray.getColor(
-        R.styleable.ShowMoreTextView_showLessTextColor,
-        ContextCompat.getColor(context, R.color.show_more_text_view_show_less_color)
-      )
-      showLineCount =
-        typedArray.getInt(R.styleable.ShowMoreTextView_showLineCount, DEFAULT_SHOW_LINE_COUNT)
-    } finally {
-      typedArray.recycle()
+            showMoreTextColor = typedArray.getColor(
+                R.styleable.ShowMoreTextView_showMoreTextColor,
+                ContextCompat.getColor(context, R.color.show_more_text_view_show_more_color)
+            )
+            showLessTextColor = typedArray.getColor(
+                R.styleable.ShowMoreTextView_showLessTextColor,
+                ContextCompat.getColor(context, R.color.show_more_text_view_show_less_color)
+            )
+            showLineCount =
+                typedArray.getInt(R.styleable.ShowMoreTextView_showLineCount, DEFAULT_SHOW_LINE_COUNT)
+        } finally {
+            typedArray.recycle()
+        }
+
+        mainText = text
     }
 
-    mainText = text
-  }
-
-  override fun onAttachedToWindow() {
-    super.onAttachedToWindow()
-    viewTreeObserver.addOnGlobalLayoutListener(layoutObserver)
-  }
-
-  private companion object {
-    const val DEFAULT_SHOW_LINE_COUNT = 2
-  }
-
-  private inner class LayoutObserver : ViewTreeObserver.OnGlobalLayoutListener {
-    override fun onGlobalLayout() {
-      initialize()
-      viewTreeObserver.removeOnGlobalLayoutListener(this)
+    override fun onAttachedToWindow() {
+        super.onAttachedToWindow()
+        viewTreeObserver.addOnGlobalLayoutListener(layoutObserver)
     }
 
-    private fun initialize() {
-      val initialText = text.toString()
-
-      var showingText = ""
-      var startIndex = 0
-      for (i in 0 until showLineCount) {
-        val end = layout.getLineEnd(i)
-        showingText += initialText.substring(startIndex, end)
-        startIndex = end
-      }
-
-      var resultText = showingText.substring(
-        0,
-        showingText.length - (ellipsisCharacter.length + showMoreText.length)
-      )
-      resultText += ellipsisCharacter + showMoreText
-
-      text = resultText
-      showMoreButton()
+    private companion object {
+        const val DEFAULT_SHOW_LINE_COUNT = 2
     }
 
-    private fun showMoreButton() {
-      val showMoreTextStartIndex = text.length - (ellipsisCharacter.length + showMoreText.length)
-      val resultSpannableString = SpannableString(text)
-
-      resultSpannableString.setSpan(
-        object : ClickableSpan() {
-          override fun onClick(widget: View) {
-            maxLines = Int.MAX_VALUE
-            text = mainText
-            showLessButton()
-          }
-        },
-        showMoreTextStartIndex,
-        text.length,
-        0
-      )
-
-      resultSpannableString.setSpan(
-        ForegroundColorSpan(showMoreTextColor),
-        showMoreTextStartIndex,
-        text.length,
-        Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
-      )
-
-      movementMethod = LinkMovementMethod.getInstance()
-      setText(resultSpannableString, BufferType.SPANNABLE)
-    }
-
-    private fun showLessButton() {
-      val resultSpannableString = SpannableString(text.toString() + showLessText)
-      val showLessTextStartIndex = resultSpannableString.length - showLessText.length
-
-      resultSpannableString.setSpan(
-        object : ClickableSpan() {
-          override fun onClick(widget: View) {
-            maxLines = showLineCount
+    private inner class LayoutObserver : ViewTreeObserver.OnGlobalLayoutListener {
+        override fun onGlobalLayout() {
             initialize()
-          }
-        },
-        showLessTextStartIndex,
-        resultSpannableString.length,
-        0
-      )
+            viewTreeObserver.removeOnGlobalLayoutListener(this)
+        }
 
-      resultSpannableString.setSpan(
-        ForegroundColorSpan(showLessTextColor),
-        showLessTextStartIndex,
-        resultSpannableString.length,
-        Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
-      )
+        private fun initialize() {
+            val initialText = text.toString()
 
-      movementMethod = LinkMovementMethod.getInstance()
-      setText(resultSpannableString, BufferType.SPANNABLE)
+            var showingText = ""
+            var startIndex = 0
+            for (i in 0 until showLineCount) {
+                val end = layout.getLineEnd(i)
+                showingText += initialText.substring(startIndex, end)
+                startIndex = end
+            }
+
+            var resultText = showingText.substring(
+                0,
+                showingText.length - (ellipsisCharacter.length + showMoreText.length)
+            )
+            resultText += ellipsisCharacter + showMoreText
+
+            text = resultText
+            showMoreButton()
+        }
+
+        private fun showMoreButton() {
+            val showMoreTextStartIndex = text.length - (ellipsisCharacter.length + showMoreText.length)
+            val resultSpannableString = SpannableString(text)
+
+            resultSpannableString.setSpan(
+                object : ClickableSpan() {
+                    override fun onClick(widget: View) {
+                        maxLines = Int.MAX_VALUE
+                        text = mainText
+                        showLessButton()
+                    }
+                },
+                showMoreTextStartIndex,
+                text.length,
+                0
+            )
+
+            resultSpannableString.setSpan(
+                ForegroundColorSpan(showMoreTextColor),
+                showMoreTextStartIndex,
+                text.length,
+                Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
+            )
+
+            movementMethod = LinkMovementMethod.getInstance()
+            setText(resultSpannableString, BufferType.SPANNABLE)
+        }
+
+        private fun showLessButton() {
+            val resultSpannableString = SpannableString(text.toString() + showLessText)
+            val showLessTextStartIndex = resultSpannableString.length - showLessText.length
+
+            resultSpannableString.setSpan(
+                object : ClickableSpan() {
+                    override fun onClick(widget: View) {
+                        maxLines = showLineCount
+                        initialize()
+                    }
+                },
+                showLessTextStartIndex,
+                resultSpannableString.length,
+                0
+            )
+
+            resultSpannableString.setSpan(
+                ForegroundColorSpan(showLessTextColor),
+                showLessTextStartIndex,
+                resultSpannableString.length,
+                Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
+            )
+
+            movementMethod = LinkMovementMethod.getInstance()
+            setText(resultSpannableString, BufferType.SPANNABLE)
+        }
     }
-  }
 }
